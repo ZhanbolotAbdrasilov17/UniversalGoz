@@ -1,0 +1,469 @@
+<!doctype html>
+{% load static%}
+<html lang="zxx">
+
+<!-- Mirrored from templates.envytheme.com/mebid/default/doctors.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 May 2022 10:29:49 GMT -->
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Links of CSS files -->
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/aos.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/remixicon.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/odometer.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/fancybox.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/selectize.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/twentytwenty.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+		<title>Mebid - Health & Medical HTML Template</title>
+
+        <link rel="icon" type="image/png" href="{% static 'assets/images/favicon.png' %}">
+    </head>
+
+    <body>
+
+        <!-- Start Preloader Area -->
+        <div class="preloader">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader Area -->
+        <!-- Start Topbar -->
+        <div class="topbar-area bg-1F242F">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="topbar-list">
+                            <li><a href="emergency-services.html"><i class="flaticon-emergency-call-1"></i> Emergency 24 hours</a></li>
+                            <li><a href="patients-and-visitors.html"><i class="flaticon-doctor-1"></i> Patients & visitors</a></li>
+                            <li><a href="find-doctor.html"><i class="flaticon-loupe"></i> Find a doctor</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="topbar-action">
+                            <li>
+                                <a href="tel:0485443322"><i class="flaticon-telephone"></i> (04) 8544 3322</a>
+                            </li>
+                            <li class="dropdown language-option">
+                                <button class="dropdown-toggle" type="button" id="language1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="flaticon-worldwide"></i>
+                                    <span class="lang-name"></span>
+                                </button>
+                                <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language1">
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/uk.png" alt="flag">
+                                        English
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/china.png" alt="flag">
+                                        简体中文
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/uae.png" alt="flag">
+                                        العربيّة
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+        <!-- Start Navbar Area -->
+        <div class="navbar-area navbar-style-three">
+            <div class="main-responsive-nav">
+                <div class="container">
+                    <div class="main-responsive-menu">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="{% static 'assets/images/123/logo.PNG' %}" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-navbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="{% static 'assets/images/123/logo.PNG' %}" alt="logo">
+                        </a>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        Home
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="index.html" class="nav-link">Home Demo - 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="index-2.html" class="nav-link">Home Demo - 2</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="index-3.html" class="nav-link">Home Demo - 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">
+                                        Pages
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link active">
+                                                Doctors
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="doctors.html" class="nav-link active">Doctors</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="doctors-details.html" class="nav-link">Doctors Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                Others Pages
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="terms-of-service.html" class="nav-link">Terms of Service</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="error-404.html" class="nav-link">404 Error</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="categories.html" class="nav-link">Categories</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="tags.html" class="nav-link">Tags</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="search-page.html" class="nav-link">Search Page</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="coming-soon.html" class="nav-link">Coming Soon</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                User Pages
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="login.html" class="nav-link">Login</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="register.html" class="nav-link">Register</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="forgot-password.html" class="nav-link">Forgot Password</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pricing.html" class="nav-link">Pricing</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="gallery.html" class="nav-link">Gallery</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="appointment.html" class="nav-link">Appointment</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="doctors-timetable.html" class="nav-link">Doctors Timetable</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="emergency-services.html" class="nav-link">Emergency Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="patients-and-visitors.html" class="nav-link">Patients & visitors</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="find-doctor.html" class="nav-link">Find A Doctor</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="testimonials.html" class="nav-link">Testimonials</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="faq.html" class="nav-link">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        Department
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="department.html" class="nav-link">Department</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="department-details.html" class="nav-link">Department Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        Shop
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="products.html" class="nav-link">Products</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="cart.html" class="nav-link">Cart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="checkout.html" class="nav-link">Checkout</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="my-account.html" class="nav-link">My Account</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="products-details.html" class="nav-link">Products Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        Blog
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="blog.html" class="nav-link">Blog Grid</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="author.html" class="nav-link">Author</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+
+                            <div class="others-options d-flex align-items-center">
+                                <div class="option-item">
+                                    <a href="#" class="search-box"><i class="ri-search-line"></i></a>
+                                </div>
+                                <div class="option-item">
+                                    <a href="cart.html" class="cart-btn"><i class="ri-shopping-cart-2-line"></i><span>0</span></a>
+                                </div>
+                                <div class="option-item">
+                                    <a href="appointment.html" class="default-btn"><i class="flaticon-calendar"></i> Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="others-option-for-responsive">
+                <div class="container">
+                    <div class="dot-menu">
+                        <div class="inner">
+                            <div class="circle circle-one"></div>
+                            <div class="circle circle-two"></div>
+                            <div class="circle circle-three"></div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="option-inner">
+                            <div class="others-options d-flex align-items-center">
+                                <div class="option-item">
+                                    <a href="#" class="search-box"><i class="ri-search-line"></i></a>
+                                </div>
+                                <div class="option-item">
+                                    <a href="cart.html" class="cart-btn"><i class="ri-shopping-cart-2-line"></i><span>0</span></a>
+                                </div>
+                                <div class="option-item">
+                                    <a href="appointment.html" class="default-btn"><i class="flaticon-calendar"></i> Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+        <!-- Search Overlay -->
+        <div class="search-overlay">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="search-overlay-layer"></div>
+                    <div class="search-overlay-layer"></div>
+                    <div class="search-overlay-layer"></div>
+
+                    <div class="search-overlay-close">
+                        <span class="search-overlay-close-line"></span>
+                        <span class="search-overlay-close-line"></span>
+                    </div>
+
+                    <div class="search-overlay-form">
+                        <form>
+                            <input type="text" class="input-search" placeholder="Search here...">
+                            <button type="submit"><i class="ri-search-line"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% block page%} {% endblock %}
+
+    <footer class="footer-area bg-1F242F pt-100 pb-75">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h3>About</h3>
+                            <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet. Nulla porttitor accumsan.</p>
+                            <ul class="footer-information">
+                                <li><i class="ri-phone-fill"></i> <a href="tel:0485443322">(04) 8544 3322</a></li>
+                                <li><i class="ri-mail-line"></i> <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#afc7cac3c3c0efc4cecbc681ccc0c2"><span class="__cf_email__" data-cfemail="97faf2f5fef3d7f0faf6fefbb9f4f8fa">[email&#160;protected]</span></a></li>
+                                <li><i class="ri-map-pin-fill"></i> 24 Newport road, carlton IP19</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget ps-5">
+                            <h3>Our departments</h3>
+
+                            <ul class="quick-links">
+                                <li><a href="department-details.html">Orthopedic</a></li>
+                                <li><a href="department-details.html">Dental service</a></li>
+                                <li><a href="department-details.html">Neurology</a></li>
+                                <li><a href="department-details.html">Emergency department</a></li>
+                                <li><a href="department-details.html">Diagnosis department</a></li>
+                                <li><a href="department-details.html">Therapy department</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget ps-3">
+                            <h3>Useful link</h3>
+
+                            <ul class="quick-links">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="find-doctor.html">Find a doctor</a></li>
+                                <li><a href="patients-and-visitors.html">Patients and visitors</a></li>
+                                <li><a href="department-details.html">International services</a></li>
+                                <li><a href="terms-of-service.html">Terms and conditions</a></li>
+                                <li><a href="privacy-policy.html">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h3>Newsletter</h3>
+
+                            <div class="widget-newsletter-content">
+                                <p>Sign up now for weekly news and updates</p>
+                                <form class="newsletter-form" data-bs-toggle="validator">
+                                    <input type="email" class="input-newsletter" placeholder="Email address" name="EMAIL" required autocomplete="off">
+
+                                    <button type="submit"><i class="flaticon-right-arrow"></i></button>
+                                    <div id="validator-newsletter" class="form-result"></div>
+                                </form>
+                                <ul class="footer-widget-social">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-line"></i></a></li>
+                                    <li><a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-shape-1">
+                <img src="{% static 'assets/images/footer-shape-2.png' %}" alt="image">
+            </div>
+        </footer>
+        <!-- End Footer Area -->
+        <!-- Start Copyright Area -->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="copyright-content">
+                    <p>
+                        Copyright © 2021 Mebid All Rights Reserved by
+                        <a href="https://envytheme.com/" target="_blank">EnvyTheme</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Area -->
+        <!-- Start Go Top -->
+        <div class="go-top">
+            <i class="ri-arrow-up-s-line"></i>
+        </div>
+        <!-- End Go Top -->
+
+        <!-- Links of JS files -->
+        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+        <script src="{% static 'assets/js/odometer.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'assets/js/fancybox.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery-ui.js' %}"></script>
+        <script src="{% static 'assets/js/selectize.min.js' %}"></script>
+        <script src="{% static 'assets/js/TweenMax.min.js' %}"></script>
+        <script src="{% static 'assets/js/event.move.min.js' %}"></script>
+        <script src="{% static 'assets/js/twentytwenty.min.js' %}"></script>
+        <script src="{% static 'assets/js/aos.js' %}"></script>
+		<script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+		<script src="{% static 'assets/js/form-validator.min.js' %}"></script>
+        <script src="{% static 'assets/js/contact-form-script.js' %}"></script>
+        <script src="{% static 'assets/js/wow.min.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    </body>
+
+<!-- Mirrored from templates.envytheme.com/mebid/default/doctors.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 May 2022 10:29:49 GMT -->
+</html>
