@@ -92,7 +92,7 @@
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="{% url 'home' %}">
                                 <img src="{% static 'assets/images/123/logo.PNG' %}" alt="logo">
                             </a>
                         </div>
@@ -102,7 +102,7 @@
             <div class="main-navbar">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{% url 'home' %}">
                             <img src="{% static 'assets/images/123/logo.PNG' %}" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -267,7 +267,7 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="blog.html" class="nav-link">Blog Grid</a>
+                                            <a href="{% url 'news'%}" class="nav-link">Blog Grid</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="author.html" class="nav-link">Author</a>

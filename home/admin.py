@@ -11,3 +11,12 @@ class DocktorAdmin(admin.ModelAdmin):
 
 admin.site.register(Doctor, DocktorAdmin)
 
+
+class DescNews(admin.TabularInline):
+    model = Fulldescription
+
+
+class NewsAdmin(admin.ModelAdmin):
+    inlines = [DescNews, ]
+
+admin.site.register(News, NewsAdmin)

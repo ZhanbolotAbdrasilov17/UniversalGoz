@@ -26,11 +26,13 @@
                     <h2>Our latest news</h2>
                 </div>
                 <div class="row justify-content-center">
+                                    {% for new in news %}
+
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog-card">
                             <div class="post-image">
-                                <a href="blog-details.html"><img src="assets/images/blog/blog-1.jpg" alt="image"></a>
-                                <div class="date">August 15, 2021</div>
+                                <a href="blog-details.html"><img src="{{new.image.url}}" alt="image"></a>
+                                <div class="date">{{ new.date}}</div>
                             </div>
 
                             <div class="post-content">
@@ -39,108 +41,15 @@
                                     <li>No comment</li>
                                 </ul>
                                 <h3>
-                                    <a href="blog-details.html">Why medical treatment is needed if there is a physical problem</a>
+                                    <a href="blog-details.html">{{ new.title}}</a>
                                 </h3>
-                                <a href="blog-details.html" class="post-btn">Read more <i class="flaticon-right-arrow"></i></a>
+                                <a href="{% url 'news' new.pk %}" class="post-btn">Read more <i class="flaticon-right-arrow"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="blog-details.html"><img src="assets/images/blog/blog-2.jpg" alt="image"></a>
-                                <div class="date">August 14, 2021</div>
-                            </div>
+                    {% endfor %}
 
-                            <div class="post-content">
-                                <ul class="entry-meta">
-                                    <li>by: <a href="author.html">Admin</a></li>
-                                    <li>No comment</li>
-                                </ul>
-                                <h3>
-                                    <a href="blog-details.html">The success of treatment of stroke patients raises new hopes</a>
-                                </h3>
-                                <a href="blog-details.html" class="post-btn">Read more <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="blog-details.html"><img src="assets/images/blog/blog-3.jpg" alt="image"></a>
-                                <div class="date">August 13, 2021</div>
-                            </div>
 
-                            <div class="post-content">
-                                <ul class="entry-meta">
-                                    <li>by: <a href="author.html">Admin</a></li>
-                                    <li>No comment</li>
-                                </ul>
-                                <h3>
-                                    <a href="blog-details.html">A doctor may be needed for a variety of treatments</a>
-                                </h3>
-                                <a href="blog-details.html" class="post-btn">Read more <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="blog-details.html"><img src="assets/images/blog/blog-4.jpg" alt="image"></a>
-                                <div class="date">August 15, 2021</div>
-                            </div>
-
-                            <div class="post-content">
-                                <ul class="entry-meta">
-                                    <li>by: <a href="author.html">Admin</a></li>
-                                    <li>No comment</li>
-                                </ul>
-                                <h3>
-                                    <a href="blog-details.html">The importance of personal treatment during an epidemic</a>
-                                </h3>
-                                <a href="blog-details.html" class="post-btn">Read more <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="blog-details.html"><img src="assets/images/blog/blog-5.jpg" alt="image"></a>
-                                <div class="date">August 14, 2021</div>
-                            </div>
-
-                            <div class="post-content">
-                                <ul class="entry-meta">
-                                    <li>by: <a href="author.html">Admin</a></li>
-                                    <li>No comment</li>
-                                </ul>
-                                <h3>
-                                    <a href="blog-details.html">Helping people manage mental health challenges</a>
-                                </h3>
-                                <a href="blog-details.html" class="post-btn">Read more <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="blog-details.html"><img src="assets/images/blog/blog-6.jpg" alt="image"></a>
-                                <div class="date">August 13, 2021</div>
-                            </div>
-
-                            <div class="post-content">
-                                <ul class="entry-meta">
-                                    <li>by: <a href="author.html">Admin</a></li>
-                                    <li>No comment</li>
-                                </ul>
-                                <h3>
-                                    <a href="blog-details.html">Increase the morale of the patients  words of the doctor</a>
-                                </h3>
-                                <a href="blog-details.html" class="post-btn">Read more <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="pagination-area">
                     <a href="blog.html" class="prev page-numbers"><i class="ri-arrow-left-s-line"></i></a>
                     <span class="page-numbers current" aria-current="page">1</span>
@@ -175,4 +84,5 @@
             </div>
         </div>
 
-{% endblock%}
+
+{% endblock %}
