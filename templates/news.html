@@ -31,7 +31,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog-card">
                             <div class="post-image">
-                                <a href="blog-details.html"><img src="{{new.image.url}}" alt="image"></a>
+                                <a href="{% url 'news' new.pk %}"><img src="{{new.image.url}}" alt="image"></a>
                                 <div class="date">{{ new.date}}</div>
                             </div>
 

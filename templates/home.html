@@ -475,7 +475,7 @@
                     {% for d in doctors %}
                     <div class="single-doctors-card">
                         <div class="doctors-image">
-                            <a href="doctors-details.html"><img src="{{d.image.url}}" alt="image"></a>
+                            <a href="{% url 'doctor' d.pk%}"><img src="{{d.image.url}}" alt="image"></a>
 
                             <ul class="social">
                                 <li>
@@ -1111,7 +1111,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-2 col-md-12">
                         <div class="overview-logo">
-                            <a href="index.html"><img src="{% static 'assets/images/logo-2.png' %}" alt="image"></a>
+                            <a href="index.html"><img src="{% static 'assets/images/123/logo.PNG' %}" alt="image"></a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-12">
