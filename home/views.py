@@ -6,7 +6,8 @@ from .models import *
 
 def home(request):
     doctors = Doctor.objects.all()
-    context = {"doctors": doctors}
+    news = News.objects.all()
+    context = {"doctors": doctors, "news":news}
     return render(request, "home.html", context)
 
 
@@ -30,6 +31,7 @@ def news(request):
     newses = News.objects.all()
     context = {"news": newses}
     return render(request, "news.html", context)
+
 
 class NewsDetail(DetailView):
     model = News

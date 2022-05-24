@@ -12,7 +12,6 @@
                             <img src="{{news.image.url}}" alt="image">
                             <div class="date">{{ news.date}}</div>
                         </div>
-                        <span>By <a href="author.html">Admin</a> / No comment</span>
                         <h3>{{ news.title}}</h3>
                         {% for t in texts %}
                         {% if t.news.id == news.id%}
