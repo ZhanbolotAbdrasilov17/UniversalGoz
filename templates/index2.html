@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
 		<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
 
-		<title>Mebid - Health & Medical HTML Template</title>
+		<title>Universal Goz</title>
 
         <link rel="icon" type="image/png" href="{% static 'assets/images/favicon.png' %}">
     </head>
@@ -93,118 +93,30 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="{% url 'home' %}" class="nav-link">
                                         Главная
+                                    </a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'about' %}" class="nav-link">О клинике</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'doctor' %}" class="nav-link">
+                                        Врачи
                                         <i class="ri-arrow-down-s-line"></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="index.html" class="nav-link">Home Demo - 1</a>
+                                            <a href="{% url 'doctor' %}" class="nav-link">Наши врачи</a>
                                         </li>
+
                                         <li class="nav-item">
-                                            <a href="index-2.html" class="nav-link">Home Demo - 2</a>
+                                            <a href="#" class="nav-link">Успехи</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="index-3.html" class="nav-link">Home Demo - 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link">О клинике</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link active">
-                                        Доктора
-                                        <i class="ri-arrow-down-s-line"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link active">
-                                                Доктора
-                                                <i class="ri-arrow-right-s-line"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="doctors.html" class="nav-link active">Doctors</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="doctors-details.html" class="nav-link">Doctors Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Остальные страницы
-                                                <i class="ri-arrow-right-s-line"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="terms-of-service.html" class="nav-link">Terms of Service</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="error-404.html" class="nav-link">404 Error</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="categories.html" class="nav-link">Categories</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="tags.html" class="nav-link">Tags</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="search-page.html" class="nav-link">Search Page</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="coming-soon.html" class="nav-link">Coming Soon</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Страницы пользователей
-                                                <i class="ri-arrow-right-s-line"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="login.html" class="nav-link">Login</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="register.html" class="nav-link">Register</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="forgot-password.html" class="nav-link">Забыли пароль</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="pricing.html" class="nav-link">Цены</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="gallery.html" class="nav-link">Галерея</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="appointment.html" class="nav-link">Встречи</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="doctors-timetable.html" class="nav-link">График работы врачей</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="emergency-services.html" class="nav-link">Службы спасения</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="patients-and-visitors.html" class="nav-link">Пациенты и посетители</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="find-doctor.html" class="nav-link">Найти доктора</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="testimonials.html" class="nav-link">Отзывы</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="faq.html" class="nav-link">Вопросы</a>
-                                        </li>
+
+
+
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -214,66 +126,64 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="department.html" class="nav-link">Department</a>
+                                            <a href="#" class="nav-link">Диагностика зрения</a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="department-details.html" class="nav-link">Department Details</a>
+                                            <a href="#" class="nav-link">Ортальмологические услуги для беременных</a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Лазерная коррекция зрения</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Лечение катаракты</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Имплантация факичных линз</a>
+                                        </li>
+                                         <li class="nav-item">
+                                            <a href="#" class="nav-link">Витреоретинальная хирургия</a>
+                                        </li>
+                                         <li class="nav-item">
+                                            <a href="#" class="nav-link">Ортокератология</a>
+                                        </li>
+
+
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         Отзывы
-                                        <i class="ri-arrow-down-s-line"></i>
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="products.html" class="nav-link">Товары</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="cart.html" class="nav-link">Корзина</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="checkout.html" class="nav-link">Проверить</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="my-account.html" class="nav-link">Мой аккаунт</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="products-details.html" class="nav-link">Детали продуктов</a>
-                                        </li>
-                                    </ul>
+
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="{% url 'news'%}" class="nav-link">
                                         Блог
                                         <i class="ri-arrow-down-s-line"></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="{% url 'news'%}" class="nav-link">Сетка блога</a>
+                                            <a href="{% url 'news'%}" class="nav-link">Важно знать</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="author.html" class="nav-link">Автор</a>
+                                            <a href="{% url 'news'%}" class="nav-link">Новости</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Подробности блога</a>
+                                            <a href="{% url 'news'%}" class="nav-link">СМИ о нас</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="blog-right-sidebar.html" class="nav-link">Правая боковая панель блога</a>
-                                        </li>
+
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Контакты</a>
+                                    <a href="{% url 'contact'%}" class="nav-link">Контакты</a>
                                 </li>
                             </ul>
 
                             <div class="others-options d-flex align-items-center">
 
                                 <div class="option-item">
-                                    <a href="appointment.html" class="default-btn"><i class="flaticon-calendar"></i> Связаться с нами</a>
+                                    <a href="{% url 'contact'%}" class="default-btn"><i class="flaticon-calendar"></i> Связаться с нами</a>
                                 </div>
                             </div>
                         </div>
@@ -340,12 +250,11 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-3 col-sm-6">
                         <div class="single-footer-widget">
-                            <h3>О нас</h3>
-                            <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet. Nulla porttitor accumsan.</p>
+                            <h3>Контакты</h3>
                             <ul class="footer-information">
-                                <li><i class="ri-phone-fill"></i> <a href="tel:0485443322">(04) 8544 3322</a></li>
-                                <li><i class="ri-mail-line"></i> <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#afc7cac3c3c0efc4cecbc681ccc0c2"><span class="__cf_email__" data-cfemail="97faf2f5fef3d7f0faf6fefbb9f4f8fa">[email&#160;protected]</span></a></li>
-                                <li><i class="ri-map-pin-fill"></i> 24 Newport road, carlton IP19</li>
+                                <li><i class="ri-phone-fill"></i> <a href="tel:0554 730 944">0554 730 944</a></li>
+                                <li><i class="ri-mail-line"></i> <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#afc7cac3c3c0efc4cecbc681ccc0c2"><span data-cfemail="97faf2f5fef3d7f0faf6fefbb9f4f8fa">universalgoz@gmail.com</span></a></li>
+                                <li><i class="ri-map-pin-fill"></i> Манаса 12а</li>
                             </ul>
                         </div>
                     </div>
@@ -354,12 +263,11 @@
                             <h3>Наши отделы</h3>
 
                             <ul class="quick-links">
-                                <li><a href="department-details.html">Ортопедический</a></li>
-                                <li><a href="department-details.html">Стоматологические услуги</a></li>
-                                <li><a href="department-details.html">Неврология</a></li>
-                                <li><a href="department-details.html">Отделение неотложной помощи</a></li>
-                                <li><a href="department-details.html">Отделение диагностики</a></li>
-                                <li><a href="department-details.html">Терапевтическое отделение</a></li>
+                                <li><a href="#">Ортопедический</a></li>
+                                <li><a href="#">Стоматологические услуги</a></li>
+                                <li><a href="#">Неврология</a></li>
+                                <li><a href="#">Отделение неотложной помощи</a></li>
+                                <li><a href="#">Отделение диагностики</a></li>
                             </ul>
                         </div>
                     </div>
@@ -368,36 +276,17 @@
                             <h3>Полезные ссылки</h3>
 
                             <ul class="quick-links">
-                                <li><a href="about.html">О нас</a></li>
-                                <li><a href="find-doctor.html">Найти врача</a></li>
-                                <li><a href="patients-and-visitors.html">Пациенты и посетители</a></li>
-                                <li><a href="department-details.html">Международные услуги</a></li>
-                                <li><a href="terms-of-service.html">Условия и положения</a></li>
-                                <li><a href="privacy-policy.html">Политика конфиденциальности</a></li>
+                                <li><a href="{%url 'about'%}">О нас</a></li>
+                                <li><a href="{%url 'doctor'%}">Найти врача</a></li>
+                                <li><a href="{% url 'news' %}">Новости</a></li>
+                                <li><a href="{%url 'contact'%}">Контакты</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Отзывы</a></li>
+
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h3>Новости</h3>
 
-                            <div class="widget-newsletter-content">
-                                <p>Подпишитесь сейчас на еженедельные новости и обновления</p>
-                                <form class="newsletter-form" data-bs-toggle="validator">
-                                    <input type="email" class="input-newsletter" placeholder="Email address" name="EMAIL" required autocomplete="off">
-
-                                    <button type="submit"><i class="flaticon-right-arrow"></i></button>
-                                    <div id="validator-newsletter" class="form-result"></div>
-                                </form>
-                                <ul class="footer-widget-social">
-                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-line"></i></a></li>
-                                    <li><a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a></li>
-                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="footer-shape-1">
@@ -410,8 +299,8 @@
             <div class="container">
                 <div class="copyright-content">
                     <p>
-                        Copyright © 2021 Mebid All Rights Reserved by
-                        <a href="https://envytheme.com/" target="_blank">EnvyTheme</a>
+                        Copyright © 2022 Universal Goz
+                        <a href="http://asoi.kg/" target="_blank">ASOI studio</a>
                     </p>
                 </div>
             </div>

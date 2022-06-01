@@ -16,6 +16,7 @@ def doctor(request):
     context = {"doctors": doctors}
     return render(request, "doctor.html", context)
 
+
 class DoctorDetail(DetailView):
     model = Doctor
     template_name = "doctor-detail.html"
@@ -26,6 +27,7 @@ class DoctorDetail(DetailView):
         context = super().get_context_data()
         context['texts'] = Description.objects.all()
         return context
+
 
 def news(request):
     newses = News.objects.all()
@@ -44,3 +46,12 @@ class NewsDetail(DetailView):
         context['texts'] = Fulldescription.objects.all()
         return context
 
+
+def contact(request):
+    return render(request, 'contact.html')
+
+
+def about(request):
+    doctors = Doctor.objects.all()
+    context = {"doctors": doctors, }
+    return render(request, 'about.html', context)

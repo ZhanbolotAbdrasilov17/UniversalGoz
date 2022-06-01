@@ -5,13 +5,9 @@
         <div class="page-banner-area item-2">
             <div class="container">
                 <div class="page-banner-content">
-                    <h2>Blog</h2>
 
                     <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>Blog</li>
+
                     </ul>
                 </div>
             </div>
@@ -22,8 +18,8 @@
         <div class="blog-area pt-100 pb-100">
             <div class="container">
                 <div class="section-title">
-                    <span>Recent articles</span>
-                    <h2>Our latest news</h2>
+                    <span>Universal Goz</span>
+                    <h2>Новости</h2>
                 </div>
                 <div class="row justify-content-center">
                                     {% for new in news %}
@@ -36,12 +32,9 @@
                             </div>
 
                             <div class="post-content">
-                                <ul class="entry-meta">
-                                    <li>by: <a href="author.html">Admin</a></li>
-                                    <li>No comment</li>
-                                </ul>
+
                                 <h3>
-                                    <a href="blog-details.html">{{ new.title}}</a>
+                                    <a href="{% url 'news' new.pk %}">{{ new.title}}</a>
                                 </h3>
                                 <a href="{% url 'news' new.pk %}" class="post-btn">Read more <i class="flaticon-right-arrow"></i></a>
                             </div>
@@ -50,39 +43,11 @@
                     {% endfor %}
 
 
-                <div class="pagination-area">
-                    <a href="blog.html" class="prev page-numbers"><i class="ri-arrow-left-s-line"></i></a>
-                    <span class="page-numbers current" aria-current="page">1</span>
-                    <a href="blog.html" class="page-numbers">2</a>
-                    <a href="blog.html" class="page-numbers">3</a>
-                    <a href="blog.html" class="next page-numbers"><i class="ri-arrow-right-s-line"></i></a>
                 </div>
             </div>
         </div>
         <!-- End Blog Area -->
 
-        <!-- Start Overview Area -->
-        <div class="overview-area pt-75 pb-75">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-12">
-                        <div class="overview-logo">
-                            <a href="index.html"><img src="assets/images/logo-2.png" alt="image"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                        <div class="overview-content">
-                            <h3>Need more information please contact us or book an appointment</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-12">
-                        <div class="overview-btn">
-                            <a href="contact.html" class="default-btn">Contact us <i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 {% endblock %}

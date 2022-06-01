@@ -6,13 +6,9 @@
         <div class="page-banner-area item-2">
             <div class="container">
                 <div class="page-banner-content">
-                    <h2>Our doctors</h2>
 
                     <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>doctors</li>
+
                     </ul>
                 </div>
             </div>
@@ -22,8 +18,8 @@
         <div class="doctors-area pt-100 pb-75">
             <div class="container">
                 <div class="section-title">
-                    <span>Our doctors</span>
-                    <h2>Professional staff at our hospital</h2>
+                    <span>Universal Goz</span>
+                    <h2>Наши врачи</h2>
                 </div>
 
                 <div class="row justify-content-center">
@@ -31,7 +27,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="single-doctors-card">
                             <div class="doctors-image">
-                                <a href="doctors-details.html"><img src="{{di.image.url}}" alt="image"></a>
+                                <a href="{% url 'doctor' di.pk%}"><img src="{{di.image.url}}" alt="image"></a>
 
                                 <ul class="social">
                                     <li>
@@ -49,16 +45,12 @@
                                             <i class="ri-instagram-line"></i>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/signup" target="_blank">
-                                            <i class="ri-linkedin-line"></i>
-                                        </a>
-                                    </li>
+
                                 </ul>
                             </div>
                             <div class="doctors-content">
                                 <h3>
-                                    <a href="doctors-details.html">{{ di.full_name }}</a>
+                                    <a href="{% url 'doctor' di.pk%}">{{ di.full_name }}</a>
                                 </h3>
                                 <span>{{ di.position }}</span>
                             </div>
@@ -76,27 +68,6 @@
             </div>
         </div>
         <!-- End Doctors Area -->
-        <!-- Start Overview Area -->
-        <div class="overview-area pt-75 pb-75">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-12">
-                        <div class="overview-logo">
-                            <a href="index.html"><img src="assets/images/logo-2.png" alt="image"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                        <div class="overview-content">
-                            <h3>Need more information please contact us or book an appointment</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-12">
-                        <div class="overview-btn">
-                            <a href="contact.html" class="default-btn">Contact us <i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
 {% endblock %}
