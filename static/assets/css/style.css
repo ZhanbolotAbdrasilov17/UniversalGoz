@@ -612,7 +612,6 @@ img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 165px;
 }
 
 .main-slides-item.bg-2 {
@@ -7258,3 +7257,42 @@ img {
           transform: translateY(-5px);
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Icons Style*/
+.fa {
+  padding: 8px;
+  width: 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #E1306C;
+  color: white;
+}

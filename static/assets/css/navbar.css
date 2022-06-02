@@ -1,6 +1,19 @@
 /*================================================
 Topbar Area CSS
 =================================================*/
+.header-row, .header-row__socs {
+ display: flex;
+ list-style-type: none;
+}
+.header-row {
+ justify-content: end;
+ align-items: center;
+ column-gap: 20px;
+}
+.header-row__socs{
+ margin : 0;
+ column-gap: 12px
+}
 .topbar-area {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -272,6 +285,9 @@ Navbar Area CSS
   padding: 0 25px 0 0;
   margin: 0;
 }
+.navbar-brand img{
+  width: 150px
+}
 
 .main-navbar .navbar ul {
   padding-left: 0;
@@ -321,6 +337,11 @@ Navbar Area CSS
 
 .main-navbar .navbar .navbar-nav .nav-item:hover a, .main-navbar .navbar .navbar-nav .nav-item.active a {
   color: var(--main-color);
+}
+
+.navbar-number{
+  color: #fff;
+  white-space: nowrap
 }
 
 .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -912,6 +933,9 @@ Navbar Area CSS
   }
   .topbar-action {
     text-align: center;
+  }
+  .header-row{
+    justify-content: center
   }
   .search-overlay .search-overlay-form {
     max-width: 280px;
