@@ -297,12 +297,15 @@ Navbar Area CSS
 
 .main-navbar .navbar .navbar-nav .nav-item {
   position: relative;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
 }
 
 .main-navbar .navbar .navbar-nav .nav-item a {
   color: var(--black-color);
+
   font-size: var(--font-size);
   font-weight: 500;
   padding-left: 0;
@@ -312,6 +315,9 @@ Navbar Area CSS
   -webkit-transition: var(--transition);
   transition: var(--transition);
   position: relative;
+  cursor: pointer;
+  border-color: #2196F3;
+  color: dodgerblue;
 }
 
 .main-navbar .navbar .navbar-nav .nav-item a i {
@@ -935,7 +941,8 @@ Navbar Area CSS
     text-align: center;
   }
   .header-row{
-    justify-content: center
+    justify-content: center;
+    flex-wrap: wrap
   }
   .search-overlay .search-overlay-form {
     max-width: 280px;

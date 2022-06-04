@@ -246,6 +246,9 @@ img {
   max-width: 810px;
   margin: 0 auto 45px;
 }
+.section-gallery{
+  margin-top: 80px;
+}
 
 .section-title span {
   font-size: var(--font-size);

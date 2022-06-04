@@ -247,72 +247,38 @@
             </div>
         </div>
         <!-- End About Area -->
-        <!-- Start Department Area -->
-        <div class="department-area pb-75">
+        <!-- Start Blog Area -->
+        <div class="blog-area pt-100 pb-75">
             <div class="container">
                 <div class="section-title">
-                    <h2>Квалифицированное решение проблем со зрением на современном уровне</h2>
+                    <h2>Наши новости</h2>
                 </div>
                 <div class="row justify-content-center">
+                    {% for new in news %}
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog-card">
                             <div class="post-image">
-                                <a href="{% url 'about' %}"><img src="{% static 'assets/images/onas.jpg' %}" alt="image"></a>
+                                <a href="{% url 'news' new.pk %}"><img src="{{new.image.url}}" alt="image"></a>
+                                <div class="date">{{ new.date}}</div>
                             </div>
 
                             <div class="post-content">
 
                                 <h3>
-                                    <a href="blog-details.html">О НАС</a>
+                                    <a href="{% url 'news' new.pk %}">{{ new.title}}</a>
                                 </h3>
-                                <a href="{% url 'about'%}" class="post-btn">Подробнее <i class="flaticon-right-arrow"></i></a>
+                                <a href="{% url 'news' new.pk %}" class="post-btn">Подробнее <i class="flaticon-right-arrow"></i></a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="{% url 'doctor' %}"><img src="{% static 'assets/images/vrachi.jpg' %}" alt="image"></a>
-                            </div>
-
-                            <div class="post-content">
-
-                                <h3>
-                                    <a href="blog-details.html">ВРАЧИ</a>
-                                </h3>
-                                <a href="{% url 'doctor' %}" class="post-btn">Познакомьтесь с нашими врачами <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="{% url 'contact' %}"><img src="{% static 'assets/images/cont.jpg' %}" alt="image"></a>
-                            </div>
-
-                            <div class="post-content">
-
-                                <h3>
-                                    <a href="blog-details.html">КОНСУЛЬТАЦИЯ</a>
-                                </h3>
-                                <a href="{% url 'contact' %}" class="post-btn">Запишитесь на консультацию <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
 
                 </div>
             </div>
-
-            <div class="department-shape-1">
-                <img src="{% static 'assets/images/department/shape-1.png' %}" alt="image">
-            </div>
-            <div class="department-shape-2">
-                <img src="{% static 'assets/images/department/shape-2.png' %}" alt="image">
-            </div>
         </div>
-        <!-- End Department Area -->
+        <!-- End Blog Area -->
+
+        <!-- Start Department Area -->
         <!-- Start Doctors Area -->
         <div class="doctors-area ptb-100">
             <div class="container">
@@ -361,6 +327,7 @@
             </div>
         </div>
         <!-- End Doctors Area -->
+
         <!-- Start Before & After Area -->
         <div class="before-after-area">
             <div class="container">
@@ -447,10 +414,75 @@
             </div>
         </div>
         <!-- End Before & After Area -->
+        <div class="department-area pb-75">
+            <div class="container">
+                <div class="section-title section-gallery">
+                    <h2>Квалифицированное решение проблем со зрением на современном уровне</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog-card">
+                            <div class="post-image">
+                                <a href="{% url 'about' %}"><img src="{% static 'assets/images/onas.jpg' %}" alt="image"></a>
+                            </div>
+
+                            <div class="post-content">
+
+                                <h3>
+                                    <a href="blog-details.html">О НАС</a>
+                                </h3>
+                                <a href="{% url 'about'%}" class="post-btn">Подробнее <i class="flaticon-right-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog-card">
+                            <div class="post-image">
+                                <a href="{% url 'doctor' %}"><img src="{% static 'assets/images/vrachi.jpg' %}" alt="image"></a>
+                            </div>
+
+                            <div class="post-content">
+
+                                <h3>
+                                    <a href="blog-details.html">ВРАЧИ</a>
+                                </h3>
+                                <a href="{% url 'doctor' %}" class="post-btn">Познакомьтесь с нашими врачами <i class="flaticon-right-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog-card">
+                            <div class="post-image">
+                                <a href="{% url 'contact' %}"><img src="{% static 'assets/images/cont.jpg' %}" alt="image"></a>
+                            </div>
+
+                            <div class="post-content">
+
+                                <h3>
+                                    <a href="blog-details.html">КОНСУЛЬТАЦИЯ</a>
+                                </h3>
+                                <a href="{% url 'contact' %}" class="post-btn">Запишитесь на консультацию <i class="flaticon-right-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="department-shape-1">
+                <img src="{% static 'assets/images/department/shape-1.png' %}" alt="image">
+            </div>
+            <div class="department-shape-2">
+                <img src="{% static 'assets/images/department/shape-2.png' %}" alt="image">
+            </div>
+        </div>
+        <!-- End Department Area -->
         <!-- Start Testimonials Area -->
         <div class="testimonials-area ptb-100">
             <div class="container">
-                <div class="section-title">
+                <div class="section-title ">
                     <span>UNIVERSAL GOZ</span>
                     <h2>Отзывы наших клиентов</h2>
                 </div>
@@ -506,36 +538,6 @@
             </div>
         </div>
         <!-- End Partner Area -->
-        <!-- Start Blog Area -->
-        <div class="blog-area pt-100 pb-75">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Наши новости</h2>
-                </div>
-                <div class="row justify-content-center">
-                    {% for new in news %}
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="{% url 'news' new.pk %}"><img src="{{new.image.url}}" alt="image"></a>
-                                <div class="date">{{ new.date}}</div>
-                            </div>
-
-                            <div class="post-content">
-
-                                <h3>
-                                    <a href="{% url 'news' new.pk %}">{{ new.title}}</a>
-                                </h3>
-                                <a href="{% url 'news' new.pk %}" class="post-btn">Подробнее <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-
-                </div>
-            </div>
-        </div>
-        <!-- End Blog Area -->
         <!-- Start Overview Area -->
         <div class="overview-area pt-75 pb-75">
             <div class="container">
@@ -560,6 +562,6 @@
             </div>
         </div>
         <div id="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1462.1040203691828!2d74.5859142582946!3d42.868452894789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb712931cd661%3A0x95b67a64ecd9923!2z0JDQtNCy0L7QutCw0YIg0JHQuNGI0LrQtdC6INCe0YHQvNC-0L3QvtCyINCR0LXQutGB0YPQu9GC0LDQvSDQkdCw0LrRi9GC0L7QstC40Yc!5e0!3m2!1sru!2skg!4v1653834123880!5m2!1sru!2skg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="map_575166143" frameborder="0" width="100%" height="100%" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_575166143", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzAwNThhNSIsInRpdGxlIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6Wzc0LjU5NjA5Niw0Mi44NTQwNTFdfSwiaWQiOjEzMTB9XSwibWFwUG9zaXRpb24iOnsibGF0Ijo0Mi44NTM4NDMyMTk3NjY2NDUsImxvbiI6NzQuNTk2MTcwMTU3MTk5MzEsInpvb20iOjE4fSwiaXNXaGVlbFpvb21FbmFibGVkIjp0cnVlfScpPC9zY3JpcHQ+PHNjcmlwdCBhc3luYz0iIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1VQS0xNTg4NjYxNjgtMSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPihmdW5jdGlvbihlKXtmdW5jdGlvbiB0KCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX13aW5kb3cuZGF0YUxheWVyPXdpbmRvdy5kYXRhTGF5ZXJ8fFtdLHQoImpzIixuZXcgRGF0ZSksdCgiY29uZmlnIixlKSx3aW5kb3cuZ3RhZz10fSkoJ1VBLTE1ODg2NjE2OC0xJyk8L3NjcmlwdD48L2JvZHk+")</script>
         </div>
 {% endblock %}
