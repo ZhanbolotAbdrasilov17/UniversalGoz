@@ -1,52 +1,314 @@
 {% extends 'index2.html' %}
 {% load static %}
 {% block page %}
-
-        <div class="page-banner-area item-2">
-            <div class="container">
-                <div class="page-banner-content">
-
-                    <ul>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- End Page Banner Area -->
-
-        <!-- Start Blog Area -->
-        <div class="blog-area pt-100 pb-100">
-            <div class="container">
-                <div class="section-title">
-                    <span>Universal Goz</span>
-                    <h2>Новости</h2>
-                </div>
-                <div class="row justify-content-center">
-                                    {% for new in news %}
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="{% url 'news' new.pk %}"><img src="{{new.image.url}}" alt="image"></a>
-                                <div class="date">{{ new.date}}</div>
+        <div class="ttm-page-title-row">
+            <div class="ttm-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">Blog</h2>
                             </div>
-
-                            <div class="post-content">
-
-                                <h3>
-                                    <a href="{% url 'news' new.pk %}">{{ new.title}}</a>
-                                </h3>
-                                <a href="{% url 'news' new.pk %}" class="post-btn">Read more <i class="flaticon-right-arrow"></i></a>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <i class="fa fa-home mr-2"></i><a title="Homepage" href="index.html">Home</a>
+                                </span>
+                                <span class="ttm-bread-sep">&nbsp; :&nbsp;: &nbsp;</span>
+                                <span>Blog</span>
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
-
-
                 </div>
             </div>
         </div>
-        <!-- End Blog Area -->
+        <!-- page-title end -->
+
+
+        <!--site-main start-->
+        <div class="site-main">
+
+            <div class="ttm-row sidebar ttm-sidebar-right ttm-bgcolor-white clearfix">
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-9 content-area">
+                            <!-- post -->
+                            <article class="post ttm-blog-classic clearfix">
+                                <!-- post-featured-wrapper -->
+                                <div class="ttm-post-featured-wrapper ttm-featured-wrapper">
+                                    <div class="ttm-post-featured">
+                                        <img class="img-fluid" src="{% static 'assets/images/blog/blog-01-1200x800.jpg'%}" alt="blog-img">
+                                        <div class="post-category">Eye Care</div>
+                                    </div>
+                                </div><!-- post-featured-wrapper end -->
+                                <!-- ttm-blog-classic-content -->
+                                <div class="ttm-blog-classic-content">
+                                    <div class="ttm-post-entry-header">
+                                        <div class="post-meta">
+                                            <span class="ttm-meta-line entry-date"><i class="fa fa-calendar"></i><time class="entry-date published" datetime="2020-11-11T04:34:34+00:00">November 11, 2020</time></span>
+                                            <span class="ttm-meta-line byline"><i class="fa fa-user"></i>John Doe</span>
+                                        </div>
+                                        <header class="entry-header">
+                                            <h2 class="entry-title"><a href="blog-single.html">Protect Your Eyes From Dust  And Disease</a></h2>
+                                        </header>
+                                    </div>
+                                    <div class="entry-content">
+                                        <div class="ttm-box-desc-text">
+                                            <p>Both long- and short-term exposure to UV radiation can harm the eyes, affect vision to compromise overall eye health. or ut labore areas disease eyecare dolore aliqua.Ut enim ad et minim veniam, and quis nostrud exercitation produr enim</p>
+                                        </div>
+                                        <div class="ttm-blogbox-desc-footer">
+                                            <div class="ttm-blogbox-footer-readmore">
+                                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-dark" href="blog-single.html">read More<i class="fontello icon-plus"></i></a>
+                                            </div>
+                                            <div class="ttm-social-share-wrapper">
+                                                <a href="#" class="ttm-social-share-icon_btn"><i class="ti ti-sharethis"></i></a>
+                                                <div class="social-icons circle">
+                                                    <ul class="m-0 padding_left5">
+                                                        <li><a href="#" rel="noopener" aria-label="facebook"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="twitter"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="google"><i class="fa fa-google-plus"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- ttm-blog-classic-content end -->
+                            </article><!-- post end -->
+                            <!-- post -->
+                            <article class="post ttm-blog-classic clearfix">
+                                <!-- post-featured-wrapper -->
+                                <div class="ttm-post-featured-wrapper ttm-featured-wrapper">
+                                    <div class="ttm-post-featured">
+                                        <img class="img-fluid" src="{% static 'assets/images/blog/blog-02-1200x800.jpg'%}" alt="blog-img">
+                                        <div class="post-category">Glasses</div>
+                                    </div>
+                                </div><!-- post-featured-wrapper end -->
+                                <!-- ttm-blog-classic-content -->
+                                <div class="ttm-blog-classic-content">
+                                    <div class="ttm-post-entry-header">
+                                        <div class="post-meta">
+                                            <span class="ttm-meta-line byline"><i class="fa fa-user"></i>John Doe</span>
+                                            <span class="ttm-meta-line entry-date"><i class="fa fa-calendar"></i>
+                                            <time class="entry-date published" datetime="2020-11-10T06:33:17+00:00">November 10, 2020</time></span>
+                                        </div>
+                                        <header class="entry-header">
+                                            <h2 class="entry-title"><a href="blog-single.html">Signs or risk factors for eye disease</a></h2>
+                                        </header>
+                                    </div>
+                                    <div class="entry-content">
+                                        <div class="ttm-box-desc-text">
+                                            <p>Both long- and short-term exposure to UV radiation can harm the eyes, affect vision to compromise overall eye health. or ut labore areas disease eyecare dolore aliqua.Ut enim ad et minim veniam, and quis nostrud exercitation produr enim</p>
+                                        </div>
+                                        <div class="ttm-blogbox-desc-footer">
+                                            <div class="ttm-blogbox-footer-readmore">
+                                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-dark" href="blog-single.html">read More<i class="fontello icon-plus"></i></a>
+                                            </div>
+                                            <div class="ttm-social-share-wrapper">
+                                                <a href="#" class="ttm-social-share-icon_btn"><i class="ti ti-sharethis"></i></a>
+                                                <div class="social-icons circle">
+                                                    <ul class="m-0 padding_left5">
+                                                        <li><a href="#" rel="noopener" aria-label="facebook"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="twitter"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="google"><i class="fa fa-google-plus"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- ttm-blog-classic-content end -->
+                            </article><!-- post end -->
+                            <!-- post -->
+                            <article class="post ttm-blog-classic clearfix">
+                                <!-- post-featured-wrapper -->
+                                <div class="ttm-post-featured-wrapper ttm-featured-wrapper">
+                                    <div class="ttm-post-featured">
+                                        <img class="img-fluid" src="{% static 'assets/images/blog/blog-03-1200x800.jpg'%}" alt="blog-img">
+                                        <div class="post-category">Lenses</div>
+                                    </div>
+                                </div><!-- post-featured-wrapper end -->
+                                <!-- ttm-blog-classic-content -->
+                                <div class="ttm-blog-classic-content">
+                                    <div class="ttm-post-entry-header">
+                                        <div class="post-meta">
+                                            <span class="ttm-meta-line byline"><i class="fa fa-user"></i>John Doe</span>
+                                            <span class="ttm-meta-line entry-date"><i class="fa fa-calendar"></i>
+                                            <time class="entry-date published" datetime="2020-11-10T06:33:11+00:00">November 10, 2020</time></span>
+                                        </div>
+                                        <header class="entry-header">
+                                            <h2 class="entry-title"><a href="blog-single.html">What Can You Do To Reduce Dry Eyes</a></h2>
+                                        </header>
+                                    </div>
+                                    <div class="entry-content">
+                                        <div class="ttm-box-desc-text">
+                                            <p>Both long- and short-term exposure to UV radiation can harm the eyes, affect vision to compromise overall eye health. or ut labore areas disease eyecare dolore aliqua.Ut enim ad et minim veniam, and quis nostrud exercitation produr enim</p>
+                                        </div>
+                                        <div class="ttm-blogbox-desc-footer">
+                                            <div class="ttm-blogbox-footer-readmore">
+                                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-dark" href="blog-single.html">read More<i class="fontello icon-plus"></i></a>
+                                            </div>
+                                            <div class="ttm-social-share-wrapper">
+                                                <a href="#" class="ttm-social-share-icon_btn"><i class="ti ti-sharethis"></i></a>
+                                                <div class="social-icons circle">
+                                                    <ul class="m-0 padding_left5">
+                                                        <li><a href="#" rel="noopener" aria-label="facebook"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="twitter"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="google"><i class="fa fa-google-plus"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- ttm-blog-classic-content end -->
+                            </article><!-- post end -->
+                            <!-- post -->
+                            <article class="post ttm-blog-classic clearfix">
+                                <!-- post-featured-wrapper -->
+                                <div class="ttm-post-featured-wrapper ttm-featured-wrapper">
+                                    <div class="ttm-post-featured">
+                                        <img class="img-fluid" src="{% static 'assets/images/blog/blog-04-1200x800.jpg'%}" alt="blog-img">
+                                        <div class="post-category">Surgeries</div>
+                                    </div>
+                                </div><!-- post-featured-wrapper end -->
+                                <!-- ttm-blog-classic-content -->
+                                <div class="ttm-blog-classic-content">
+                                    <div class="ttm-post-entry-header">
+                                        <div class="post-meta">
+                                            <span class="ttm-meta-line entry-date"><i class="fa fa-calendar"></i>
+                                            <time class="entry-date published" datetime="2020-10-02T09:23:11+00:00">October 2, 2020</time></span>
+                                            <span class="ttm-meta-line byline"><i class="fa fa-user"></i>John Doe</span>
+                                        </div>
+                                        <header class="entry-header">
+                                            <h2 class="entry-title"><a href="blog-single.html">Is UV light damages your eye sight?</a></h2>
+                                        </header>
+                                    </div>
+                                    <div class="entry-content">
+                                        <div class="ttm-box-desc-text">
+                                            <p>Both long- and short-term exposure to UV radiation can harm the eyes, affect vision to compromise overall eye health. or ut labore areas disease eyecare dolore aliqua.Ut enim ad et minim veniam, and quis nostrud exercitation produr enim</p>
+                                        </div>
+                                        <div class="ttm-blogbox-desc-footer">
+                                            <div class="ttm-blogbox-footer-readmore">
+                                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-dark" href="blog-single.html">read More<i class="fontello icon-plus"></i></a>
+                                            </div>
+                                            <div class="ttm-social-share-wrapper">
+                                                <a href="#" class="ttm-social-share-icon_btn"><i class="ti ti-sharethis"></i></a>
+                                                <div class="social-icons circle">
+                                                    <ul class="m-0 padding_left5">
+                                                        <li><a href="#" rel="noopener" aria-label="facebook"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="twitter"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="google"><i class="fa fa-google-plus"></i></a></li>
+                                                        <li><a href="#" rel="noopener" aria-label="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- ttm-blog-classic-content end -->
+                            </article><!-- post end -->
+                            <div class="pagination-block">
+                                <span class="page-numbers current">1</span>
+                                <a class="page-numbers" href="#">2</a>
+                                <a class="next page-numbers" href="#"><i class="ti ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 widget-area sidebar-right">
+                            <aside class="widget widget-search with-title">
+                                <form role="search" method="get" class="search-form" action="#">
+                                    <label>
+                                    <span class="screen-reader-text">Search for:</span>
+                                    <input type="search" class="input-text" placeholder="Search …" value="" name="s">
+                                    </label>
+                                    <button class="btn ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor" type="submit" value="Search"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                                </form>
+                            </aside>
+                            <aside class="widget widget-categories with-title">
+                                <h3 class="widget-title">Categories</h3>
+                                <ul>
+                                    <li><a href="#">Eye Care</a></li>
+                                    <li><a href="#">Glasses</a></li>
+                                    <li><a href="#">Lasik</a></li>
+                                    <li><a href="#">Lenses</a></li>
+                                    <li><a href="#">Surgeries</a></li>
+                                    <li><a href="#">Vision</a></li>
+                                </ul>
+                            </aside>
+                            <aside class="widget widget-recent-post with-title">
+                                <h3 class="widget-title">Recent Posts</h3>
+                                <ul class="widget-post ttm-recent-post-list">
+                                    <li>
+                                        <a href="blog-single.html"><img src="{% static 'assets/images/blog/blog-01-150x150.jpg'%}" alt="post-img"></a>
+                                        <div class="post-detail">
+                                            <span class="post-date"><i class="fa fa-calendar"></i>November 11, 2020</span>
+                                            <a href="blog-single.html">Protect Your Eyes From Dust  And Disease</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="blog-single.html"><img src="{% static 'assets/images/blog/blog-02-150x150.jpg'%}" alt="post-img"></a>
+                                        <div class="post-detail">
+                                            <span class="post-date"><i class="fa fa-calendar"></i>November 10, 2020</span>
+                                            <a href="blog-single.html">Signs or risk factors for eye disease</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="blog-single.html"><img src="{% static 'assets/images/blog/blog-03-150x150.jpg'%}" alt="post-img"></a>
+                                        <div class="post-detail">
+                                            <span class="post-date"><i class="fa fa-calendar"></i>November 11, 2020</span>
+                                            <a href="blog-single.html">What Can You Do To Reduce Dry Eyes</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="widget tagcloud-widget with-title">
+                                <h3 class="widget-title">Tags</h3>
+                                <div class="tagcloud">
+                                    <a href="#" class="tag-cloud-link">Care</a>
+                                    <a href="#" class="tag-cloud-link">Doctor</a>
+                                    <a href="#" class="tag-cloud-link">Eye</a>
+                                    <a href="#" class="tag-cloud-link">Eye Doctor</a>
+                                    <a href="#" class="tag-cloud-link">Glasses</a>
+                                    <a href="#" class="tag-cloud-link">Health</a>
+                                    <a href="#" class="tag-cloud-link">Lenses</a>
+                                    <a href="#" class="tag-cloud-link">Optician</a>
+                                    <a href="#" class="tag-cloud-link">Surgeries</a>
+                                </div>
+                            </aside>
+                            <aside class="widget flicker-widget with-title">
+                                <h3 class="widget-title">Gallery</h3>
+                                <div class="images-gellary">
+                                    <ul>
+                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/blog/blog-01-1200x800.jpg'%}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-01-150x150.jpg'%}" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images\blog\blog-02-1200x800.jpg'%}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-02-150x150.jpg'%}" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/blog/blog-03-1200x800.jpg'%}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-03-150x150.jpg'%}" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/blog/blog-04-1200x800.jpg'%}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-04-150x150.jpg'%}" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/portfolio/project-06-1200x800.jpg'%}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-05-150x150.jpg'%}" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/portfolio/project-04-1200x800.jpg'%}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-06-150x150.jpg'%}" alt="gellary_img"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <aside class="widget widget-banner p-0 border-0">
+                                <img class="img-fluid auto_size" src="{% static 'assets/images/sidebar-banner.jpg" alt="sidebar-banner">
+                            </aside>
+                        </div>
+                    </div><!-- row end -->
+                </div>
+            </div>
+
+
+        </div><!--site-main end-->
 
 
 

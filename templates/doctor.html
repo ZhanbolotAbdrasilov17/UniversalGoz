@@ -2,72 +2,360 @@
 {% load static %}
 {% block page %}
 
- <!-- Start Page Banner Area -->
-        <div class="page-banner-area item-2">
-            <div class="container">
-                <div class="page-banner-content">
-
-                    <ul>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- End Page Banner Area -->
-        <!-- Start Doctors Area -->
-        <div class="doctors-area pt-100 pb-75">
-            <div class="container">
-                <div class="section-title">
-                    <span>Universal Goz</span>
-                    <h2>Наши врачи</h2>
-                </div>
-
-                <div class="row justify-content-center">
-                    {% for di in doctors %}
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-doctors-card">
-                            <div class="doctors-image">
-                                <a href="{% url 'doctor' di.pk%}"><img src="{{di.image.url}}" alt="image"></a>
-
-                                <ul class="social">
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/?lang=en" target="_blank">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-
-                                </ul>
+         <!-- page-title -->
+        <div class="ttm-page-title-row">
+            <div class="ttm-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">Our Team</h2>
                             </div>
-                            <div class="doctors-content">
-                                <h3>
-                                    <a href="{% url 'doctor' di.pk%}">{{ di.full_name }}</a>
-                                </h3>
-                                <span>{{ di.position }}</span>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <i class="fa fa-home mr-2"></i><a title="Homepage" href="index.html">Home</a>
+                                </span>
+                                <span class="ttm-bread-sep">&nbsp; :&nbsp;: &nbsp;</span>
+                                <span>Our Team</span>
                             </div>
                         </div>
                     </div>
-                  {% endfor %}
-
-
-
-
-
-
-
                 </div>
             </div>
         </div>
-        <!-- End Doctors Area -->
+        <!-- page-title end -->
+
+        <!--site-main start-->
+        <div class="site-main">
+
+
+            <!--grid-section-->
+            <section class="ttm-row grid-section clearfix">
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-team -->
+                            <div class="featured-imagebox featured-imagebox-team style1">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img01.jpg'%}" alt="image">
+                                    <div class="featured-iconbox ttm-media-link">
+                                    <div class="media-block">
+                                        <ul class="social-icons">
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html" tabindex="0">Dr. Berry Gardner</a></h3>
+                                    </div>
+                                    <div class="team-position">Clarivu eye</div>
+                                </div>
+                                <div class="ttm-team-bottom-content">
+                                    <div class="ttm-available-timebox-inner">
+                                        <ul class="ttm-available-box">
+                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
+                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ttm-btn-bottom">
+                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-team end-->
+                        </div>
+                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-team -->
+                            <div class="featured-imagebox featured-imagebox-team style1">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img02.jpg'%}" alt="image">
+                                    <div class="featured-iconbox ttm-media-link">
+                                    <div class="media-block">
+                                        <ul class="social-icons">
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html" tabindex="0">Dr. Bonnie Alberta</a></h3>
+                                    </div>
+                                    <div class="team-position">Optician</div>
+                                </div>
+                                <div class="ttm-team-bottom-content">
+                                    <div class="ttm-available-timebox-inner">
+                                        <ul class="ttm-available-box">
+                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
+                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ttm-btn-bottom">
+                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-team end-->
+                        </div>
+                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-team -->
+                            <div class="featured-imagebox featured-imagebox-team style1">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img03.jpg'%}" alt="image">
+                                    <div class="featured-iconbox ttm-media-link">
+                                    <div class="media-block">
+                                        <ul class="social-icons">
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html" tabindex="0">Dr. Terri Williams</a></h3>
+                                    </div>
+                                    <div class="team-position">Optometrist</div>
+                                </div>
+                                <div class="ttm-team-bottom-content">
+                                    <div class="ttm-available-timebox-inner">
+                                        <ul class="ttm-available-box">
+                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
+                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ttm-btn-bottom">
+                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-team end-->
+                        </div>
+                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-team -->
+                            <div class="featured-imagebox featured-imagebox-team style1">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img04.jpg'%}" alt="image">
+                                    <div class="featured-iconbox ttm-media-link">
+                                    <div class="media-block">
+                                        <ul class="social-icons">
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html" tabindex="0">Dr. Steven Carter</a></h3>
+                                    </div>
+                                    <div class="team-position">Optometrist</div>
+                                </div>
+                                <div class="ttm-team-bottom-content">
+                                    <div class="ttm-available-timebox-inner">
+                                        <ul class="ttm-available-box">
+                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
+                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ttm-btn-bottom">
+                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-team end-->
+                        </div>
+                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-team -->
+                            <div class="featured-imagebox featured-imagebox-team style1">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img05.jpg'%}" alt="image">
+                                    <div class="featured-iconbox ttm-media-link">
+                                    <div class="media-block">
+                                        <ul class="social-icons">
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html" tabindex="0">Dr. John Batter</a></h3>
+                                    </div>
+                                    <div class="team-position">Cataract surgery</div>
+                                </div>
+                                <div class="ttm-team-bottom-content">
+                                    <div class="ttm-available-timebox-inner">
+                                        <ul class="ttm-available-box">
+                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
+                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ttm-btn-bottom">
+                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-team end-->
+                        </div>
+                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-team -->
+                            <div class="featured-imagebox featured-imagebox-team style1">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img06.jpg'%}" alt="image">
+                                    <div class="featured-iconbox ttm-media-link">
+                                    <div class="media-block">
+                                        <ul class="social-icons">
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html" tabindex="0">Dr. William Gardner</a></h3>
+                                    </div>
+                                    <div class="team-position">Optometrist</div>
+                                </div>
+                                <div class="ttm-team-bottom-content">
+                                    <div class="ttm-available-timebox-inner">
+                                        <ul class="ttm-available-box">
+                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
+                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ttm-btn-bottom">
+                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-team end-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--grid-section end-->
+
+
+            <!--cta-section-->
+            <section class="ttm-row ttm-bgimage-yes bg-img10 ttm-bg ttm-bgcolor-darkgrey clearfix">
+                <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
+                <div class="container"><!--container-->
+                    <div class="row"><!--row-->
+                        <div class="col-lg-8 m-auto">
+                            <div class="row-title text-center">
+                                <div class="ttm-play-icon-btn mb-35">
+                                    <div class="ttm-play-icon-animation">
+                                        <a href="https://youtu.be/7e90gBu4pas" target="_self" class="ttm_prettyphoto">
+                                            <div class="ttm-icon ttm-icon_element-fill ttm-icon_element-color-skincolor ttm-icon_element-size-sm ttm-icon_element-style-rounded">
+                                                <i class="fa fa-play"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="padding_bottom20 padding_top20">
+                                    <h3 class="fs-18 ttm-textcolor-skincolor padding_bottom5">WANT TO GET 20% OFF?</h3>
+                                    <h2 class="fs-50">Get A Solutions For All Types Of Eye Care Services </h2>
+                                </div>
+                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-skincolor ttm-icon-btn-right" href="contact.html">Contact us<i class="fontello icon-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--cta-section end-->
+
+
+            <!--client-section-->
+            <div class="ttm-row client-section ttm-bgcolor-grey clearfix">
+                <div class="container">
+                    <!-- slick_slider -->
+                    <div class="slick_slider slick-slide_ver-sep row" data-slick='{"slidesToShow": 6, "slidesToScroll": 1, "arrows":false, "autoplay":true, "infinite":true, "responsive": [{"breakpoint":1200,"settings":{"slidesToShow": 5}}, {"breakpoint":1024,"settings":{"slidesToShow": 4}}, {"breakpoint":777,"settings":{"slidesToShow": 3}}, {"breakpoint":575,"settings":{"slidesToShow": 2}}]}'>
+                        <div class="col-lg-12">
+                            <div class="client-box style2">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="client-01">
+                                    <div class="client-thumbnail client-thumbnail-grayscale">
+                                        <img class="img-fluid auto_size" src="{% static 'assets/images/client/skin-client-01.png'%}" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="client-box style2">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="client-02">
+                                    <div class="client-thumbnail client-thumbnail-grayscale">
+                                        <img class="img-fluid auto_size" src="{% static 'assets/images/client/skin-client-02.png'%}" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="client-box style2">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="client-03">
+                                    <div class="client-thumbnail client-thumbnail-grayscale">
+                                        <img class="img-fluid auto_size" src="{% static 'assets/images/client/skin-client-03.png'%}" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="client-box style2">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="client-04">
+                                    <div class="client-thumbnail client-thumbnail-grayscale">
+                                        <img class="img-fluid auto_size" src="{% static 'assets/images/client/skin-client-04.png'%}" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="client-box style2">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="client-05">
+                                    <div class="client-thumbnail client-thumbnail-grayscale">
+                                        <img class="img-fluid auto_size" src="{% static 'assets/images/client/skin-client-05.png'%}" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="client-box style2">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="client-01">
+                                    <div class="client-thumbnail client-thumbnail-grayscale">
+                                        <img class="img-fluid auto_size" src="{% static 'assets/images/client/skin-client-01.png'%}" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="client-box style2">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="client-06">
+                                    <div class="client-thumbnail client-thumbnail-grayscale">
+                                        <img class="img-fluid auto_size" src="{% static 'assets/images/client/skin-client-06.png'%}" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- ttm-client end -->
+                </div>
+            </div>
+            <!--client-section end-->
+
+
+        </div><!--site-main end-->
+
+
 
 
 {% endblock %}

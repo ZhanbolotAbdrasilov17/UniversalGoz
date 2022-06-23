@@ -1,567 +1,2168 @@
 {% extends 'index2.html' %}
 {% load static %}
 {% block page %}
- <!-- Start Main Slides Area -->
-        <div class="home-slides owl-carousel owl-theme">
-            <div class="main-slides-item">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500">
-                            <div class="main-slides-content" data-speed="0.05" data-revert="true">
-                                <!-- <span>Welcome to mebid</span> -->
-                                <h1>Что нужно знать о лазерной коррекции</h1>
-                                <p>Самые животрепещущие вопросы</p>
 
-                                <div class="slides-btn">
-                                    <a href="department.html" class="default-btn">Подробнее <i class="flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500">
-                            <div class="main-slides-image" data-speed="0.02" data-revert="true">
-                                <img src="{% static 'assets/images/main-slides/goz.jpg' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-slides-item bg-2">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500">
-                            <div class="main-slides-content" data-speed="0.05" data-revert="true">
-                                <!-- <span>Welcome to mebid</span> -->
-                                <h1>Кто выполняет операции в ОЛЦ</h1>
-                                <p>Наши офтальмохирурги</p>
-
-                                <div class="slides-btn">
-                                    <a href="department.html" class="default-btn">Подробнее <i class="flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500">
-                            <div class="main-slides-image" data-speed="0.02" data-revert="true">
-                                <img src="{% static 'assets/images/main-slides/goz2.jpg' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-slides-item bg-3">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500">
-                            <div class="main-slides-content" data-speed="0.05" data-revert="true">
-                                <!-- <span>Welcome to mebid</span> -->
-                                <h1>Оборудование для лазерной коррекции</h1>
-                                <p>Оборудование установленное в ОЛЦ</p>
-
-                                <div class="slides-btn">
-                                    <a href="department.html" class="default-btn">Подробнее <i class="flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500">
-                            <div class="main-slides-image" data-speed="0.02" data-revert="true">
-                                <img src="{% static 'assets/images/main-slides/goz3.jpg' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Main Slides Area -->
-        <!-- Start Features Area -->
-        <div class="features-area pt-100 pb-75">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-features-card">
-                            <div class="icon">
-                                <i><img src="data:image/png;base64,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"/></i>
-                            </div>
-                            <h3>
-                                <a href="doctors-details.html">Диагностика</a>
-                            </h3>
-
-                            <div class="features-shape">
-                                <img src="{% static 'assets/images/features-shape.png' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-features-card">
-                            <div class="icon">
-                                <i><img src="data:image/png;base64,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"/></i>
-                            </div>
-                            <h3>
-                                <a href="department-details.html">Лазерная коррекция</a>
-                            </h3>
-
-                            <div class="features-shape">
-                                <img src="{% static 'assets/images/features-shape.png' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-features-card">
-                            <div class="icon">
-                                <i><img src="data:image/png;base64,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"/></i>
-                            </div>
-                            <h3>
-                                <a href="department-details.html">Катаракта</a>
-                            </h3>
-
-                            <div class="features-shape">
-                                <img src="{% static 'assets/images/features-shape.png' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-features-card">
-                            <div class="icon">
-                                <i><img src="data:image/png;base64,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"/></i>
-                            </div>
-                            <h3>
-                                <a href="doctors-details.html">Витректомия</a>
-                            </h3>
-
-                            <div class="features-shape">
-                                <img src="{% static 'assets/images/features-shape.png' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-features-card">
-                            <div class="icon">
-                                <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAKvklEQVR4nO2be7BVVR3HP+ceHpFOiSCgIBWCgEVFaT5Rc6IiDBKpIOUhCoJaTU1NYUVGYJaj9DItm8Im0wkrNQVFpzEcCXyFT7igZopoeL2+CJDLZffH97fub519z97cc+453Gn0O7Nn7732Omv9fmv91u+11oG3sM/xLiABtnY1IV2B3sCdaAD+0MW07FMMAL4KPIOY/w/wni6laB+gAIwHbgZaEOMJcC9weBfSVYJCndo9HfguMMreW4DlwNV2T4BhwLHAB4HhwGDgAGA/+80bSE9sBtYDjwB3A0/VieaaYARwBz7b/wYuREsA4EjgcuBfUZ1Kr6eAy4Cj9gVDHUUv4EfALkTkC8D5QHegCEwDHqSUkSeApcB5wCnAEKQki/a73sBQYCxwAXANrkPC9QBwJtCt/ixm43BgnRHUAvwQ2N++nQZspFQiLgLeC/QHPg18H7gNeBwx2Ay0AlsQg38FlljddwBHAIusrdDueuAzdeUyA1OA14yIR3GxHASsiAhcB0xCDMwA7gL2ULn4twCrgTlokKcAD0XfbwYG1o9dRwFYHHW8FC0D0Ey8hC+F6cAhwM/wwUqAnWggFthvPox0RW+7+gAfAqYCC4FVwO7o903ADxDDs5DCTJAEnVonvgGtt99YZ7uBeVZeAL6Dz+wfgX7AfOC/EeGrjKm3V9F3HzSg90btvW599AdusLI9aGBrjh7ATfgMTrLyAnAVLqbnWfnHI0Jvxc1iLXAypRbnfmAkUphBGV8JNNSqw27An6zhbUg7g5j/pZW/ZuUTgHH2fRFyiOqFLyDPMvQ/0freZmVX1KKTAvB7fI0dE31bgIviCcAZaGk04/a/3uiDJCxBFmQucBw+CJ1eDkHhbQeOj8pPQ+utBZeIQ4EnkT7YlygiRRt0wBwkCbvsfWK1DU/DR/b0qPxQXNufh9b7YfZtP+qHuUi5ZuHbRtMupCcusPeXkXmuCEfgYrQOuMcaim3zDcivfwV4sZpOKsBc6/MR8gfhCqv3Ioo6l9n7bZV0NtA6ynNMthohD9j7jdQvwML6epS9D0IRuAW3DgehwUgoleKyKADfpNR2Bzf2TDTDT1rZLOAr9vwMcGBVbFWGfvjE5A1Cf5zpuYjWBNHePavxInAt7Wd6LfBOqzM96nwA7t21As8Dv0IjXmtkSeF9ZEvdFHwp9AEetveZWZ38FBftYPM3I9c04HErnwpckkHUBvLXaDXIW4ojUnXHoMkEeZ4JCqGn2vNj5TqYgDsTY5Afn1h5wNFW9hwa0TD7D6EIbwSuD26tktFKcB0u4gFLrWyavY/FrcD+eEh9XNxQr+jDTOCL9rwm1eHPrfxi4Bx7fhU4OKozEDePn+oEcx1BsArXRWUzrKwRl4K1VjYd0Z4g171dQ6vt/R57/3yqw2etfDSK5BIUiKQx376tqJynTOQtgedxn78bnoMIUhB8gbuRpIal3aY71uMzNhh5TtvxEBeU+AjifzBSei1I26bRFzkirdROF+QNQIIcsYCgqB+390BvK9Jnm+37KJCzk6DZLSJTl6BMTIzZUWc77X5HDsErrc6UChmtFEHabojKijitAUGqxwG/s+fZDXikthyN0OjoBzHeFz33tPvfcwhbZffjc+p0BGlG0vgtksQJePDVWqbe/XY/Nno+sgFlXcAJDgPwaKqBkMtfiNYYyK5mYZ3dh+fUqQTFjPIXkLR2B87K+f1Ddj8KKUhQ0rXNqwqMb7D3YakGGq38BFxnpO1vjBG459UZhL6m59T5BNm6IeigYMIfRIwnKDPdlkzoYxWD/U97c81W3hfl4+LflMOBVqcpn7+9Iii0jWSnvxtwq5S+grs83N6fNh4SxFObQuthje2w956UIiQke+FbXT3IRg+r80ZHuMxBETdrM6Ly2NsLSMcJ8fNo3G/pGdPW0QHYFdXblVEnRmcHoNxsbkJSkPb2oHyQFJeFAG57RNtO6PgSeDWq94o99yYbnV0CWWt6pl1Z35so9UzjQUhQVNvHnrcSfQzWIEsJbrLyY5HySJAPkYWgBJ+ogOk8BF2wCXgb8uqyBmGj1Q9LJB6E+xBvCfBEg30gYmZLxECMTXYfjzxFMDOSgfCts1Yg4FqjYShy0ccgVzZc3ZCO2IQYvAZZkOkoNlls7WyNaHu6AZkFgBPt/k+7x44PuO3/Fi4d788hOJjVxpw6e0OY0dXIzi+y8sV4EjagFXl4Iyk/ELOt3gbcp2kEd4U3U+oK35LqIER/sSu8Mof4sGmRDqgqQSzWl6BZXhOVLUPJ2XIootmPN2eDa369PYcNnLYkx3hKg6F4+yqsm2fRXl9eMHQQlQVD5dbx35BoH41M8G577gF8A0/WbkMpvCyTXMSjwVaj9zlSOuxcK/iHvYfAIR3IhJzBaBQHJJQPhy+0b8v3yrqQpcyOQbN+e06dSq41aBM2QSF0WzjcC99vn4UnRNamCA0bD4vxHEI6ITII9xrHUR0us9/fSXsR7sx1Pp7GK0mIgLaUE5TmOhH3B+IdlaOsbAuy88E3eBgpzZFIiSa0D6f3hjzCN1Fq1gLi5EdWrPBR+/46Ev8t9l42Sl1iH18E/owrxzjdHfLyU4BLMwheT+WZ4XLtNCKNnhUD7C1OKODpsMuj+hvIyCQX8WRBfN2Hp8WDlViPRjR4heFYy1Uo2Kg3PoZndmZk1Alp8WaUqwxO3qy8hgvA12m/MfIM8r0H4V7hOegAZPieFx3WCoPQ4YuYtnKzPxCPWmcjk5egaDBzYyTdQBD3rOslZBKDmN1C/bbGypm/QEcaDciMJijRE2eqP1tJpx3ZHP0Lci1D+aKyLVWHrIFfhpuz9AAUgF/goj8c3yfMc9wycQZyjFqByVH5ofje29eQFQl5glqdz0kz3oxc4HRwEyMo5p3ASXjStBl4d7WELLRGdqAgJGAc7hFOBM7GD0ldTO3O56Q3QMJ6jjdHu+MzvwdN3ESjbw86zFE1CiioSJCox8dUL8IH5xTgc3hS5XZqYxGC735uVDYPZ74f7pm+gZKjn8RjloU1oIEirn1fwc8JFfBN1R3o5NgJuAbejAKiSpVjAe3fLUFOTEL7DHOB0jOCTUjsJ+OTcHUVfWeiO+4gbUPHVwMhV1r5brTuhlGaqFxFZXsEIyld/6uibwW0E7Q6+r4GhbnzkdgH5rPS6VWjiB+L2w18KSJqQdT5cmR+zsKlIUGu8hw6tjRuQ3HB0db+QCT6j0XtNSE7PwjfjdqDxL6ep1Xa1n6C/v4SDkifinuHr6LA6hCkneOjsq1oK/1S5MmdhKRmiF2HoUNOc5Abu45SiWhCJ9QHoFMqIS55mU4qvEpwOs5sI1r7IHMTbG+CzvifbcTOQ6LbSilDHbl2I19kJnLNz8Xzk8HOV23qqsUQZIvDrP4EjxsmIdcz9hx/jAZqAFKOlyFrsQHZ6ha7mq1sJTKp41AW+jh0TiFeVk8j69Nl6Ik8wGB2mpBY9kSKcxqlx9oT5ETdhA5UTgI+ggazL2J0CDK3k9Hfb26kvRfaiHRMh3z7fYGhlIr+ZqQYD0EK6UQkIfGfHSq9nkcR5/HUQMnVS0uOB76H/HXQ2l0B/BpPlIyy7x+wqx/+X4ECMrMvo8FqRJr/LvzQw/8FxqLTZmErLcGPtb+p0A/4Mi76W9Eaf9PhANxZub6LaekyDMatwFvoavwPcuGApg8TygcAAAAASUVORK5CYII="/></i>
-                            </div>
-                            <h3>
-                                <a href="department-details.html">Ортокератология</a>
-                            </h3>
-
-                            <div class="features-shape">
-                                <img src="{% static 'assets/images/features-shape.png' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-features-card">
-                            <div class="icon">
-                                <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAE20lEQVRoge3YeajUVRQH8M88t8qobNEosYTMelkoaVERJhVltohIEYV/lBUFUkllK60EVtBiYthitBjZikaFqBUYlGRRUS5FpZYaLSqFaa+c/jh3mN8b580bZ8Y3/fG+MAz3nPu793zvPefccy/d6EY3KqFHjd8NSL+/8E/jzOka9MFUrEY+/dqwBBOwZ/NMqx4H4iNh/E94CmsUCeXxpyCaa5KNnSKHd4Sx08XO3Jzaq3EDrsOKJLu7OWZ2jtOFgc+mdiv+xqfYO9OvL77Evzi2Kw2sFrMFkSGpPSO1Tyzpl8Ot2pPuMlTjz5+hPw5N7RXYH+egHwZiOMbhiNRnfaZ/l6AzIn1EEL+NC9CCbehVpu+veBFH40zsIVywFAMxRrjlV1iKHUm3L84QC7cOi0WKrxuHCFeZkdo5bBdBPk0E+YUYKkjCfBEnpWR74CGRsrPZ7gscg8nYUqJbL3a+brSmAe/NyFaL1NsRvsHaMvJCbH2Oy3A+HhUH6h9JtwHXCje9I8n/xqn1kICRaYLbMrLHk+y0Mv1HJ93sEnmr2KVlwl2zmCBc6wdRLWQxQhD5pAbb22FwMmxmRnZkGvxrEewF7CNSclsyPItpaZyO3GQMDutA90L6tmLy6FlJiY3C6MGp3YJBYmVPEf79HLbi8tTvFkEyi/7p/9sO5mnTcc1W+OZgUVXUjPeErw4QGSZf4bcDs8TuZHF90k8sM36LyExzOpj/9TRu/w70VWNyMmJV+p+FS/Cz2K1xGIspYqfy4uzJkjk89V2lfTVwHhambzbiNbHyBYwRsbWkXhJEGl2ZJvtHMa1OT7JsPORwf5I/UzLO7Un+PvZKspvwe5Jvx48YlnQjsUmcYw0reYbitzRZAXclA44r03+p8PtBGVlOMQUvUiz7ewjXeSnTd3iab6s4IBuKBaonMj7pbiyR5/BE0r2rmIqniuRBrP4vooI4uxGGl2JXiOwhdmR+GV0Lnk7fvoXeGV2riL3tOHdXjGvpvEtNOEuk9hVldDtwhUjb4/CyiLuhorbqh4sEyd2CanbkFFGiFNLxiArj9cDc1G+BCPQ25VN0p2jEjoxXTKm9tHeVD/GgncsSIq1OwivCjQ5O7VcbYFNFLNC+LB+tmDo3CYMLZcZ+uFScJ3ksF/f+cuiF+8SCdAkWJKOyNVFfXK14zrRhHk5O+p6K58oykQSajgKRN+389JMTBeFCEcx5fIyLxYo/kGT3dJWxlVAgUrg3PCxWvvSWOQxPivopL4J4g+KOPab8DbPLUIiRa/CdIql1ypM6SARyXly0ZosyPy/iqWkoTb+jhMt8r2NSLwpXK9wlWsQ9vdINc7ejlEgWo8Qql5LaItJsodQ4CZtFNmsaFolKtBJyOMHOpApPqnnhnmN3n5mdY414OKgWORH4rXgEHwgiLzTetOrRV/j6vDrGmCSITGmIRSWotkQZIlZ4VY3z5HCluJi9UeMYFVEtkaPS/8oa57lKFJTPi3OlabhTuMXIGr6dKA7HzTigkUbVgrkiRkpfRzrDTMWstU37yrgpWK62N6Xl4vyZo/P7yW5HTrxrLa5jjAmCyOSGWFQG1QT7QHFxqjVjUXy7Pb6OMSqiGiKFjFUPkbXiZaSpRHLCLT6qc673/Q8uVvs3YIzedj3rdaMb3WgQ/gMNg1b34Rkd/wAAAABJRU5ErkJggg=="/></i>
-                            </div>
-                            <h3>
-                                <a href="department-details.html">Для беременных</a>
-                            </h3>
-
-                            <div class="features-shape">
-                                <img src="{% static 'assets/images/features-shape.png' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-features-card">
-                            <div class="icon">
-                                <i><img src="data:image/png;base64,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"/></i>
-                            </div>
-                            <h3>
-                                <a href="doctors-details.html">Факичные линзы</a>
-                            </h3>
-
-                            <div class="features-shape">
-                                <img src="{% static 'assets/images/features-shape.png' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-features-card">
-                            <div class="icon">
-                                <i><img src="data:image/png;base64,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"/></i>
-                            </div>
-                            <h3>
-                                <a href="department-details.html">Femto-LASIK</a>
-                            </h3>
-
-                            <div class="features-shape">
-                                <img src="{% static 'assets/images/features-shape.png' %}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- End Features Area -->
-        <!-- Start About Area -->
-        <div class="about-area pb-100">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="about-content">
-                            <h3>О клинике</h3>
-                            <p>Офтальмологический лазерный центр был основан в 2017 году.
-
-                                Это совершенно новая глазная клиника, которая стремится предоставлять медицинскую офтальмологическую помощь на мировом уровне.</p>
-                            <div class="about-inner-box">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-5 col-md-6">
-                                        <img src="{% static 'assets/images/about/about-2.jpg' %}" alt="image">
-                                    </div>
-                                    <div class="col-lg-7 col-md-6">
-                                        <p>Благодаря плодотворному сотрудничеству с сетью клиник «Прозрение», многолетнему опыту действующих офтальмохирургов и врачей, доверию десятков тысяч благодарных пациентов и четко отработанной системе предоставления качественных профильных услуг, нам удалось добиться стабильно высоких результатов в послеоперационном периоде, что в свою очередь придало новый импульс развитию офтальмологии Кыргызской Республики.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about-btn">
-                                <a href="about.html" class="default-btn">О клинике <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-12">
-                        <div class="about-image">
-                            <img src="{% static 'assets/images/about/about.png' %}" alt="image">
-
-                            <div class="about-info">
-                                <div class="info-box">
-                                    <div class="icon">
-                                        <i class="flaticon-call"></i>
-                                    </div>
-                                    <span>справочная 24/7</span>
-                                    <a href="tel:0485443322">0554 730 944</a>
-                                </div>
-                                <ul class="info-time">
-                                    <li>Пн - Пт <span>08:00 - 20:00</span></li>
-                                    <li>Суб <span>09:00 - 14:00</span></li>
-                                    <li>Вск <span>выходной</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End About Area -->
-        <!-- Start Blog Area -->
-        <div class="blog-area pt-100 pb-75">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Наши новости</h2>
-                </div>
-                <div class="row justify-content-center">
-                    {% for new in news %}
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="{% url 'news' new.pk %}"><img src="{{new.image.url}}" alt="image"></a>
-                                <div class="date">{{ new.date}}</div>
-                            </div>
-
-                            <div class="post-content">
-
-                                <h3>
-                                    <a href="{% url 'news' new.pk %}">{{ new.title}}</a>
-                                </h3>
-                                <a href="{% url 'news' new.pk %}" class="post-btn">Подробнее <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-
-                </div>
-            </div>
-        </div>
-        <!-- End Blog Area -->
-
-        <!-- Start Department Area -->
-        <!-- Start Doctors Area -->
-        <div class="doctors-area ptb-100">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Наши врачи</h2>
-                </div>
-
-
-                <div class="doctors-slides owl-carousel owl-theme">
-
-                    {% for d in doctors %}
-                    <div class="single-doctors-card">
-                        <div class="doctors-image">
-                            <a href="{% url 'doctor' d.pk%}"><img src="{{d.image.url}}" alt="image"></a>
-
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <i class="ri-facebook-fill"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/?lang=en" target="_blank">
-                                        <i class="ri-twitter-fill"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/" target="_blank">
-                                        <i class="ri-instagram-line"></i>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="doctors-content">
-                            <h3>
-                                <a href="doctors-details.html">{{d.full_name}}</a>
-                            </h3>
-                            <span>{{d.position}}</span>
-                        </div>
-                    </div>
-                    {% endfor %}
-
-
-                </div>
-            </div>
-        </div>
-        <!-- End Doctors Area -->
-
-        <!-- Start Before & After Area -->
-        <div class="before-after-area">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Результаты до и после</h2>
-                </div>
-                <div class="before-after-twentytwenty-image">
-                    <div class="twentytwenty-container">
-                        <img src="{% static 'assets/images/before-after/before.jpg' %}" alt="image">
-                        <img src="{% static 'assets/images/before-after/after.jpg' %}" alt="image">
-                    </div>
-                </div>
+<div class="banner_slider_wrapper">
+        <div class="banner_slider banner_slider_3">
+          <div
+            class="slide"
+            style="background-image: url(static/assets/images/slides/slider-mainbg-001.jpg)"
+          >
+            <div
+              class="slide__content ttm-textcolor-darkgrey text-right slide_style1"
+            >
+              <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 ">
-                        <div class="before-after-content">
-                            <h3>Почему наша клиника?</h3>
+                  <div class="col-lg-12 no-gutters">
+                    <div
+                      class="slide__content--headings d-md-flex d-block text-md-left text-center"
+                    >
+                      <div
+                        data-animation="fadeIntop"
+                        class="fade-main ttm-bgcolor-white"
+                      ></div>
+                      <div
+                        data-animation="fadeInbottom"
+                        class="fade-main-bottom ttm-bgcolor-white"
+                      ></div>
+                      <div
+                        data-animation="fadeInLeft"
+                        class="fade-in-main ttm-bgcolor-white"
+                      ></div>
+                      <div class="padding_top10">
+                        <h3
+                          data-animation="fadeInDown"
+                          class="text-md-left text-center"
+                        >
+                          Placing Your Safety at The Heart Of Everything
+                        </h3>
+                        <h1
+                          data-animation="fadeInDown"
+                          class="text-md-left text-center"
+                        >
+                          MORE REAL
+                        </h1>
+                        <h2
+                          data-animation="fadeInDown"
+                          class="text-md-left fs-60 text-center"
+                        >
+                          Vision For A
+                          <span class="ttm-textcolor-skincolor"> Better </span>
+                          life
+                        </h2>
+                        <div class="slider-btn">
+                          <a
+                            class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor ttm-btn-right ttm-icon-btn-right"
+                            href="glasses.html"
+                            >More About<i class="fontello icon-plus"></i
+                          ></a>
+                          <div
+                            class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-size-xl ttm-icon_element-color-skincolor"
+                          >
+                            <i class="flaticon-eye-exam-1 fs-58"></i>
+                          </div>
+                          <div
+                            class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-size-xl ttm-icon_element-color-skincolor"
+                          >
+                            <i class="flaticon-eye-5 fs-58"></i>
+                          </div>
+                          <div
+                            class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-size-xl ttm-icon_element-color-skincolor"
+                          >
+                            <i class="flaticon-optometrist fs-58"></i>
+                          </div>
+                          <div
+                            class="align-items-center res-767-margin_top20"
+                            data-animation="fadeInUp"
+                            data-delay="1.4"
+                          ></div>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-lg-6 ">
-                        <div class="before-after-list">
-                            <ul class="list">
-                                <li><i class="ri-check-line"></i> Новейшее оборудование</li>
-                                <p>Наша клиника оборудована по самым современным стандартам для диагностики и лечения заболеваний глаза.</p>
-                                <li><i class="ri-check-line"></i> Квалифицированные врачи</li>
-                                <p>Прием ведут офтальмологи высшей категории с более чем 25-летним стажем..</p>
-                                <li><i class="ri-check-line"></i> Персональный подход</li>
-                                <p>Высокое качество обслуживания — наш приоритет. Приходите и убедитесь сами!</p>
-
-                            </ul>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <div class="funfact-inner-box">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 col-sm-6 col-6">
-                            <div class="single-funfact-card">
-                                <div class="icon">
-                                    <i class="flaticon-badge"></i>
-                                </div>
-                                <h3>
-                                    <span class="odometer" data-count="15500">00</span>
-                                </h3>
-                                <p>Пациентов</p>
-                            </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url(static/assets/images/slides/slider-mainbg-002.jpg)"
+          >
+            <div
+              class="slide__content ttm-textcolor-darkgrey text-right slide_style1"
+            >
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 no-gutters">
+                    <div
+                      class="slide__content--headings d-md-flex d-block text-md-left text-center"
+                    >
+                      <div
+                        data-animation="fadeIntop"
+                        class="fade-main ttm-bgcolor-white"
+                      ></div>
+                      <div
+                        data-animation="fadeInbottom"
+                        class="fade-main-bottom ttm-bgcolor-white"
+                      ></div>
+                      <div
+                        data-animation="fadeInLeft"
+                        class="fade-in-main ttm-bgcolor-white"
+                      ></div>
+                      <div class="padding_top10">
+                        <h3
+                          data-animation="fadeInDown"
+                          class="text-md-left text-center"
+                        >
+                          Placing Your Safety at The Heart Of Everything
+                        </h3>
+                        <h1
+                          data-animation="fadeInDown"
+                          class="text-md-left text-center"
+                        >
+                          WE BRING
+                        </h1>
+                        <h2
+                          data-animation="fadeInDown"
+                          class="text-md-left fs-60 text-center"
+                        >
+                          For Your
+                          <span class="ttm-textcolor-skincolor"> Eyes </span>
+                          Only
+                        </h2>
+                        <div class="slider-btn">
+                          <a
+                            class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor ttm-btn-right ttm-icon-btn-right"
+                            href="glasses.html"
+                            >More About<i class="fontello icon-plus"></i
+                          ></a>
+                          <div
+                            class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-size-xl ttm-icon_element-color-skincolor"
+                          >
+                            <i class="flaticon-eye-exam-1 fs-58"></i>
+                          </div>
+                          <div
+                            class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-size-xl ttm-icon_element-color-skincolor"
+                          >
+                            <i class="flaticon-eye-5 fs-58"></i>
+                          </div>
+                          <div
+                            class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-size-xl ttm-icon_element-color-skincolor"
+                          >
+                            <i class="flaticon-optometrist fs-58"></i>
+                          </div>
+                          <div
+                            class="align-items-center res-767-margin_top20"
+                            data-animation="fadeInUp"
+                            data-delay="1.4"
+                          ></div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-6">
-                            <div class="single-funfact-card">
-                                <div class="icon">
-                                    <i class="flaticon-satisfaction"></i>
-                                </div>
-                                <h3>
-                                    <span class="odometer" data-count="25">00</span>
-                                </h3>
-                                <p>Персонал клиники</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-6">
-                            <div class="single-funfact-card">
-                                <div class="icon">
-                                    <i class="flaticon-saline"></i>
-                                </div>
-                                <h3>
-                                    <span class="odometer" data-count="90000">00</span>
-                                </h3>
-                                <p>Операций</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-6">
-                            <div class="single-funfact-card">
-                                <div class="icon">
-                                    <i class="flaticon-laboratory"></i>
-                                </div>
-                                <h3>
-                                    <span class="odometer" data-count="135">00</span>
-                                </h3>
-                                <p>Стаж врачей</p>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="before-after-shape">
-                <img src="{% static 'assets/images/before-after/shape.png' %}" alt="image">
-            </div>
+          </div>
         </div>
-        <!-- End Before & After Area -->
-        <div class="department-area pb-75">
-            <div class="container">
-                <div class="section-title section-gallery">
-                    <h2>Квалифицированное решение проблем со зрением на современном уровне</h2>
+      </div>
+
+      <!--site-main start-->
+      <div class="site-main">
+        <section class="ttm-row vision-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div
+                  class="padding_left50 bg-img1 ttm-bg ttm-bgimage-yes res-991-padding_right80 ml_50 mr_80 clearfix"
+                >
+                  <div class="row no-gutters">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                      <div class="ttm-bgcolor-white spacing-11">
+                        <!-- section title -->
+                        <div class="section-title">
+                          <div class="title-header">
+                            <h2 class="title">
+                              Everybody Deserves To See World Clearly.
+                            </h2>
+                          </div>
+                          <div class="title-desc">
+                            <p>
+                              Our mission is to provide patients with the best
+                              eye doctors, thorough eye’s health exams & the
+                              personal attention you deserve.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="margin_top30">
+                          <div
+                            class="featured-icon-box icon-align-before-content style9 icon-ver_align-top"
+                          >
+                            <h3>01. A First-class Eyecare Service</h3>
+                            <div class="featured-icon">
+                              <div
+                                class="ttm-icon ttm-icon_element-fill ttm-icon_element-color-skincolor ttm-icon_element-size-md ttm-icon_element-style-square"
+                              >
+                                <i class="flaticon-eye-test-4"></i>
+                              </div>
+                            </div>
+                            <div class="featured-content">
+                              <div class="featured-desc">
+                                <p class="padding_bottom10">
+                                  It is Optrica's commitment to provide
+                                  exceptional eyecare services. Eye sight is so
+                                  precious!!!
+                                </p>
+                              </div>
+                              <a
+                                class="ttm-btn ttm-btn-size-md ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right"
+                                href="phakic-lens.html"
+                                title=""
+                                >Know More<i class="fontello icon-plus"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="margin_top35">
+                          <div
+                            class="featured-icon-box icon-align-before-content style9 icon-ver_align-top"
+                          >
+                            <h3>02. The Vision Exams Equipment</h3>
+                            <div class="featured-icon">
+                              <div
+                                class="ttm-icon ttm-icon_element-fill ttm-icon_element-color-skincolor ttm-icon_element-size-md ttm-icon_element-style-square"
+                              >
+                                <i class="flaticon-optometrist"></i>
+                              </div>
+                            </div>
+                            <div class="featured-content">
+                              <div class="featured-desc">
+                                <p class="padding_bottom10">
+                                  The latest in technology advancements's
+                                  toolkit helps us diagnose & improve imp eye
+                                  senses.
+                                </p>
+                              </div>
+                              <a
+                                class="ttm-btn ttm-btn-size-md ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right"
+                                href="project-style-01.html"
+                                title=""
+                                >Know More<i class="fontello icon-plus"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8 col-md-12"></div>
+                  </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="{% url 'about' %}"><img src="{% static 'assets/images/onas.jpg' %}" alt="image"></a>
-                            </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                            <div class="post-content">
-
-                                <h3>
-                                    <a href="blog-details.html">О НАС</a>
-                                </h3>
-                                <a href="{% url 'about'%}" class="post-btn">Подробнее <i class="flaticon-right-arrow"></i></a>
-                            </div>
+        <section
+          class="ttm-row ttm-bgcolor-darkgrey service-section style1 col-bg-img-one ttm-col-bgimage-yes ttm-bg clearfix"
+        >
+          <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 col-md-12">
+                <div class="row mb_30">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <!--featured-icon-box-->
+                    <div
+                      class="featured-icon-box icon-align-top-content style10"
+                    >
+                      <div class="featured-icon">
+                        <div
+                          class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg"
+                        >
+                          <i class="ttm-num ti-info"></i>
+                          <i class="flaticon-eye-test-3"></i>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="{% url 'doctor' %}"><img src="{% static 'assets/images/vrachi.jpg' %}" alt="image"></a>
-                            </div>
-
-                            <div class="post-content">
-
-                                <h3>
-                                    <a href="blog-details.html">ВРАЧИ</a>
-                                </h3>
-                                <a href="{% url 'doctor' %}" class="post-btn">Познакомьтесь с нашими врачами <i class="flaticon-right-arrow"></i></a>
-                            </div>
+                      </div>
+                      <div class="featured-content">
+                        <div class="featured-title">
+                          <h3>We’re Certified</h3>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-card">
-                            <div class="post-image">
-                                <a href="{% url 'contact' %}"><img src="{% static 'assets/images/cont.jpg' %}" alt="image"></a>
-                            </div>
-
-                            <div class="post-content">
-
-                                <h3>
-                                    <a href="blog-details.html">КОНСУЛЬТАЦИЯ</a>
-                                </h3>
-                                <a href="{% url 'contact' %}" class="post-btn">Запишитесь на консультацию <i class="flaticon-right-arrow"></i></a>
-                            </div>
+                        <div class="featured-desc">
+                          <p>
+                            We are Certified by Government for excellence in
+                            Ophthalmic tech!
+                          </p>
                         </div>
+                      </div>
                     </div>
-
+                    <!--featured-icon-box end-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <!--featured-icon-box-->
+                    <div
+                      class="featured-icon-box icon-align-top-content style10"
+                    >
+                      <div class="featured-icon">
+                        <div
+                          class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg"
+                        >
+                          <i class="ttm-num ti-info"></i>
+                          <i class="flaticon-visual"></i>
+                        </div>
+                      </div>
+                      <div class="featured-content">
+                        <div class="featured-title">
+                          <h3>Years Of Service</h3>
+                        </div>
+                        <div class="featured-desc">
+                          <p>
+                            Community health and vision care to the area for
+                            over 20 years
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--featured-icon-box end-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <!--featured-icon-box-->
+                    <div
+                      class="featured-icon-box icon-align-top-content style10"
+                    >
+                      <div class="featured-icon">
+                        <div
+                          class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg"
+                        >
+                          <i class="ttm-num ti-info"></i>
+                          <i class="flaticon-optic"></i>
+                        </div>
+                      </div>
+                      <div class="featured-content">
+                        <div class="featured-title">
+                          <h3>Expert Doctors</h3>
+                        </div>
+                        <div class="featured-desc">
+                          <p>
+                            You will treated with friendly, compassionate vision
+                            care
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--featured-icon-box end-->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <!--featured-icon-box-->
+                    <div
+                      class="featured-icon-box icon-align-top-content style10"
+                    >
+                      <div class="featured-icon">
+                        <div
+                          class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg"
+                        >
+                          <i class="ttm-num ti-info"></i>
+                          <i class="flaticon-computer"></i>
+                        </div>
+                      </div>
+                      <div class="featured-content">
+                        <div class="featured-title">
+                          <h3>Great Services</h3>
+                        </div>
+                        <div class="featured-desc">
+                          <p>
+                            Today, we fit into the perfect frame of services for
+                            everyone
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--featured-icon-box end-->
+                  </div>
                 </div>
-            </div>
-
-            <div class="department-shape-1">
-                <img src="{% static 'assets/images/department/shape-1.png' %}" alt="image">
-            </div>
-            <div class="department-shape-2">
-                <img src="{% static 'assets/images/department/shape-2.png' %}" alt="image">
-            </div>
-        </div>
-        <!-- End Department Area -->
-        <!-- Start Testimonials Area -->
-        <div class="testimonials-area ptb-100">
-            <div class="container">
-                <div class="section-title ">
-                    <span>UNIVERSAL GOZ</span>
-                    <h2>Отзывы наших клиентов</h2>
+              </div>
+              <div class="col-xl-4 col-md-12">
+                <div class="ttm_single_image-wrapper">
+                  <img
+                    class="img-fluid"
+                    width="370"
+                    height="549"
+                    src="{% static 'assets/images/single-img-12.jpg'%}"
+                    alt="single_07"
+                  />
                 </div>
-                <div class="testimonials-slides owl-carousel owl-theme">
-                    <div class="single-testimonials-box">
-                        <p>Отличная клиника. Все понравилось. Глаз теперь, как алмаз. Все было супер, по высшему разряду. Отличная клиника. Все понравилось. Глаз теперь, как алмаз. Все было супер, по высшему разряду. Отличная клиника. Все понравилось. Глаз теперь, как алмаз.</p>
-
-                        <div class="info">
-                            <h3>Марсел Ысаков</h3>
-                        </div>
-                    </div>
-                    <div class="single-testimonials-box">
-                        <p>Все было супер, по высшему разряду. Отличная клиника. Все понравилось. Глаз теперь, как алмаз.Все было супер, по высшему разряду. Отличная клиника. Все понравилось. Глаз теперь, как алмаз. Все было супер, по высшему разряду. Отличная клиника. Все понравилось. Глаз теперь, как алмаз.</p>
-
-                        <div class="info">
-                            <h3>Азат Максатбеков</h3>
-                        </div>
-                    </div>
-
+                <div
+                  class="ttm_single_content ttm-bgcolor-skincolor text-left padding_top20 padding_left35 padding_bottom10"
+                >
+                  <h3 class="margin_bottom0">Why Choose Us!</h3>
+                  <p class="margin_bottom0">Lorem ipsum dolor sit amlore.</p>
                 </div>
+              </div>
             </div>
-        </div>
-        <!-- End Testimonials Area -->
+            <!-- row end -->
+          </div>
+        </section>
 
-        <!-- Start Partner Area -->
-        <div class="partner-area bg-0a0b1c ptb-100">
-            <div class="container">
+        <section class="ttm-row grid-section clearfix">
+          <div class="container">
+            <!-- row -->
+            <div class="row">
+              <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox-team -->
+                <div class="featured-imagebox featured-imagebox-team style1">
+                  <div class="featured-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="{% static 'assets/images/team-member/team-img01.jpg'%}"
+                      alt="image"
+                    />
+                    <div class="featured-iconbox ttm-media-link">
+                      <div class="media-block">
+                        <ul class="social-icons">
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="facebook"
+                              tabindex="0"
+                              ><i class="fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="twitter"
+                              tabindex="0"
+                              ><i class="fa fa-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="google"
+                              tabindex="0"
+                              ><i class="fa fa-google-plus"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="linkedin"
+                              tabindex="0"
+                              ><i class="fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="featured-content">
+                    <div class="featured-title">
+                      <h3>
+                        <a href="team-details.html" tabindex="0"
+                          >Dr. Berry Gardner</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="team-position">Clarivu eye</div>
+                  </div>
+                  <div class="ttm-team-bottom-content">
+                    <div class="ttm-available-timebox-inner">
+                      <ul class="ttm-available-box">
+                        <li>
+                          Mon-Fri <span class="ttm-time">7.00 – 18.00</span>
+                        </li>
+                        <li>
+                          Sat-Sun <span class="ttm-time">7.00 – 12.00</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="ttm-btn-bottom">
+                      <a
+                        href="team-details.html"
+                        class="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-skincolor font-weight-500"
+                        tabindex="0"
+                        >Booking A Visit<i class="fontello icon-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- featured-imagebox-team end-->
+              </div>
+              <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox-team -->
+                <div class="featured-imagebox featured-imagebox-team style1">
+                  <div class="featured-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="{% static 'assets/images/team-member/team-img02.jpg'%}"
+                      alt="image"
+                    />
+                    <div class="featured-iconbox ttm-media-link">
+                      <div class="media-block">
+                        <ul class="social-icons">
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="facebook"
+                              tabindex="0"
+                              ><i class="fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="twitter"
+                              tabindex="0"
+                              ><i class="fa fa-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="google"
+                              tabindex="0"
+                              ><i class="fa fa-google-plus"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="linkedin"
+                              tabindex="0"
+                              ><i class="fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="featured-content">
+                    <div class="featured-title">
+                      <h3>
+                        <a href="team-details.html" tabindex="0"
+                          >Dr. Bonnie Alberta</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="team-position">Optician</div>
+                  </div>
+                  <div class="ttm-team-bottom-content">
+                    <div class="ttm-available-timebox-inner">
+                      <ul class="ttm-available-box">
+                        <li>
+                          Mon-Fri <span class="ttm-time">7.00 – 18.00</span>
+                        </li>
+                        <li>
+                          Sat-Sun <span class="ttm-time">7.00 – 12.00</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="ttm-btn-bottom">
+                      <a
+                        href="team-details.html"
+                        class="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-skincolor font-weight-500"
+                        tabindex="0"
+                        >Booking A Visit<i class="fontello icon-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- featured-imagebox-team end-->
+              </div>
+              <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox-team -->
+                <div class="featured-imagebox featured-imagebox-team style1">
+                  <div class="featured-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="{% static 'assets/images/team-member/team-img03.jpg'%}"
+                      alt="image"
+                    />
+                    <div class="featured-iconbox ttm-media-link">
+                      <div class="media-block">
+                        <ul class="social-icons">
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="facebook"
+                              tabindex="0"
+                              ><i class="fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="twitter"
+                              tabindex="0"
+                              ><i class="fa fa-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="google"
+                              tabindex="0"
+                              ><i class="fa fa-google-plus"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="linkedin"
+                              tabindex="0"
+                              ><i class="fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="featured-content">
+                    <div class="featured-title">
+                      <h3>
+                        <a href="team-details.html" tabindex="0"
+                          >Dr. Terri Williams</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="team-position">Optometrist</div>
+                  </div>
+                  <div class="ttm-team-bottom-content">
+                    <div class="ttm-available-timebox-inner">
+                      <ul class="ttm-available-box">
+                        <li>
+                          Mon-Fri <span class="ttm-time">7.00 – 18.00</span>
+                        </li>
+                        <li>
+                          Sat-Sun <span class="ttm-time">7.00 – 12.00</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="ttm-btn-bottom">
+                      <a
+                        href="team-details.html"
+                        class="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-skincolor font-weight-500"
+                        tabindex="0"
+                        >Booking A Visit<i class="fontello icon-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- featured-imagebox-team end-->
+              </div>
+              <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox-team -->
+                <div class="featured-imagebox featured-imagebox-team style1">
+                  <div class="featured-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="{% static 'assets/images/team-member/team-img04.jpg'%}"
+                      alt="image"
+                    />
+                    <div class="featured-iconbox ttm-media-link">
+                      <div class="media-block">
+                        <ul class="social-icons">
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="facebook"
+                              tabindex="0"
+                              ><i class="fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="twitter"
+                              tabindex="0"
+                              ><i class="fa fa-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="google"
+                              tabindex="0"
+                              ><i class="fa fa-google-plus"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="linkedin"
+                              tabindex="0"
+                              ><i class="fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="featured-content">
+                    <div class="featured-title">
+                      <h3>
+                        <a href="team-details.html" tabindex="0"
+                          >Dr. Steven Carter</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="team-position">Optometrist</div>
+                  </div>
+                  <div class="ttm-team-bottom-content">
+                    <div class="ttm-available-timebox-inner">
+                      <ul class="ttm-available-box">
+                        <li>
+                          Mon-Fri <span class="ttm-time">7.00 – 18.00</span>
+                        </li>
+                        <li>
+                          Sat-Sun <span class="ttm-time">7.00 – 12.00</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="ttm-btn-bottom">
+                      <a
+                        href="team-details.html"
+                        class="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-skincolor font-weight-500"
+                        tabindex="0"
+                        >Booking A Visit<i class="fontello icon-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- featured-imagebox-team end-->
+              </div>
+              <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox-team -->
+                <div class="featured-imagebox featured-imagebox-team style1">
+                  <div class="featured-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="{% static 'assets/images/team-member/team-img05.jpg'%}"
+                      alt="image"
+                    />
+                    <div class="featured-iconbox ttm-media-link">
+                      <div class="media-block">
+                        <ul class="social-icons">
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="facebook"
+                              tabindex="0"
+                              ><i class="fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="twitter"
+                              tabindex="0"
+                              ><i class="fa fa-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="google"
+                              tabindex="0"
+                              ><i class="fa fa-google-plus"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="linkedin"
+                              tabindex="0"
+                              ><i class="fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="featured-content">
+                    <div class="featured-title">
+                      <h3>
+                        <a href="team-details.html" tabindex="0"
+                          >Dr. John Batter</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="team-position">Cataract surgery</div>
+                  </div>
+                  <div class="ttm-team-bottom-content">
+                    <div class="ttm-available-timebox-inner">
+                      <ul class="ttm-available-box">
+                        <li>
+                          Mon-Fri <span class="ttm-time">7.00 – 18.00</span>
+                        </li>
+                        <li>
+                          Sat-Sun <span class="ttm-time">7.00 – 12.00</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="ttm-btn-bottom">
+                      <a
+                        href="team-details.html"
+                        class="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-skincolor font-weight-500"
+                        tabindex="0"
+                        >Booking A Visit<i class="fontello icon-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- featured-imagebox-team end-->
+              </div>
+              <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox-team -->
+                <div class="featured-imagebox featured-imagebox-team style1">
+                  <div class="featured-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="{% static 'assets/images/team-member/team-img06.jpg'%}"
+                      alt="image"
+                    />
+                    <div class="featured-iconbox ttm-media-link">
+                      <div class="media-block">
+                        <ul class="social-icons">
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="facebook"
+                              tabindex="0"
+                              ><i class="fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="twitter"
+                              tabindex="0"
+                              ><i class="fa fa-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="google"
+                              tabindex="0"
+                              ><i class="fa fa-google-plus"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tooltip-top"
+                              href="#"
+                              rel="noopener"
+                              aria-label="linkedin"
+                              tabindex="0"
+                              ><i class="fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="featured-content">
+                    <div class="featured-title">
+                      <h3>
+                        <a href="team-details.html" tabindex="0"
+                          >Dr. William Gardner</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="team-position">Optometrist</div>
+                  </div>
+                  <div class="ttm-team-bottom-content">
+                    <div class="ttm-available-timebox-inner">
+                      <ul class="ttm-available-box">
+                        <li>
+                          Mon-Fri <span class="ttm-time">7.00 – 18.00</span>
+                        </li>
+                        <li>
+                          Sat-Sun <span class="ttm-time">7.00 – 12.00</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="ttm-btn-bottom">
+                      <a
+                        href="team-details.html"
+                        class="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-skincolor font-weight-500"
+                        tabindex="0"
+                        >Booking A Visit<i class="fontello icon-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- featured-imagebox-team end-->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="ttm-row bottom_zero_padding-section checkup-section clearfix"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-md-6 col-md-12">
+                <div
+                  class="ttm_single_image-wrapper padding_bottom30 res-767-padding_bottom0"
+                >
+                  <img
+                    class="img-fluid"
+                    src="{% static 'assets/images/single-img-02.jpg'%}"
+                    alt=""
+                  />
+                  <div class="ttm_single_image_text">
+                    <h3>Need a Doctor for Check-up? Call for an</h3>
+                    <a
+                      class="ttm-textcolor-skincolor fs-26"
+                      href="project-style-01.html"
+                      ><u>Emergency Service!</u></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xl-6 col-md-6 col-md-12 margin_top70 padding_left30 res-325-padding_left30"
+              >
                 <div class="section-title">
-                    <span>Наши партнеры</span>
+                  <div class="title-header">
+                    <h2 class="title">
+                      Optrica Your Eye Sight Is Our First Priority!
+                    </h2>
+                  </div>
+                  <div class="title-desc">
+                    <p class="margin_top20 margin_bottom30">
+                      Our facilities are equipped with state-of-the-art
+                      ophthalmic technology to provide the most effective care
+                      treatments and facilities.
+                    </p>
+                  </div>
                 </div>
-
-                <div class="partner-slides owl-carousel owl-theme">
-                    <div class="image-box">
-                        <a href="http://asoi.kg" target="_blank"><img src="{% static 'assets/images/partner/partner-1.png' %}" alt="image"></a>
+                <div class="res-991-pt-15">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul class="ttm-list ttm-list-style-icon style1">
+                        <li>
+                          <i class="flaticon-checkmark"></i>
+                          <span class="ttm-list-li-content"
+                            >Individual treatment program</span
+                          >
+                        </li>
+                        <li>
+                          <i class="flaticon-checkmark"></i>
+                          <span class="ttm-list-li-content"
+                            >The highest professional level.</span
+                          >
+                        </li>
+                        <li>
+                          <i class="flaticon-checkmark"></i>
+                          <span class="ttm-list-li-content"
+                            >We performing all operations</span
+                          >
+                        </li>
+                      </ul>
                     </div>
-
-                    <div class="image-box">
-                        <a href="http://asoi.kg" target="_blank"><img src="{% static 'assets/images/partner/partner-2.png' %}" alt="image"></a>
+                    <div class="col-md-6">
+                      <ul class="ttm-list ttm-list-style-icon style1">
+                        <li>
+                          <i class="flaticon-checkmark"></i>
+                          <span class="ttm-list-li-content"
+                            >It's available under the one roof</span
+                          >
+                        </li>
+                        <li>
+                          <i class="flaticon-checkmark"></i>
+                          <span class="ttm-list-li-content"
+                            >A Specialized Eye procedures</span
+                          >
+                        </li>
+                        <li>
+                          <i class="flaticon-checkmark"></i>
+                          <span class="ttm-list-li-content"
+                            >100% Compliance of materials</span
+                          >
+                        </li>
+                      </ul>
                     </div>
-
-                    <div class="image-box">
-                        <a href="http://asoi.kg" target="_blank"><img src="{% static 'assets/images/partner/partner-3.png' %}" alt="image"></a>
-                    </div>
-
-                    <div class="image-box">
-                        <a href="http://asoi.kg" target="_blank"><img src="{% static 'assets/images/partner/partner-4.png' %}" alt="image"></a>
-                    </div>
-
-                    <div class="image-box">
-                        <a href="http://asoi.kg" target="_blank"><img src="{% static 'assets/images/partner/partner-5.png' %}" alt="image"></a>
-                    </div>
+                  </div>
                 </div>
+                <div
+                  class="ttm-horizontal_sep width-100 margin_top35 margin_bottom35"
+                ></div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12 ttm-box-col-wrapper">
+                    <!-- ttm-fid -->
+                    <div
+                      class="ttm-fid inside ttm-fid-with-icon ttm-fid-view-top_icon style1"
+                    >
+                      <div class="ttm-fid-contents">
+                        <h3 class="ttm-fid-inner">
+                          <span
+                            data-appear-animation="animateDigits"
+                            data-from="0"
+                            data-to="320"
+                            data-interval="5"
+                            data-before=""
+                            data-before-style="sup"
+                            data-after=""
+                            data-after-style="sub"
+                            class="numinate"
+                            >320</span
+                          >
+                          <span class="ml_10 res-991-ml-0">+</span>
+                        </h3>
+                        <h4 class="ttm-fid-title">Winning Awards</h4>
+                      </div>
+                    </div>
+                    <!-- ttm-fid end -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 ttm-box-col-wrapper">
+                    <!-- ttm-fid -->
+                    <div
+                      class="ttm-fid inside ttm-fid-with-icon ttm-fid-view-top_icon style1"
+                    >
+                      <div class="ttm-fid-contents">
+                        <h3 class="ttm-fid-inner">
+                          <span
+                            data-appear-animation="animateDigits"
+                            data-from="0"
+                            data-to="152"
+                            data-interval="5"
+                            data-before=""
+                            data-before-style="sup"
+                            data-after=""
+                            data-after-style="sub"
+                            class="numinate"
+                            >152</span
+                          >
+                          <span class="ml_10 res-991-ml-0">k</span>
+                        </h3>
+                        <h4 class="ttm-fid-title">Happy Clients</h4>
+                      </div>
+                    </div>
+                    <!-- ttm-fid end -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 ttm-box-col-wrapper">
+                    <!-- ttm-fid -->
+                    <div
+                      class="ttm-fid inside ttm-fid-with-icon ttm-fid-view-top_icon style1"
+                    >
+                      <div class="ttm-fid-contents">
+                        <h3 class="ttm-fid-inner">
+                          <span
+                            data-appear-animation="animateDigits"
+                            data-from="0"
+                            data-to="852"
+                            data-interval="5"
+                            data-before=""
+                            data-before-style="sup"
+                            data-after=""
+                            data-after-style="sub"
+                            class="numinate"
+                            >852</span
+                          >
+                        </h3>
+                        <h4 class="ttm-fid-title">Happy Clients</h4>
+                      </div>
+                    </div>
+                    <!-- ttm-fid end -->
+                  </div>
+                </div>
+                <div class="res-991-pt-15">
+                  <div class="row">
+                    <div class="col-md-6 padding_left0">
+                      <div
+                        class="ttm_single_image-wrapper res-1300-margin_top70 margin_top35 ml_30 res-1199-margin_top30"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="{% static 'assets/images/single-img-03.jpg'%}"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 padding_left0">
+                      <div
+                        class="featured-icon-box icon-align-before-content icon-ver_align-top margin_top100 res-767-margin_top20 res-1199-margin_top140 res-1300-margin_top120 res-1199-margin_top70 res-1199-ml_70 res-767-margin_left15 ml_40"
+                      >
+                        <div class="featured-icon">
+                          <img
+                            class="img-fluid"
+                            width="80"
+                            height="60"
+                            src="{% static 'assets/images/single-icon.png'%}"
+                            alt=""
+                          />
+                        </div>
+                        <div class="featured-content">
+                          <div class="featured-title">
+                            <h3 class="fs-20 font-weight-700">
+                              At Optrica we value our patients Health.
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <!-- End Partner Area -->
-        <!-- Start Overview Area -->
-        <div class="overview-area pt-75 pb-75">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-12">
-                        <div class="overview-logo">
-                            <a href="index.html"><img src="{% static 'assets/images/123/logo.PNG' %}" alt="image"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                        <div class="overview-content">
-                            <h3>Вы готовы к консультацию?</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-12">
-                        <div class="overview-btn">
-                            <a href="{%url 'contact'%}" class="default-btn">Получить консультацию <i class="flaticon-right-arrow"></i></a>
-                        </div>
+          </div>
+        </section>
 
-                    </div>
+        <section class="ttm-row ttm-bgcolor-white clearfix">
+          <div class="container">
+            <!--row -->
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- section title -->
+                <div class="section-title text-center">
+                  <div class="title-header">
+                    <h3>OUR VISION</h3>
+                    <h2 class="title">A Global Treatment of Eye Disease</h2>
+                  </div>
                 </div>
+                <!-- section title end -->
+              </div>
             </div>
-        </div>
-        <div id="contact-map">
-            <iframe id="map_575166143" frameborder="0" width="100%" height="100%" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_575166143", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzAwNThhNSIsInRpdGxlIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6Wzc0LjU5NjA5Niw0Mi44NTQwNTFdfSwiaWQiOjEzMTB9XSwibWFwUG9zaXRpb24iOnsibGF0Ijo0Mi44NTM4NDMyMTk3NjY2NDUsImxvbiI6NzQuNTk2MTcwMTU3MTk5MzEsInpvb20iOjE4fSwiaXNXaGVlbFpvb21FbmFibGVkIjp0cnVlfScpPC9zY3JpcHQ+PHNjcmlwdCBhc3luYz0iIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1VQS0xNTg4NjYxNjgtMSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPihmdW5jdGlvbihlKXtmdW5jdGlvbiB0KCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX13aW5kb3cuZGF0YUxheWVyPXdpbmRvdy5kYXRhTGF5ZXJ8fFtdLHQoImpzIixuZXcgRGF0ZSksdCgiY29uZmlnIixlKSx3aW5kb3cuZ3RhZz10fSkoJ1VBLTE1ODg2NjE2OC0xJyk8L3NjcmlwdD48L2JvZHk+")</script>
-        </div>
+            <!-- row end -->
+            <!--row -->
+            <!--tab-section-->
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="ttm-tabs ttm-tab-style-04" data-effect="fadeIn">
+                  <ul class="tabs text-center clearfix">
+                    <li class="tab">
+                      <a href="#"
+                        ><i class="flaticon-eye-test-3"></i>Transitions
+                        Lenses</a
+                      >
+                    </li>
+                    <li class="tab">
+                      <a href="#"
+                        ><i class="flaticon-computer"></i>A Cataract Surgery</a
+                      >
+                    </li>
+                    <li class="tab active">
+                      <a href="#"
+                        ><i class="flaticon-optical-7"></i>Refractive Lenses</a
+                      >
+                    </li>
+                    <li class="tab">
+                      <a href="#"
+                        ><i class="flaticon-optic"></i>Implantable Lenses</a
+                      >
+                    </li>
+                    <li class="tab">
+                      <a href="#"
+                        ><i class="flaticon-visual"></i>Restoration Vision</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="content-tab">
+                    <!-- content-inner -->
+                    <div class="content-inner active">
+                      <div class="row no-gutters">
+                        <div class="col-xl-6 col-md-12">
+                          <div
+                            class="res-991-padding_bottom30 padding_right30 padding_top30 padding_bottom10 res-991-padding_right0"
+                          >
+                            <h3>
+                              Optrica Making Quality Eye Care Most Comfortable
+                            </h3>
+                            <p class="padding_bottom20">
+                              We believe that everyone deserves to see the world
+                              clearly. That’s why we’ve made it our mission to
+                              provide patients with the best eye doctors the
+                              most thorough eye’s health exams
+                            </p>
+                            <img
+                              class="img-fluid alignleft"
+                              src="{% static 'assets/images/single-img-05.jpg'%}"
+                              alt="image"
+                            />
+                            <div class="padding_top10">
+                              <ul
+                                class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor"
+                              >
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >View at another perspective</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A patient’s friendly approach</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >Strive to improve techniques
+                                  </span>
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >The largest ophthalmic group</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A specialized eye procedure</span
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12">
+                          <div class="d-inline-block single-img-wraper">
+                            <img
+                              class="img-fluid"
+                              width="532"
+                              height="452"
+                              src="{% static 'assets/images/single-img-04.jpg'%}"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- content-inner end-->
+                    <!-- content-inner -->
+                    <div class="content-inner">
+                      <div class="row no-gutters">
+                        <div class="col-xl-6 col-md-12">
+                          <div
+                            class="res-991-padding_bottom30 padding_right30 padding_top30 padding_bottom10 res-991-padding_right0"
+                          >
+                            <h3>
+                              Optrica Making Quality Eye Care Most Comfortable
+                            </h3>
+                            <p class="padding_bottom20">
+                              We believe that everyone deserves to see the world
+                              clearly. That’s why we’ve made it our mission to
+                              provide patients with the best eye doctors the
+                              most thorough eye’s health exams
+                            </p>
+                            <img
+                              class="img-fluid alignleft"
+                              src="{% static 'assets/images/single-img-05.jpg'%}"
+                              alt="image"
+                            />
+                            <div class="padding_top10">
+                              <ul
+                                class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor"
+                              >
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >View at another perspective</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A patient’s friendly approach</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >Strive to improve techniques
+                                  </span>
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >The largest ophthalmic group</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A specialized eye procedure</span
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12">
+                          <div class="d-inline-block single-img-wraper">
+                            <img
+                              class="img-fluid auto_size"
+                              src="{% static 'assets/images/single-img-04.jpg'%}"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- content-inner end-->
+                    <!-- content-inner -->
+                    <div class="content-inner">
+                      <div class="row no-gutters">
+                        <div class="col-xl-6 col-md-12">
+                          <div
+                            class="res-991-padding_bottom30 padding_right30 padding_top30 padding_bottom10 res-991-padding_right0"
+                          >
+                            <h3>
+                              Optrica Making Quality Eye Care Most Comfortable
+                            </h3>
+                            <p class="padding_bottom20">
+                              We believe that everyone deserves to see the world
+                              clearly. That’s why we’ve made it our mission to
+                              provide patients with the best eye doctors the
+                              most thorough eye’s health exams
+                            </p>
+                            <img
+                              class="img-fluid alignleft"
+                              src="{% static 'assets/images/single-img-05.jpg'%}"
+                              alt="image"
+                            />
+                            <div class="padding_top10">
+                              <ul
+                                class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor"
+                              >
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >View at another perspective</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A patient’s friendly approach</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >Strive to improve techniques
+                                  </span>
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >The largest ophthalmic group</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A specialized eye procedure</span
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12">
+                          <div class="d-inline-block single-img-wraper">
+                            <img
+                              class="img-fluid auto_size"
+                              src="{% static 'assets/images/single-img-04.jpg'%}"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- content-inner end-->
+                    <!-- content-inner -->
+                    <div class="content-inner">
+                      <div class="row no-gutters">
+                        <div class="col-xl-6 col-md-12">
+                          <div
+                            class="res-991-padding_bottom30 padding_right30 padding_top30 padding_bottom10 res-991-padding_right0"
+                          >
+                            <h3>
+                              Optrica Making Quality Eye Care Most Comfortable
+                            </h3>
+                            <p class="padding_bottom20">
+                              We believe that everyone deserves to see the world
+                              clearly. That’s why we’ve made it our mission to
+                              provide patients with the best eye doctors the
+                              most thorough eye’s health exams
+                            </p>
+                            <img
+                              class="img-fluid alignleft"
+                              src="{% static 'assets/images/single-img-05.jpg'%}"
+                              alt="image"
+                            />
+                            <div class="padding_top10">
+                              <ul
+                                class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor"
+                              >
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >View at another perspective</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A patient’s friendly approach</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >Strive to improve techniques
+                                  </span>
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >The largest ophthalmic group</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A specialized eye procedure</span
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12">
+                          <div class="d-inline-block single-img-wraper">
+                            <img
+                              class="img-fluid auto_size"
+                              src="{% static 'assets/images/single-img-04.jpg'%}"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- content-inner end-->
+                    <!-- content-inner -->
+                    <div class="content-inner">
+                      <div class="row no-gutters">
+                        <div class="col-xl-6 col-md-12">
+                          <div
+                            class="res-991-padding_bottom30 padding_right30 padding_top30 padding_bottom10 res-991-padding_right0"
+                          >
+                            <h3>
+                              Optrica Making Quality Eye Care Most Comfortable
+                            </h3>
+                            <p class="padding_bottom20">
+                              We believe that everyone deserves to see the world
+                              clearly. That’s why we’ve made it our mission to
+                              provide patients with the best eye doctors the
+                              most thorough eye’s health exams
+                            </p>
+                            <img
+                              class="img-fluid alignleft"
+                              src="{% static 'assets/images/single-img-05.jpg'%}"
+                              alt="image"
+                            />
+                            <div class="padding_top10">
+                              <ul
+                                class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor"
+                              >
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >View at another perspective</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A patient’s friendly approach</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >Strive to improve techniques
+                                  </span>
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >The largest ophthalmic group</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A specialized eye procedure</span
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12">
+                          <div class="d-inline-block single-img-wraper">
+                            <img
+                              class="img-fluid auto_size"
+                              src="{% static 'assets/images/single-img-04.jpg'%}"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- content-inner end-->
+                    <!-- content-inner -->
+                    <div class="content-inner">
+                      <div class="row no-gutters">
+                        <div class="col-xl-6 col-md-12">
+                          <div
+                            class="res-991-padding_bottom30 padding_right30 padding_top30 padding_bottom10 res-991-padding_right0"
+                          >
+                            <h3>
+                              Optrica Making Quality Eye Care Most Comfortable
+                            </h3>
+                            <p class="padding_bottom20">
+                              We believe that everyone deserves to see the world
+                              clearly. That’s why we’ve made it our mission to
+                              provide patients with the best eye doctors the
+                              most thorough eye’s health exams
+                            </p>
+                            <img
+                              class="img-fluid alignleft"
+                              src="{% static 'assets/images/single-img-05.jpg'%}"
+                              alt="image"
+                            />
+                            <div class="padding_top10">
+                              <ul
+                                class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor"
+                              >
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >View at another perspective</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A patient’s friendly approach</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >Strive to improve techniques
+                                  </span>
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >The largest ophthalmic group</span
+                                  >
+                                </li>
+                                <li>
+                                  <i class="fa-minus"></i
+                                  ><span class="ttm-list-li-content"
+                                    >A specialized eye procedure</span
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12">
+                          <div class="d-inline-block single-img-wraper">
+                            <img
+                              class="img-fluid auto_size"
+                              src="{% static 'assets/images/single-img-04.jpg'%}"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- content-inner end-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="ttm-row zero_padding-section testimonial-section clearfix"
+        >
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-lg-1 col-md-12">
+                <div
+                  class="col-bg-img-two ttm-col-bgimage-yes ttm-bg ttm-left-span spacing-13 res-991-padding_top0"
+                >
+                  <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                  <div class="layer-content"></div>
+                </div>
+                <img
+                  src="{% static 'assets/images/bg-image/col-bgimage-2.png'%}"
+                  class="ttm-equal-height-image"
+                  alt="bg-image"
+                />
+              </div>
+              <div class="col-lg-10 col-md-12">
+                <div
+                  class="col-bg-img-four ttm-col-bgimage-yes ttm-bgcolor-darkgrey spacing-8 position-relative"
+                >
+                  <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                  <div class="layer-content">
+                    <!-- row -->
+                    <div class="row">
+                      <div class="col-lg-5 col-md-4 m-auto">
+                        <div class="testimonials-nav">
+                          <div
+                            class="testimonial-avatar"
+                            aria-hidden="true"
+                            tabindex="0"
+                          >
+                            <div class="testimonial-img">
+                              <img
+                                class="img-fluid"
+                                src="{% static 'assets/images/testimonial\01.jpg'%}"
+                                alt="testimonial-img"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="testimonial-avatar"
+                            aria-hidden="true"
+                            tabindex="0"
+                          >
+                            <div class="testimonial-img">
+                              <img
+                                class="img-fluid"
+                                src="{% static 'assets/images/testimonial\02.jpg'%}"
+                                alt="testimonial-img"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="testimonial-avatar"
+                            aria-hidden="true"
+                            tabindex="0"
+                          >
+                            <div class="testimonial-img">
+                              <img
+                                class="img-fluid"
+                                src="{% static 'assets/images/testimonial\03.jpg'%}"
+                                alt="testimonial-img"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="testimonial-avatar"
+                            aria-hidden="true"
+                            tabindex="0"
+                          >
+                            <div class="testimonial-img">
+                              <img
+                                class="img-fluid"
+                                src="{% static 'assets/images/testimonial\04.jpg'%}"
+                                alt="testimonial-img"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="testimonial-avatar"
+                            aria-hidden="true"
+                            tabindex="0"
+                          >
+                            <div class="testimonial-img">
+                              <img
+                                class="img-fluid"
+                                src="{% static 'assets/images/testimonial\03.jpg'%}"
+                                alt="testimonial-img"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="testimonial-avatar"
+                            aria-hidden="true"
+                            tabindex="0"
+                          >
+                            <div class="testimonial-img">
+                              <img
+                                class="img-fluid"
+                                src="{% static 'assets/images/testimonial\02.jpg'%}"
+                                alt="testimonial-img"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <!-- testimonials -->
+                        <div class="testimonials-info style3">
+                          <div class="testimonials">
+                            <div class="testimonial-content">
+                              <blockquote class="testimonial-text text-center">
+                                An Optrica is very kind and knowledgeable in eye
+                                care field. Explain things, genuinely cares for
+                                his patients & staff, has all up to date
+                                technology. If I could give more stars I would!
+                                Can blindly rely!!!!!
+                              </blockquote>
+                              <div class="testimonial-bottom">
+                                <div class="star-ratings">
+                                  <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                  </ul>
+                                </div>
+                                <div class="testimonial-caption">
+                                  <h3>Cameron Stence</h3>
+                                  <label>Houston Director</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- testimonials end -->
+                          <!-- testimonials -->
+                          <div class="testimonials">
+                            <div class="testimonial-content">
+                              <blockquote class="testimonial-text text-center">
+                                They make you understand the problems in a
+                                simple language and are very patient friendly.
+                                They set the barometer high through his
+                                empathetic accurate & advanced practice. I
+                                recommend Optrica.
+                              </blockquote>
+                              <div class="testimonial-bottom">
+                                <div class="star-ratings">
+                                  <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                  </ul>
+                                </div>
+                                <div class="testimonial-caption">
+                                  <h3>Cameron Stence</h3>
+                                  <label>Houston Director</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- testimonials end -->
+                          <!-- testimonials -->
+                          <div class="testimonials">
+                            <div class="testimonial-content">
+                              <blockquote class="testimonial-text text-center">
+                                Had long standing vision problem in my left eye
+                                Got to meet Optrica. Found very pleasant &
+                                warmth to interact, them gave me very
+                                professional guidance & advised under go for
+                                cataract surgery.!!!
+                              </blockquote>
+                              <div class="testimonial-bottom">
+                                <div class="star-ratings">
+                                  <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                  </ul>
+                                </div>
+                                <div class="testimonial-caption">
+                                  <h3>Cameron Stence</h3>
+                                  <label>Houston Director</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- testimonials end -->
+                          <!-- testimonials -->
+                          <div class="testimonials">
+                            <div class="testimonial-content">
+                              <blockquote class="testimonial-text text-center">
+                                They make you understand the problems in a
+                                simple language and are very patient friendly.
+                                They set the barometer high through his
+                                empathetic accurate & advanced practice. I
+                                recommend Optrica.
+                              </blockquote>
+                              <div class="testimonial-bottom">
+                                <div class="star-ratings">
+                                  <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                  </ul>
+                                </div>
+                                <div class="testimonial-caption">
+                                  <h3>Cameron Stence</h3>
+                                  <label>Houston Director</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- testimonials end -->
+                          <!-- testimonials -->
+                          <div class="testimonials">
+                            <div class="testimonial-content">
+                              <blockquote class="testimonial-text text-center">
+                                Had long standing vision problem in my left eye
+                                Got to meet Optrica. Found very pleasant &
+                                warmth to interact, them gave me very
+                                professional guidance & advised under go for
+                                cataract surgery.!!!
+                              </blockquote>
+                              <div class="testimonial-bottom">
+                                <div class="star-ratings">
+                                  <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                  </ul>
+                                </div>
+                                <div class="testimonial-caption">
+                                  <h3>Cameron Stence</h3>
+                                  <label>Houston Director</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- testimonials end -->
+                          <!-- testimonials -->
+                          <div class="testimonials">
+                            <div class="testimonial-content">
+                              <blockquote class="testimonial-text text-center">
+                                They make you understand the problems in a
+                                simple language and are very patient friendly.
+                                They set the barometer high through his
+                                empathetic accurate & advanced practice. I
+                                recommend Optrica.
+                              </blockquote>
+                              <div class="testimonial-bottom">
+                                <div class="star-ratings">
+                                  <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                  </ul>
+                                </div>
+                                <div class="testimonial-caption">
+                                  <h3>Cameron Stence</h3>
+                                  <label>Houston Director</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- testimonials end -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-12">
+                <div
+                  class="col-bg-img-three ttm-col-bgimage-yes ttm-bg ttm-right-span spacing-12"
+                >
+                  <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                  <div class="layer-content"></div>
+                </div>
+                <img
+                  src="{% static 'assets/images/bg-image/col-bgimage-3.png'%}"
+                  class="ttm-equal-height-image"
+                  alt="bg-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="ttm-row top_zero_padding-section client-section clearfix"
+        >
+          <div class="container-fluid">
+            <!-- slick_slider -->
+            <div
+              class="slick_slider row"
+              data-slick='{"slidesToShow": 6, "slidesToScroll": 1, "arrows":false, "autoplay":false, "infinite":true, "responsive": [{"breakpoint":1200,"settings":{"slidesToShow": 5}}, {"breakpoint":1024,"settings":{"slidesToShow": 4}}, {"breakpoint":777,"settings":{"slidesToShow": 3}}, {"breakpoint":575,"settings":{"slidesToShow": 2}}]}'
+            >
+              <div class="col-lg-12">
+                <div class="client-box">
+                  <div
+                    class="ttm-client-logo-tooltip ttm-vertical_sep"
+                    data-tooltip="client-01"
+                  >
+                    <div class="client-thumbnail client-thumbnail-grayscale">
+                      <img
+                        class="img-fluid"
+                        width="109"
+                        height="80"
+                        src="{% static 'assets/images/client/skin-client-01.png'%}"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="client-box">
+                  <div
+                    class="ttm-client-logo-tooltip ttm-vertical_sep"
+                    data-tooltip="client-01"
+                  >
+                    <div class="client-thumbnail client-thumbnail-grayscale">
+                      <img
+                        class="img-fluid"
+                        width="148"
+                        height="74"
+                        src="{% static 'assets/images/client/skin-client-02.png'%}"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="client-box">
+                  <div
+                    class="ttm-client-logo-tooltip ttm-vertical_sep"
+                    data-tooltip="client-01"
+                  >
+                    <div class="client-thumbnail client-thumbnail-grayscale">
+                      <img
+                        class="img-fluid"
+                        width="97"
+                        height="76"
+                        src="{% static 'assets/images/client/skin-client-03.png'%}"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="client-box">
+                  <div
+                    class="ttm-client-logo-tooltip ttm-vertical_sep"
+                    data-tooltip="client-01"
+                  >
+                    <div class="client-thumbnail client-thumbnail-grayscale">
+                      <img
+                        class="img-fluid"
+                        width="88"
+                        height="80"
+                        src="{% static 'assets/images/client/skin-client-04.png'%}"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="client-box">
+                  <div
+                    class="ttm-client-logo-tooltip ttm-vertical_sep"
+                    data-tooltip="client-01"
+                  >
+                    <div class="client-thumbnail client-thumbnail-grayscale">
+                      <img
+                        class="img-fluid"
+                        width="109"
+                        height="80"
+                        src="{% static 'assets/images/client/skin-client-05.png'%}"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="client-box">
+                  <div
+                    class="ttm-client-logo-tooltip ttm-vertical_sep"
+                    data-tooltip="client-01"
+                  >
+                    <div class="client-thumbnail client-thumbnail-grayscale">
+                      <img
+                        class="img-fluid"
+                        width="109"
+                        height="80"
+                        src="{% static 'assets/images/client/skin-client-01.png'%}"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="client-box">
+                  <div
+                    class="ttm-client-logo-tooltip ttm-vertical_sep"
+                    data-tooltip="client-01"
+                  >
+                    <div class="client-thumbnail client-thumbnail-grayscale">
+                      <img
+                        class="img-fluid"
+                        width="148"
+                        height="84"
+                        src="{% static 'assets/images/client/skin-client-06.png'%}"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ttm-client end -->
+          </div>
+          <div class="ttm-horizontal_sep sep_width2 width-100"></div>
+        </section>
+
+        <section class="ttm-row twentytwenty-section clearfix">
+          <div class="container">
+            <!--row -->
+            <div class="row">
+              <div class="col-lg-8">
+                <!-- section title -->
+                <div class="section-title text-left">
+                  <div class="title-header">
+                    <h3>OUR VISION</h3>
+                    <h2 class="title">Care Your Vision For Better Life</h2>
+                  </div>
+                </div>
+                <!-- section title end -->
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <div
+                      class="featured-imagebox featured-imagebox-post style4"
+                    >
+                      <div class="featured-thumbnail">
+                        <img
+                          class="img-fluid auto_size"
+                          src="{% static 'assets/images/single-img-06.png'%}"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div
+                      class="featured-imagebox featured-imagebox-post style4"
+                    >
+                      <div class="featured-content">
+                        <div class="post-meta res-575-margin_top15">
+                          <span class="ttm-meta-user date-link">
+                            <i class="flaticon-user-interface"></i>By
+                            Admin</span
+                          >
+                          <span class="ttm-meta-line tags-links"
+                            ><i class="flaticon-comment-white-oval-bubble"></i
+                            >02 Comments</span
+                          >
+                        </div>
+                        <div class="featured-title">
+                          <h3 class="margin_bottom20">
+                            <a href="retina-disease.html"
+                              >Don’t Settle For The Anything That is Lower
+                              Standard</a
+                            >
+                          </h3>
+                        </div>
+                        <div class="featured-desc">
+                          <p>
+                            Maximizing the visual potential of each of <br />the
+                            patients through quality treatment
+                          </p>
+                        </div>
+                        <a
+                          class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor ttm-btn-right ttm-icon-btn-right margin_top10"
+                          href="contact.html"
+                          >Know More<i class="fontello icon-plus"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <!-- ttm_single_image-wrapper -->
+                <div
+                  class="ttm_single_image-wrapper ttm-reset-content-center-991"
+                >
+                  <div class="twentytwenty-container">
+                    <img src="{% static 'assets/images/after-img-one.jpg'%}" alt="after" />
+                    <img src="{% static 'assets/images/before-img-one.jpg'%}" alt="before" />
+                  </div>
+                </div>
+                <!-- ttm_single_image-wrapper end -->
+              </div>
+            </div>
+          </div>
+        </section>
 {% endblock %}

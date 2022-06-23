@@ -3,29 +3,236 @@
 {% block page %}
 
 
-        <!-- Start Blog Details Area -->
-        <div class="blog-details-area pt-100 pb-100">
-            <div class="container">
-                <div class="blog-details-desc">
-                    <div class="article-content">
-                        <div class="article-image">
-                            <img src="{{news.image.url}}" alt="image">
-                            <div class="date">{{ news.date}}</div>
+        <!-- page-title -->
+        <div class="ttm-page-title-row">
+            <div class="ttm-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">Blog Single View</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <i class="fa fa-home mr-2"></i><a title="Homepage" href="index.html">Home</a>
+                                </span>
+                                <span class="ttm-bread-sep">&nbsp; :&nbsp;: &nbsp;</span>
+                                <span>Blog Single View</span>
+                            </div>
                         </div>
-                        <h3>{{ news.title}}</h3>
-                        {% for t in texts %}
-                        {% if t.news.id == news.id%}
-                        <p>{{ t.text}}</p>
-                        {% endif%}
-                        {% endfor %}
-
                     </div>
-
                 </div>
             </div>
         </div>
-        <!-- End Blog Details Area -->
-<!-- End Overview Area -->
-        <!-- Start Footer Area -->
+        <!-- page-title end -->
+
+        <!--site-main start-->
+        <div class="site-main">
+
+            <div class="ttm-row sidebar ttm-sidebar-right ttm-bgcolor-white clearfix">
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-9 content-area">
+                            <!-- post -->
+                            <article class="post ttm-blog-single clearfix">
+                                <!-- post-featured-wrapper -->
+                                <div class="ttm-post-featured-wrapper ttm-featured-wrapper">
+                                    <div class="ttm-post-featured">
+                                        <img class="img-fluid" src="images\blog\blog-01-1200x800.jpg" alt="">
+                                    </div>
+                                </div><!-- post-featured-wrapper end -->
+                                <!-- ttm-blog-classic-content -->
+                                <div class="ttm-blog-single-content">
+                                    <div class="ttm-post-entry-header">
+                                        <div class="post-meta">
+                                            <span class="ttm-meta-line entry-date"><i class="fa fa-calendar"></i><time class="entry-date published" datetime="2020-11-11T04:34:34+00:00">November 11, 2020</time></span>
+                                            <span class="ttm-meta-line byline"><i class="fa fa-user"></i>John Doe</span>
+                                        </div>
+                                    </div>
+                                    <div class="entry-content">
+                                        <div class="ttm-box-desc-text">
+                                            <p>Both long- and short-term exposure to UV radiation can harm the eyes, affect vision to compromise overall eye health. or ut labore areas disease eyecare dolore aliqua.Ut enim ad et minim veniam, and quis nostrud exercitation produr enim <span id="more-1899"></span> ad minim venia <a class="ttm-textcolor-skincolor" href="#">trudco laboris nisi ut </a>aliq. conducted right in our clinic.</p>
+                                            <h4 class="fs-22">Individual Approach</h4>
+                                            <p>Nor again is there anyone&nbsp;<b>who loves set eyes care</b>&nbsp;set injury magna consectr elit, do eiusmod tempor loream incididunt or ut labore areas disease eyecare dolore aliqua.</p>
+                                            <p>Ut <u><a class="ttm-textcolor-skincolor" href="#">enimad etminim </a></u> veniam, and quis nostrud exercitation produr enim ad minim venia trudco laboris nisi ut aliq.conducted right in our clinic disease eyecare dolore aliqua. Ut enim ad et minim veniam.</p>
+                                            <div class="margin_top40 margin_bottom40">
+                                                <div class="row">
+                                                    <div class="col-md-6 ttm-box-col-wrapper res-767-padding_bottom30">
+                                                        <img class="img-fluid w-100 h-100" src="images\blog\blog-detail.jpg" alt="blog-image">
+                                                    </div>
+                                                    <div class="col-md-6 ttm-box-col-wrapper">
+                                                        <blockquote class="ttm-bgcolor-grey"><div class="qoute-text">Business it will frequently occur that greater pleasures have repudiated choose enjoy pleasure that has no annoying.</div><cite class="ttm-textcolor-skincolor">- Alex Jhon Martin</cite></blockquote>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fs-22">Making Every Step Easy</h4>
+                                            <p>Holds in these matters too this principle off selection held rejects pleasures too secure other greater pleasures or else he endures again is there anyone <u><a class="ttm-textcolor-skincolor" href="#">who loves or pursues or desires</a></u> to obtain pain of itself, because it is pain veniam, and quis nostrud exercitation produr enim ad minim venia trudco.</p>
+                                            <div class="margin_top30 margin_bottom45">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
+                                                            <li><i class="fa fa-long-arrow-right"></i><div class="ttm-list-li-content">They Carry Insurance loream Coverage</div></li>
+                                                            <li><i class="fa fa-long-arrow-right"></i><div class="ttm-list-li-content">With righteous indignation and dislike men</div></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor res-575-margin_top10">
+                                                            <li><i class="fa fa-long-arrow-right"></i><div class="ttm-list-li-content">They Carry Insurance loream Coverage</div></li>
+                                                            <li><i class="fa fa-long-arrow-right"></i><div class="ttm-list-li-content">With righteous indignation and dislike men</div></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="social-media-block">
+                                                <div class="d-sm-flex justify-content-between">
+                                                    <div class="ttm-social-share-wrapper margin_top15">
+                                                        <h6 class="font-weight-50 margin_bottom0 margin_right10">Share : </h6>
+                                                        <ul class="social-icons circle">
+                                                            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                                                            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                                                            <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
+                                                            <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="margin_top15">
+                                                        <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-icon-btn-right ttm-btn-color-dark margin_right10" href="#">Eye</a>
+                                                        <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-icon-btn-right ttm-btn-color-dark" href="#">Glasses</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ttm-blog-classic-box-comment clearfix">
+                                                <div id="comments" class="comments-area">
+                                                    <div class="comment-respond">
+                                                        <h3 class="comment-reply-title">Leave a Reply</h3>
+                                                        <form action="#" method="post" id="commentform" class="comment-form">
+                                                            <p class="comment-notes">Your email address will not be published. </p>
+                                                            <p class="comment-form-comment">
+                                                                <textarea id="comment" placeholder="Comment" name="comment" cols="45" rows="4" aria-required="true"></textarea>
+                                                            </p>
+                                                            <p class="comment-form-author">
+                                                                <input id="author" placeholder="Name (required)" name="author" type="text" value="" size="30" aria-required="true">
+                                                            </p>
+                                                            <p class="comment-form-email">
+                                                                <input id="email" placeholder="Email (required)" name="email" type="text" value="" size="30" aria-required="true">
+                                                            </p>
+                                                            <p class="comment-form-url">
+                                                                <input id="url" placeholder="Website" name="url" type="text" value="" size="30">
+                                                            </p>
+                                                            <p class="comment-cookies">
+                                                                <input id="comment-cookies-consent" name="comment-cookies-consent" type="checkbox" value="yes">
+                                                                <label for="comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label>
+                                                            </p>
+                                                            <p class="form-submit margin_top30 margin_bottom0">
+                                                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Post Comment<i class="fontello icon-plus"></i></button>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- ttm-blog-classic-content end -->
+                            </article><!-- post end -->
+                        </div>
+                        <div class="col-lg-3 widget-area sidebar-right">
+                            <aside class="widget widget-search with-title">
+                                <form role="search" method="get" class="search-form" action="#">
+                                    <label>
+                                    <span class="screen-reader-text">Search for:</span>
+                                    <input type="search" class="input-text" placeholder="Search …" value="" name="s">
+                                    </label>
+                                    <button class="btn ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor" type="submit" value="Search"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                                </form>
+                            </aside>
+                            <aside class="widget widget-categories with-title">
+                                <h3 class="widget-title">Categories</h3>
+                                <ul>
+                                    <li><a href="#">Eye Care</a></li>
+                                    <li><a href="#">Glasses</a></li>
+                                    <li><a href="#">Lasik</a></li>
+                                    <li><a href="#">Lenses</a></li>
+                                    <li><a href="#">Surgeries</a></li>
+                                    <li><a href="#">Vision</a></li>
+                                </ul>
+                            </aside>
+                            <aside class="widget widget-recent-post with-title">
+                                <h3 class="widget-title">Recent Posts</h3>
+                                <ul class="widget-post ttm-recent-post-list">
+                                    <li>
+                                        <a href="blog-single.html"><img src="images\blog\blog-01-150x150.jpg" alt="post-img"></a>
+                                        <div class="post-detail">
+                                            <span class="post-date"><i class="fa fa-calendar"></i>November 11, 2020</span>
+                                            <a href="blog-single.html">Protect Your Eyes From Dust  And Disease</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="blog-single.html"><img src="images\blog\blog-02-150x150.jpg" alt="post-img"></a>
+                                        <div class="post-detail">
+                                            <span class="post-date"><i class="fa fa-calendar"></i>November 10, 2020</span>
+                                            <a href="blog-single.html">Signs or risk factors for eye disease</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="blog-single.html"><img src="images\blog\blog-03-150x150.jpg" alt="post-img"></a>
+                                        <div class="post-detail">
+                                            <span class="post-date"><i class="fa fa-calendar"></i>November 11, 2020</span>
+                                            <a href="blog-single.html">What Can You Do To Reduce Dry Eyes</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="widget tagcloud-widget with-title">
+                                <h3 class="widget-title">Tags</h3>
+                                <div class="tagcloud">
+                                    <a href="#" class="tag-cloud-link">Care</a>
+                                    <a href="#" class="tag-cloud-link">Doctor</a>
+                                    <a href="#" class="tag-cloud-link">Eye</a>
+                                    <a href="#" class="tag-cloud-link">Eye Doctor</a>
+                                    <a href="#" class="tag-cloud-link">Glasses</a>
+                                    <a href="#" class="tag-cloud-link">Health</a>
+                                    <a href="#" class="tag-cloud-link">Lenses</a>
+                                    <a href="#" class="tag-cloud-link">Optician</a>
+                                    <a href="#" class="tag-cloud-link">Surgeries</a>
+                                </div>
+                            </aside>
+                            <aside class="widget flicker-widget with-title">
+                                <h3 class="widget-title">Gallery</h3>
+                                <div class="images-gellary">
+                                    <ul>
+                                        <li><a class="ttm_prettyphoto" href="images\blog\blog-01-1200x800.jpg" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="images\blog\blog-01-150x150.jpg" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="images\blog\blog-02-1200x800.jpg" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="images\blog\blog-02-150x150.jpg" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="images\blog\blog-03-1200x800.jpg" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="images\blog\blog-03-150x150.jpg" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="images\blog\blog-04-1200x800.jpg" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="images\blog\blog-04-150x150.jpg" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="images\portfolio\project-06-1200x800.jpg" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="images\blog\blog-05-150x150.jpg" alt="gellary_img"></a>
+                                        </li>
+                                        <li><a class="ttm_prettyphoto" href="images\portfolio\project-04-1200x800.jpg" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
+                                            <img class="img-fluid" src="images\blog\blog-06-150x150.jpg" alt="gellary_img"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <aside class="widget widget-banner p-0 border-0">
+                                <img class="img-fluid auto_size" src="images\sidebar-banner.jpg" alt="sidebar-banner">
+                            </aside>
+                        </div>
+                    </div><!-- row end -->
+                </div>
+            </div>
+
+
+        </div><!--site-main end-->
+
+
+
 
 {% endblock%}
