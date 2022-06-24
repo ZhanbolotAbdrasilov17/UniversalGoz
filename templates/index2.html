@@ -150,80 +150,53 @@
                             <a href="#" class="mega-menu-link">Pages</a>
                             <ul class="mega-submenu">
                               <li><a href="{% url 'about' %}">About Us 1</a></li>
-                              <li><a href="about-us-2.html">About Us 2</a></li>
-                              <li><a href="services-1.html">Services 1</a></li>
-                              <li><a href="services-2.html">Services 2</a></li>
-                              <li><a href="our-team.html">Our Team</a></li>
+                              <li><a href="{% url 'about_2' %}">About Us 2</a></li>
+                              <li><a href="{% url 'service' %}">Services 1</a></li>
+                              <li><a href="{% url 'doctor' %}">Our Team</a></li>
                               <li>
                                 <a href="team-details.html">Team Details</a>
                               </li>
-                              <li><a href="faqs.html">FAQs</a></li>
+                              <li><a href="{% url 'faq'%}">FAQs</a></li>
                               <li><a href="error.html">Error Page</a></li>
                             </ul>
                           </li>
                           <li class="mega-menu-item">
                             <a href="#" class="mega-menu-link">Services</a>
                             <ul class="mega-submenu">
-                              <li><a href="glasses.html">Contact Lenses</a></li>
+                              <li><a href="{% url 'contact_lenses'%}">Contact Lenses</a></li>
                               <li>
-                                <a href="comprehensive.html">Comprehensive</a>
+                                <a href="{% url 'comprehensive'%}">Comprehensive</a>
                               </li>
                               <li>
-                                <a href="keratoconus.html">Keratoconus</a>
+                                <a href="{% url 'keratoconus'%}">Keratoconus</a>
                               </li>
                               <li>
-                                <a href="phakic-lens.html">Phakic Lens</a>
+                                <a href="{% url 'phakic_lens'%}">Phakic Lens</a>
                               </li>
                               <li>
-                                <a href="retina-disease.html">Retina care</a>
+                                <a href="{% url 'retina_disease'%}">Retina care</a>
                               </li>
-                              <li><a href="glaucoma.html">Glaucoma</a></li>
+                              <li><a href="{% url 'glaucoma'%}">Glaucoma</a></li>
                             </ul>
                           </li>
                           <li class="mega-menu-item">
                             <a href="#" class="mega-menu-link">Research</a>
                             <ul class="mega-submenu">
                               <li>
-                                <a href="project-style-01.html"
-                                  >Research Style One</a
-                                >
-                              </li>
-                              <li>
-                                <a href="project-style-02.html"
+                                <a href="{% url 'research'%}"
                                   >Research Style Two</a
                                 >
                               </li>
                               <li class="mega-menu-item">
-                                <a href="#" class="mega-menu-link"
-                                  >Research Single</a
-                                >
-                                <ul class="mega-submenu">
-                                  <li>
-                                    <a href="transitions-lenses.html"
-                                      >Single Style 1</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="visual-impairment.html"
-                                      >Single Style 2</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="cochrane-eyesvision.html"
-                                      >Single Style 3</a
-                                    >
-                                  </li>
-                                </ul>
+                                <a href="{% url 'research_single' %}" class="mega-menu-link"
+                                  >Research Single</a>
                               </li>
                             </ul>
                           </li>
                           <li class="mega-menu-item">
                             <a href="#" class="mega-menu-link">Blog</a>
                             <ul class="mega-submenu">
-                              <li><a href="blog.html">Blog Classic</a></li>
-                              <li>
-                                <a href="blog-grid.html">Blog Grid View</a>
-                              </li>
+                              <li><a href="{% url 'news'%}">Blog Classic</a></li>
                               <li>
                                 <a href="blog-single.html">Blog Single View</a>
                               </li>
