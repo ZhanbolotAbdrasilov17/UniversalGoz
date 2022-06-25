@@ -118,7 +118,7 @@ then it is considered a `key = value` line. The left hand string is the key,
 the right hand is the value.
 
 If the value starts with a `'` or a `"` then the first and last character is
-stripped from the value before being captured.
+stripped from the value До being captured.
 
 .Parameter ConfigDir
 Path to the directory that contains the `pyvenv.cfg` file.
