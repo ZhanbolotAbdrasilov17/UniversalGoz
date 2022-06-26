@@ -143,15 +143,12 @@ jQuery(function ($) {
     var $firstAnimatingElements = $bannerFirstSlide.find("[data-animation]");
     slideanimate($firstAnimatingElements);
   });
-  $bannerSlider.on(
-    "beforeChange",
-    function (e, slick, currentSlide, nextSlide) {
-      var $animatingElements = $(
-        'div.slick-slide[data-slick-index="' + nextSlide + '"]'
-      ).find("[data-animation]");
-      slideanimate($animatingElements);
-    }
-  );
+  $bannerSlider.on("ДоChange", function (e, slick, currentSlide, nextSlide) {
+    var $animatingElements = $(
+      'div.slick-slide[data-slick-index="' + nextSlide + '"]'
+    ).find("[data-animation]");
+    slideanimate($animatingElements);
+  });
   $bannerSlider.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -409,17 +406,17 @@ jQuery(function ($) {
     jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({ hook: "data-gal" });
   });
 
-  //   $(document).ready(function () {
-  //     var e =
-  //       '<div class="ttm_floting_customsett">' +
-  //       '<a href="https://support.themetechmount.com/" class="tmtheme_fbar_icons"><i class="fa fa-headphones"></i><span>Support</span></a>' +
-  //       '<a href="https://themetechmount.com/" class="tmtheme_fbar_icons"><i class="themifyicon themifyicon ti-pencil"></i><span>Customization</span></a>' +
-  //       '<a href="https://1.envato.market/dWaEq" class="tmtheme_fbar_icons"><i class="themifyicon ti-shopping-cart"></i><span class="buy_link">Buy<span>$29</span></span></a>' +
-  //       '<div class="clearfix"></div>' +
-  //       "</div>";
+  $(document).ready(function () {
+    var e =
+      '<div class="ttm_floting_customsett">' +
+      '<a href="https://support.themetechmount.com/" class="tmtheme_fbar_icons"><i class="fa fa-headphones"></i><span>Support</span></a>' +
+      '<a href="https://themetechmount.com/" class="tmtheme_fbar_icons"><i class="themifyicon themifyicon ti-pencil"></i><span>Customization</span></a>' +
+      '<a href="https://1.envato.market/dWaEq" class="tmtheme_fbar_icons"><i class="themifyicon ti-shopping-cart"></i><span class="buy_link">Buy<span>$29</span></span></a>' +
+      '<div class="clearfix"></div>' +
+      "</div>";
 
-  //     $("body").append(e);
-  //   });
+    $("body").append(e);
+  });
 
   /*------------------------------------------------------------------------------*/
   /* share-icon_btn

@@ -29,15 +29,3 @@ class Fulldescription(models.Model):
     text = models.TextField(verbose_name="Текст")
 
 
-class Headlines(models.Model):
-    title = models.CharField(max_length=200, verbose_name="Заглавки")
-    image = models.ImageField(null=True, blank=True, upload_to="headlines")
-
-    def __str__(self):
-        return self.title
-
-class DescriptionHeadlines(models.Model):
-    headlines = models.ForeignKey(Headlines, on_delete=models.CASCADE, related_name="headlines_description")
-    text = models.TextField(verbose_name="Текст")
-
-    
