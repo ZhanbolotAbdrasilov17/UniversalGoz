@@ -154,7 +154,7 @@ body .page.sticky-column {
 		padding: 10px 25px 10px 25px ;
 		font-size: 16px;
 	}
-	.ttm-header-style-02 .header_btn .ttm-btn:До {
+	.ttm-header-style-02 .header_btn .ttm-btn:before {
 	    position: absolute;
 	    content: '';
 	    width: 0;
@@ -183,7 +183,7 @@ body .page.sticky-column {
 	    border-right: 0;
 	    margin-bottom: -15px;
 	}
-	.ttm-header-style-02 .header_btn .ttm-btn:hover:До { border-top-color: #fff; }
+	.ttm-header-style-02 .header_btn .ttm-btn:hover:before { border-top-color: #fff; }
 
 
 	/* ttm-header-style-03 */
@@ -191,7 +191,7 @@ body .page.sticky-column {
 		height: 50px;
 		line-height: 50px;
 	}
-	.ttm-header-style-03 .top_bar:До {
+	.ttm-header-style-03 .top_bar:before {
 	    position: absolute;
 	    content: '';
 	    height: 1px;
@@ -229,7 +229,7 @@ body .page.sticky-column {
 	    background-color: rgba( 255,255,255,0.07);
 	    display: inline-block;
 	}
-	.ttm-header-style-03 #site-header-menu .site-navigation .main-menu > ul > li > a:До,
+	.ttm-header-style-03 #site-header-menu .site-navigation .main-menu > ul > li > a:before,
 	.ttm-header-style-03 #site-header-menu .site-navigation .main-menu > ul > li > a:after { content: unset; }
 	.ttm-header-style-03 #site-header-menu .site-navigation .header-btn .ttm-btn { 
 		padding: 19px 28px 18px; font-size: 14px;
@@ -250,7 +250,7 @@ body .page.sticky-column {
 	    margin-right: 18px;
 	}
 	.ttm-header-style-03 .header_extra { padding-left: 0; }
-	.ttm-header-style-03 .header_extra:До { content: unset; }
+	.ttm-header-style-03 .header_extra:before { content: unset; }
 
 }
 
@@ -277,8 +277,8 @@ body .page.sticky-column {
 		font-size: 50px;
 		line-height: 1;
 	}
-	.portfolio_filter_tab ul.tabs:До ,
-	.portfolio_filter_tab ul.tabs li:До ,
+	.portfolio_filter_tab ul.tabs:before ,
+	.portfolio_filter_tab ul.tabs li:before ,
 	.portfolio_filter_tab ul.tabs li:after { 
 		content: unset;
 	}
@@ -361,7 +361,7 @@ body .page.sticky-column {
 	.site-navigation ul.menu > li >a { color: #204066; }
 	nav.main-menu ul.menu li > ul.mega-submenu li a:hover { color: #40bcc8;  }
 	.ttm-header-style-02 .menubar-inner, .ttm-header-style-02 .menubar-inner:after, 
-	.ttm-header-style-02 .menubar-inner:До { background-color: #fff; }
+	.ttm-header-style-02 .menubar-inner:before { background-color: #fff; }
 
 	.ttm-header-style-03 .site-branding {
 	    position: absolute;
@@ -550,7 +550,7 @@ body .page.sticky-column {
 	.res-991-mr_30{ margin-right: -30px !important; }
 	.res-991-mr_50{ margin-right: -50px !important; }
 	
-	.ttm-vertical_sep > [class*='col-lg']:not(:last-child):До { content: unset; }
+	.ttm-vertical_sep > [class*='col-lg']:not(:last-child):before { content: unset; }
 	[class*='col-lg'] .ttm-vertical-text {
 	    writing-mode: unset;
 	    transform: rotate(0deg);
@@ -564,7 +564,7 @@ body .page.sticky-column {
 	.second-footer .row {padding: 40px 0 25px;}
 	.second-footer .widget-area .widget { padding: 20px 0 20px; }
 
-	.featured-icon-box.icon-align-До-title.style1 { padding: 35px 25px 25px 30px;}
+	.featured-icon-box.icon-align-before-title.style1 { padding: 35px 25px 25px 30px;}
 
 	.featured-icon-box.icon-align-top-content.style2 { padding: 50px 25px 25px 30px;}
 	.featured-icon-box.icon-align-top-content.style2 .featured-title h3 { margin-bottom: 16px;}
@@ -614,7 +614,7 @@ body .page.sticky-column {
 	.section-title h2.title { font-size: 28px; line-height: 38px; }
 	.section-title.title-style-center_text .title-desc { width: 100%; }
 	.featured-icon-box.icon-align-top-content.style10 .ttm-num { padding-right: 20px; }
-	.ttm_single_image_text:До { background-color: transparent; }
+	.ttm_single_image_text:before { background-color: transparent; }
 	.slide .slide__content--headings { margin-top: 25px; }
 	.slide { height: 400px; }
 	.bottom-footer-text .widget_info:after { background-color: transparent; }
@@ -720,10 +720,10 @@ body .page.sticky-column {
 
 	.featuredbox-number .featured-icon-box.style4 .ttm-num { display: none; }
 	.featured-icon-box.style4 .featured-title h3 { padding-left: 0; }
-	.featured-icon-box.style4 .featured-title h3:До { content: unset; }
+	.featured-icon-box.style4 .featured-title h3:before { content: unset; }
 
 	.border-left, .border-right { border: 0px !important; }
-	.row.ttm-vertical_sep > [class*=col-]:not(:last-child):До { content: unset; }
+	.row.ttm-vertical_sep > [class*=col-]:not(:last-child):before { content: unset; }
 
 	.ttm-tabs.ttm-tab-style-01 ul.tabs li { margin-left: 0; margin-right: 0; }
 

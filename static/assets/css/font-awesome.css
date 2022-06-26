@@ -5,13 +5,9 @@
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  font-family: "FontAwesome";
-  src: url("../fonts/fontawesome-webfont.eot");
-  src: url("../fonts/fontawesome-webfont-1.eot") format("embedded-opentype"),
-    url("../fonts/fontawesome-webfont.woff2") format("woff2"),
-    url("../fonts/fontawesome-webfont.woff") format("woff"),
-    url("../fonts/fontawesome-webfont.ttf") format("truetype"),
-    url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont-1.eot') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -64,9 +60,9 @@
   left: -1.85714286em;
 }
 .fa-border {
-  padding: 0.2em 0.25em 0.15em;
+  padding: .2em .25em .15em;
   border: solid 0.08em #eeeeee;
-  border-radius: 0.1em;
+  border-radius: .1em;
 }
 .fa-pull-left {
   float: left;
@@ -75,10 +71,10 @@
   float: right;
 }
 .fa.fa-pull-left {
-  margin-right: 0.3em;
+  margin-right: .3em;
 }
 .fa.fa-pull-right {
-  margin-left: 0.3em;
+  margin-left: .3em;
 }
 /* Deprecated as of 4.4.0 */
 .pull-right {
@@ -88,10 +84,10 @@
   float: left;
 }
 .fa.pull-left {
-  margin-right: 0.3em;
+  margin-right: .3em;
 }
 .fa.pull-right {
-  margin-left: 0.3em;
+  margin-left: .3em;
 }
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
@@ -184,2140 +180,2140 @@
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-.fa-glass:до {
+.fa-glass:before {
   content: "\f000";
 }
-.fa-music:до {
+.fa-music:before {
   content: "\f001";
 }
-.fa-search:до {
+.fa-search:before {
   content: "\f002";
 }
-.fa-envelope-o:до {
+.fa-envelope-o:before {
   content: "\f003";
 }
-.fa-heart:до {
+.fa-heart:before {
   content: "\f004";
 }
-.fa-star:до {
+.fa-star:before {
   content: "\f005";
 }
-.fa-star-o:до {
+.fa-star-o:before {
   content: "\f006";
 }
-.fa-user:до {
+.fa-user:before {
   content: "\f007";
 }
-.fa-film:до {
+.fa-film:before {
   content: "\f008";
 }
-.fa-th-large:до {
+.fa-th-large:before {
   content: "\f009";
 }
-.fa-th:до {
+.fa-th:before {
   content: "\f00a";
 }
-.fa-th-list:до {
+.fa-th-list:before {
   content: "\f00b";
 }
-.fa-check:до {
+.fa-check:before {
   content: "\f00c";
 }
-.fa-remove:до,
-.fa-close:до,
-.fa-times:до {
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
   content: "\f00d";
 }
-.fa-search-plus:до {
+.fa-search-plus:before {
   content: "\f00e";
 }
-.fa-search-minus:до {
+.fa-search-minus:before {
   content: "\f010";
 }
-.fa-power-off:до {
+.fa-power-off:before {
   content: "\f011";
 }
-.fa-signal:до {
+.fa-signal:before {
   content: "\f012";
 }
-.fa-gear:до,
-.fa-cog:до {
+.fa-gear:before,
+.fa-cog:before {
   content: "\f013";
 }
-.fa-trash-o:до {
+.fa-trash-o:before {
   content: "\f014";
 }
-.fa-home:до {
+.fa-home:before {
   content: "\f015";
 }
-.fa-file-o:до {
+.fa-file-o:before {
   content: "\f016";
 }
-.fa-clock-o:до {
+.fa-clock-o:before {
   content: "\f017";
 }
-.fa-road:до {
+.fa-road:before {
   content: "\f018";
 }
-.fa-download:до {
+.fa-download:before {
   content: "\f019";
 }
-.fa-arrow-circle-o-down:до {
+.fa-arrow-circle-o-down:before {
   content: "\f01a";
 }
-.fa-arrow-circle-o-up:до {
+.fa-arrow-circle-o-up:before {
   content: "\f01b";
 }
-.fa-inbox:до {
+.fa-inbox:before {
   content: "\f01c";
 }
-.fa-play-circle-o:до {
+.fa-play-circle-o:before {
   content: "\f01d";
 }
-.fa-rotate-right:до,
-.fa-repeat:до {
+.fa-rotate-right:before,
+.fa-repeat:before {
   content: "\f01e";
 }
-.fa-refresh:до {
+.fa-refresh:before {
   content: "\f021";
 }
-.fa-list-alt:до {
+.fa-list-alt:before {
   content: "\f022";
 }
-.fa-lock:до {
+.fa-lock:before {
   content: "\f023";
 }
-.fa-flag:до {
+.fa-flag:before {
   content: "\f024";
 }
-.fa-headphones:до {
+.fa-headphones:before {
   content: "\f025";
 }
-.fa-volume-off:до {
+.fa-volume-off:before {
   content: "\f026";
 }
-.fa-volume-down:до {
+.fa-volume-down:before {
   content: "\f027";
 }
-.fa-volume-up:до {
+.fa-volume-up:before {
   content: "\f028";
 }
-.fa-qrcode:до {
+.fa-qrcode:before {
   content: "\f029";
 }
-.fa-barcode:до {
+.fa-barcode:before {
   content: "\f02a";
 }
-.fa-tag:до {
+.fa-tag:before {
   content: "\f02b";
 }
-.fa-tags:до {
+.fa-tags:before {
   content: "\f02c";
 }
-.fa-book:до {
+.fa-book:before {
   content: "\f02d";
 }
-.fa-bookmark:до {
+.fa-bookmark:before {
   content: "\f02e";
 }
-.fa-print:до {
+.fa-print:before {
   content: "\f02f";
 }
-.fa-camera:до {
+.fa-camera:before {
   content: "\f030";
 }
-.fa-font:до {
+.fa-font:before {
   content: "\f031";
 }
-.fa-bold:до {
+.fa-bold:before {
   content: "\f032";
 }
-.fa-italic:до {
+.fa-italic:before {
   content: "\f033";
 }
-.fa-text-height:до {
+.fa-text-height:before {
   content: "\f034";
 }
-.fa-text-width:до {
+.fa-text-width:before {
   content: "\f035";
 }
-.fa-align-left:до {
+.fa-align-left:before {
   content: "\f036";
 }
-.fa-align-center:до {
+.fa-align-center:before {
   content: "\f037";
 }
-.fa-align-right:до {
+.fa-align-right:before {
   content: "\f038";
 }
-.fa-align-justify:до {
+.fa-align-justify:before {
   content: "\f039";
 }
-.fa-list:до {
+.fa-list:before {
   content: "\f03a";
 }
-.fa-dedent:до,
-.fa-outdent:до {
+.fa-dedent:before,
+.fa-outdent:before {
   content: "\f03b";
 }
-.fa-indent:до {
+.fa-indent:before {
   content: "\f03c";
 }
-.fa-video-camera:до {
+.fa-video-camera:before {
   content: "\f03d";
 }
-.fa-photo:до,
-.fa-image:до,
-.fa-picture-o:до {
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
   content: "\f03e";
 }
-.fa-pencil:до {
+.fa-pencil:before {
   content: "\f040";
 }
-.fa-map-marker:до {
+.fa-map-marker:before {
   content: "\f041";
 }
-.fa-adjust:до {
+.fa-adjust:before {
   content: "\f042";
 }
-.fa-tint:до {
+.fa-tint:before {
   content: "\f043";
 }
-.fa-edit:до,
-.fa-pencil-square-o:до {
+.fa-edit:before,
+.fa-pencil-square-o:before {
   content: "\f044";
 }
-.fa-share-square-o:до {
+.fa-share-square-o:before {
   content: "\f045";
 }
-.fa-check-square-o:до {
+.fa-check-square-o:before {
   content: "\f046";
 }
-.fa-arrows:до {
+.fa-arrows:before {
   content: "\f047";
 }
-.fa-step-backward:до {
+.fa-step-backward:before {
   content: "\f048";
 }
-.fa-fast-backward:до {
+.fa-fast-backward:before {
   content: "\f049";
 }
-.fa-backward:до {
+.fa-backward:before {
   content: "\f04a";
 }
-.fa-play:до {
+.fa-play:before {
   content: "\f04b";
 }
-.fa-pause:до {
+.fa-pause:before {
   content: "\f04c";
 }
-.fa-stop:до {
+.fa-stop:before {
   content: "\f04d";
 }
-.fa-forward:до {
+.fa-forward:before {
   content: "\f04e";
 }
-.fa-fast-forward:до {
+.fa-fast-forward:before {
   content: "\f050";
 }
-.fa-step-forward:до {
+.fa-step-forward:before {
   content: "\f051";
 }
-.fa-eject:до {
+.fa-eject:before {
   content: "\f052";
 }
-.fa-chevron-left:до {
+.fa-chevron-left:before {
   content: "\f053";
 }
-.fa-chevron-right:до {
+.fa-chevron-right:before {
   content: "\f054";
 }
-.fa-plus-circle:до {
+.fa-plus-circle:before {
   content: "\f055";
 }
-.fa-minus-circle:до {
+.fa-minus-circle:before {
   content: "\f056";
 }
-.fa-times-circle:до {
+.fa-times-circle:before {
   content: "\f057";
 }
-.fa-check-circle:до {
+.fa-check-circle:before {
   content: "\f058";
 }
-.fa-question-circle:до {
+.fa-question-circle:before {
   content: "\f059";
 }
-.fa-info-circle:до {
+.fa-info-circle:before {
   content: "\f05a";
 }
-.fa-crosshairs:до {
+.fa-crosshairs:before {
   content: "\f05b";
 }
-.fa-times-circle-o:до {
+.fa-times-circle-o:before {
   content: "\f05c";
 }
-.fa-check-circle-o:до {
+.fa-check-circle-o:before {
   content: "\f05d";
 }
-.fa-ban:до {
+.fa-ban:before {
   content: "\f05e";
 }
-.fa-arrow-left:до {
+.fa-arrow-left:before {
   content: "\f060";
 }
-.fa-arrow-right:до {
+.fa-arrow-right:before {
   content: "\f061";
 }
-.fa-arrow-up:до {
+.fa-arrow-up:before {
   content: "\f062";
 }
-.fa-arrow-down:до {
+.fa-arrow-down:before {
   content: "\f063";
 }
-.fa-mail-forward:до,
-.fa-share:до {
+.fa-mail-forward:before,
+.fa-share:before {
   content: "\f064";
 }
-.fa-expand:до {
+.fa-expand:before {
   content: "\f065";
 }
-.fa-compress:до {
+.fa-compress:before {
   content: "\f066";
 }
-.fa-plus:до {
+.fa-plus:before {
   content: "\f067";
 }
-.fa-minus:до {
+.fa-minus:before {
   content: "\f068";
 }
-.fa-asterisk:до {
+.fa-asterisk:before {
   content: "\f069";
 }
-.fa-exclamation-circle:до {
+.fa-exclamation-circle:before {
   content: "\f06a";
 }
-.fa-gift:до {
+.fa-gift:before {
   content: "\f06b";
 }
-.fa-leaf:до {
+.fa-leaf:before {
   content: "\f06c";
 }
-.fa-fire:до {
+.fa-fire:before {
   content: "\f06d";
 }
-.fa-eye:до {
+.fa-eye:before {
   content: "\f06e";
 }
-.fa-eye-slash:до {
+.fa-eye-slash:before {
   content: "\f070";
 }
-.fa-warning:до,
-.fa-exclamation-triangle:до {
+.fa-warning:before,
+.fa-exclamation-triangle:before {
   content: "\f071";
 }
-.fa-plane:до {
+.fa-plane:before {
   content: "\f072";
 }
-.fa-calendar:до {
+.fa-calendar:before {
   content: "\f073";
 }
-.fa-random:до {
+.fa-random:before {
   content: "\f074";
 }
-.fa-comment:до {
+.fa-comment:before {
   content: "\f075";
 }
-.fa-magnet:до {
+.fa-magnet:before {
   content: "\f076";
 }
-.fa-chevron-up:до {
+.fa-chevron-up:before {
   content: "\f077";
 }
-.fa-chevron-down:до {
+.fa-chevron-down:before {
   content: "\f078";
 }
-.fa-retweet:до {
+.fa-retweet:before {
   content: "\f079";
 }
-.fa-shopping-cart:до {
+.fa-shopping-cart:before {
   content: "\f07a";
 }
-.fa-folder:до {
+.fa-folder:before {
   content: "\f07b";
 }
-.fa-folder-open:до {
+.fa-folder-open:before {
   content: "\f07c";
 }
-.fa-arrows-v:до {
+.fa-arrows-v:before {
   content: "\f07d";
 }
-.fa-arrows-h:до {
+.fa-arrows-h:before {
   content: "\f07e";
 }
-.fa-bar-chart-o:до,
-.fa-bar-chart:до {
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
   content: "\f080";
 }
-.fa-twitter-square:до {
+.fa-twitter-square:before {
   content: "\f081";
 }
-.fa-facebook-square:до {
+.fa-facebook-square:before {
   content: "\f082";
 }
-.fa-camera-retro:до {
+.fa-camera-retro:before {
   content: "\f083";
 }
-.fa-key:до {
+.fa-key:before {
   content: "\f084";
 }
-.fa-gears:до,
-.fa-cogs:до {
+.fa-gears:before,
+.fa-cogs:before {
   content: "\f085";
 }
-.fa-comments:до {
+.fa-comments:before {
   content: "\f086";
 }
-.fa-thumbs-o-up:до {
+.fa-thumbs-o-up:before {
   content: "\f087";
 }
-.fa-thumbs-o-down:до {
+.fa-thumbs-o-down:before {
   content: "\f088";
 }
-.fa-star-half:до {
+.fa-star-half:before {
   content: "\f089";
 }
-.fa-heart-o:до {
+.fa-heart-o:before {
   content: "\f08a";
 }
-.fa-sign-out:до {
+.fa-sign-out:before {
   content: "\f08b";
 }
-.fa-linkedin-square:до {
+.fa-linkedin-square:before {
   content: "\f08c";
 }
-.fa-thumb-tack:до {
+.fa-thumb-tack:before {
   content: "\f08d";
 }
-.fa-external-link:до {
+.fa-external-link:before {
   content: "\f08e";
 }
-.fa-sign-in:до {
+.fa-sign-in:before {
   content: "\f090";
 }
-.fa-trophy:до {
+.fa-trophy:before {
   content: "\f091";
 }
-.fa-github-square:до {
+.fa-github-square:before {
   content: "\f092";
 }
-.fa-upload:до {
+.fa-upload:before {
   content: "\f093";
 }
-.fa-lemon-o:до {
+.fa-lemon-o:before {
   content: "\f094";
 }
-.fa-phone:до {
+.fa-phone:before {
   content: "\f095";
 }
-.fa-square-o:до {
+.fa-square-o:before {
   content: "\f096";
 }
-.fa-bookmark-o:до {
+.fa-bookmark-o:before {
   content: "\f097";
 }
-.fa-phone-square:до {
+.fa-phone-square:before {
   content: "\f098";
 }
-.fa-twitter:до {
+.fa-twitter:before {
   content: "\f099";
 }
-.fa-facebook-f:до,
-.fa-facebook:до {
+.fa-facebook-f:before,
+.fa-facebook:before {
   content: "\f09a";
 }
-.fa-github:до {
+.fa-github:before {
   content: "\f09b";
 }
-.fa-unlock:до {
+.fa-unlock:before {
   content: "\f09c";
 }
-.fa-credit-card:до {
+.fa-credit-card:before {
   content: "\f09d";
 }
-.fa-feed:до,
-.fa-rss:до {
+.fa-feed:before,
+.fa-rss:before {
   content: "\f09e";
 }
-.fa-hdd-o:до {
+.fa-hdd-o:before {
   content: "\f0a0";
 }
-.fa-bullhorn:до {
+.fa-bullhorn:before {
   content: "\f0a1";
 }
-.fa-bell:до {
+.fa-bell:before {
   content: "\f0f3";
 }
-.fa-certificate:до {
+.fa-certificate:before {
   content: "\f0a3";
 }
-.fa-hand-o-right:до {
+.fa-hand-o-right:before {
   content: "\f0a4";
 }
-.fa-hand-o-left:до {
+.fa-hand-o-left:before {
   content: "\f0a5";
 }
-.fa-hand-o-up:до {
+.fa-hand-o-up:before {
   content: "\f0a6";
 }
-.fa-hand-o-down:до {
+.fa-hand-o-down:before {
   content: "\f0a7";
 }
-.fa-arrow-circle-left:до {
+.fa-arrow-circle-left:before {
   content: "\f0a8";
 }
-.fa-arrow-circle-right:до {
+.fa-arrow-circle-right:before {
   content: "\f0a9";
 }
-.fa-arrow-circle-up:до {
+.fa-arrow-circle-up:before {
   content: "\f0aa";
 }
-.fa-arrow-circle-down:до {
+.fa-arrow-circle-down:before {
   content: "\f0ab";
 }
-.fa-globe:до {
+.fa-globe:before {
   content: "\f0ac";
 }
-.fa-wrench:до {
+.fa-wrench:before {
   content: "\f0ad";
 }
-.fa-tasks:до {
+.fa-tasks:before {
   content: "\f0ae";
 }
-.fa-filter:до {
+.fa-filter:before {
   content: "\f0b0";
 }
-.fa-briefcase:до {
+.fa-briefcase:before {
   content: "\f0b1";
 }
-.fa-arrows-alt:до {
+.fa-arrows-alt:before {
   content: "\f0b2";
 }
-.fa-group:до,
-.fa-users:до {
+.fa-group:before,
+.fa-users:before {
   content: "\f0c0";
 }
-.fa-chain:до,
-.fa-link:до {
+.fa-chain:before,
+.fa-link:before {
   content: "\f0c1";
 }
-.fa-cloud:до {
+.fa-cloud:before {
   content: "\f0c2";
 }
-.fa-flask:до {
+.fa-flask:before {
   content: "\f0c3";
 }
-.fa-cut:до,
-.fa-scissors:до {
+.fa-cut:before,
+.fa-scissors:before {
   content: "\f0c4";
 }
-.fa-copy:до,
-.fa-files-o:до {
+.fa-copy:before,
+.fa-files-o:before {
   content: "\f0c5";
 }
-.fa-paperclip:до {
+.fa-paperclip:before {
   content: "\f0c6";
 }
-.fa-save:до,
-.fa-floppy-o:до {
+.fa-save:before,
+.fa-floppy-o:before {
   content: "\f0c7";
 }
-.fa-square:до {
+.fa-square:before {
   content: "\f0c8";
 }
-.fa-navicon:до,
-.fa-reorder:до,
-.fa-bars:до {
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
   content: "\f0c9";
 }
-.fa-list-ul:до {
+.fa-list-ul:before {
   content: "\f0ca";
 }
-.fa-list-ol:до {
+.fa-list-ol:before {
   content: "\f0cb";
 }
-.fa-strikethrough:до {
+.fa-strikethrough:before {
   content: "\f0cc";
 }
-.fa-underline:до {
+.fa-underline:before {
   content: "\f0cd";
 }
-.fa-table:до {
+.fa-table:before {
   content: "\f0ce";
 }
-.fa-magic:до {
+.fa-magic:before {
   content: "\f0d0";
 }
-.fa-truck:до {
+.fa-truck:before {
   content: "\f0d1";
 }
-.fa-pinterest:до {
+.fa-pinterest:before {
   content: "\f0d2";
 }
-.fa-pinterest-square:до {
+.fa-pinterest-square:before {
   content: "\f0d3";
 }
-.fa-google-plus-square:до {
+.fa-google-plus-square:before {
   content: "\f0d4";
 }
-.fa-google-plus:до {
+.fa-google-plus:before {
   content: "\f0d5";
 }
-.fa-money:до {
+.fa-money:before {
   content: "\f0d6";
 }
-.fa-caret-down:до {
+.fa-caret-down:before {
   content: "\f0d7";
 }
-.fa-caret-up:до {
+.fa-caret-up:before {
   content: "\f0d8";
 }
-.fa-caret-left:до {
+.fa-caret-left:before {
   content: "\f0d9";
 }
-.fa-caret-right:до {
+.fa-caret-right:before {
   content: "\f0da";
 }
-.fa-columns:до {
+.fa-columns:before {
   content: "\f0db";
 }
-.fa-unsorted:до,
-.fa-sort:до {
+.fa-unsorted:before,
+.fa-sort:before {
   content: "\f0dc";
 }
-.fa-sort-down:до,
-.fa-sort-desc:до {
+.fa-sort-down:before,
+.fa-sort-desc:before {
   content: "\f0dd";
 }
-.fa-sort-up:до,
-.fa-sort-asc:до {
+.fa-sort-up:before,
+.fa-sort-asc:before {
   content: "\f0de";
 }
-.fa-envelope:до {
+.fa-envelope:before {
   content: "\f0e0";
 }
-.fa-linkedin:до {
+.fa-linkedin:before {
   content: "\f0e1";
 }
-.fa-rotate-left:до,
-.fa-undo:до {
+.fa-rotate-left:before,
+.fa-undo:before {
   content: "\f0e2";
 }
-.fa-legal:до,
-.fa-gavel:до {
+.fa-legal:before,
+.fa-gavel:before {
   content: "\f0e3";
 }
-.fa-dashboard:до,
-.fa-tachometer:до {
+.fa-dashboard:before,
+.fa-tachometer:before {
   content: "\f0e4";
 }
-.fa-comment-o:до {
+.fa-comment-o:before {
   content: "\f0e5";
 }
-.fa-comments-o:до {
+.fa-comments-o:before {
   content: "\f0e6";
 }
-.fa-flash:до,
-.fa-bolt:до {
+.fa-flash:before,
+.fa-bolt:before {
   content: "\f0e7";
 }
-.fa-sitemap:до {
+.fa-sitemap:before {
   content: "\f0e8";
 }
-.fa-umbrella:до {
+.fa-umbrella:before {
   content: "\f0e9";
 }
-.fa-paste:до,
-.fa-clipboard:до {
+.fa-paste:before,
+.fa-clipboard:before {
   content: "\f0ea";
 }
-.fa-lightbulb-o:до {
+.fa-lightbulb-o:before {
   content: "\f0eb";
 }
-.fa-exchange:до {
+.fa-exchange:before {
   content: "\f0ec";
 }
-.fa-cloud-download:до {
+.fa-cloud-download:before {
   content: "\f0ed";
 }
-.fa-cloud-upload:до {
+.fa-cloud-upload:before {
   content: "\f0ee";
 }
-.fa-user-md:до {
+.fa-user-md:before {
   content: "\f0f0";
 }
-.fa-stethoscope:до {
+.fa-stethoscope:before {
   content: "\f0f1";
 }
-.fa-suitcase:до {
+.fa-suitcase:before {
   content: "\f0f2";
 }
-.fa-bell-o:до {
+.fa-bell-o:before {
   content: "\f0a2";
 }
-.fa-coffee:до {
+.fa-coffee:before {
   content: "\f0f4";
 }
-.fa-cutlery:до {
+.fa-cutlery:before {
   content: "\f0f5";
 }
-.fa-file-text-o:до {
+.fa-file-text-o:before {
   content: "\f0f6";
 }
-.fa-building-o:до {
+.fa-building-o:before {
   content: "\f0f7";
 }
-.fa-hospital-o:до {
+.fa-hospital-o:before {
   content: "\f0f8";
 }
-.fa-ambulance:до {
+.fa-ambulance:before {
   content: "\f0f9";
 }
-.fa-medkit:до {
+.fa-medkit:before {
   content: "\f0fa";
 }
-.fa-fighter-jet:до {
+.fa-fighter-jet:before {
   content: "\f0fb";
 }
-.fa-beer:до {
+.fa-beer:before {
   content: "\f0fc";
 }
-.fa-h-square:до {
+.fa-h-square:before {
   content: "\f0fd";
 }
-.fa-plus-square:до {
+.fa-plus-square:before {
   content: "\f0fe";
 }
-.fa-angle-double-left:до {
+.fa-angle-double-left:before {
   content: "\f100";
 }
-.fa-angle-double-right:до {
+.fa-angle-double-right:before {
   content: "\f101";
 }
-.fa-angle-double-up:до {
+.fa-angle-double-up:before {
   content: "\f102";
 }
-.fa-angle-double-down:до {
+.fa-angle-double-down:before {
   content: "\f103";
 }
-.fa-angle-left:до {
+.fa-angle-left:before {
   content: "\f104";
 }
-.fa-angle-right:до {
+.fa-angle-right:before {
   content: "\f105";
 }
-.fa-angle-up:до {
+.fa-angle-up:before {
   content: "\f106";
 }
-.fa-angle-down:до {
+.fa-angle-down:before {
   content: "\f107";
 }
-.fa-desktop:до {
+.fa-desktop:before {
   content: "\f108";
 }
-.fa-laptop:до {
+.fa-laptop:before {
   content: "\f109";
 }
-.fa-tablet:до {
+.fa-tablet:before {
   content: "\f10a";
 }
-.fa-mobile-phone:до,
-.fa-mobile:до {
+.fa-mobile-phone:before,
+.fa-mobile:before {
   content: "\f10b";
 }
-.fa-circle-o:до {
+.fa-circle-o:before {
   content: "\f10c";
 }
-.fa-quote-left:до {
+.fa-quote-left:before {
   content: "\f10d";
 }
-.fa-quote-right:до {
+.fa-quote-right:before {
   content: "\f10e";
 }
-.fa-spinner:до {
+.fa-spinner:before {
   content: "\f110";
 }
-.fa-circle:до {
+.fa-circle:before {
   content: "\f111";
 }
-.fa-mail-reply:до,
-.fa-reply:до {
+.fa-mail-reply:before,
+.fa-reply:before {
   content: "\f112";
 }
-.fa-github-alt:до {
+.fa-github-alt:before {
   content: "\f113";
 }
-.fa-folder-o:до {
+.fa-folder-o:before {
   content: "\f114";
 }
-.fa-folder-open-o:до {
+.fa-folder-open-o:before {
   content: "\f115";
 }
-.fa-smile-o:до {
+.fa-smile-o:before {
   content: "\f118";
 }
-.fa-frown-o:до {
+.fa-frown-o:before {
   content: "\f119";
 }
-.fa-meh-o:до {
+.fa-meh-o:before {
   content: "\f11a";
 }
-.fa-gamepad:до {
+.fa-gamepad:before {
   content: "\f11b";
 }
-.fa-keyboard-o:до {
+.fa-keyboard-o:before {
   content: "\f11c";
 }
-.fa-flag-o:до {
+.fa-flag-o:before {
   content: "\f11d";
 }
-.fa-flag-checkered:до {
+.fa-flag-checkered:before {
   content: "\f11e";
 }
-.fa-terminal:до {
+.fa-terminal:before {
   content: "\f120";
 }
-.fa-code:до {
+.fa-code:before {
   content: "\f121";
 }
-.fa-mail-reply-all:до,
-.fa-reply-all:до {
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
   content: "\f122";
 }
-.fa-star-half-empty:до,
-.fa-star-half-full:до,
-.fa-star-half-o:до {
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
   content: "\f123";
 }
-.fa-location-arrow:до {
+.fa-location-arrow:before {
   content: "\f124";
 }
-.fa-crop:до {
+.fa-crop:before {
   content: "\f125";
 }
-.fa-code-fork:до {
+.fa-code-fork:before {
   content: "\f126";
 }
-.fa-unlink:до,
-.fa-chain-broken:до {
+.fa-unlink:before,
+.fa-chain-broken:before {
   content: "\f127";
 }
-.fa-question:до {
+.fa-question:before {
   content: "\f128";
 }
-.fa-info:до {
+.fa-info:before {
   content: "\f129";
 }
-.fa-exclamation:до {
+.fa-exclamation:before {
   content: "\f12a";
 }
-.fa-superscript:до {
+.fa-superscript:before {
   content: "\f12b";
 }
-.fa-subscript:до {
+.fa-subscript:before {
   content: "\f12c";
 }
-.fa-eraser:до {
+.fa-eraser:before {
   content: "\f12d";
 }
-.fa-puzzle-piece:до {
+.fa-puzzle-piece:before {
   content: "\f12e";
 }
-.fa-microphone:до {
+.fa-microphone:before {
   content: "\f130";
 }
-.fa-microphone-slash:до {
+.fa-microphone-slash:before {
   content: "\f131";
 }
-.fa-shield:до {
+.fa-shield:before {
   content: "\f132";
 }
-.fa-calendar-o:до {
+.fa-calendar-o:before {
   content: "\f133";
 }
-.fa-fire-extinguisher:до {
+.fa-fire-extinguisher:before {
   content: "\f134";
 }
-.fa-rocket:до {
+.fa-rocket:before {
   content: "\f135";
 }
-.fa-maxcdn:до {
+.fa-maxcdn:before {
   content: "\f136";
 }
-.fa-chevron-circle-left:до {
+.fa-chevron-circle-left:before {
   content: "\f137";
 }
-.fa-chevron-circle-right:до {
+.fa-chevron-circle-right:before {
   content: "\f138";
 }
-.fa-chevron-circle-up:до {
+.fa-chevron-circle-up:before {
   content: "\f139";
 }
-.fa-chevron-circle-down:до {
+.fa-chevron-circle-down:before {
   content: "\f13a";
 }
-.fa-html5:до {
+.fa-html5:before {
   content: "\f13b";
 }
-.fa-css3:до {
+.fa-css3:before {
   content: "\f13c";
 }
-.fa-anchor:до {
+.fa-anchor:before {
   content: "\f13d";
 }
-.fa-unlock-alt:до {
+.fa-unlock-alt:before {
   content: "\f13e";
 }
-.fa-bullseye:до {
+.fa-bullseye:before {
   content: "\f140";
 }
-.fa-ellipsis-h:до {
+.fa-ellipsis-h:before {
   content: "\f141";
 }
-.fa-ellipsis-v:до {
+.fa-ellipsis-v:before {
   content: "\f142";
 }
-.fa-rss-square:до {
+.fa-rss-square:before {
   content: "\f143";
 }
-.fa-play-circle:до {
+.fa-play-circle:before {
   content: "\f144";
 }
-.fa-ticket:до {
+.fa-ticket:before {
   content: "\f145";
 }
-.fa-minus-square:до {
+.fa-minus-square:before {
   content: "\f146";
 }
-.fa-minus-square-o:до {
+.fa-minus-square-o:before {
   content: "\f147";
 }
-.fa-level-up:до {
+.fa-level-up:before {
   content: "\f148";
 }
-.fa-level-down:до {
+.fa-level-down:before {
   content: "\f149";
 }
-.fa-check-square:до {
+.fa-check-square:before {
   content: "\f14a";
 }
-.fa-pencil-square:до {
+.fa-pencil-square:before {
   content: "\f14b";
 }
-.fa-external-link-square:до {
+.fa-external-link-square:before {
   content: "\f14c";
 }
-.fa-share-square:до {
+.fa-share-square:before {
   content: "\f14d";
 }
-.fa-compass:до {
+.fa-compass:before {
   content: "\f14e";
 }
-.fa-toggle-down:до,
-.fa-caret-square-o-down:до {
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
   content: "\f150";
 }
-.fa-toggle-up:до,
-.fa-caret-square-o-up:до {
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
   content: "\f151";
 }
-.fa-toggle-right:до,
-.fa-caret-square-o-right:до {
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
   content: "\f152";
 }
-.fa-euro:до,
-.fa-eur:до {
+.fa-euro:before,
+.fa-eur:before {
   content: "\f153";
 }
-.fa-gbp:до {
+.fa-gbp:before {
   content: "\f154";
 }
-.fa-dollar:до,
-.fa-usd:до {
+.fa-dollar:before,
+.fa-usd:before {
   content: "\f155";
 }
-.fa-rupee:до,
-.fa-inr:до {
+.fa-rupee:before,
+.fa-inr:before {
   content: "\f156";
 }
-.fa-cny:до,
-.fa-rmb:до,
-.fa-yen:до,
-.fa-jpy:до {
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
   content: "\f157";
 }
-.fa-ruble:до,
-.fa-rouble:до,
-.fa-rub:до {
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
   content: "\f158";
 }
-.fa-won:до,
-.fa-krw:до {
+.fa-won:before,
+.fa-krw:before {
   content: "\f159";
 }
-.fa-bitcoin:до,
-.fa-btc:до {
+.fa-bitcoin:before,
+.fa-btc:before {
   content: "\f15a";
 }
-.fa-file:до {
+.fa-file:before {
   content: "\f15b";
 }
-.fa-file-text:до {
+.fa-file-text:before {
   content: "\f15c";
 }
-.fa-sort-alpha-asc:до {
+.fa-sort-alpha-asc:before {
   content: "\f15d";
 }
-.fa-sort-alpha-desc:до {
+.fa-sort-alpha-desc:before {
   content: "\f15e";
 }
-.fa-sort-amount-asc:до {
+.fa-sort-amount-asc:before {
   content: "\f160";
 }
-.fa-sort-amount-desc:до {
+.fa-sort-amount-desc:before {
   content: "\f161";
 }
-.fa-sort-numeric-asc:до {
+.fa-sort-numeric-asc:before {
   content: "\f162";
 }
-.fa-sort-numeric-desc:до {
+.fa-sort-numeric-desc:before {
   content: "\f163";
 }
-.fa-thumbs-up:до {
+.fa-thumbs-up:before {
   content: "\f164";
 }
-.fa-thumbs-down:до {
+.fa-thumbs-down:before {
   content: "\f165";
 }
-.fa-youtube-square:до {
+.fa-youtube-square:before {
   content: "\f166";
 }
-.fa-youtube:до {
+.fa-youtube:before {
   content: "\f167";
 }
-.fa-xing:до {
+.fa-xing:before {
   content: "\f168";
 }
-.fa-xing-square:до {
+.fa-xing-square:before {
   content: "\f169";
 }
-.fa-youtube-play:до {
+.fa-youtube-play:before {
   content: "\f16a";
 }
-.fa-dropbox:до {
+.fa-dropbox:before {
   content: "\f16b";
 }
-.fa-stack-overflow:до {
+.fa-stack-overflow:before {
   content: "\f16c";
 }
-.fa-instagram:до {
+.fa-instagram:before {
   content: "\f16d";
 }
-.fa-flickr:до {
+.fa-flickr:before {
   content: "\f16e";
 }
-.fa-adn:до {
+.fa-adn:before {
   content: "\f170";
 }
-.fa-bitbucket:до {
+.fa-bitbucket:before {
   content: "\f171";
 }
-.fa-bitbucket-square:до {
+.fa-bitbucket-square:before {
   content: "\f172";
 }
-.fa-tumblr:до {
+.fa-tumblr:before {
   content: "\f173";
 }
-.fa-tumblr-square:до {
+.fa-tumblr-square:before {
   content: "\f174";
 }
-.fa-long-arrow-down:до {
+.fa-long-arrow-down:before {
   content: "\f175";
 }
-.fa-long-arrow-up:до {
+.fa-long-arrow-up:before {
   content: "\f176";
 }
-.fa-long-arrow-left:до {
+.fa-long-arrow-left:before {
   content: "\f177";
 }
-.fa-long-arrow-right:до {
+.fa-long-arrow-right:before {
   content: "\f178";
 }
-.fa-apple:до {
+.fa-apple:before {
   content: "\f179";
 }
-.fa-windows:до {
+.fa-windows:before {
   content: "\f17a";
 }
-.fa-android:до {
+.fa-android:before {
   content: "\f17b";
 }
-.fa-linux:до {
+.fa-linux:before {
   content: "\f17c";
 }
-.fa-dribbble:до {
+.fa-dribbble:before {
   content: "\f17d";
 }
-.fa-skype:до {
+.fa-skype:before {
   content: "\f17e";
 }
-.fa-foursquare:до {
+.fa-foursquare:before {
   content: "\f180";
 }
-.fa-trello:до {
+.fa-trello:before {
   content: "\f181";
 }
-.fa-female:до {
+.fa-female:before {
   content: "\f182";
 }
-.fa-male:до {
+.fa-male:before {
   content: "\f183";
 }
-.fa-gittip:до,
-.fa-gratipay:до {
+.fa-gittip:before,
+.fa-gratipay:before {
   content: "\f184";
 }
-.fa-sun-o:до {
+.fa-sun-o:before {
   content: "\f185";
 }
-.fa-moon-o:до {
+.fa-moon-o:before {
   content: "\f186";
 }
-.fa-archive:до {
+.fa-archive:before {
   content: "\f187";
 }
-.fa-bug:до {
+.fa-bug:before {
   content: "\f188";
 }
-.fa-vk:до {
+.fa-vk:before {
   content: "\f189";
 }
-.fa-weibo:до {
+.fa-weibo:before {
   content: "\f18a";
 }
-.fa-renren:до {
+.fa-renren:before {
   content: "\f18b";
 }
-.fa-pagelines:до {
+.fa-pagelines:before {
   content: "\f18c";
 }
-.fa-stack-exchange:до {
+.fa-stack-exchange:before {
   content: "\f18d";
 }
-.fa-arrow-circle-o-right:до {
+.fa-arrow-circle-o-right:before {
   content: "\f18e";
 }
-.fa-arrow-circle-o-left:до {
+.fa-arrow-circle-o-left:before {
   content: "\f190";
 }
-.fa-toggle-left:до,
-.fa-caret-square-o-left:до {
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
   content: "\f191";
 }
-.fa-dot-circle-o:до {
+.fa-dot-circle-o:before {
   content: "\f192";
 }
-.fa-wheelchair:до {
+.fa-wheelchair:before {
   content: "\f193";
 }
-.fa-vimeo-square:до {
+.fa-vimeo-square:before {
   content: "\f194";
 }
-.fa-turkish-lira:до,
-.fa-try:до {
+.fa-turkish-lira:before,
+.fa-try:before {
   content: "\f195";
 }
-.fa-plus-square-o:до {
+.fa-plus-square-o:before {
   content: "\f196";
 }
-.fa-space-shuttle:до {
+.fa-space-shuttle:before {
   content: "\f197";
 }
-.fa-slack:до {
+.fa-slack:before {
   content: "\f198";
 }
-.fa-envelope-square:до {
+.fa-envelope-square:before {
   content: "\f199";
 }
-.fa-wordpress:до {
+.fa-wordpress:before {
   content: "\f19a";
 }
-.fa-openid:до {
+.fa-openid:before {
   content: "\f19b";
 }
-.fa-institution:до,
-.fa-bank:до,
-.fa-university:до {
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
   content: "\f19c";
 }
-.fa-mortar-board:до,
-.fa-graduation-cap:до {
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
   content: "\f19d";
 }
-.fa-yahoo:до {
+.fa-yahoo:before {
   content: "\f19e";
 }
-.fa-google:до {
+.fa-google:before {
   content: "\f1a0";
 }
-.fa-reddit:до {
+.fa-reddit:before {
   content: "\f1a1";
 }
-.fa-reddit-square:до {
+.fa-reddit-square:before {
   content: "\f1a2";
 }
-.fa-stumbleupon-circle:до {
+.fa-stumbleupon-circle:before {
   content: "\f1a3";
 }
-.fa-stumbleupon:до {
+.fa-stumbleupon:before {
   content: "\f1a4";
 }
-.fa-delicious:до {
+.fa-delicious:before {
   content: "\f1a5";
 }
-.fa-digg:до {
+.fa-digg:before {
   content: "\f1a6";
 }
-.fa-pied-piper-pp:до {
+.fa-pied-piper-pp:before {
   content: "\f1a7";
 }
-.fa-pied-piper-alt:до {
+.fa-pied-piper-alt:before {
   content: "\f1a8";
 }
-.fa-drupal:до {
+.fa-drupal:before {
   content: "\f1a9";
 }
-.fa-joomla:до {
+.fa-joomla:before {
   content: "\f1aa";
 }
-.fa-language:до {
+.fa-language:before {
   content: "\f1ab";
 }
-.fa-fax:до {
+.fa-fax:before {
   content: "\f1ac";
 }
-.fa-building:до {
+.fa-building:before {
   content: "\f1ad";
 }
-.fa-child:до {
+.fa-child:before {
   content: "\f1ae";
 }
-.fa-paw:до {
+.fa-paw:before {
   content: "\f1b0";
 }
-.fa-spoon:до {
+.fa-spoon:before {
   content: "\f1b1";
 }
-.fa-cube:до {
+.fa-cube:before {
   content: "\f1b2";
 }
-.fa-cubes:до {
+.fa-cubes:before {
   content: "\f1b3";
 }
-.fa-behance:до {
+.fa-behance:before {
   content: "\f1b4";
 }
-.fa-behance-square:до {
+.fa-behance-square:before {
   content: "\f1b5";
 }
-.fa-steam:до {
+.fa-steam:before {
   content: "\f1b6";
 }
-.fa-steam-square:до {
+.fa-steam-square:before {
   content: "\f1b7";
 }
-.fa-recycle:до {
+.fa-recycle:before {
   content: "\f1b8";
 }
-.fa-automobile:до,
-.fa-car:до {
+.fa-automobile:before,
+.fa-car:before {
   content: "\f1b9";
 }
-.fa-cab:до,
-.fa-taxi:до {
+.fa-cab:before,
+.fa-taxi:before {
   content: "\f1ba";
 }
-.fa-tree:до {
+.fa-tree:before {
   content: "\f1bb";
 }
-.fa-spotify:до {
+.fa-spotify:before {
   content: "\f1bc";
 }
-.fa-deviantart:до {
+.fa-deviantart:before {
   content: "\f1bd";
 }
-.fa-soundcloud:до {
+.fa-soundcloud:before {
   content: "\f1be";
 }
-.fa-database:до {
+.fa-database:before {
   content: "\f1c0";
 }
-.fa-file-pdf-o:до {
+.fa-file-pdf-o:before {
   content: "\f1c1";
 }
-.fa-file-word-o:до {
+.fa-file-word-o:before {
   content: "\f1c2";
 }
-.fa-file-excel-o:до {
+.fa-file-excel-o:before {
   content: "\f1c3";
 }
-.fa-file-powerpoint-o:до {
+.fa-file-powerpoint-o:before {
   content: "\f1c4";
 }
-.fa-file-photo-o:до,
-.fa-file-picture-o:до,
-.fa-file-image-o:до {
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
   content: "\f1c5";
 }
-.fa-file-zip-o:до,
-.fa-file-archive-o:до {
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
   content: "\f1c6";
 }
-.fa-file-sound-o:до,
-.fa-file-audio-o:до {
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
   content: "\f1c7";
 }
-.fa-file-movie-o:до,
-.fa-file-video-o:до {
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
   content: "\f1c8";
 }
-.fa-file-code-o:до {
+.fa-file-code-o:before {
   content: "\f1c9";
 }
-.fa-vine:до {
+.fa-vine:before {
   content: "\f1ca";
 }
-.fa-codepen:до {
+.fa-codepen:before {
   content: "\f1cb";
 }
-.fa-jsfiddle:до {
+.fa-jsfiddle:before {
   content: "\f1cc";
 }
-.fa-life-bouy:до,
-.fa-life-buoy:до,
-.fa-life-saver:до,
-.fa-support:до,
-.fa-life-ring:до {
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
   content: "\f1cd";
 }
-.fa-circle-o-notch:до {
+.fa-circle-o-notch:before {
   content: "\f1ce";
 }
-.fa-ra:до,
-.fa-resistance:до,
-.fa-rebel:до {
+.fa-ra:before,
+.fa-resistance:before,
+.fa-rebel:before {
   content: "\f1d0";
 }
-.fa-ge:до,
-.fa-empire:до {
+.fa-ge:before,
+.fa-empire:before {
   content: "\f1d1";
 }
-.fa-git-square:до {
+.fa-git-square:before {
   content: "\f1d2";
 }
-.fa-git:до {
+.fa-git:before {
   content: "\f1d3";
 }
-.fa-y-combinator-square:до,
-.fa-yc-square:до,
-.fa-hacker-news:до {
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
   content: "\f1d4";
 }
-.fa-tencent-weibo:до {
+.fa-tencent-weibo:before {
   content: "\f1d5";
 }
-.fa-qq:до {
+.fa-qq:before {
   content: "\f1d6";
 }
-.fa-wechat:до,
-.fa-weixin:до {
+.fa-wechat:before,
+.fa-weixin:before {
   content: "\f1d7";
 }
-.fa-send:до,
-.fa-paper-plane:до {
+.fa-send:before,
+.fa-paper-plane:before {
   content: "\f1d8";
 }
-.fa-send-o:до,
-.fa-paper-plane-o:до {
+.fa-send-o:before,
+.fa-paper-plane-o:before {
   content: "\f1d9";
 }
-.fa-history:до {
+.fa-history:before {
   content: "\f1da";
 }
-.fa-circle-thin:до {
+.fa-circle-thin:before {
   content: "\f1db";
 }
-.fa-header:до {
+.fa-header:before {
   content: "\f1dc";
 }
-.fa-paragraph:до {
+.fa-paragraph:before {
   content: "\f1dd";
 }
-.fa-sliders:до {
+.fa-sliders:before {
   content: "\f1de";
 }
-.fa-share-alt:до {
+.fa-share-alt:before {
   content: "\f1e0";
 }
-.fa-share-alt-square:до {
+.fa-share-alt-square:before {
   content: "\f1e1";
 }
-.fa-bomb:до {
+.fa-bomb:before {
   content: "\f1e2";
 }
-.fa-soccer-ball-o:до,
-.fa-futbol-o:до {
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
   content: "\f1e3";
 }
-.fa-tty:до {
+.fa-tty:before {
   content: "\f1e4";
 }
-.fa-binoculars:до {
+.fa-binoculars:before {
   content: "\f1e5";
 }
-.fa-plug:до {
+.fa-plug:before {
   content: "\f1e6";
 }
-.fa-slideshare:до {
+.fa-slideshare:before {
   content: "\f1e7";
 }
-.fa-twitch:до {
+.fa-twitch:before {
   content: "\f1e8";
 }
-.fa-yelp:до {
+.fa-yelp:before {
   content: "\f1e9";
 }
-.fa-newspaper-o:до {
+.fa-newspaper-o:before {
   content: "\f1ea";
 }
-.fa-wifi:до {
+.fa-wifi:before {
   content: "\f1eb";
 }
-.fa-calculator:до {
+.fa-calculator:before {
   content: "\f1ec";
 }
-.fa-paypal:до {
+.fa-paypal:before {
   content: "\f1ed";
 }
-.fa-google-wallet:до {
+.fa-google-wallet:before {
   content: "\f1ee";
 }
-.fa-cc-visa:до {
+.fa-cc-visa:before {
   content: "\f1f0";
 }
-.fa-cc-mastercard:до {
+.fa-cc-mastercard:before {
   content: "\f1f1";
 }
-.fa-cc-discover:до {
+.fa-cc-discover:before {
   content: "\f1f2";
 }
-.fa-cc-amex:до {
+.fa-cc-amex:before {
   content: "\f1f3";
 }
-.fa-cc-paypal:до {
+.fa-cc-paypal:before {
   content: "\f1f4";
 }
-.fa-cc-stripe:до {
+.fa-cc-stripe:before {
   content: "\f1f5";
 }
-.fa-bell-slash:до {
+.fa-bell-slash:before {
   content: "\f1f6";
 }
-.fa-bell-slash-o:до {
+.fa-bell-slash-o:before {
   content: "\f1f7";
 }
-.fa-trash:до {
+.fa-trash:before {
   content: "\f1f8";
 }
-.fa-copyright:до {
+.fa-copyright:before {
   content: "\f1f9";
 }
-.fa-at:до {
+.fa-at:before {
   content: "\f1fa";
 }
-.fa-eyedropper:до {
+.fa-eyedropper:before {
   content: "\f1fb";
 }
-.fa-paint-brush:до {
+.fa-paint-brush:before {
   content: "\f1fc";
 }
-.fa-birthday-cake:до {
+.fa-birthday-cake:before {
   content: "\f1fd";
 }
-.fa-area-chart:до {
+.fa-area-chart:before {
   content: "\f1fe";
 }
-.fa-pie-chart:до {
+.fa-pie-chart:before {
   content: "\f200";
 }
-.fa-line-chart:до {
+.fa-line-chart:before {
   content: "\f201";
 }
-.fa-lastfm:до {
+.fa-lastfm:before {
   content: "\f202";
 }
-.fa-lastfm-square:до {
+.fa-lastfm-square:before {
   content: "\f203";
 }
-.fa-toggle-off:до {
+.fa-toggle-off:before {
   content: "\f204";
 }
-.fa-toggle-on:до {
+.fa-toggle-on:before {
   content: "\f205";
 }
-.fa-bicycle:до {
+.fa-bicycle:before {
   content: "\f206";
 }
-.fa-bus:до {
+.fa-bus:before {
   content: "\f207";
 }
-.fa-ioxhost:до {
+.fa-ioxhost:before {
   content: "\f208";
 }
-.fa-angellist:до {
+.fa-angellist:before {
   content: "\f209";
 }
-.fa-cc:до {
+.fa-cc:before {
   content: "\f20a";
 }
-.fa-shekel:до,
-.fa-sheqel:до,
-.fa-ils:до {
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
   content: "\f20b";
 }
-.fa-meanpath:до {
+.fa-meanpath:before {
   content: "\f20c";
 }
-.fa-buysellads:до {
+.fa-buysellads:before {
   content: "\f20d";
 }
-.fa-connectdevelop:до {
+.fa-connectdevelop:before {
   content: "\f20e";
 }
-.fa-dashcube:до {
+.fa-dashcube:before {
   content: "\f210";
 }
-.fa-forumbee:до {
+.fa-forumbee:before {
   content: "\f211";
 }
-.fa-leanpub:до {
+.fa-leanpub:before {
   content: "\f212";
 }
-.fa-sellsy:до {
+.fa-sellsy:before {
   content: "\f213";
 }
-.fa-shirtsinbulk:до {
+.fa-shirtsinbulk:before {
   content: "\f214";
 }
-.fa-simplybuilt:до {
+.fa-simplybuilt:before {
   content: "\f215";
 }
-.fa-skyatlas:до {
+.fa-skyatlas:before {
   content: "\f216";
 }
-.fa-cart-plus:до {
+.fa-cart-plus:before {
   content: "\f217";
 }
-.fa-cart-arrow-down:до {
+.fa-cart-arrow-down:before {
   content: "\f218";
 }
-.fa-diamond:до {
+.fa-diamond:before {
   content: "\f219";
 }
-.fa-ship:до {
+.fa-ship:before {
   content: "\f21a";
 }
-.fa-user-secret:до {
+.fa-user-secret:before {
   content: "\f21b";
 }
-.fa-motorcycle:до {
+.fa-motorcycle:before {
   content: "\f21c";
 }
-.fa-street-view:до {
+.fa-street-view:before {
   content: "\f21d";
 }
-.fa-heartbeat:до {
+.fa-heartbeat:before {
   content: "\f21e";
 }
-.fa-venus:до {
+.fa-venus:before {
   content: "\f221";
 }
-.fa-mars:до {
+.fa-mars:before {
   content: "\f222";
 }
-.fa-mercury:до {
+.fa-mercury:before {
   content: "\f223";
 }
-.fa-intersex:до,
-.fa-transgender:до {
+.fa-intersex:before,
+.fa-transgender:before {
   content: "\f224";
 }
-.fa-transgender-alt:до {
+.fa-transgender-alt:before {
   content: "\f225";
 }
-.fa-venus-double:до {
+.fa-venus-double:before {
   content: "\f226";
 }
-.fa-mars-double:до {
+.fa-mars-double:before {
   content: "\f227";
 }
-.fa-venus-mars:до {
+.fa-venus-mars:before {
   content: "\f228";
 }
-.fa-mars-stroke:до {
+.fa-mars-stroke:before {
   content: "\f229";
 }
-.fa-mars-stroke-v:до {
+.fa-mars-stroke-v:before {
   content: "\f22a";
 }
-.fa-mars-stroke-h:до {
+.fa-mars-stroke-h:before {
   content: "\f22b";
 }
-.fa-neuter:до {
+.fa-neuter:before {
   content: "\f22c";
 }
-.fa-genderless:до {
+.fa-genderless:before {
   content: "\f22d";
 }
-.fa-facebook-official:до {
+.fa-facebook-official:before {
   content: "\f230";
 }
-.fa-pinterest-p:до {
+.fa-pinterest-p:before {
   content: "\f231";
 }
-.fa-whatsapp:до {
+.fa-whatsapp:before {
   content: "\f232";
 }
-.fa-server:до {
+.fa-server:before {
   content: "\f233";
 }
-.fa-user-plus:до {
+.fa-user-plus:before {
   content: "\f234";
 }
-.fa-user-times:до {
+.fa-user-times:before {
   content: "\f235";
 }
-.fa-hotel:до,
-.fa-bed:до {
+.fa-hotel:before,
+.fa-bed:before {
   content: "\f236";
 }
-.fa-viacoin:до {
+.fa-viacoin:before {
   content: "\f237";
 }
-.fa-train:до {
+.fa-train:before {
   content: "\f238";
 }
-.fa-subway:до {
+.fa-subway:before {
   content: "\f239";
 }
-.fa-medium:до {
+.fa-medium:before {
   content: "\f23a";
 }
-.fa-yc:до,
-.fa-y-combinator:до {
+.fa-yc:before,
+.fa-y-combinator:before {
   content: "\f23b";
 }
-.fa-optin-monster:до {
+.fa-optin-monster:before {
   content: "\f23c";
 }
-.fa-opencart:до {
+.fa-opencart:before {
   content: "\f23d";
 }
-.fa-expeditedssl:до {
+.fa-expeditedssl:before {
   content: "\f23e";
 }
-.fa-battery-4:до,
-.fa-battery:до,
-.fa-battery-full:до {
+.fa-battery-4:before,
+.fa-battery:before,
+.fa-battery-full:before {
   content: "\f240";
 }
-.fa-battery-3:до,
-.fa-battery-three-quarters:до {
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
   content: "\f241";
 }
-.fa-battery-2:до,
-.fa-battery-half:до {
+.fa-battery-2:before,
+.fa-battery-half:before {
   content: "\f242";
 }
-.fa-battery-1:до,
-.fa-battery-quarter:до {
+.fa-battery-1:before,
+.fa-battery-quarter:before {
   content: "\f243";
 }
-.fa-battery-0:до,
-.fa-battery-empty:до {
+.fa-battery-0:before,
+.fa-battery-empty:before {
   content: "\f244";
 }
-.fa-mouse-pointer:до {
+.fa-mouse-pointer:before {
   content: "\f245";
 }
-.fa-i-cursor:до {
+.fa-i-cursor:before {
   content: "\f246";
 }
-.fa-object-group:до {
+.fa-object-group:before {
   content: "\f247";
 }
-.fa-object-ungroup:до {
+.fa-object-ungroup:before {
   content: "\f248";
 }
-.fa-sticky-note:до {
+.fa-sticky-note:before {
   content: "\f249";
 }
-.fa-sticky-note-o:до {
+.fa-sticky-note-o:before {
   content: "\f24a";
 }
-.fa-cc-jcb:до {
+.fa-cc-jcb:before {
   content: "\f24b";
 }
-.fa-cc-diners-club:до {
+.fa-cc-diners-club:before {
   content: "\f24c";
 }
-.fa-clone:до {
+.fa-clone:before {
   content: "\f24d";
 }
-.fa-balance-scale:до {
+.fa-balance-scale:before {
   content: "\f24e";
 }
-.fa-hourglass-o:до {
+.fa-hourglass-o:before {
   content: "\f250";
 }
-.fa-hourglass-1:до,
-.fa-hourglass-start:до {
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
   content: "\f251";
 }
-.fa-hourglass-2:до,
-.fa-hourglass-half:до {
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
   content: "\f252";
 }
-.fa-hourglass-3:до,
-.fa-hourglass-end:до {
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
   content: "\f253";
 }
-.fa-hourglass:до {
+.fa-hourglass:before {
   content: "\f254";
 }
-.fa-hand-grab-o:до,
-.fa-hand-rock-o:до {
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
   content: "\f255";
 }
-.fa-hand-stop-o:до,
-.fa-hand-paper-o:до {
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
   content: "\f256";
 }
-.fa-hand-scissors-o:до {
+.fa-hand-scissors-o:before {
   content: "\f257";
 }
-.fa-hand-lizard-o:до {
+.fa-hand-lizard-o:before {
   content: "\f258";
 }
-.fa-hand-spock-o:до {
+.fa-hand-spock-o:before {
   content: "\f259";
 }
-.fa-hand-pointer-o:до {
+.fa-hand-pointer-o:before {
   content: "\f25a";
 }
-.fa-hand-peace-o:до {
+.fa-hand-peace-o:before {
   content: "\f25b";
 }
-.fa-trademark:до {
+.fa-trademark:before {
   content: "\f25c";
 }
-.fa-registered:до {
+.fa-registered:before {
   content: "\f25d";
 }
-.fa-creative-commons:до {
+.fa-creative-commons:before {
   content: "\f25e";
 }
-.fa-gg:до {
+.fa-gg:before {
   content: "\f260";
 }
-.fa-gg-circle:до {
+.fa-gg-circle:before {
   content: "\f261";
 }
-.fa-tripadvisor:до {
+.fa-tripadvisor:before {
   content: "\f262";
 }
-.fa-odnoklassniki:до {
+.fa-odnoklassniki:before {
   content: "\f263";
 }
-.fa-odnoklassniki-square:до {
+.fa-odnoklassniki-square:before {
   content: "\f264";
 }
-.fa-get-pocket:до {
+.fa-get-pocket:before {
   content: "\f265";
 }
-.fa-wikipedia-w:до {
+.fa-wikipedia-w:before {
   content: "\f266";
 }
-.fa-safari:до {
+.fa-safari:before {
   content: "\f267";
 }
-.fa-chrome:до {
+.fa-chrome:before {
   content: "\f268";
 }
-.fa-firefox:до {
+.fa-firefox:before {
   content: "\f269";
 }
-.fa-opera:до {
+.fa-opera:before {
   content: "\f26a";
 }
-.fa-internet-explorer:до {
+.fa-internet-explorer:before {
   content: "\f26b";
 }
-.fa-tv:до,
-.fa-television:до {
+.fa-tv:before,
+.fa-television:before {
   content: "\f26c";
 }
-.fa-contao:до {
+.fa-contao:before {
   content: "\f26d";
 }
-.fa-500px:до {
+.fa-500px:before {
   content: "\f26e";
 }
-.fa-amazon:до {
+.fa-amazon:before {
   content: "\f270";
 }
-.fa-calendar-plus-o:до {
+.fa-calendar-plus-o:before {
   content: "\f271";
 }
-.fa-calendar-minus-o:до {
+.fa-calendar-minus-o:before {
   content: "\f272";
 }
-.fa-calendar-times-o:до {
+.fa-calendar-times-o:before {
   content: "\f273";
 }
-.fa-calendar-check-o:до {
+.fa-calendar-check-o:before {
   content: "\f274";
 }
-.fa-industry:до {
+.fa-industry:before {
   content: "\f275";
 }
-.fa-map-pin:до {
+.fa-map-pin:before {
   content: "\f276";
 }
-.fa-map-signs:до {
+.fa-map-signs:before {
   content: "\f277";
 }
-.fa-map-o:до {
+.fa-map-o:before {
   content: "\f278";
 }
-.fa-map:до {
+.fa-map:before {
   content: "\f279";
 }
-.fa-commenting:до {
+.fa-commenting:before {
   content: "\f27a";
 }
-.fa-commenting-o:до {
+.fa-commenting-o:before {
   content: "\f27b";
 }
-.fa-houzz:до {
+.fa-houzz:before {
   content: "\f27c";
 }
-.fa-vimeo:до {
+.fa-vimeo:before {
   content: "\f27d";
 }
-.fa-black-tie:до {
+.fa-black-tie:before {
   content: "\f27e";
 }
-.fa-fonticons:до {
+.fa-fonticons:before {
   content: "\f280";
 }
-.fa-reddit-alien:до {
+.fa-reddit-alien:before {
   content: "\f281";
 }
-.fa-edge:до {
+.fa-edge:before {
   content: "\f282";
 }
-.fa-credit-card-alt:до {
+.fa-credit-card-alt:before {
   content: "\f283";
 }
-.fa-codiepie:до {
+.fa-codiepie:before {
   content: "\f284";
 }
-.fa-modx:до {
+.fa-modx:before {
   content: "\f285";
 }
-.fa-fort-awesome:до {
+.fa-fort-awesome:before {
   content: "\f286";
 }
-.fa-usb:до {
+.fa-usb:before {
   content: "\f287";
 }
-.fa-product-hunt:до {
+.fa-product-hunt:before {
   content: "\f288";
 }
-.fa-mixcloud:до {
+.fa-mixcloud:before {
   content: "\f289";
 }
-.fa-scribd:до {
+.fa-scribd:before {
   content: "\f28a";
 }
-.fa-pause-circle:до {
+.fa-pause-circle:before {
   content: "\f28b";
 }
-.fa-pause-circle-o:до {
+.fa-pause-circle-o:before {
   content: "\f28c";
 }
-.fa-stop-circle:до {
+.fa-stop-circle:before {
   content: "\f28d";
 }
-.fa-stop-circle-o:до {
+.fa-stop-circle-o:before {
   content: "\f28e";
 }
-.fa-shopping-bag:до {
+.fa-shopping-bag:before {
   content: "\f290";
 }
-.fa-shopping-basket:до {
+.fa-shopping-basket:before {
   content: "\f291";
 }
-.fa-hashtag:до {
+.fa-hashtag:before {
   content: "\f292";
 }
-.fa-bluetooth:до {
+.fa-bluetooth:before {
   content: "\f293";
 }
-.fa-bluetooth-b:до {
+.fa-bluetooth-b:before {
   content: "\f294";
 }
-.fa-percent:до {
+.fa-percent:before {
   content: "\f295";
 }
-.fa-gitlab:до {
+.fa-gitlab:before {
   content: "\f296";
 }
-.fa-wpbeginner:до {
+.fa-wpbeginner:before {
   content: "\f297";
 }
-.fa-wpforms:до {
+.fa-wpforms:before {
   content: "\f298";
 }
-.fa-envira:до {
+.fa-envira:before {
   content: "\f299";
 }
-.fa-universal-access:до {
+.fa-universal-access:before {
   content: "\f29a";
 }
-.fa-wheelchair-alt:до {
+.fa-wheelchair-alt:before {
   content: "\f29b";
 }
-.fa-question-circle-o:до {
+.fa-question-circle-o:before {
   content: "\f29c";
 }
-.fa-blind:до {
+.fa-blind:before {
   content: "\f29d";
 }
-.fa-audio-description:до {
+.fa-audio-description:before {
   content: "\f29e";
 }
-.fa-volume-control-phone:до {
+.fa-volume-control-phone:before {
   content: "\f2a0";
 }
-.fa-braille:до {
+.fa-braille:before {
   content: "\f2a1";
 }
-.fa-assistive-listening-systems:до {
+.fa-assistive-listening-systems:before {
   content: "\f2a2";
 }
-.fa-asl-interpreting:до,
-.fa-american-sign-language-interpreting:до {
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
   content: "\f2a3";
 }
-.fa-deafness:до,
-.fa-hard-of-hearing:до,
-.fa-deaf:до {
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
   content: "\f2a4";
 }
-.fa-glide:до {
+.fa-glide:before {
   content: "\f2a5";
 }
-.fa-glide-g:до {
+.fa-glide-g:before {
   content: "\f2a6";
 }
-.fa-signing:до,
-.fa-sign-language:до {
+.fa-signing:before,
+.fa-sign-language:before {
   content: "\f2a7";
 }
-.fa-low-vision:до {
+.fa-low-vision:before {
   content: "\f2a8";
 }
-.fa-viadeo:до {
+.fa-viadeo:before {
   content: "\f2a9";
 }
-.fa-viadeo-square:до {
+.fa-viadeo-square:before {
   content: "\f2aa";
 }
-.fa-snapchat:до {
+.fa-snapchat:before {
   content: "\f2ab";
 }
-.fa-snapchat-ghost:до {
+.fa-snapchat-ghost:before {
   content: "\f2ac";
 }
-.fa-snapchat-square:до {
+.fa-snapchat-square:before {
   content: "\f2ad";
 }
-.fa-pied-piper:до {
+.fa-pied-piper:before {
   content: "\f2ae";
 }
-.fa-first-order:до {
+.fa-first-order:before {
   content: "\f2b0";
 }
-.fa-yoast:до {
+.fa-yoast:before {
   content: "\f2b1";
 }
-.fa-themeisle:до {
+.fa-themeisle:before {
   content: "\f2b2";
 }
-.fa-google-plus-circle:до,
-.fa-google-plus-official:до {
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
   content: "\f2b3";
 }
-.fa-fa:до,
-.fa-font-awesome:до {
+.fa-fa:before,
+.fa-font-awesome:before {
   content: "\f2b4";
 }
-.fa-handshake-o:до {
+.fa-handshake-o:before {
   content: "\f2b5";
 }
-.fa-envelope-open:до {
+.fa-envelope-open:before {
   content: "\f2b6";
 }
-.fa-envelope-open-o:до {
+.fa-envelope-open-o:before {
   content: "\f2b7";
 }
-.fa-linode:до {
+.fa-linode:before {
   content: "\f2b8";
 }
-.fa-address-book:до {
+.fa-address-book:before {
   content: "\f2b9";
 }
-.fa-address-book-o:до {
+.fa-address-book-o:before {
   content: "\f2ba";
 }
-.fa-vcard:до,
-.fa-address-card:до {
+.fa-vcard:before,
+.fa-address-card:before {
   content: "\f2bb";
 }
-.fa-vcard-o:до,
-.fa-address-card-o:до {
+.fa-vcard-o:before,
+.fa-address-card-o:before {
   content: "\f2bc";
 }
-.fa-user-circle:до {
+.fa-user-circle:before {
   content: "\f2bd";
 }
-.fa-user-circle-o:до {
+.fa-user-circle-o:before {
   content: "\f2be";
 }
-.fa-user-o:до {
+.fa-user-o:before {
   content: "\f2c0";
 }
-.fa-id-badge:до {
+.fa-id-badge:before {
   content: "\f2c1";
 }
-.fa-drivers-license:до,
-.fa-id-card:до {
+.fa-drivers-license:before,
+.fa-id-card:before {
   content: "\f2c2";
 }
-.fa-drivers-license-o:до,
-.fa-id-card-o:до {
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
   content: "\f2c3";
 }
-.fa-quora:до {
+.fa-quora:before {
   content: "\f2c4";
 }
-.fa-free-code-camp:до {
+.fa-free-code-camp:before {
   content: "\f2c5";
 }
-.fa-telegram:до {
+.fa-telegram:before {
   content: "\f2c6";
 }
-.fa-thermometer-4:до,
-.fa-thermometer:до,
-.fa-thermometer-full:до {
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
   content: "\f2c7";
 }
-.fa-thermometer-3:до,
-.fa-thermometer-three-quarters:до {
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
   content: "\f2c8";
 }
-.fa-thermometer-2:до,
-.fa-thermometer-half:до {
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
   content: "\f2c9";
 }
-.fa-thermometer-1:до,
-.fa-thermometer-quarter:до {
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
   content: "\f2ca";
 }
-.fa-thermometer-0:до,
-.fa-thermometer-empty:до {
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
   content: "\f2cb";
 }
-.fa-shower:до {
+.fa-shower:before {
   content: "\f2cc";
 }
-.fa-bathtub:до,
-.fa-s15:до,
-.fa-bath:до {
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
   content: "\f2cd";
 }
-.fa-podcast:до {
+.fa-podcast:before {
   content: "\f2ce";
 }
-.fa-window-maximize:до {
+.fa-window-maximize:before {
   content: "\f2d0";
 }
-.fa-window-minimize:до {
+.fa-window-minimize:before {
   content: "\f2d1";
 }
-.fa-window-restore:до {
+.fa-window-restore:before {
   content: "\f2d2";
 }
-.fa-times-rectangle:до,
-.fa-window-close:до {
+.fa-times-rectangle:before,
+.fa-window-close:before {
   content: "\f2d3";
 }
-.fa-times-rectangle-o:до,
-.fa-window-close-o:до {
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
   content: "\f2d4";
 }
-.fa-bandcamp:до {
+.fa-bandcamp:before {
   content: "\f2d5";
 }
-.fa-grav:до {
+.fa-grav:before {
   content: "\f2d6";
 }
-.fa-etsy:до {
+.fa-etsy:before {
   content: "\f2d7";
 }
-.fa-imdb:до {
+.fa-imdb:before {
   content: "\f2d8";
 }
-.fa-ravelry:до {
+.fa-ravelry:before {
   content: "\f2d9";
 }
-.fa-eercast:до {
+.fa-eercast:before {
   content: "\f2da";
 }
-.fa-microchip:до {
+.fa-microchip:before {
   content: "\f2db";
 }
-.fa-snowflake-o:до {
+.fa-snowflake-o:before {
   content: "\f2dc";
 }
-.fa-superpowers:до {
+.fa-superpowers:before {
   content: "\f2dd";
 }
-.fa-wpexplorer:до {
+.fa-wpexplorer:before {
   content: "\f2de";
 }
-.fa-meetup:до {
+.fa-meetup:before {
   content: "\f2e0";
 }
 .sr-only {
