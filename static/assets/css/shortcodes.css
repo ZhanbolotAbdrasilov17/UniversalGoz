@@ -49,11 +49,7 @@
 /* ===============================================
     1.ttm-row
 ------------------------*/
-<<<<<<< HEAD
 .ttm-row{ padding: 40px 0;}
-=======
-.ttm-row{ padding: 100px 0;}
->>>>>>> edd88213fccf6084ad3678df96b7d4c8e0477a8d
 .ttm-row.broken-section { padding: 0 0; }
 .ttm-row.zero_padding-section { padding: 0 0; }
 .ttm-row.bottom_zero_padding-section { padding: 100px 0 0; }

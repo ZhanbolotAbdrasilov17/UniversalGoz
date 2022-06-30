@@ -88,7 +88,6 @@ def about_2(request):
     return render(request, 'about_2.html')
 
 def faq(request):
-<<<<<<< HEAD
     faqs = FAQ.objects.all()
     context = {"faqs": faqs}
     return render(request, 'faq.html', context)
@@ -97,39 +96,12 @@ def treatment(request):
     treatments = Treatment.objects.all()
     context = {"treatments": treatments}
     return render(request, 'research.html', context)
-=======
-    return render(request, 'faq.html')
-
-def contact_lenses(request):
-    return render(request, 'contact_lenses.html')
-
-def comprehensive(request):
-    return render(request, 'comprehensive.html')
-
-def keratoconus(request):
-    return render(request, 'keratoconus.html')
-
-def phakic_lens(request):
-    return render(request, 'phakic_lens.html')
-
-def retina_disease(request):
-    return render(request, 'retina_disease.html')
-
-def glaucoma(request):
-    return render(request, 'glaucoma.html')
-
-def research(request):
-    return render(request, 'research.html')
->>>>>>> edd88213fccf6084ad3678df96b7d4c8e0477a8d
 
 def research_single(request):
     return render(request, 'research_single.html')
 
 def service(request):
     return render(request, 'service.html')
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> edd88213fccf6084ad3678df96b7d4c8e0477a8d
