@@ -1,349 +1,455 @@
-<!doctype html>
-{% load static%}
-<html lang="zxx">
+<!DOCTYPE html>
+{% load static %}
+{% load i18n%}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="HTML5 Template" />
+    <meta
+      name="keywords"
+      content="Optometrist & Eye Care html template,  unlimited colors available, ui/ux, ui/ix designs, best wordpress theme, html template, html, javascript, best css theme, css3, elementor theme, latest premium themes 2022,latest premium templates 2022, cymol themes, themetechmount, multi-theme, eye care, Eye Care Clinic, eye doctor, eye surgeon theme, healthcare, Laser Vision, medical theme, ophthalmologist, optical store, optometrist, responsive wp theme, vision care, website theme and template, woocommerce"
+    />
+    <meta
+      name="description"
+      content="Optrica &#8211; Optometrist &amp; Eye Care HTML Template"
+    />
+    <meta name="author" content="https://www.themetechmount.com/" />
+    <meta name="viewport" content=" width=device-width, initial-scale=1" />
+    <title>Optrica &#8211; Optometrist &amp; Eye Care HTML Template</title>
 
-<!-- Mirrored from templates.envytheme.com/mebid/default/doctors.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 May 2022 10:29:49 GMT -->
-<head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon.png'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/flaticon.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/fontello.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/themify-icons.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/prettyPhoto.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/twentytwenty.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/main.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/megamenu.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/responsive.css'%}" />
+  </head>
 
-        <!-- Links of CSS files -->
-        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/aos.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/remixicon.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/odometer.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/fancybox.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/selectize.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/twentytwenty.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
-		<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
-		<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/font-awesome-4.7.0/css/font-awesome.css' %}">
+  <body>
+    <!--page start-->
+    <div class="page">
+      <!-- preloader start -->
+      <div id="preloader" class="blobs-wrapper">
+        <div class="loader-blob"></div>
+      </div>
+      <!-- preloader end -->
 
-		<title>Universal Goz</title>
-
-        <link rel="icon" type="image/png" href="{% static 'assets/images/favicon.png' %}">
-    </head>
-
-    <body>
-
-        <!-- Start Preloader Area -->
-        <div class="preloader">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      <!--header start-->
+      <header id="masthead" class="header ttm-header-style-01 clearfix">
+        <!-- top_bar -->
+        <div class="top_bar ttm-bgcolor-darkgrey clearfix">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 d-flex flex-row align-items-center">
+                <div class="top_bar_contact_item">
+                  <div class="top_bar_icon"><i class="flaticon-tack"></i></div>
+                  МЕДЕРОВА 197, БИШКЕК
                 </div>
-            </div>
-        </div>
-        <!-- End Preloader Area -->
-        <!-- Start Topbar -->
-        <div class="topbar-area bg-1F242F">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6" >
+                <div class="top_bar_contact_item mr-auto">
+                  <div class="top_bar_icon">
+                    <i class="flaticon-paper-plane"></i>
+                  </div>
+                  sales@themetechmount.com
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="site-description">{% trans "Социальные сети" %}</div>
+                  <div class="top_bar_contact_item top_bar_social">
+                    <ul class="social-icons">
+                      <li class="facebook-icon">
+                        <a
+                          href="https://www.facebook.com/themetechMount18"
+                          rel="noopener"
+                          aria-label="facebook"
+                          ><i class="fa fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li class="twitter-icon">
+                        <a
+                          href="https://twitter.com/themetechmount"
+                          rel="noopener"
+                          aria-label="twitter"
+                          ><i class="fa fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li class="instagram-icon">
+                        <a
+                          href=" https://www.instagram.com/universal.goz/"
+                          rel="noopener"
+                          aria-label="instagram"
+                          ><i class="fa fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li class="linkedin-icon">
+                        <a
+                          href="https://www.linkedin.com/company/themetech-mount/"
+                          rel="noopener"
+                          aria-label="linkedin"
+                          ><i class="fa fa-linkedin"></i
+                        ></a>
+                      </li>
+                    </ul>
+<!--                                <div class="languages-switcher">-->
+<!--									<i class="ri-global-line"></i>-->
+<!--									<form action="{% url 'set_language' %}" method="post">{% csrf_token %}-->
+<!--									<input name="next" type="hidden" value="{{ redirect_to }}">-->
+<!--									<select name="language" onchange="this.form.submit()">-->
+<!--										{% get_current_language as LANGUAGE_CODE %}-->
+<!--										{% get_available_languages as LANGUAGES %}-->
+<!--										{% get_language_info_list for LANGUAGES as languages %}-->
+<!--										{% for language in languages %}-->
 
-                        <ul class="topbar-list">
-                            <li><a href="emergency-services.html"> Пн-Пт   09:00 – 17:00</a></li>
-                            <li><a href="emergency-services.html"> Сб 09:00 – 14:00</a></li>
+<!--											<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>-->
+<!--												{{ language.name_local }}-->
+<!--											</option>-->
+<!--										{% endfor %}-->
+<!--									</select>-->
+<!--&lt;!&ndash;									<input type="submit" value="ОК">&ndash;&gt;-->
+<!--									</form>-->
+
+<!--								</div>-->
+                  </div>
+                </div>
+                <form class="lang-switcher" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                  <input name="next" type="hidden" value="{{ redirect_to }}">
+                  <select style="padding: 0 10px; background: transparent; color: #fff; border: none" name="language" onchange="this.form.submit()">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    {% for language in languages %}
+                    <option style="background: #fff; color: #111;" value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                      {{ language.name_local }}
+                    </option>
+                    {% endfor %}
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- top_bar end -->
+        <!-- site-header-menu -->
+        <div id="site-header-menu" class="site-header-menu">
+          <div class="site-header-menu-inner ttm-stickable-header">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <!--site-navigation -->
+                  <div
+                    class="site-navigation d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <!-- site-branding -->
+                    <div class="site-branding">
+                      <a
+                        class="home-link"
+                        href="index.html"
+                        title="Optrica"
+                        rel="home"
+                      >
+                        <img
+                          width="192"
+                          height="34"
+                          id="logo-img"
+                          class="img-center"
+                          src="{% static 'assets/images/logo-img-white.svg'%}"
+                          alt="logo-img"
+                        />
+                      </a>
+                    </div>
+                    <!-- site-branding end -->
+                    <div class="d-flex flex-row">
+                      <div
+                        class="btn-show-menu-mobile menubar menubar--squeeze"
+                      >
+                        <span class="menubar-box">
+                          <span class="menubar-inner"></span>
+                        </span>
+                      </div>
+                      <!-- menu -->
+                      <nav class="main-menu menu-mobile" id="menu">
+                        <ul class="menu">
+                          <li class="mega-menu-item active">
+                            <a href="#" class="mega-menu-link">Главная</a>
+                          </li>
+                          <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">Здоровье глаз</a>
+                            <ul class="mega-submenu">
+                              <li><a href="{% url 'about' %}">About Us 1</a></li>
+                              <li><a href="{% url 'about_2' %}">About Us 2</a></li>
+                              <li><a href="{% url 'service' %}">Services 1</a></li>
+                              <li><a href="{% url 'doctor' %}">Our Team</a></li>
+                              <li>
+                                <a href="team-details.html">Team Details</a>
+                              </li>
+                              <li><a href="{% url 'faq'%}">FAQs</a></li>
+                              <li><a href="error.html">Error Page</a></li>
+                            </ul>
+                          </li>
+
+                          <li class="mega-menu-item">
+                            <a href="{% url 'treatment'%}" class="mega-menu-link">Диагнозы</a>
+                          </li>
+                          <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">Новости</a>
+                            <ul class="mega-submenu">
+                              <li><a href="{% url 'news'%}">Blog Classic</a></li>
+                              <li>
+                                <a href="blog-single.html">Blog Single View</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="mega-menu-item">
+                            <a href="{% url 'contact'%}">Контакты</a>
+                          </li>
                         </ul>
-
-
-
+                      </nav>
+                      <div
+                        class="header_extra d-flex flex-row align-items-center justify-content-end"
+                      >
+                        <div class="header_btn">
+                          <a
+                            class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor ttm-btn-right ttm-icon-btn-right"
+                            href="contact.html"
+                            >Записаться<i class="fontello icon-plus"></i
+                          ></a>
+                        </div>
+                      </div>
                     </div>
-
-
-
-                    <div class="col-lg-6 col-md-6 header-row">
-                        <ul class="header-row__socs">
-                            <li><a href="#" class="fa fa-facebook"></a></li>
-                            <li><a href="#" class="fa fa-whatsapp"></a></li>
-                            <li><a href="#" class="fa fa-google"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                        </ul>
-                        <a href="tel:0485443322" class="navbar-number topbar-action"><i class="flaticon-telephone "></i> +996 700 00 00 00</a>
-                    </div>
+                  </div>
+                  <!-- site-navigation end-->
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- End Topbar -->
-        <!-- Start Navbar Area -->
-        <div class="navbar-area navbar-style-three">
-            <div class="main-responsive-nav">
-                <div class="container">
-                    <div class="main-responsive-menu">
-                        <div class="logo">
-                            <a href="{% url 'home' %}">
-                                <img src="{% static 'assets/images/123/logo.PNG' %}" alt="logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-navbar">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="{% url 'home' %}">
-                            <img src="{% static 'assets/images/123/logo.PNG' %}" alt="logo">
-                        </a>
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav m-auto">
-                                <li class="nav-item">
-                                    <a href="{% url 'home' %}" class="nav-link">
-                                        Главная
-                                    </a>
+        <!-- site-header-menu end-->
+      </header>
+      <!--header end-->
 
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{% url 'about' %}" class="nav-link">О клинике</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{% url 'doctor' %}" class="nav-link">
-                                        Врачи
-                                        <i class="ri-arrow-down-s-line"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="{% url 'doctor' %}" class="nav-link">Наши врачи</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">Успехи</a>
-                                        </li>
-
-
-
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Услуги
-                                        <i class="ri-arrow-down-s-line"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">Диагностика зрения</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">Ортальмологические услуги для беременных</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">Лазерная коррекция зрения</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">Лечение катаракты</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">Имплантация факичных линз</a>
-                                        </li>
-                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Витреоретинальная хирургия</a>
-                                        </li>
-                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Ортокератология</a>
-                                        </li>
-
-
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Отзывы
-                                    </a>
-
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{% url 'news'%}" class="nav-link">
-                                        Блог
-                                        <i class="ri-arrow-down-s-line"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="{% url 'news'%}" class="nav-link">Важно знать</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{% url 'news'%}" class="nav-link">Новости</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{% url 'news'%}" class="nav-link">СМИ о нас</a>
-                                        </li>
-
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{% url 'contact'%}" class="nav-link">Контакты</a>
-                                </li>
-                            </ul>
-
-                            <div class="others-options d-flex align-items-center">
-
-                                <div class="option-item">
-                                    <a href="{% url 'contact'%}" class="default-btn"><i class="flaticon-calendar"></i> Связаться с нами</a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-
-            <div class="others-option-for-responsive">
-                <div class="container">
-                    <div class="dot-menu">
-                        <div class="inner">
-                            <div class="circle circle-one"></div>
-                            <div class="circle circle-two"></div>
-                            <div class="circle circle-three"></div>
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        <div class="option-inner">
-                            <div class="others-options d-flex align-items-center">
-                                <div class="option-item">
-                                    <a href="#" class="search-box"><i class="ri-search-line"></i></a>
-                                </div>
-                                <div class="option-item">
-                                    <a href="cart.html" class="cart-btn"><i class="ri-shopping-cart-2-line"></i><span>0</span></a>
-                                </div>
-                                <div class="option-item">
-                                    <a href="appointment.html" class="default-btn"><i class="flaticon-calendar"></i> Appointment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Navbar Area -->
-        <!-- Search Overlay -->
-        <div class="search-overlay">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="search-overlay-layer"></div>
-                    <div class="search-overlay-layer"></div>
-                    <div class="search-overlay-layer"></div>
-
-                    <div class="search-overlay-close">
-                        <span class="search-overlay-close-line"></span>
-                        <span class="search-overlay-close-line"></span>
-                    </div>
-
-                    <div class="search-overlay-form">
-                        <form>
-                            <input type="text" class="input-search" placeholder="Search here...">
-                            <button type="submit"><i class="ri-search-line"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    {% block page%} {% endblock %}
-
-    <footer class="footer-area bg-1F242F pt-100 pb-75">
+          {% block page%} {% endblock %}
+        <footer class="footer widget-footer ttm-textcolor-white clearfix">
+          <div class="second-footer">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h3>Контакты</h3>
-                            <ul class="footer-information">
-                                <li><i class="ri-phone-fill"></i> <a href="tel:0554 730 944">0554 730 944</a></li>
-                                <li><i class="ri-mail-line"></i> <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#afc7cac3c3c0efc4cecbc681ccc0c2"><span data-cfemail="97faf2f5fef3d7f0faf6fefbb9f4f8fa">universalgoz@gmail.com</span></a></li>
-                                <li><i class="ri-map-pin-fill"></i> Манаса 12а</li>
-                            </ul>
-                        </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
+                  <div class="widget widget_text clearfix">
+                    <div class="footer-logo">
+                      <img
+                        id="footer-logo-img"
+                        class="img-fluid auto_size"
+                        src="{% static 'assets/images/logo-img.svg'%}"
+                        alt="image"
+                      />
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-footer-widget ps-5">
-                            <h3>Наши отделы</h3>
-
-                            <ul class="quick-links">
-                                <li><a href="#">Ортопедический</a></li>
-                                <li><a href="#">Стоматологические услуги</a></li>
-                                <li><a href="#">Неврология</a></li>
-                                <li><a href="#">Отделение неотложной помощи</a></li>
-                                <li><a href="#">Отделение диагностики</a></li>
-                            </ul>
+                    <div
+                      class="featured-icon-box icon-align-before-content icon-ver_align-top"
+                    >
+                      <div class="featured-icon">
+                        <div
+                          class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg"
+                        >
+                          <i
+                            class="ttm-textcolor-skincolor flaticon-arroba"
+                          ></i>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-footer-widget ps-3">
-                            <h3>Полезные ссылки</h3>
-
-                            <ul class="quick-links">
-                                <li><a href="{%url 'about'%}">О нас</a></li>
-                                <li><a href="{%url 'doctor'%}">Найти врача</a></li>
-                                <li><a href="{% url 'news' %}">Новости</a></li>
-                                <li><a href="{%url 'contact'%}">Контакты</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Отзывы</a></li>
-
-                            </ul>
-
+                      </div>
+                      <div class="featured-content">
+                        <div class="featured-title">
+                          <h3>Free Consult</h3>
+                          <a href="mailto:sale@themetechmount.com"
+                            ><br />sale@themetechmount.com</a
+                          >
                         </div>
+                      </div>
                     </div>
-
-                </div>
-            </div>
-
-            <div class="footer-shape-1">
-                <img src="{% static 'assets/images/footer-shape-2.png' %}" alt="image">
-            </div>
-
-        </footer>
-        <!-- End Footer Area -->
-        <!-- Start Copyright Area -->
-        <div class="copyright-area">
-            <div class="container">
-                <div class="copyright-content">
-                    <p>
-                        Copyright © 2022 Universal Goz
-                        <a href="http://asoi.kg/" target="_blank">ASOI studio</a>
+                    <p class="margin_top30">
+                      Optrica committed to provide greater eye improvements of
+                      system & technology.
                     </p>
+                    <div
+                      class="social-icons d-inline-block margin_top10 margin_bottom10"
+                    >
+                      <ul class="list-inline">
+                        <li class="social-facebook">
+                          <a
+                            class="tooltip-top"
+                            target="_blank"
+                            href="#"
+                            rel="noopener"
+                            aria-label="facebook"
+                            data-tooltip="Facebook"
+                          >
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="social-twitter">
+                          <a
+                            class="tooltip-top"
+                            target="_blank"
+                            href="#"
+                            rel="noopener"
+                            aria-label="Twitter"
+                            data-tooltip="Twitter"
+                          >
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          </a>
+                        </li>
+                        <li class="social-flickr">
+                          <a
+                            class="tooltip-top"
+                            target="_blank"
+                            href="#"
+                            rel="noopener"
+                            aria-label="Flickr"
+                            data-tooltip="Flickr"
+                          >
+                            <i class="fa fa-flickr" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="social-linkedin">
+                          <a
+                            class="tooltip-top"
+                            target="_blank"
+                            href="#"
+                            rel="noopener"
+                            aria-label="LinkedIn"
+                            data-tooltip="LinkedIn"
+                          >
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
+                  <div class="widget widget_nav_menu clearfix">
+                    <h3 class="widget-title">Departments</h3>
+                    <ul id="menu-footer-service-link" class="menu">
+                      <li><a href="{% url 'about' %}">Who We Are</a></li>
+                      <li><a href="{% url 'about_2' %}">Our Mission</a></li>
+                      <li><a href="{% url 'news' %}">Awards</a></li>
+                      <li><a href="{% url 'doctor' %}">Our Doctors</a></li>
+                      <li><a href="{% url 'about_2' %}">Before &amp; After</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
+                  <div class="widget widget_nav_menu clearfix">
+                    <h3 class="widget-title">Quick Link</h3>
+                    <ul id="menu-footer-quick-link" class="menu">
+                      <li><a href="glasses.html">Treatments</a></li>
+                      <li><a href="glaucoma.html">Our Patients</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="our-team.html">Appointments</a></li>
+                      <li><a href="phakic-lens.html">About Us</a></li>
+                      <li><a href="faqs.html">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <!-- End Copyright Area -->
+          </div>
+          <div class="bottom-footer-text ttm-bgcolor-skincolor copyright">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div
+                    class="d-md-flex justify-content-between mr-auto res-1199-padding_bottom10"
+                  >
+                    <span class="cpy-text"
+                      >2022. Все права защищены. Дизайнер
+                      <a href="services-2.html" class="font-weight-500">ASOI </a
+                      ></span
+                    >
+                  </div>
+                </div>
+                <div class="col-xl-7">
+                  <div class="d-md-flex mr-auto">
+                    <!-- widget-info -->
+                    <div
+                      class="widget_info d-flex flex-row align-items-center justify-content-center"
+                    >
+                      <div class="widget_icon">
+                        <img
+                          width="55"
+                          height="55"
+                          class="img-fluid"
+                          src="{% static 'assets/images/email.svg'%}"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="widget_content">
+                        <p class="widget_title">
+                          <a href="mailto:info@example.com">info@example.com</a>
+                        </p>
+                      </div>
+                    </div>
+                    <!-- widget-info end -->
+                    <!-- widget-info -->
+                    <div
+                      class="widget_info d-flex flex-row align-items-center justify-content-center res-767-padding_left0"
+                    >
+                      <div class="widget_icon">
+                        <i class="flaticon-call"></i>
+                      </div>
+                      <div class="widget_content">
+                        <p class="widget_title">0312540054</p>
+                      </div>
+                    </div>
+                    <!-- widget-info end -->
+                    <!-- widget-info -->
+                    <div
+                      class="widget_info d-flex flex-row align-items-center justify-content-center"
+                    >
+                      <div class="widget_icon">
+                        <i class="flaticon-location-1"></i>
+                      </div>
+                      <div class="widget_content">
+                        <p class="widget_title">МЕДЕРОВА 197, БИШКЕК</p>
+                      </div>
+                    </div>
+                    <!-- widget-info end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
 
-        <!-- Start Go Top -->
-        <div class="go-top">
-            <i class="ri-arrow-up-s-line"></i>
-        </div>
-        <!-- End Go Top -->
+      <!--back-to-top start-->
+      <a id="totop" href="#top">
+        <i class="fa fa-angle-up"></i>
+      </a>
+      <!--back-to-top end-->
+    </div>
+    <!-- page end -->
 
+    <!-- Javascript -->
 
-
-        <!-- Links of JS files -->
-        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
-        <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
-        <script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
-        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
-        <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
-        <script src="{% static 'assets/js/odometer.min.js' %}"></script>
-        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
-        <script src="{% static 'assets/js/fancybox.min.js' %}"></script>
-        <script src="{% static 'assets/js/jquery-ui.js' %}"></script>
-        <script src="{% static 'assets/js/selectize.min.js' %}"></script>
-        <script src="{% static 'assets/js/TweenMax.min.js' %}"></script>
-        <script src="{% static 'assets/js/event.move.min.js' %}"></script>
-        <script src="{% static 'assets/js/twentytwenty.min.js' %}"></script>
-        <script src="{% static 'assets/js/aos.js' %}"></script>
-		<script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
-		<script src="{% static 'assets/js/form-validator.min.js' %}"></script>
-        <script src="{% static 'assets/js/contact-form-script.js' %}"></script>
-        <script src="{% static 'assets/js/wow.min.js' %}"></script>
-        <script src="{% static 'assets/js/main.js' %}"></script>
-    </body>
-
-<!-- Mirrored from templates.envytheme.com/mebid/default/doctors.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 May 2022 10:29:49 GMT -->
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js'%}"></script>
+    <script src="{% static 'assets/js/jquery-migrate-3.3.2.min.js'%}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'assets/js/jquery.easing.js'%}"></script>
+    <script src="{% static 'assets/js/jquery-waypoints.js'%}"></script>
+    <script src="{% static 'assets/js/jquery-validate.js'%}"></script>
+    <script src="{% static 'assets/js/jquery.prettyPhoto.js'%}"></script>
+    <script src="{% static 'assets/js/slick.min.js'%}"></script>
+    <script src="{% static 'assets/js/numinate.min.js'%}"></script>
+    <script src="{% static 'assets/js/imagesloaded.min.js'%}"></script>
+    <script src="{% static 'assets/js/jquery-isotope.js'%}"></script>
+    <script src="{% static 'assets/js/jquery.event.move.js'%}"></script>
+    <script src="{% static 'assets/js/jquery.twentytwenty.js'%}"></script>
+    <script src="{% static 'assets/js/main.js'%}"></script>
+  </body>
 </html>

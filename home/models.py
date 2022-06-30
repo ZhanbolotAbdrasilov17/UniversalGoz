@@ -29,3 +29,25 @@ class Fulldescription(models.Model):
     text = models.TextField(verbose_name="Текст")
 
 
+
+class Treatment(models.Model):
+    title = models.CharField(max_length=200, verbose_name="Диагноз")
+    image = models.ImageField(null=True, blank=True, upload_to="treatment")
+
+    def __str__(self):
+        return self.title
+
+class TreatmentFullDescription(models.Model):
+    treatment = models.ForeignKey(Treatment, on_delete=models.CASCADE, related_name="treatment_descriptions")
+    title = models.CharField(max_length=200, verbose_name="Заглавие", blank=True, null=True)
+    text = models.TextField(verbose_name="Описание")
+
+
+class FAQ(models.Model):
+    question = models.CharField(max_length=300, verbose_name="вопросы",)
+    answer = models.TextField(verbose_name="ответы")
+
+    def __str__(self):
+        return self.question
+
+

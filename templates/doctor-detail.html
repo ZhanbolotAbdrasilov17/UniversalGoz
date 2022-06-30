@@ -2,70 +2,129 @@
 {% load static %}
 {% block page %}
 
+        <!-- page-title -->
+        <div class="ttm-page-title-row">
+            <div class="ttm-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
 
-        <!-- Start doctor Details Area -->
-        <section class="doctor-details-area ptb-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page-title end -->
+
+        <!--site-main start-->
+        <div class="site-main">
+
+
+        <section class="ttm-row padding_top70 padding_bottom70 clearfix">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="doctor-details-image">
-                            <div class="desc-image">
-                                <img src="{{doctors.image.url}}" alt="image">
-                                <div class="share-link">
-                                    <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-fill"></i></a>
-                                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="ri-twitter-fill"></i></a>
-                                    <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-                                    <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <div class="col-lg-12">
+                        <div class="ttm-team-member-single-content">
+                            <div class="ttm-team-member-single-content-area">
+                                <div class="ttm-bg ttm-col-bgcolor-yes ttm-bgcolor-grey spacing-9 res-991-margin_top0">
+                                    <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                                    <div class="layer-content">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-5 col-md-6">
+                                                <!-- ttm-featured-wrapper -->
+                                                <div class="ttm-featured-wrapper">
+                                                    <div class="featured-thumbnail mt_90 res-991-margin_top0">
+                                                        <img class="img-fluid" src="{{ doctors.image.url }}" alt="image">
+                                                    </div>
+                                                </div><!-- ttm-featured-wrapper end-->
+                                            </div>
+                                            <div class="col-lg-7 col-md-6">
+                                                <div class="ttm-team-member-content padding_left50 res-767-padding_left0 res-767-padding_top40">
+                                                    <div class="ttm-team-member-single-list">
+                                                        <h2 class="ttm-team-member-single-title">{{ doctors.full_name }}</h2>
+                                                        <div class="ttm-team-member-single-position">{{ doctors.position }}</div>
+                                                        <div class="ttm-team-data">
+                                                            <div class="ttm-team-details-wrapper">
+                                                                <ul class="ttm-team-details-list clearfix">
+                                                                    <li>
+                                                                        <div class="ttm-team-list-title ttm-textcolor-darkgrey">Phone :</div>
+                                                                        <div class="ttm-team-list-value">+12 12 123 45 46</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="ttm-team-list-title ttm-textcolor-darkgrey">Email :</div>
+                                                                        <div class="ttm-team-list-value"><a href="mailto:de@gmail.com">de@gmail.com</a></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="ttm-team-list-title ttm-textcolor-darkgrey">Speciality :</div>
+                                                                        <div class="ttm-team-list-value">General Assistant</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="ttm-team-list-title ttm-textcolor-darkgrey">Experience :</div>
+                                                                        <div class="ttm-team-list-value">10 Years</div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ttm-social-links-wrapper">
+                                                            <ul class="social-icons circle">
+                                                                <li class="social-facebook">
+                                                                    <a class="tooltip-top" target="_blank" href="#" data-tooltip="Facebook"><i class="ti ti-facebook" aria-hidden="true"></i></a>
+                                                                </li>
+                                                                <li class="social-twitter">
+                                                                    <a class="tooltip-top" target="_blank" href="#" data-tooltip="Twitter"><i class="ti ti-twitter-alt" aria-hidden="true"></i></a>
+                                                                </li>
+                                                                <li class="social-pinterest">
+                                                                    <a class="tooltip-top" target="_blank" href="#" data-tooltip="Pinterest"><i class="ti ti-pinterest-alt" aria-hidden="true"></i></a>
+                                                                </li>
+                                                                <li class="social-instagram">
+                                                                    <a class="tooltip-top" target="_blank" href="#" data-tooltip="Instagram"><i class="ti ti-instagram" aria-hidden="true"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="desc-content">
-                                <h3>{{ doctors.full_name}}</h3>
+                            <div class="ttm-team-member-content padding_top15 res-991-padding_top0">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7">
+                                        <div class="res-991-padding_right0 res-991-margin_bottom30">
+                                            {% for desc in texts %}
+                                            {% if desc.doctor.id == doctors.id%}
+                                            <p>{{ desc.text}}</p>
+                                            {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <!-- ttm_single_image-wrapper -->
+                                        <div class="d-inline ttm_single_image-wrapper padding_left90">
+                                            <div class="d-inline-block">
+                                                <img class="img-fluid auto_size margin_right1" width="180" src="images\team-detail2.jpg" alt="">
+                                            </div>
+                                            <div class="d-inline-block">
+                                                <img class="img-fluid auto_size" width="180" src="images\team-detail1.jpg" alt="">
+                                            </div>
+                                        </div><!-- ttm_single_image-wrapper end -->
+                                    </div>
+                                </div>
                             </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8 col-md-12">
-                        <div class="doctor-details-desc">
-                            <div class="introduction-content">
-                                <h3>{{ doctors.position}}</h3>
-                                {% for do in texts %}
-                                {% if do.doctor.id == doctors.id%}
-                                <p>{{ do.text}}</p>
-                                {% endif%}
-                                {% endfor %}
-
-
-                            </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End doctor Details Area -->
 
-        <!-- Start Overview Area -->
-        <div class="overview-area pt-75 pb-75">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-12">
-                        <div class="overview-logo">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                        <div class="overview-content">
-                            <h3>Требуется консультация?</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-12">
-                        <div class="overview-btn">
-                            <a href="contact.html" class="default-btn">Связаться с нами <i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Overview Area -->
+
+
+
+
+
+
+
+    </div><!--site-main end-->
+
+
+
 {% endblock %}

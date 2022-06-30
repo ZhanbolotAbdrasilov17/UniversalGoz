@@ -1,107 +1,267 @@
 @font-face {
-    font-family: "flaticon";
-    src: url("../fonts/flaticone857.ttf?de9945de8c0ec5371a6c0616490a77b8") format("truetype"),
-url("../fonts/flaticone857.woff?de9945de8c0ec5371a6c0616490a77b8") format("woff"),
-url("../fonts/flaticone857.woff2?de9945de8c0ec5371a6c0616490a77b8") format("woff2"),
-url("../fonts/flaticone857.eot?de9945de8c0ec5371a6c0616490a77b8#iefix") format("embedded-opentype"),
-url("../fonts/flaticone857.svg?de9945de8c0ec5371a6c0616490a77b8#flaticon") format("svg");
-}
-
-i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon !important;
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.eot");
+    src: url("../fonts/Flaticon-1.eot") format("embedded-opentype"),
+    url("../fonts/Flaticon.woff2") format("woff2"),
+    url("../fonts/Flaticon.woff") format("woff"),
+    url("../fonts/Flaticon.ttf") format("truetype"),
+    url("../fonts/Flaticon.svg") format("svg");
+    font-weight: normal;
     font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg") format("svg");
+  }
 }
 
-.flaticon-doctor:before {
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+    font-style: normal;
+}
+
+.flaticon-optical:before {
     content: "\f101";
 }
-.flaticon-emergency:before {
+.flaticon-eye:before {
     content: "\f102";
 }
-.flaticon-stethoscope:before {
+.flaticon-optical-1:before {
     content: "\f103";
 }
-.flaticon-badge:before {
+.flaticon-eye-1:before {
     content: "\f104";
 }
-.flaticon-satisfaction:before {
+.flaticon-glasses:before {
     content: "\f105";
 }
-.flaticon-saline:before {
+.flaticon-eyeglasses:before {
     content: "\f106";
 }
-.flaticon-laboratory:before {
+.flaticon-eye-2:before {
     content: "\f107";
 }
-.flaticon-emergency-call:before {
+.flaticon-vision:before {
     content: "\f108";
 }
-.flaticon-medical:before {
+.flaticon-optical-shop:before {
     content: "\f109";
 }
-.flaticon-emergency-call-1:before {
+.flaticon-optical-2:before {
     content: "\f10a";
 }
-.flaticon-loupe:before {
+.flaticon-optics:before {
     content: "\f10b";
 }
-.flaticon-orthopedics:before {
+.flaticon-optical-3:before {
     content: "\f10c";
 }
-.flaticon-heart:before {
+.flaticon-optics-1:before {
     content: "\f10d";
 }
-.flaticon-ophthalmology:before {
+.flaticon-vision-1:before {
     content: "\f10e";
 }
-.flaticon-neurology:before {
+.flaticon-observation:before {
     content: "\f10f";
 }
-.flaticon-stomach:before {
+.flaticon-optical-4:before {
     content: "\f110";
 }
-.flaticon-abdominoplasty:before {
+.flaticon-optical-5:before {
     content: "\f111";
 }
-.flaticon-shopping-cart:before {
+.flaticon-optical-6:before {
     content: "\f112";
 }
-.flaticon-telephone:before {
+.flaticon-optic:before {
     content: "\f113";
 }
-.flaticon-worldwide:before {
+.flaticon-vision-2:before {
     content: "\f114";
 }
-.flaticon-calendar:before {
+.flaticon-view:before {
     content: "\f115";
 }
-.flaticon-call:before {
+.flaticon-eye-exam:before {
     content: "\f116";
 }
-.flaticon-play:before {
+.flaticon-contact-lens:before {
     content: "\f117";
 }
-.flaticon-quote:before {
+.flaticon-visual:before {
     content: "\f118";
 }
-.flaticon-envelope:before {
+.flaticon-glasses-1:before {
     content: "\f119";
 }
-.flaticon-pin:before {
+.flaticon-eye-3:before {
     content: "\f11a";
 }
-.flaticon-right-arrow:before {
+.flaticon-eyeglasses-1:before {
     content: "\f11b";
 }
-.flaticon-left-arrow:before {
+.flaticon-computer:before {
     content: "\f11c";
 }
-.flaticon-doctor-1:before {
+.flaticon-view-1:before {
     content: "\f11d";
+}
+.flaticon-vision-3:before {
+    content: "\f11e";
+}
+.flaticon-eyeglasses-2:before {
+    content: "\f11f";
+}
+.flaticon-ophthalmology:before {
+    content: "\f120";
+}
+.flaticon-optical-7:before {
+    content: "\f121";
+}
+.flaticon-eye-test:before {
+    content: "\f122";
+}
+.flaticon-glasses-2:before {
+    content: "\f123";
+}
+.flaticon-eye-4:before {
+    content: "\f124";
+}
+.flaticon-refraction:before {
+    content: "\f125";
+}
+.flaticon-eye-exam-1:before {
+    content: "\f126";
+}
+.flaticon-glasses-3:before {
+    content: "\f127";
+}
+.flaticon-dropper:before {
+    content: "\f128";
+}
+.flaticon-eyeglasses-3:before {
+    content: "\f129";
+}
+.flaticon-oculist:before {
+    content: "\f12a";
+}
+.flaticon-doctor:before {
+    content: "\f12b";
+}
+.flaticon-doctor-1:before {
+    content: "\f12c";
+}
+.flaticon-eye-exam-2:before {
+    content: "\f12d";
+}
+.flaticon-eye-test-1:before {
+    content: "\f12e";
+}
+.flaticon-medical-report:before {
+    content: "\f12f";
+}
+.flaticon-medical-report-1:before {
+    content: "\f130";
+}
+.flaticon-medicines:before {
+    content: "\f131";
+}
+.flaticon-medicine:before {
+    content: "\f132";
+}
+.flaticon-phone-call:before {
+    content: "\f133";
+}
+.flaticon-location:before {
+    content: "\f134";
+}
+.flaticon-placeholder:before {
+    content: "\f135";
+}
+.flaticon-email:before {
+    content: "\f136";
+}
+.flaticon-email-1:before {
+    content: "\f137";
+}
+.flaticon-play-button:before {
+    content: "\f138";
+}
+.flaticon-newsletter:before {
+    content: "\f139";
+}
+.flaticon-optometrist:before {
+    content: "\f13a";
+}
+.flaticon-optometrist-1:before {
+    content: "\f13b";
+}
+.flaticon-pin:before {
+    content: "\f13c";
+}
+.flaticon-place:before {
+    content: "\f13d";
+}
+.flaticon-shield:before {
+    content: "\f13e";
+}
+.flaticon-best:before {
+    content: "\f13f";
+}
+.flaticon-return:before {
+    content: "\f140";
+}
+.flaticon-paper-plane:before {
+    content: "\f141";
+}
+.flaticon-tack:before {
+    content: "\f142";
+}
+.flaticon-user-interface:before {
+    content: "\f143";
+}
+.flaticon-comment-white-oval-bubble:before {
+    content: "\f144";
+}
+.flaticon-speech-bubble:before {
+    content: "\f145";
+}
+.flaticon-email-2:before {
+    content: "\f146";
+}
+.flaticon-eye-test-2:before {
+    content: "\f147";
+}
+.flaticon-eye-test-3:before {
+    content: "\f148";
+}
+.flaticon-vision-4:before {
+    content: "\f149";
+}
+.flaticon-eye-test-4:before {
+    content: "\f14a";
+}
+.flaticon-email-3:before {
+    content: "\f14b";
+}
+.flaticon-location-1:before {
+    content: "\f14c";
+}
+.flaticon-call:before {
+    content: "\f14d";
+}
+.flaticon-arroba:before {
+    content: "\f14e";
+}
+.flaticon-eye-5:before {
+    content: "\f14f";
+}
+.flaticon-avatar:before {
+    content: "\f150";
+}
+.flaticon-checkmark:before {
+    content: "\f151";
 }
