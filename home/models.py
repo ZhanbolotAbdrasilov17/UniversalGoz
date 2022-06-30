@@ -29,14 +29,21 @@ class Fulldescription(models.Model):
     text = models.TextField(verbose_name="Текст")
 
 
+<<<<<<< HEAD
 
 class Treatment(models.Model):
     title = models.CharField(max_length=200, verbose_name="Диагноз")
     image = models.ImageField(null=True, blank=True, upload_to="treatment")
+=======
+class Headlines(models.Model):
+    title = models.CharField(max_length=200, verbose_name="Заглавки")
+    image = models.ImageField(null=True, blank=True, upload_to="headlines")
+>>>>>>> edd88213fccf6084ad3678df96b7d4c8e0477a8d
 
     def __str__(self):
         return self.title
 
+<<<<<<< HEAD
 class TreatmentFullDescription(models.Model):
     treatment = models.ForeignKey(Treatment, on_delete=models.CASCADE, related_name="treatment_descriptions")
     title = models.CharField(max_length=200, verbose_name="Заглавие", blank=True, null=True)
@@ -51,3 +58,10 @@ class FAQ(models.Model):
         return self.question
 
 
+=======
+class DescriptionHeadlines(models.Model):
+    headlines = models.ForeignKey(Headlines, on_delete=models.CASCADE, related_name="headlines_description")
+    text = models.TextField(verbose_name="Текст")
+
+    
+>>>>>>> edd88213fccf6084ad3678df96b7d4c8e0477a8d
