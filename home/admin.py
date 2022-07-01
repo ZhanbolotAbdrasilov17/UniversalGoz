@@ -35,3 +35,4 @@ class TreatmentAdmin(admin.ModelAdmin):
 
 admin.site.register(Treatment, TreatmentAdmin)
 admin.site.register(FAQ)
+admin.site.register(Reviews)

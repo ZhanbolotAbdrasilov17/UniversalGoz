@@ -39,7 +39,7 @@
                                 <!-- post-featured-wrapper -->
                                 <div class="ttm-post-featured-wrapper ttm-featured-wrapper">
                                     <div class="ttm-post-featured">
-                                        <img class="img-fluid" src="{% static 'assets/images/blog/blog-01-1200x800.jpg' %}" alt="">
+                                        <img class="img-fluid" src="{{ news.image.url }}" alt="">
                                     </div>
                                 </div><!-- post-featured-wrapper end -->
                                 <!-- ttm-blog-classic-content -->
@@ -47,22 +47,22 @@
                                     <div class="ttm-post-entry-header">
                                         <div class="post-meta">
                                             <span class="ttm-meta-line entry-date"><i class="fa fa-calendar"></i><time class="entry-date published" datetime="2020-11-11T04:34:34+00:00">November 11, 2020</time></span>
-                                            <span class="ttm-meta-line byline"><i class="fa fa-user"></i>John Doe</span>
                                         </div>
                                     </div>
                                     <div class="entry-content">
                                         <div class="ttm-box-desc-text">
-                                            <p>Both long- and short-term exposure to UV radiation can harm the eyes, affect vision to compromise overall eye health. or ut labore areas disease eyecare dolore aliqua.Ut enim ad et minim veniam, and quis nostrud exercitation produr enim <span id="more-1899"></span> ad minim venia <a class="ttm-textcolor-skincolor" href="#">trudco laboris nisi ut </a>aliq. conducted right in our clinic.</p>
-                                            <h4 class="fs-22">Individual Approach</h4>
-                                            <p>Nor again is there anyone&nbsp;<b>who loves set eyes care</b>&nbsp;set injury magna consectr elit, do eiusmod tempor loream incididunt or ut labore areas disease eyecare dolore aliqua.</p>
+                                            <p>{{ news.title}}<span id="more-1899"></span> ad minim venia <a class="ttm-textcolor-skincolor" href="#">trudco laboris nisi ut </a>aliq. conducted right in our clinic.</p>
+                                            <h4 class="fs-22">{{ news.title}}</h4>
+                                            {% for n in texts %}
+                                            {% if n.news.id == news.id%}
+                                            <p>{{ n.text}}</p>
+                                            {% endif %}
+                                            {% endfor %}
                                             <p>Ut <u><a class="ttm-textcolor-skincolor" href="#">enimad etminim </a></u> veniam, and quis nostrud exercitation produr enim ad minim venia trudco laboris nisi ut aliq.conducted right in our clinic disease eyecare dolore aliqua. Ut enim ad et minim veniam.</p>
                                             <div class="margin_top40 margin_bottom40">
                                                 <div class="row">
                                                     <div class="col-md-6 ttm-box-col-wrapper res-767-padding_bottom30">
                                                         <img class="img-fluid w-100 h-100" src="{% static 'assets/images/blog/blog-detail.jpg' %}" alt="blog-image">
-                                                    </div>
-                                                    <div class="col-md-6 ttm-box-col-wrapper">
-                                                        <blockquote class="ttm-bgcolor-grey"><div class="qoute-text">Business it will frequently occur that greater pleasures have repudiated choose enjoy pleasure that has no annoying.</div><cite class="ttm-textcolor-skincolor">- Alex Jhon Martin</cite></blockquote>
                                                     </div>
                                                 </div>
                                             </div>
@@ -106,93 +106,6 @@
                                     </div>
                                 </div><!-- ttm-blog-classic-content end -->
                             </article><!-- post end -->
-                        </div>
-                        <div class="col-lg-3 widget-area sidebar-right">
-                            <aside class="widget widget-search with-title">
-                                <form role="search" method="get" class="search-form" action="#">
-                                    <label>
-                                    <span class="screen-reader-text">Search for:</span>
-                                    <input type="search" class="input-text" placeholder="Search …" value="" name="s">
-                                    </label>
-                                    <button class="btn ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor" type="submit" value="Search"> <i class="fa fa-search" aria-hidden="true"></i> </button>
-                                </form>
-                            </aside>
-                            <aside class="widget widget-categories with-title">
-                                <h3 class="widget-title">Categories</h3>
-                                <ul>
-                                    <li><a href="#">Eye Care</a></li>
-                                    <li><a href="#">Glasses</a></li>
-                                    <li><a href="#">Lasik</a></li>
-                                    <li><a href="#">Lenses</a></li>
-                                    <li><a href="#">Surgeries</a></li>
-                                    <li><a href="#">Vision</a></li>
-                                </ul>
-                            </aside>
-                            <aside class="widget widget-recent-post with-title">
-                                <h3 class="widget-title">Recent Posts</h3>
-                                <ul class="widget-post ttm-recent-post-list">
-                                    <li>
-                                        <a href="blog-single.html"><img src="{% static 'assets/images/blog/blog-01-150x150.jpg' %}" alt="post-img"></a>
-                                        <div class="post-detail">
-                                            <span class="post-date"><i class="fa fa-calendar"></i>November 11, 2020</span>
-                                            <a href="blog-single.html">Protect Your Eyes From Dust  And Disease</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="blog-single.html"><img src="{% static 'assets/images/blog/blog-02-150x150.jpg' %}" alt="post-img"></a>
-                                        <div class="post-detail">
-                                            <span class="post-date"><i class="fa fa-calendar"></i>November 10, 2020</span>
-                                            <a href="blog-single.html">Signs or risk factors for eye disease</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="blog-single.html"><img src="{% static 'assets/images/blog/blog-03-150x150.jpg' %}" alt="post-img"></a>
-                                        <div class="post-detail">
-                                            <span class="post-date"><i class="fa fa-calendar"></i>November 11, 2020</span>
-                                            <a href="blog-single.html">What Can You Do To Reduce Dry Eyes</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </aside>
-                            <aside class="widget tagcloud-widget with-title">
-                                <h3 class="widget-title">Tags</h3>
-                                <div class="tagcloud">
-                                    <a href="#" class="tag-cloud-link">Care</a>
-                                    <a href="#" class="tag-cloud-link">Doctor</a>
-                                    <a href="#" class="tag-cloud-link">Eye</a>
-                                    <a href="#" class="tag-cloud-link">Eye Doctor</a>
-                                    <a href="#" class="tag-cloud-link">Glasses</a>
-                                    <a href="#" class="tag-cloud-link">Health</a>
-                                    <a href="#" class="tag-cloud-link">Lenses</a>
-                                    <a href="#" class="tag-cloud-link">Optician</a>
-                                    <a href="#" class="tag-cloud-link">Surgeries</a>
-                                </div>
-                            </aside>
-                            <aside class="widget flicker-widget with-title">
-                                <h3 class="widget-title">Gallery</h3>
-                                <div class="images-gellary">
-                                    <ul>
-                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/blog/blog-01-1200x800.jpg' %}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
-                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-01-150x150.jpg' %}" alt="gellary_img"></a>
-                                        </li>
-                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/blog/blog-02-1200x800.jpg' %}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
-                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-02-150x150.jpg' %}" alt="gellary_img"></a>
-                                        </li>
-                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/blog/blog-03-1200x800.jpg' %}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
-                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-03-150x150.jpg' %}" alt="gellary_img"></a>
-                                        </li>
-                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/blog/blog-04-1200x800.jpg' %}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
-                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-04-150x150.jpg' %}" alt="gellary_img"></a>
-                                        </li>
-                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/portfolio/project-06-1200x800.jpg' %}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
-                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-05-150x150.jpg' %}" alt="gellary_img"></a>
-                                        </li>
-                                        <li><a class="ttm_prettyphoto" href="{% static 'assets/images/portfolio/project-04-1200x800.jpg' %}" rel="prettyPhoto[coregallery]" data-rel="prettyPhoto">
-                                            <img class="img-fluid" src="{% static 'assets/images/blog/blog-06-150x150.jpg' %}" alt="gellary_img"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </aside>
                         </div>
                     </div><!-- row end -->
                 </div>

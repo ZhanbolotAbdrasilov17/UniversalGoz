@@ -34,11 +34,12 @@
                 <div class="container">
                     <!-- row -->
                     <div class="row">
+                        {% for doctor in doctors %}
                         <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
                             <!-- featured-imagebox-team -->
                             <div class="featured-imagebox featured-imagebox-team style1">
                                 <div class="featured-thumbnail">
-                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img01.jpg'%}" alt="image">
+                                    <img class="img-fluid" src="{{ doctor.image.url}}" alt="image">
                                     <div class="featured-iconbox ttm-media-link">
                                     <div class="media-block">
                                         <ul class="social-icons">
@@ -52,9 +53,9 @@
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h3><a href="team-details.html" tabindex="0">Dr. Berry Gardner</a></h3>
+                                        <h3><a href="{% url 'doctor' doctor.pk %}" tabindex="0">{{ doctor.full_name }}</a></h3>
                                     </div>
-                                    <div class="team-position">Clarivu eye</div>
+                                    <div class="team-position">{{ doctor.position }}</div>
                                 </div>
                                 <div class="ttm-team-bottom-content">
                                     <div class="ttm-available-timebox-inner">
@@ -69,181 +70,7 @@
                                 </div>
                             </div><!-- featured-imagebox-team end-->
                         </div>
-                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                            <!-- featured-imagebox-team -->
-                            <div class="featured-imagebox featured-imagebox-team style1">
-                                <div class="featured-thumbnail">
-                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img02.jpg'%}" alt="image">
-                                    <div class="featured-iconbox ttm-media-link">
-                                    <div class="media-block">
-                                        <ul class="social-icons">
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="featured-content">
-                                    <div class="featured-title">
-                                        <h3><a href="team-details.html" tabindex="0">Dr. Bonnie Alberta</a></h3>
-                                    </div>
-                                    <div class="team-position">Optician</div>
-                                </div>
-                                <div class="ttm-team-bottom-content">
-                                    <div class="ttm-available-timebox-inner">
-                                        <ul class="ttm-available-box">
-                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
-                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="ttm-btn-bottom">
-                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- featured-imagebox-team end-->
-                        </div>
-                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                            <!-- featured-imagebox-team -->
-                            <div class="featured-imagebox featured-imagebox-team style1">
-                                <div class="featured-thumbnail">
-                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img03.jpg'%}" alt="image">
-                                    <div class="featured-iconbox ttm-media-link">
-                                    <div class="media-block">
-                                        <ul class="social-icons">
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="featured-content">
-                                    <div class="featured-title">
-                                        <h3><a href="team-details.html" tabindex="0">Dr. Terri Williams</a></h3>
-                                    </div>
-                                    <div class="team-position">Optometrist</div>
-                                </div>
-                                <div class="ttm-team-bottom-content">
-                                    <div class="ttm-available-timebox-inner">
-                                        <ul class="ttm-available-box">
-                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
-                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="ttm-btn-bottom">
-                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- featured-imagebox-team end-->
-                        </div>
-                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                            <!-- featured-imagebox-team -->
-                            <div class="featured-imagebox featured-imagebox-team style1">
-                                <div class="featured-thumbnail">
-                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img04.jpg'%}" alt="image">
-                                    <div class="featured-iconbox ttm-media-link">
-                                    <div class="media-block">
-                                        <ul class="social-icons">
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="featured-content">
-                                    <div class="featured-title">
-                                        <h3><a href="team-details.html" tabindex="0">Dr. Steven Carter</a></h3>
-                                    </div>
-                                    <div class="team-position">Optometrist</div>
-                                </div>
-                                <div class="ttm-team-bottom-content">
-                                    <div class="ttm-available-timebox-inner">
-                                        <ul class="ttm-available-box">
-                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
-                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="ttm-btn-bottom">
-                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- featured-imagebox-team end-->
-                        </div>
-                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                            <!-- featured-imagebox-team -->
-                            <div class="featured-imagebox featured-imagebox-team style1">
-                                <div class="featured-thumbnail">
-                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img05.jpg'%}" alt="image">
-                                    <div class="featured-iconbox ttm-media-link">
-                                    <div class="media-block">
-                                        <ul class="social-icons">
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="featured-content">
-                                    <div class="featured-title">
-                                        <h3><a href="team-details.html" tabindex="0">Dr. John Batter</a></h3>
-                                    </div>
-                                    <div class="team-position">Cataract surgery</div>
-                                </div>
-                                <div class="ttm-team-bottom-content">
-                                    <div class="ttm-available-timebox-inner">
-                                        <ul class="ttm-available-box">
-                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
-                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="ttm-btn-bottom">
-                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- featured-imagebox-team end-->
-                        </div>
-                        <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                            <!-- featured-imagebox-team -->
-                            <div class="featured-imagebox featured-imagebox-team style1">
-                                <div class="featured-thumbnail">
-                                    <img class="img-fluid" src="{% static 'assets/images/team-member/team-img06.jpg'%}" alt="image">
-                                    <div class="featured-iconbox ttm-media-link">
-                                    <div class="media-block">
-                                        <ul class="social-icons">
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="facebook" tabindex="0"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="twitter" tabindex="0"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="google" tabindex="0"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="tooltip-top" href="#" rel="noopener" aria-label="linkedin" tabindex="0"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="featured-content">
-                                    <div class="featured-title">
-                                        <h3><a href="team-details.html" tabindex="0">Dr. William Gardner</a></h3>
-                                    </div>
-                                    <div class="team-position">Optometrist</div>
-                                </div>
-                                <div class="ttm-team-bottom-content">
-                                    <div class="ttm-available-timebox-inner">
-                                        <ul class="ttm-available-box">
-                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
-                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="ttm-btn-bottom">
-                                        <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- featured-imagebox-team end-->
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
@@ -270,7 +97,7 @@
                                     <h3 class="fs-18 ttm-textcolor-skincolor padding_bottom5">WANT TO GET 20% OFF?</h3>
                                     <h2 class="fs-50">Get A Solutions For All Types Of Eye Care Services </h2>
                                 </div>
-                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-skincolor ttm-icon-btn-right" href="contact.html">Contact us<i class="fontello icon-plus"></i></a>
+                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-skincolor ttm-icon-btn-right" href="{% url 'contact'%}">Свяжитесь с нами<i class="fontello icon-plus"></i></a>
                             </div>
                         </div>
                     </div>

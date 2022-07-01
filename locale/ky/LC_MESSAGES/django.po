@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-30 10:54+0000\n"
+"POT-Creation-Date: 2022-07-01 07:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,218 @@ msgstr "Русский"
 msgid "Kyrgyz"
 msgstr "Кыргызча"
 
+#: templates/home.html:38
+msgid "Ставьте свою безопасность во главу угла"
+msgstr "Коопсуздукту биринчи орунга кой"
+
+#: templates/home.html:187
+msgid "Каждый заслуживает ясно видеть мир."
+msgstr "Ар бир адам дүйнөнү ачык көрүүгө татыктуу."
+
+#: templates/home.html:192
+msgid "Наша миссия состоит в том, чтобы обеспечить пациентов лучшими врачами-офтальмологами, тщательными осмотрами глаз и личным вниманием, которого вы заслуживаете."
+msgstr "Биздин миссия бейтаптарды эң мыкты көз дарыгерлери, кылдат көз текшерүүлөрү жана сизге татыктуу болгон жеке көңүл буруу менен камсыз кылуу."
+
+
+#: templates/home.html:200
+msgid "Первоклассный сервис по уходу за глазами"
+msgstr "Биринчи класстагы көзгө кам көрүү кызматы"
+
+#: templates/home.html:211
+msgid "Компания стремится предоставлять исключительные услуги по уходу за глазами. Зрение бесценно!!!"
+msgstr "Компания көзгө кам көрүү боюнча өзгөчө кызматтарды көрсөтүүгө умтулат. Көрүү баа жеткис!"
+
+
+#: templates/home.html:227
+msgid "Оборудование для осмотра зрения"
+msgstr "Көрүү жабдуулары"
+
+#: templates/home.html:238
+msgid "Новейший инструментарий технологических достижений помогает нам диагностировать и улучшать зрение бесов."
+msgstr "Технологиялык жетишкендиктердин акыркы инструменттери жиндердин көрүнүшүн аныктоого жана жакшыртууга жардам берет."
+
+#: templates/home.html:283
+msgid "Мы сертифицированы"
+msgstr "Биз сертификатталганбыз"
+
+#: templates/home.html:287
+msgid "Мы сертифицированы правительством за выдающиеся достижения в области офтальмологических технологий!"
+msgstr "Биз офтальмологиялык технологиядагы мыкты жетишкендиктер үчүн өкмөт тарабынан тастыкталганбыз!"
+
+#: templates/home.html:309
+msgid "Годы службы"
+msgstr "Кызмат жылдары"
+
+#: templates/home.html:313
+msgid "Общественное здравоохранение и уход за зрением в этом районе более 20 лет"
+msgstr "20 жылдан ашуун аймакта коомдук саламаттыкты сактоо жана көрүү кам көрүү"
+
+#: templates/home.html:339
+msgid "Вам будет оказана дружелюбная, сострадательная забота о зрении"
+msgstr "Сиз достук, боорукер көрүнүш кам көрөсүз"
+
+#: templates/home.html:361
+msgid "Отличные услуги"
+msgstr "Мыкты кызматтар"
+
+#: templates/home.html:365
+msgid "Сегодня мы вписываемся в идеальные рамки обслуживания для всех"
+msgstr "Бүгүн биз ар бир адам үчүн идеалдуу тейлөө алкагына туура келет"
+
+#: templates/home.html:387
+msgid "Почему нужно выбрать нас?"
+msgstr "Эмне үчүн бизди тандаңыз?"
+
+#: templates/home.html:492
+msgid "Нужен врач для осмотра? Позвоните для консультации!"
+msgstr "Текшерүү үчүн дарыгер керекпи? Консультацияга чалыңыз!"
+
+#: templates/home.html:496
+msgid "Аварийная служба!"
+msgstr "Тез жардам кызматы!"
+
+#: templates/home.html:507
+msgid "Ваше зрение – наш главный приоритет!"
+msgstr "Сиздин көз карашыңыз биздин башкы приоритетибиз!"
+
+#: templates/home.html:512
+msgid "Наши учреждения оснащены самыми современными офтальмологическими технологиями, чтобы обеспечить наиболее эффективные процедуры и средства ухода."
+msgstr "Биздин мекемелер эң эффективдүү дарылоону жана кам көрүү каражаттарын камсыз кылуу үчүн заманбап офтальмологиялык технологиялар менен жабдылган."
+
+#: templates/home.html:523
+msgid "Индивидуальная программа лечения"
+msgstr "Жеке дарылоо программасы"
+
+#: templates/home.html:529
+msgid "Высочайший профессиональный уровень."
+msgstr "Жогорку кесиптик деңгээл."
+
+#: templates/home.html:535
+msgid "Выполняем все операции"
+msgstr "Биз бардык операцияларды жасайбыз"
+
+#: templates/home.html:545
+msgid "Это доступно под одной крышей"
+msgstr "Бул бир чатырдын астында жеткиликтүү"
+
+#: templates/home.html:551
+msgid "Специализированные процедуры для глаз"
+msgstr "Атайын көз дарылоо"
+
+#: templates/home.html:557
+#, python-format
+msgid "100%% соответствие материалов"
+msgstr "Материалдардын 100% шайкештиги"
+
+#: templates/home.html:589 templates/index2.html:333
+msgid "Награды"
+msgstr "Сыйлыктар"
+
 #: templates/index2.html:64
 msgid "Социальные сети"
 msgstr "Социалдык тармактар"
+
+#: templates/index2.html:180
+msgid "Главная"
+msgstr "Yй"
+
+#: templates/index2.html:183
+msgid "Сервисы"
+msgstr "Кызматтар"
+
+#: templates/index2.html:185
+msgid "О нас 1"
+msgstr "Биз жөнүндө 1"
+
+#: templates/index2.html:186
+msgid "О нас 2"
+msgstr "Биз жөнүндө 2"
+
+#: templates/index2.html:187
+msgid "Сервисы компании"
+msgstr "Компания кызматтары"
+
+#: templates/index2.html:188
+msgid "Наша команда"
+msgstr "Биздин топ"
+
+#: templates/index2.html:190
+msgid "Подробное описание"
+msgstr "Толук сүрөттөмө"
+
+#: templates/index2.html:192
+msgid "Часто задаваемые вопросы"
+msgstr "Көп берилүүчү суроолор"
+
+#: templates/index2.html:198
+msgid "Диагнозы"
+msgstr "Диагностика"
+
+#: templates/index2.html:201
+msgid "Новости"
+msgstr "Жаңылыктар"
+
+#: templates/index2.html:204
+msgid "Контакты"
+msgstr "Байланыштар"
+
+#: templates/index2.html:215
+msgid "Записаться"
+msgstr "Кирүү"
+
+#: templates/index2.html:260
+msgid "Бесплатная консультация"
+msgstr "Акысыз консультация"
+
+#: templates/index2.html:268
+msgid "Компания стремится обеспечить большее улучшение зрения в системе и технологиях."
+msgstr "Компания системада жана технологияда көрүү мүмкүнчүлүгүн жогорулатууну камсыз кылууга умтулат"
+
+
+#: templates/index2.html:329
+msgid "Департаменты"
+msgstr "Бөлүмдөр"
+
+#: templates/index2.html:331
+msgid "Кто мы есть"
+msgstr "Биз кимбиз"
+
+#: templates/index2.html:332
+msgid "Наша миссия"
+msgstr "Биздин миссия"
+
+#: templates/index2.html:334
+msgid "Наши врачи"
+msgstr "Биздин врачтар"
+
+#: templates/index2.html:335
+msgid "До и После"
+msgstr "Чейин жана кийин"
+
+#: templates/index2.html:341
+msgid "Прямая ссылка"
+msgstr "Түз шилтеме"
+
+#: templates/index2.html:343
+msgid "Лечение"
+msgstr "Дарылоо"
+
+#: templates/index2.html:344
+msgid "Наши пациенты"
+msgstr "Биздин пациенттер"
+
+#: templates/index2.html:345
+msgid "Свяжитесь с нами"
+msgstr "Биз менен байланыш"
+
+#: templates/index2.html:346
+msgid "Назначения"
+msgstr "Дайындоолор"
+
+#: templates/index2.html:347
+msgid "О нас"
+msgstr "Биз жөнүндө"
+
+#: templates/index2.html:348
+msgid "Политика конфиденциальности"
+msgstr "Купуялык саясаты"

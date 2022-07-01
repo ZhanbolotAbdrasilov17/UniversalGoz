@@ -1,5 +1,6 @@
 {% extends 'index2.html' %}
 {% load static %}
+{% load i18n%}
 {% block page %}
 
 <div class="banner_slider_wrapper">
@@ -34,21 +35,21 @@
                           data-animation="fadeInDown"
                           class="text-md-left text-center"
                         >
-                          Placing Your Safety at The Heart Of Everything
+                          {% trans 'Ставьте свою безопасность во главу угла' %}
                         </h3>
                         <h1
                           data-animation="fadeInDown"
                           class="text-md-left text-center"
                         >
-                          MORE REAL
+                          БОЛЕЕ РЕАЛЬНО
                         </h1>
                         <h2
                           data-animation="fadeInDown"
                           class="text-md-left fs-60 text-center"
                         >
-                          Vision For A
-                          <span class="ttm-textcolor-skincolor"> Better </span>
-                          life
+                          Видение для
+                          <span class="ttm-textcolor-skincolor"> лучшей </span>
+                          жизни
                         </h2>
                         <div class="slider-btn">
                           <a
@@ -114,7 +115,7 @@
                           data-animation="fadeInDown"
                           class="text-md-left text-center"
                         >
-                          Placing Your Safety at The Heart Of Everything
+                          Ставьте свою безопасность во главу угла
                         </h3>
                         <h1
                           data-animation="fadeInDown"
@@ -183,14 +184,12 @@
                         <div class="section-title">
                           <div class="title-header">
                             <h2 class="title">
-                              Everybody Deserves To See World Clearly.
+                              {% trans 'Каждый заслуживает ясно видеть мир.' %}
                             </h2>
                           </div>
                           <div class="title-desc">
                             <p>
-                              Our mission is to provide patients with the best
-                              eye doctors, thorough eye’s health exams & the
-                              personal attention you deserve.
+                              {% trans 'Наша миссия состоит в том, чтобы обеспечить пациентов лучшими врачами-офтальмологами, тщательными осмотрами глаз и личным вниманием, которого вы заслуживаете.' %}
                             </p>
                           </div>
                         </div>
@@ -198,7 +197,7 @@
                           <div
                             class="featured-icon-box icon-align-before-content style9 icon-ver_align-top"
                           >
-                            <h3>01. A First-class Eyecare Service</h3>
+                            <h3>{% trans 'Первоклассный сервис по уходу за глазами' %}</h3>
                             <div class="featured-icon">
                               <div
                                 class="ttm-icon ttm-icon_element-fill ttm-icon_element-color-skincolor ttm-icon_element-size-md ttm-icon_element-style-square"
@@ -209,9 +208,7 @@
                             <div class="featured-content">
                               <div class="featured-desc">
                                 <p class="padding_bottom10">
-                                  It is Optrica's commitment to provide
-                                  exceptional eyecare services. Eye sight is so
-                                  precious!!!
+                                 {% trans 'Компания стремится предоставлять исключительные услуги по уходу за глазами. Зрение бесценно!!!' %}
                                 </p>
                               </div>
                               <a
@@ -227,7 +224,7 @@
                           <div
                             class="featured-icon-box icon-align-before-content style9 icon-ver_align-top"
                           >
-                            <h3>02. The Vision Exams Equipment</h3>
+                            <h3>{% trans 'Оборудование для осмотра зрения' %}</h3>
                             <div class="featured-icon">
                               <div
                                 class="ttm-icon ttm-icon_element-fill ttm-icon_element-color-skincolor ttm-icon_element-size-md ttm-icon_element-style-square"
@@ -238,9 +235,7 @@
                             <div class="featured-content">
                               <div class="featured-desc">
                                 <p class="padding_bottom10">
-                                  The latest in technology advancements's
-                                  toolkit helps us diagnose & improve imp eye
-                                  senses.
+                                  {% trans 'Новейший инструментарий технологических достижений помогает нам диагностировать и улучшать зрение бесов.' %}
                                 </p>
                               </div>
                               <a
@@ -285,12 +280,11 @@
                       </div>
                       <div class="featured-content">
                         <div class="featured-title">
-                          <h3>We’re Certified</h3>
+                          <h3>{% trans 'Мы сертифицированы' %}</h3>
                         </div>
                         <div class="featured-desc">
                           <p>
-                            We are Certified by Government for excellence in
-                            Ophthalmic tech!
+                            {% trans 'Мы сертифицированы правительством за выдающиеся достижения в области офтальмологических технологий!' %}
                           </p>
                         </div>
                       </div>
@@ -312,12 +306,11 @@
                       </div>
                       <div class="featured-content">
                         <div class="featured-title">
-                          <h3>Years Of Service</h3>
+                          <h3>{% trans 'Годы службы' %}</h3>
                         </div>
                         <div class="featured-desc">
                           <p>
-                            Community health and vision care to the area for
-                            over 20 years
+                            {% trans 'Общественное здравоохранение и уход за зрением в этом районе более 20 лет' %}
                           </p>
                         </div>
                       </div>
@@ -339,12 +332,11 @@
                       </div>
                       <div class="featured-content">
                         <div class="featured-title">
-                          <h3>Expert Doctors</h3>
+                          <h3>Врачи-эксперты</h3>
                         </div>
                         <div class="featured-desc">
                           <p>
-                            You will treated with friendly, compassionate vision
-                            care
+                            {% trans 'Вам будет оказана дружелюбная, сострадательная забота о зрении' %}
                           </p>
                         </div>
                       </div>
@@ -366,12 +358,11 @@
                       </div>
                       <div class="featured-content">
                         <div class="featured-title">
-                          <h3>Great Services</h3>
+                          <h3>{% trans 'Отличные услуги' %}</h3>
                         </div>
                         <div class="featured-desc">
                           <p>
-                            Today, we fit into the perfect frame of services for
-                            everyone
+                            {% trans 'Сегодня мы вписываемся в идеальные рамки обслуживания для всех' %}
                           </p>
                         </div>
                       </div>
@@ -393,7 +384,7 @@
                 <div
                   class="ttm_single_content ttm-bgcolor-skincolor text-left padding_top20 padding_left35 padding_bottom10"
                 >
-                  <h3 class="margin_bottom0">Why Choose Us!</h3>
+                  <h3 class="margin_bottom0">{% trans 'Почему нужно выбрать нас?' %}</h3>
                   <p class="margin_bottom0">Lorem ipsum dolor sit amlore.</p>
                 </div>
               </div>
@@ -476,8 +467,7 @@
                     <div class="team-position">{{ doctor.position }}</div>
                   </div>
 
-                </div>
-                <!-- featured-imagebox-team end-->
+                </div><!-- featured-imagebox-team end-->
               </div>
               {% endfor %}
             </div>
@@ -499,11 +489,11 @@
                     alt=""
                   />
                   <div class="ttm_single_image_text">
-                    <h3>Need a Doctor for Check-up? Call for an</h3>
+                    <h3>{% trans 'Нужен врач для осмотра? Позвоните для консультации!' %}</h3>
                     <a
                       class="ttm-textcolor-skincolor fs-26"
                       href="project-style-01.html"
-                      ><u>Emergency Service!</u></a
+                      ><u>{% trans 'Аварийная служба!' %}</u></a
                     >
                   </div>
                 </div>
@@ -514,14 +504,12 @@
                 <div class="section-title">
                   <div class="title-header">
                     <h2 class="title">
-                      Optrica Your Eye Sight Is Our First Priority!
+                      {% trans 'Ваше зрение – наш главный приоритет!' %}
                     </h2>
                   </div>
                   <div class="title-desc">
                     <p class="margin_top20 margin_bottom30">
-                      Our facilities are equipped with state-of-the-art
-                      ophthalmic technology to provide the most effective care
-                      treatments and facilities.
+                      {% trans 'Наши учреждения оснащены самыми современными офтальмологическими технологиями, чтобы обеспечить наиболее эффективные процедуры и средства ухода.' %}
                     </p>
                   </div>
                 </div>
@@ -532,19 +520,19 @@
                         <li>
                           <i class="flaticon-checkmark"></i>
                           <span class="ttm-list-li-content"
-                            >Individual treatment program</span
+                            >{% trans 'Индивидуальная программа лечения' %}</span
                           >
                         </li>
                         <li>
                           <i class="flaticon-checkmark"></i>
                           <span class="ttm-list-li-content"
-                            >The highest professional level.</span
+                            >{% trans 'Высочайший профессиональный уровень.' %}</span
                           >
                         </li>
                         <li>
                           <i class="flaticon-checkmark"></i>
                           <span class="ttm-list-li-content"
-                            >We performing all operations</span
+                            >{% trans 'Выполняем все операции' %}</span
                           >
                         </li>
                       </ul>
@@ -554,19 +542,19 @@
                         <li>
                           <i class="flaticon-checkmark"></i>
                           <span class="ttm-list-li-content"
-                            >It's available under the one roof</span
+                            >{% trans 'Это доступно под одной крышей' %}</span
                           >
                         </li>
                         <li>
                           <i class="flaticon-checkmark"></i>
                           <span class="ttm-list-li-content"
-                            >A Specialized Eye procedures</span
+                            >{% trans 'Специализированные процедуры для глаз' %}</span
                           >
                         </li>
                         <li>
                           <i class="flaticon-checkmark"></i>
                           <span class="ttm-list-li-content"
-                            >100% Compliance of materials</span
+                            >{% trans '100% соответствие материалов' %}</span
                           >
                         </li>
                       </ul>
@@ -598,7 +586,7 @@
                           >
                           <span class="ml_10 res-991-ml-0">+</span>
                         </h3>
-                        <h4 class="ttm-fid-title">Winning Awards</h4>
+                        <h4 class="ttm-fid-title">{% trans 'Награды' %}</h4>
                       </div>
                     </div>
                     <!-- ttm-fid end -->
@@ -624,7 +612,7 @@
                           >
                           <span class="ml_10 res-991-ml-0">k</span>
                         </h3>
-                        <h4 class="ttm-fid-title">Happy Clients</h4>
+                        <h4 class="ttm-fid-title">Счастливые клиенты</h4>
                       </div>
                     </div>
                     <!-- ttm-fid end -->
@@ -649,7 +637,7 @@
                             >852</span
                           >
                         </h3>
-                        <h4 class="ttm-fid-title">Happy Clients</h4>
+                        <h4 class="ttm-fid-title">Счастливые клиенты</h4>
                       </div>
                     </div>
                     <!-- ttm-fid end -->
@@ -684,7 +672,7 @@
                         <div class="featured-content">
                           <div class="featured-title">
                             <h3 class="fs-20 font-weight-700">
-                              At Optrica we value our patients Health.
+                              Мы ценим здоровье наших пациентов.
                             </h3>
                           </div>
                         </div>
@@ -706,7 +694,7 @@
                 <div class="section-title text-center">
                   <div class="title-header">
                     <h3>OUR VISION</h3>
-                    <h2 class="title">A Global Treatment of Eye Disease</h2>
+                    <h2 class="title">Глобальное лечение заболеваний глаз</h2>
                   </div>
                 </div>
                 <!-- section title end -->
@@ -721,29 +709,24 @@
                   <ul class="tabs text-center clearfix">
                     <li class="tab">
                       <a href="#"
-                        ><i class="flaticon-eye-test-3"></i>Transitions
-                        Lenses</a
+                        ><i class="flaticon-eye-test-3"></i>Переходные линзы</a
                       >
                     </li>
                     <li class="tab">
                       <a href="#"
-                        ><i class="flaticon-computer"></i>A Cataract Surgery</a
-                      >
+                        ><i class="flaticon-computer"></i>Хирургия катаракты</a>
                     </li>
                     <li class="tab active">
                       <a href="#"
-                        ><i class="flaticon-optical-7"></i>Refractive Lenses</a
-                      >
+                        ><i class="flaticon-optical-7"></i>Преломляющие линзы</a>
                     </li>
                     <li class="tab">
                       <a href="#"
-                        ><i class="flaticon-optic"></i>Implantable Lenses</a
-                      >
+                        ><i class="flaticon-optic"></i>Имплантируемые линзы</a>
                     </li>
                     <li class="tab">
                       <a href="#"
-                        ><i class="flaticon-visual"></i>Restoration Vision</a
-                      >
+                        ><i class="flaticon-visual"></i>Видение восстановления</a>
                     </li>
                   </ul>
                   <div class="content-tab">
@@ -755,13 +738,12 @@
                             class="res-991-padding_bottom30 padding_right30 padding_top30 padding_bottom10 res-991-padding_right0"
                           >
                             <h3>
-                              Optrica Making Quality Eye Care Most Comfortable
+                              Мы делаем качественный уход за глазами максимально комфортным
                             </h3>
                             <p class="padding_bottom20">
-                              We believe that everyone deserves to see the world
-                              clearly. That’s why we’ve made it our mission to
-                              provide patients with the best eye doctors the
-                              most thorough eye’s health exams
+                              Мы верим, что каждый заслуживает того, чтобы ясно видеть мир.
+                              Вот почему мы поставили перед собой задачу обеспечить пациентов лучшими врачами-офтальмологами,
+                              самыми тщательными обследованиями здоровья глаз.
                             </p>
                             <img
                               class="img-fluid alignleft"
@@ -775,31 +757,31 @@
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >View at another perspective</span
+                                    >Посмотреть в другом ракурсе</span
                                   >
                                 </li>
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >A patient’s friendly approach</span
+                                    >Дружелюбный подход к пациенту</span
                                   >
                                 </li>
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >Strive to improve techniques
+                                    >Стремитесь улучшить технику
                                   </span>
                                 </li>
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >The largest ophthalmic group</span
+                                    >Самая большая офтальмологическая группа</span
                                   >
                                 </li>
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >A specialized eye procedure</span
+                                    >Специализированная процедура для глаз</span
                                   >
                                 </li>
                               </ul>
@@ -828,13 +810,12 @@
                             class="res-991-padding_bottom30 padding_right30 padding_top30 padding_bottom10 res-991-padding_right0"
                           >
                             <h3>
-                              Optrica Making Quality Eye Care Most Comfortable
+                              Качественный уход за глазами максимально комфортным
                             </h3>
                             <p class="padding_bottom20">
-                              We believe that everyone deserves to see the world
-                              clearly. That’s why we’ve made it our mission to
-                              provide patients with the best eye doctors the
-                              most thorough eye’s health exams
+                              Мы верим, что каждый заслуживает того, чтобы ясно видеть мир.
+                              Вот почему мы поставили перед собой задачу обеспечить пациентов лучшими врачами-офтальмологами,
+                              самыми тщательными обследованиями здоровья глаз.
                             </p>
                             <img
                               class="img-fluid alignleft"
@@ -848,31 +829,31 @@
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >View at another perspective</span
+                                    >Посмотреть в другом ракурсе</span
                                   >
                                 </li>
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >A patient’s friendly approach</span
+                                    >Дружелюбный подход к пациенту</span
                                   >
                                 </li>
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >Strive to improve techniques
+                                    >Стремитесь улучшить технику
                                   </span>
                                 </li>
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >The largest ophthalmic group</span
+                                    >Самая большая офтальмологическая группа</span
                                   >
                                 </li>
                                 <li>
                                   <i class="fa-minus"></i
                                   ><span class="ttm-list-li-content"
-                                    >A specialized eye procedure</span
+                                    >Специализированная процедура для глаз</span
                                   >
                                 </li>
                               </ul>
@@ -1633,7 +1614,7 @@
                 <div class="section-title text-left">
                   <div class="title-header">
                     <h3>OUR VISION</h3>
-                    <h2 class="title">Care Your Vision For Better Life</h2>
+                    <h2 class="title">Позаботьтесь о своем видении ради лучшей жизни</h2>
                   </div>
                 </div>
                 <!-- section title end -->
@@ -1658,9 +1639,7 @@
                       <div class="featured-content">
                         <div class="post-meta res-575-margin_top15">
                           <span class="ttm-meta-user date-link">
-                            <i class="flaticon-user-interface"></i>By
-                            Admin</span
-                          >
+                            <i class="flaticon-user-interface"></i>От администратора</span>
                           <span class="ttm-meta-line tags-links"
                             ><i class="flaticon-comment-white-oval-bubble"></i
                             >02 Comments</span
@@ -1669,8 +1648,7 @@
                         <div class="featured-title">
                           <h3 class="margin_bottom20">
                             <a href="retina-disease.html"
-                              >Don’t Settle For The Anything That is Lower
-                              Standard</a
+                              >Не соглашайтесь ни на что, что ниже стандарта</a
                             >
                           </h3>
                         </div>

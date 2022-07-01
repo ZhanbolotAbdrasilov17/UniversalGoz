@@ -14,3 +14,7 @@ class TreatmentTranslation(TranslationOptions):
 @register(TreatmentFullDescription)
 class TreatmentFullDescriptionTranslation(TranslationOptions):
     fields = ('text', )
+
+@register(Reviews)
+class ReviewsTranslation(TranslationOptions):
+    fields = ('text', )

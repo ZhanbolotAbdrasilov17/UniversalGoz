@@ -10,10 +10,18 @@ class Doctor(models.Model):
     def __str__(self):
         return self.full_name
 
+    class Meta:
+        verbose_name = 'Доктора'
+        ordering = ['full_name']
+
 
 class Description(models.Model):
     doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE, related_name="descriptions")
     text = models.TextField(verbose_name="Описание")
+
+    class Meta:
+        verbose_name = 'Описание_врачей'
+        ordering = ['text']
 
 
 class News(models.Model):
@@ -24,9 +32,17 @@ class News(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name = 'Новости'
+        ordering = ['title']
+
 class Fulldescription(models.Model):
     news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="news_descriptions")
     text = models.TextField(verbose_name="Текст")
+
+    class Meta:
+        verbose_name = 'Описание_новостей'
+        ordering = ['text']
 
 
 
@@ -37,10 +53,18 @@ class Treatment(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name = 'Диагноз'
+        ordering = ['title']
+
 class TreatmentFullDescription(models.Model):
     treatment = models.ForeignKey(Treatment, on_delete=models.CASCADE, related_name="treatment_descriptions")
     title = models.CharField(max_length=200, verbose_name="Заглавие", blank=True, null=True)
     text = models.TextField(verbose_name="Описание")
+
+    class Meta:
+        verbose_name = 'Описание_лечения'
+        ordering = ['text']
 
 
 class FAQ(models.Model):
@@ -50,4 +74,19 @@ class FAQ(models.Model):
     def __str__(self):
         return self.question
 
+    class Meta:
+        verbose_name = 'Вопросы'
+        ordering = ['question']
+
+class Reviews(models.Model):
+    name = models.CharField(max_length=100, verbose_name="ФИО")
+    image = models.ImageField(null=True, blank=True, upload_to="reviews")
+    text = models.TextField(verbose_name="отзывы")
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Отзывы'
+        ordering = ['name']
 
