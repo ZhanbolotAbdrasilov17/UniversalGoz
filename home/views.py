@@ -23,7 +23,8 @@ def appeal(request):
 def home(request):
     doctors = Doctor.objects.all()
     news = News.objects.all()
-    context = {"doctors": doctors, "news": news}
+    reviews = Reviews.objects.all()
+    context = {"doctors": doctors, "news": news, "reviews": reviews}
     return render(request, "home.html", context)
 
 

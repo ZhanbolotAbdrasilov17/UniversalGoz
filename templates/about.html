@@ -1,5 +1,6 @@
 {% extends 'index2.html' %}
 {% load static %}
+{% load i18n%}
 {% block page %}
 
 
@@ -10,14 +11,14 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="page-title-heading">
-                                <h2 class="title">О нас</h2>
+                                <h2 class="title">{% trans 'О нас' %}</h2>
                             </div>
                             <div class="breadcrumb-wrapper">
                                 <span>
-                                    <i class="fa fa-home mr-2"></i><a title="Homepage" href="index.html">О нас</a>
+                                    <i class="fa fa-home mr-2"></i><a title="Homepage" href="index.html">{% trans 'О нас' %}</a>
                                 </span>
                                 <span class="ttm-bread-sep">&nbsp; :&nbsp;: &nbsp;</span>
-                                <span>About Us</span>
+                                <span>{% trans 'О нас' %}</span>
                             </div>
                         </div>
                     </div>
@@ -51,10 +52,10 @@
                                                 </div>
                                                 <div class="featured-content">
                                                     <div class="featured-title">
-                                                        <h3>Квалифицированные врачи</h3>
+                                                        <h3>{% trans 'Квалифицированные врачи' %}</h3>
                                                     </div>
                                                     <div class="featured-desc">
-                                                        <p>Команда экспертов, имеющих большой опыт в области зрения</p>
+                                                        <p>{% trans 'Команда экспертов, имеющих большой опыт в области зрения' %}</p>
                                                     </div>
                                                 </div>
                                             </div><!-- featured-icon-box end-->
@@ -69,10 +70,10 @@
                                                 </div>
                                                 <div class="featured-content">
                                                     <div class="featured-title">
-                                                        <h3>Экстренная помощь</h3>
+                                                        <h3>{% trans 'Экстренная помощь' %}</h3>
                                                     </div>
                                                     <div class="featured-desc">
-                                                        <p>Наша служба поддержки работает круглосуточно и без выходных.</p>
+                                                        <p>{% trans 'Наша служба поддержки работает круглосуточно и без выходных.' %}</p>
                                                     </div>
                                                 </div>
                                             </div><!-- featured-icon-box end-->
@@ -87,10 +88,10 @@
                                                 </div>
                                                 <div class="featured-content">
                                                     <div class="featured-title">
-                                                        <h3>Современное оборудование</h3>
+                                                        <h3>{% trans 'Современное оборудование' %}</h3>
                                                     </div>
                                                     <div class="featured-desc">
-                                                        <p>Компания оснащена высокотехнологичным оборудованием и технологиями.</p>
+                                                        <p>{% trans 'Компания оснащена высокотехнологичным оборудованием и технологиями.' %}</p>
                                                     </div>
                                                 </div>
                                             </div><!-- featured-icon-box end-->
@@ -105,7 +106,7 @@
                                                 </div>
                                                 <div class="d-table align-items-center mt_200 margin_bottom120 box-shadow">
                                                     <div class="d-table-cell align-middle position-relative ttm-bgcolor-white p-50 padding_top25 padding_bottom25 res-991-p-10 res-991-padding_left20 res-991-padding_right20">
-                                                        <h2 class="fs-18 mb-0">Мы застрахованы и надежны</h2>
+                                                        <h2 class="fs-18 mb-0">{% trans 'Мы застрахованы и надежны' %}</h2>
                                                     </div>
                                                     <a class="d-table-cell align-middle" href="#">
                                                         <div class="ttm-icon ttm-icon_element-fill ttm-icon_element-color-skincolor ttm-icon_element-size-md ttm-icon_element-style-square mb-0 border-0">
@@ -121,11 +122,11 @@
                                                 <div class="section-title">
                                                     <div class="title-header">
                                                         <h3>EyeCare</h3>
-                                                        <h2 class="title">Познакомьтесь с Optrica Online, чтобы получить индивидуальное лечение</h2>
+                                                        <h2 class="title">{% trans 'Познакомьтесь с нами, чтобы получить индивидуальное лечение' %}</h2>
                                                     </div>
                                                     <div class="heading-seperator"><span></span></div>
-                                                    <div class="title-desc"><p>Соединить нас со всеми легко, создав учетную запись. Зарегистрировавшись, вы на один шаг приблизитесь к врачу в вашем районе. Уход за глазами не подходит всем.</p>
-                                                    <p>Ожидание — самое страшное. Наша цель — связать вас с провайдером в течение часа. Если вам нужен рецепт, его можно отправить напрямую.</p></div>
+                                                    <div class="title-desc"><p>{% trans 'Соединить нас со всеми легко, создав учетную запись. Зарегистрировавшись, вы на один шаг приблизитесь к врачу в вашем районе. Уход за глазами не подходит всем.' %}</p>
+                                                    <p>{% trans 'Ожидание — самое страшное. Наша цель — связать вас с провайдером в течение часа. Если вам нужен рецепт, его можно отправить напрямую.' %}</p></div>
                                                 </div><!-- section title end -->
                                                 <div class="row padding_top15">
                                                     <div class="col-lg-6 col-md-5 col-sm-6 padding_right20">
@@ -137,11 +138,11 @@
                                                                 </div>
                                                             </div>
                                                             <div class="featured-title">
-                                                                <h3>Профессиональные техники</h3>
+                                                                <h3>{% trans 'Профессиональные техники' %}</h3>
                                                             </div>
                                                             <div class="featured-content">
                                                                 <div class="featured-desc">
-                                                                    <p>Улучшение вашего видения, чтобы улучшить ситуацию.</p>
+                                                                    <p>{% trans 'Улучшение вашего видения, чтобы улучшить ситуацию.' %}</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -154,11 +155,11 @@
                                                                 </div>
                                                             </div>
                                                             <div class="featured-title">
-                                                                <h3>Страсть к исцелению</h3>
+                                                                <h3>{% trans 'Страсть к исцелению' %}</h3>
                                                             </div>
                                                             <div class="featured-content">
                                                                 <div class="featured-desc">
-                                                                    <p>Мы стремимся улучшить общее состояние здоровья каждого человека.</p>
+                                                                    <p>{% trans 'Мы стремимся улучшить общее состояние здоровья каждого человека.' %}</p>
                                                                 </div>
                                                             </div>
                                                         </div><!-- featured-icon-box end-->
@@ -175,7 +176,7 @@
                                                                         440
                                                                     </span>
                                                                 </h4>
-                                                                <h3 class="ttm-fid-title">Успешно <br>Хирургия глаза</h3>
+                                                                <h3 class="ttm-fid-title">{% trans 'Успешно' %} <br>{% trans 'Хирургия глаза' %}</h3>
                                                             </div>
                                                         </div><!-- ttm-fid end -->
                                                     </div>
@@ -200,10 +201,10 @@
                                 <!-- section title -->
                                 <div class="section-title">
                                     <div class="title-header">
-                                        <h2 class="title">Представляем оптометриста высокого качества <span class="ttm-textcolor-skincolor"> Clinic</span></h2>
+                                        <h2 class="title">{% trans 'Представляем оптометриста высокого качества' %} <span class="ttm-textcolor-skincolor"> Clinic</span></h2>
                                     </div>
                                     <div class="heading-seperator"><span></span></div>
-                                    <div class="title-desc"><p>Офтальмологи – это врачи. Они прошли специальную подготовку в области медицины и хирургии глаза. Они проводят проверку зрения, диагностируют и лечат все глазные заболевания и проводят операции на глазах.</p></div>
+                                    <div class="title-desc"><p>{% trans 'Офтальмологи – это врачи. Они прошли специальную подготовку в области медицины и хирургии глаза. Они проводят проверку зрения, диагностируют и лечат все глазные заболевания и проводят операции на глазах.' %}</p></div>
                                 </div><!-- section title end -->
                                 <div class="padding_top10"></div>
                                 <!-- ttm-progress-bar -->
@@ -246,12 +247,12 @@
                             <!-- section title -->
                             <div class="section-title title-style-center_text">
                                 <div class="title-header">
-                                    <h3>Наши эксперты</h3>
-                                    <h2 class="title">Как это помогает вам оставаться сильным</h2>
+                                    <h3>{% trans 'Наши эксперты' %}</h3>
+                                    <h2 class="title">{% trans 'Как это помогает вам оставаться сильным' %}</h2>
                                 </div>
                                 <div class="heading-seperator"><span></span></div>
                                 <div class="title-desc">
-                                    <p>Если вы ищете лучшего офтальмолога онлайн для индивидуального лечения рядом с вами, следуйте инструкциям.</p>
+                                    <p>{% trans 'Если вы ищете лучшего офтальмолога онлайн для индивидуального лечения рядом с вами, следуйте инструкциям.' %}</p>
                                 </div>
                             </div><!-- section title end -->
                         </div>
@@ -269,10 +270,10 @@
                                             </div>
                                             <div class="featured-content">
                                                 <div class="featured-title">
-                                                    <h3>Производство ткани</h3>
+                                                    <h3>{% trans 'Производство ткани' %}</h3>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Мы производим лучшее качество ткани, охватывающее все аспекты</p>
+                                                    <p>{% trans 'Мы производим лучшее качество ткани, охватывающее все аспекты' %}</p>
                                                 </div>
                                             </div>
                                         </div><!-- featured-imagebox end-->
@@ -286,10 +287,10 @@
                                             </div>
                                             <div class="featured-content">
                                                 <div class="featured-title">
-                                                    <h3>Экспорт по всему миру</h3>
+                                                    <h3>{% trans 'Экспорт по всему миру' %}</h3>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Мы экспортируем не только локально, но и по всему миру</p>
+                                                    <p>{% trans 'Мы экспортируем не только локально, но и по всему миру' %}</p>
                                                 </div>
                                             </div>
                                         </div><!-- featured-imagebox end-->
@@ -303,10 +304,10 @@
                                             </div>
                                             <div class="featured-content">
                                                 <div class="featured-title">
-                                                    <h3>Доступен цифровой магазин</h3>
+                                                    <h3>{% trans 'Доступен цифровой магазин' %}</h3>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Продемонстрированы в цифровом виде все наши продукты для максимального охвата</p>
+                                                    <p>{% trans 'Продемонстрированы в цифровом виде все наши продукты для максимального охвата' %}</p>
                                                 </div>
                                             </div>
                                         </div><!-- featured-imagebox end-->
@@ -320,10 +321,10 @@
                                             </div>
                                             <div class="featured-content">
                                                 <div class="featured-title">
-                                                    <h3>Отличная поддержка клиентов</h3>
+                                                    <h3>{% trans 'Отличная поддержка клиентов' %}</h3>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>наша стойка регистрации доступна для клиентов 24*7!</p>
+                                                    <p>{% trans 'наша стойка регистрации доступна для клиентов 24*7!' %}</p>
                                                 </div>
                                             </div>
                                         </div><!-- featured-imagebox end-->

@@ -1191,6 +1191,7 @@
                     <div class="row">
                       <div class="col-lg-5 col-md-4 m-auto">
                         <div class="testimonials-nav">
+                          {% for re in reviews %}
                           <div
                             class="testimonial-avatar"
                             aria-hidden="true"
@@ -1199,89 +1200,22 @@
                             <div class="testimonial-img">
                               <img
                                 class="img-fluid"
-                                src="{% static 'assets/images/testimonial\01.jpg'%}"
+                                src="{{ re.image.url }}"
                                 alt="testimonial-img"
                               />
                             </div>
                           </div>
-                          <div
-                            class="testimonial-avatar"
-                            aria-hidden="true"
-                            tabindex="0"
-                          >
-                            <div class="testimonial-img">
-                              <img
-                                class="img-fluid"
-                                src="{% static 'assets/images/testimonial\02.jpg'%}"
-                                alt="testimonial-img"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="testimonial-avatar"
-                            aria-hidden="true"
-                            tabindex="0"
-                          >
-                            <div class="testimonial-img">
-                              <img
-                                class="img-fluid"
-                                src="{% static 'assets/images/testimonial\03.jpg'%}"
-                                alt="testimonial-img"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="testimonial-avatar"
-                            aria-hidden="true"
-                            tabindex="0"
-                          >
-                            <div class="testimonial-img">
-                              <img
-                                class="img-fluid"
-                                src="{% static 'assets/images/testimonial\04.jpg'%}"
-                                alt="testimonial-img"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="testimonial-avatar"
-                            aria-hidden="true"
-                            tabindex="0"
-                          >
-                            <div class="testimonial-img">
-                              <img
-                                class="img-fluid"
-                                src="{% static 'assets/images/testimonial\03.jpg'%}"
-                                alt="testimonial-img"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="testimonial-avatar"
-                            aria-hidden="true"
-                            tabindex="0"
-                          >
-                            <div class="testimonial-img">
-                              <img
-                                class="img-fluid"
-                                src="{% static 'assets/images/testimonial\02.jpg'%}"
-                                alt="testimonial-img"
-                              />
-                            </div>
-                          </div>
+                          {% endfor %}
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <!-- testimonials -->
                         <div class="testimonials-info style3">
+                          {% for r in reviews %}
                           <div class="testimonials">
                             <div class="testimonial-content">
                               <blockquote class="testimonial-text text-center">
-                                An Optrica is very kind and knowledgeable in eye
-                                care field. Explain things, genuinely cares for
-                                his patients & staff, has all up to date
-                                technology. If I could give more stars I would!
-                                Can blindly rely!!!!!
+                                {{r.text}}
                               </blockquote>
                               <div class="testimonial-bottom">
                                 <div class="star-ratings">
@@ -1294,153 +1228,12 @@
                                   </ul>
                                 </div>
                                 <div class="testimonial-caption">
-                                  <h3>Cameron Stence</h3>
-                                  <label>Houston Director</label>
+                                  <h3>{{r.name}}</h3>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <!-- testimonials end -->
-                          <!-- testimonials -->
-                          <div class="testimonials">
-                            <div class="testimonial-content">
-                              <blockquote class="testimonial-text text-center">
-                                They make you understand the problems in a
-                                simple language and are very patient friendly.
-                                They set the barometer high through his
-                                empathetic accurate & advanced practice. I
-                                recommend Optrica.
-                              </blockquote>
-                              <div class="testimonial-bottom">
-                                <div class="star-ratings">
-                                  <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                  </ul>
-                                </div>
-                                <div class="testimonial-caption">
-                                  <h3>Cameron Stence</h3>
-                                  <label>Houston Director</label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- testimonials end -->
-                          <!-- testimonials -->
-                          <div class="testimonials">
-                            <div class="testimonial-content">
-                              <blockquote class="testimonial-text text-center">
-                                Had long standing vision problem in my left eye
-                                Got to meet Optrica. Found very pleasant &
-                                warmth to interact, them gave me very
-                                professional guidance & advised under go for
-                                cataract surgery.!!!
-                              </blockquote>
-                              <div class="testimonial-bottom">
-                                <div class="star-ratings">
-                                  <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                  </ul>
-                                </div>
-                                <div class="testimonial-caption">
-                                  <h3>Cameron Stence</h3>
-                                  <label>Houston Director</label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- testimonials end -->
-                          <!-- testimonials -->
-                          <div class="testimonials">
-                            <div class="testimonial-content">
-                              <blockquote class="testimonial-text text-center">
-                                They make you understand the problems in a
-                                simple language and are very patient friendly.
-                                They set the barometer high through his
-                                empathetic accurate & advanced practice. I
-                                recommend Optrica.
-                              </blockquote>
-                              <div class="testimonial-bottom">
-                                <div class="star-ratings">
-                                  <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                  </ul>
-                                </div>
-                                <div class="testimonial-caption">
-                                  <h3>Cameron Stence</h3>
-                                  <label>Houston Director</label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- testimonials end -->
-                          <!-- testimonials -->
-                          <div class="testimonials">
-                            <div class="testimonial-content">
-                              <blockquote class="testimonial-text text-center">
-                                Had long standing vision problem in my left eye
-                                Got to meet Optrica. Found very pleasant &
-                                warmth to interact, them gave me very
-                                professional guidance & advised under go for
-                                cataract surgery.!!!
-                              </blockquote>
-                              <div class="testimonial-bottom">
-                                <div class="star-ratings">
-                                  <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                  </ul>
-                                </div>
-                                <div class="testimonial-caption">
-                                  <h3>Cameron Stence</h3>
-                                  <label>Houston Director</label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- testimonials end -->
-                          <!-- testimonials -->
-                          <div class="testimonials">
-                            <div class="testimonial-content">
-                              <blockquote class="testimonial-text text-center">
-                                They make you understand the problems in a
-                                simple language and are very patient friendly.
-                                They set the barometer high through his
-                                empathetic accurate & advanced practice. I
-                                recommend Optrica.
-                              </blockquote>
-                              <div class="testimonial-bottom">
-                                <div class="star-ratings">
-                                  <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                  </ul>
-                                </div>
-                                <div class="testimonial-caption">
-                                  <h3>Cameron Stence</h3>
-                                  <label>Houston Director</label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- testimonials end -->
+                          {% endfor %}
                         </div>
                       </div>
                     </div>
