@@ -475,6 +475,99 @@
         </section>
 
         <section
+          class="ttm-row zero_padding-section testimonial-section clearfix">
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-lg-1 col-md-12">
+                <div
+                  class="col-bg-img-two ttm-col-bgimage-yes ttm-bg ttm-left-span spacing-13 res-991-padding_top0"
+                >
+                  <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                  <div class="layer-content"></div>
+                </div>
+                <img
+                  src="{% static 'assets/images/bg-image/col-bgimage-2.png'%}"
+                  class="ttm-equal-height-image"
+                  alt="bg-image"
+                />
+              </div>
+              <div class="col-lg-10 col-md-12">
+                <div
+                  class="col-bg-img-four ttm-col-bgimage-yes ttm-bgcolor-darkgrey spacing-8 position-relative"
+                >
+                  <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                  <div class="layer-content">
+                    <!-- row -->
+                    <div class="row">
+                      <div class="col-lg-5 col-md-4 m-auto">
+                        <div class="testimonials-nav">
+                          {% for re in reviews %}
+                          <div
+                            class="testimonial-avatar"
+                            aria-hidden="true"
+                            tabindex="0"
+                          >
+                            <div class="testimonial-img">
+                              <img
+                                class="img-fluid"
+                                src="{{ re.image.url }}"
+                                alt="testimonial-img"
+                              />
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <!-- testimonials -->
+                        <div class="testimonials-info style3">
+                          {% for r in reviews %}
+                          <div class="testimonials">
+                            <div class="testimonial-content">
+                              <blockquote class="testimonial-text text-center">
+                                {{r.text}}
+                              </blockquote>
+                              <div class="testimonial-bottom">
+                                <div class="star-ratings">
+                                  <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                  </ul>
+                                </div>
+                                <div class="testimonial-caption">
+                                  <h3>{{r.name}}</h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-12">
+                <div
+                  class="col-bg-img-three ttm-col-bgimage-yes ttm-bg ttm-right-span spacing-12"
+                >
+                  <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                  <div class="layer-content"></div>
+                </div>
+                <img
+                  src="{% static 'assets/images/bg-image/col-bgimage-3.png'%}"
+                  class="ttm-equal-height-image"
+                  alt="bg-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
         style="margin-top: 15px"
           class="ttm-row zero_padding-section testimonial-section clearfix"
         >

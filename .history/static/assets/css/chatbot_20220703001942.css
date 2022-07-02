@@ -533,7 +533,7 @@ strong {
 }
 #chat-circle {
   position: fixed;
-  bottom: 70px;
+  bottom: 50px;
   right: 50px;
   background: #28305f;
   width: 50px;

@@ -17,20 +17,13 @@
  =============== */
 
 jQuery(function ($) {
-  "use strict";
-
   /*------------------------------------------------------------------------------*/
   /* Preloader
 /*------------------------------------------------------------------------------*/
   // makes sure the whole site is loaded
-  $(window).on("load", function () {
-    $(".loader-blob").fadeOut(),
-      $("#preloader")
-        .delay(300)
-        .fadeOut("slow", function () {
-          $(this).remove();
-        });
-  });
+  // $(window).on("load",function(){
+  //     $(".loader-blob").fadeOut(),$("#preloader").delay(300).fadeOut("slow",function(){$(this).remove()})
+  // })
 
   /*------------------------------------------------------------------------------*/
   /* header_search
@@ -409,166 +402,176 @@ jQuery(function ($) {
     jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({ hook: "data-gal" });
   });
 
-  /*------------------------------------------------------------------------------*/
-  /* share-icon_btn
+  //  $(document).ready(function() {
+  // var e = '<div class="ttm_floting_customsett">'+
+  //             '<a href="https://support.themetechmount.com/" class="tmtheme_fbar_icons"><i class="fa fa-headphones"></i><span>Support</span></a>'+
+  //             '<a href="https://themetechmount.com/" class="tmtheme_fbar_icons"><i class="themifyicon themifyicon ti-pencil"></i><span>Customization</span></a>'+
+  //             '<a href="https://1.envato.market/dWaEq" class="tmtheme_fbar_icons"><i class="themifyicon ti-shopping-cart"></i><span class="buy_link">Buy<span>$29</span></span></a>'+
+  //             '<div class="clearfix"></div>'+
+  //         '</div>';
+
+  // $('body').append(e);
+});
+
 /*------------------------------------------------------------------------------*/
-  jQuery(".ttm-blog-classic").each(function (t) {
-    var e = jQuery(this);
-    e.find(".ttm-social-share-icon_btn").on("click", function () {
-      return e.find(".social-icons").toggleClass("show"), !1;
-    });
-  });
-
-  jQuery(document).ready(function ($) {
-    optrica_logMarginPadding_content();
-  });
-  function optrica_logMarginPadding_content() {
-    jQuery(".ttm-expandcontent-yes").each(function () {
-      var ttm_column_div = "";
-      var scrren_size = jQuery(window).width();
-      var box_size = jQuery(this).parent().width();
-      var extra_size = (scrren_size - box_size) / 2;
-
-      if (jQuery(this).hasClass("ttm-right-span")) {
-        ttm_column_div =
-          ", .ttm-expandcontent_column > .ttm-expandcontent_wrapper ";
-        jQuery(
-          ".ttm-expandcontent_column > div" + ttm_column_div,
-          jQuery(this)
-        ).css("margin-right", "-" + extra_size + "px");
-      } else if (jQuery(this).hasClass("ttm-left-span")) {
-        ttm_column_div =
-          ", .ttm-expandcontent_column > .ttm-expandcontent_wrapper ";
-        jQuery(
-          ".ttm-expandcontent_column > div" + ttm_column_div,
-          jQuery(this)
-        ).css("margin-left", "-" + extra_size + "px");
-      }
-    });
-  }
-  jQuery(window).resize(function () {
-    optrica_logMarginPadding_content();
-  });
-
-  // $(function () { jQuery(".img-fluid:not(.alignleft, .alignright, .slider_arrow, .auto_size)").attr("height", "100%")});
-  // $(function () { jQuery(".img-fluid:not(.alignleft, .alignright, .slider_arrow, .auto_size)").attr("width", "100%")});
-
-  /*------------------------------------------------------------------------------*/
-  /* twentytwenty[data-orientation]
+/* share-icon_btn
 /*------------------------------------------------------------------------------*/
-
-  $(function () {
-    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
-      default_offset_pct: 0.5,
-    });
-    $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
-      default_offset_pct: 0.3,
-      orientation: "vertical",
-    });
+jQuery(".ttm-blog-classic").each(function (t) {
+  var e = jQuery(this);
+  e.find(".ttm-social-share-icon_btn").on("click", function () {
+    return e.find(".social-icons").toggleClass("show"), !1;
   });
+});
 
-  /*------------------------------------------------------------------------------*/
-  /* Slick_slider
-/*------------------------------------------------------------------------------*/
-  $(".slick_slider").slick({
-    speed: 1000,
-    infinite: true,
-    arrows: false,
-    dots: false,
-    autoplay: false,
-    centerMode: false,
+jQuery(document).ready(function ($) {
+  optrica_logMarginPadding_content();
+});
+function optrica_logMarginPadding_content() {
+  jQuery(".ttm-expandcontent-yes").each(function () {
+    var ttm_column_div = "";
+    var scrren_size = jQuery(window).width();
+    var box_size = jQuery(this).parent().width();
+    var extra_size = (scrren_size - box_size) / 2;
 
-    responsive: [
-      {
-        breakpoint: 1360,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 575,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
-
-  /* testimonials */
-  var testinav = jQuery(".testimonials-nav", this);
-  var testiinfo = jQuery(".testimonials-info", this);
-
-  jQuery(".testimonials-info", this).slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: false,
-    arrows: false,
-    asNavFor: testinav,
-    adaptiveHeight: true,
-    speed: 1700,
-    autoplay: false,
-    autoplaySpeed: 1700,
-    infinite: true,
-  });
-
-  jQuery(".testimonials-nav", this).slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: testiinfo,
-    centerMode: true,
-    centerPadding: 0,
-    focusOnSelect: true,
-    autoplay: false,
-    autoplaySpeed: 1700,
-    speed: 1700,
-    arrows: false,
-    dots: false,
-    variableWidth: true,
-    infinite: true,
-  });
-
-  /*------------------------------------------------------------------------------*/
-  /* Back to top
-/*------------------------------------------------------------------------------*/
-
-  // ===== Scroll to Top ====
-  jQuery("#totop").hide();
-
-  $(window).on("scroll", function () {
-    if (jQuery(this).scrollTop() >= 500) {
-      // If page is scrolled more than 50px
-      jQuery("#totop").fadeIn(200); // Fade in the arrow
-      jQuery("#totop").addClass("top-visible");
-    } else {
-      jQuery("#totop").fadeOut(200); // Else fade out the arrow
-      jQuery("#totop").removeClass("top-visible");
+    if (jQuery(this).hasClass("ttm-right-span")) {
+      ttm_column_div =
+        ", .ttm-expandcontent_column > .ttm-expandcontent_wrapper ";
+      jQuery(
+        ".ttm-expandcontent_column > div" + ttm_column_div,
+        jQuery(this)
+      ).css("margin-right", "-" + extra_size + "px");
+    } else if (jQuery(this).hasClass("ttm-left-span")) {
+      ttm_column_div =
+        ", .ttm-expandcontent_column > .ttm-expandcontent_wrapper ";
+      jQuery(
+        ".ttm-expandcontent_column > div" + ttm_column_div,
+        jQuery(this)
+      ).css("margin-left", "-" + extra_size + "px");
     }
   });
+}
+jQuery(window).resize(function () {
+  optrica_logMarginPadding_content();
+});
 
-  jQuery("#totop").on("click", function () {
-    // When arrow is clicked
-    jQuery("body,html").animate(
-      {
-        scrollTop: 0, // Scroll to top of body
-      },
-      500
-    );
-    return false;
+// $(function () { jQuery(".img-fluid:not(.alignleft, .alignright, .slider_arrow, .auto_size)").attr("height", "100%")});
+// $(function () { jQuery(".img-fluid:not(.alignleft, .alignright, .slider_arrow, .auto_size)").attr("width", "100%")});
+
+/*------------------------------------------------------------------------------*/
+/* twentytwenty[data-orientation]
+/*------------------------------------------------------------------------------*/
+
+$(function () {
+  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
+    default_offset_pct: 0.5,
   });
+  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
+    default_offset_pct: 0.3,
+    orientation: "vertical",
+  });
+});
+
+/*------------------------------------------------------------------------------*/
+/* Slick_slider
+/*------------------------------------------------------------------------------*/
+$(".slick_slider").slick({
+  speed: 1000,
+  infinite: true,
+  arrows: false,
+  dots: false,
+  autoplay: false,
+  centerMode: false,
+
+  responsive: [
+    {
+      breakpoint: 1360,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 680,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+/* testimonials */
+var testinav = jQuery(".testimonials-nav", this);
+var testiinfo = jQuery(".testimonials-info", this);
+
+jQuery(".testimonials-info", this).slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: false,
+  arrows: false,
+  asNavFor: testinav,
+  adaptiveHeight: true,
+  speed: 1700,
+  autoplay: false,
+  autoplaySpeed: 1700,
+  infinite: true,
+});
+
+jQuery(".testimonials-nav", this).slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: testiinfo,
+  centerMode: true,
+  centerPadding: 0,
+  focusOnSelect: true,
+  autoplay: false,
+  autoplaySpeed: 1700,
+  speed: 1700,
+  arrows: false,
+  dots: false,
+  variableWidth: true,
+  infinite: true,
+});
+
+/*------------------------------------------------------------------------------*/
+/* Back to top
+/*------------------------------------------------------------------------------*/
+
+// ===== Scroll to Top ====
+jQuery("#totop").hide();
+
+$(window).on("scroll", function () {
+  if (jQuery(this).scrollTop() >= 500) {
+    // If page is scrolled more than 50px
+    jQuery("#totop").fadeIn(200); // Fade in the arrow
+    jQuery("#totop").addClass("top-visible");
+  } else {
+    jQuery("#totop").fadeOut(200); // Else fade out the arrow
+    jQuery("#totop").removeClass("top-visible");
+  }
+});
+
+jQuery("#totop").on("click", function () {
+  // When arrow is clicked
+  jQuery("body,html").animate(
+    {
+      scrollTop: 0, // Scroll to top of body
+    },
+    500
+  );
+  return false;
 });
