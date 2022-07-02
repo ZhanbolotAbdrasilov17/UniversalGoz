@@ -1,5 +1,6 @@
 {% extends 'index2.html' %}
 {% load static %}
+{% load i18n%}
 {% block page %}
 
          <!-- page-title -->
@@ -9,14 +10,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="page-title-heading">
-                                <h2 class="title">Our Team</h2>
-                            </div>
-                            <div class="breadcrumb-wrapper">
-                                <span>
-                                    <i class="fa fa-home mr-2"></i><a title="Homepage" href="index.html">Home</a>
-                                </span>
-                                <span class="ttm-bread-sep">&nbsp; :&nbsp;: &nbsp;</span>
-                                <span>Our Team</span>
+                                <h2 class="title">{% trans "Наша команда" %}</h2>
                             </div>
                         </div>
                     </div>
@@ -59,10 +53,6 @@
                                 </div>
                                 <div class="ttm-team-bottom-content">
                                     <div class="ttm-available-timebox-inner">
-                                        <ul class="ttm-available-box">
-                                            <li>Mon-Fri <span class="ttm-time">7.00 – 18.00</span></li>
-                                            <li>Sat-Sun <span class="ttm-time">7.00 – 12.00</span></li>
-                                        </ul>
                                     </div>
                                     <div class="ttm-btn-bottom">
                                         <a href="team-details.html" class="ttm-btn btn-inline ttm-btn-size-md  ttm-btn-color-skincolor font-weight-500" tabindex="0">Booking A Visit<i class="fontello icon-plus"></i></a>
@@ -94,10 +84,9 @@
                                     </div>
                                 </div>
                                 <div class="padding_bottom20 padding_top20">
-                                    <h3 class="fs-18 ttm-textcolor-skincolor padding_bottom5">WANT TO GET 20% OFF?</h3>
-                                    <h2 class="fs-50">Get A Solutions For All Types Of Eye Care Services </h2>
+                                    <h3 class="fs-18 ttm-textcolor-skincolor padding_bottom5">{% trans "ХОТИТЕ ПОЛУЧИТЬ СКИДКУ 20%?" %}</h3>
+                                    <h2 class="fs-50">{% trans "Получите Решения Для Всех Видов Офтальмологических Услуг" %} </h2>
                                 </div>
-                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-skincolor ttm-icon-btn-right" href="{% url 'contact'%}">Свяжитесь с нами<i class="fontello icon-plus"></i></a>
                             </div>
                         </div>
                     </div>

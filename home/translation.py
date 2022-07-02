@@ -7,6 +7,20 @@ class DoctorTranslation(TranslationOptions):
     fields = ('position', )
 
 
+@register(News)
+class NewsTranslation(TranslationOptions):
+    fields = ('title', )
+
+@register(Fulldescription)
+class DescriptionTranslation(TranslationOptions):
+    fields = ('text', )
+
+
+@register(Description)
+class DescriptionTranslation(TranslationOptions):
+    fields = ('text', )
+
+
 @register(Treatment)
 class TreatmentTranslation(TranslationOptions):
     fields = ('title', )
@@ -18,3 +32,7 @@ class TreatmentFullDescriptionTranslation(TranslationOptions):
 @register(Reviews)
 class ReviewsTranslation(TranslationOptions):
     fields = ('text', )
+
+@register(FAQ)
+class FAQTranslation(TranslationOptions):
+    fields = ('question', 'answer')

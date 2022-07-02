@@ -14,11 +14,6 @@
                                 <h2 class="title">{% trans 'О нас' %}</h2>
                             </div>
                             <div class="breadcrumb-wrapper">
-                                <span>
-                                    <i class="fa fa-home mr-2"></i><a title="Homepage" href="index.html">{% trans 'О нас' %}</a>
-                                </span>
-                                <span class="ttm-bread-sep">&nbsp; :&nbsp;: &nbsp;</span>
-                                <span>{% trans 'О нас' %}</span>
                             </div>
                         </div>
                     </div>
@@ -364,12 +359,11 @@
                                 <!-- section title -->
                                 <div class="section-title">
                                     <div class="title-header">
-                                        <h3>Уход за глазами</h3>
-                                        <h2 class="title">Мы сохраняем, улучшаем и защищаем ваше зрение.</h2>
+                                        <h3>{% trans "Уход за глазами" %}</h3>
+                                        <h2 class="title">{% trans "Мы сохраняем, улучшаем и защищаем ваше зрение." %}</h2>
                                     </div>
                                     <div class="heading-seperator"><span></span></div>
-                                    <div class="title-desc"><p>Вы ничего не имеете, если у вас нет серьезных травм, которые могут привести к серьезным травмам, ухудшению состояния глаз или трудным ситуациям. <span class="ttm-textcolor-skincolor">enim ad et minim</span> veniam, and quis nostrud prodrug conducted.</p>
-                                    <p>Eyecare Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum</p></div>
+                                    <div class="title-desc"><p>{% trans "Вы ничего не имеете, если у вас нет серьезных травм, которые могут привести к серьезным травмам, ухудшению состояния глаз или трудным ситуациям." %} <span class="ttm-textcolor-skincolor"></span> </p>
                                 </div><!-- section title end -->
                                 <div class="padding_top10 padding_bottom35 res-991-padding_right0">
                                     <div class="d-sm-flex align-items-center">
@@ -379,25 +373,11 @@
                                             </div>
                                             <div class="padding_left15">
                                                 <h3 class="margin_bottom0 fs-18">Dr. Terri Williams</h3>
-                                                <label class="margin_bottom0">Оптик в Бривоне</label>
+                                                <label class="margin_bottom0">{% trans "Главный врач" %}</label>
                                             </div>
                                         </div>
                                         <div class="margin_left30 padding_left30 border-left">
                                             <img height="62" width="192" class="img-fluid auto_size" src="{% static 'assets/images/sign-01.png'%}" alt="sign-01">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10">
-                                        <div class="sign_up_form-block">
-                                            <h3>Вам нужна дополнительная помощь?</h3>
-                                            <form id="sign_up_form" class="wrap-form sign_up_form" method="post" action="#" data-mailchimp="true">
-                                                <div class="mailchimp-inputbox" id="sign_up_form-content">
-                                                    <input type="email" name="email" placeholder="Enter Your Email" required="">
-                                                    <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Sign up!</button>
-                                                </div>
-                                            </form>
-                                            <h2 class="fs-18 mb-0">Или позвоните в <strong class="ttm-textcolor-skincolor">+888 445 55 678</strong></h2>
                                         </div>
                                     </div>
                                 </div>
@@ -418,20 +398,17 @@
                                 <!-- section title -->
                                 <div class="section-title">
                                     <div class="title-header">
-                                        <h3>Mission</h3>
-                                        <h2 class="title">Представляем оптометриста высокого качества <span class="ttm-textcolor-skincolor"> Клиника</span></h2>
+                                        <h2 class="title">{% trans "Представляем оптометриста высокого качества" %} <span class="ttm-textcolor-skincolor"> Клиника</span></h2>
                                     </div>
                                     <div class="heading-seperator"><span></span></div>
-                                    <div class="title-desc"><p>Вы ничего не имеете, если у вас нет серьезных травм, которые могут привести к серьезным травмам, ухудшению состояния глаз или трудным ситуациям. <span class="ttm-textcolor-skincolor">enim ad et minim</span> veniam, and quis nostrud exercitation produr conducted right in our clinic.</p></div>
                                 </div><!-- section title end -->
                                 <div class="padding_bottom35">
                                     <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor ttm-textcolor-darkgrey">
-                                        <li><i class="fa fa-check"></i><div class="ttm-list-li-content">Составление индивидуальной программы лечения пациента.</div></li>
-                                        <li><i class="fa fa-check"></i><div class="ttm-list-li-content">Выполнение всех операций работает на профессиональном уровне.</div></li>
-                                        <li><i class="fa fa-check"></i><div class="ttm-list-li-content">Соответствие материалов международным стандартам.</div></li>
+                                        <li><i class="fa fa-check"></i><div class="ttm-list-li-content">{% trans "Составление индивидуальной программы лечения пациента." %}</div></li>
+                                        <li><i class="fa fa-check"></i><div class="ttm-list-li-content">{% trans "Выполнение всех операций работает на профессиональном уровне." %}</div></li>
+                                        <li><i class="fa fa-check"></i><div class="ttm-list-li-content">{% trans "Соответствие материалов международным стандартам." %}</div></li>
                                     </ul>
                                 </div>
-                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor" href="contact.html">Записаться на прием<i class="fontello icon-plus"></i></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
