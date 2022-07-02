@@ -28,19 +28,16 @@
           <!-- featured-imagebox-portfolio -->
           <div class="featured-imagebox featured-imagebox-portfolio style2">
             <!-- ttm-box-view-overlay -->
-            <a href="{% url 'treatment' treatment.pk %}">
-              <div class="ttm-box-view-overlay">
-                <!-- featured-thumbnail -->
+            <div class="ttm-box-view-overlay">
+              <!-- featured-thumbnail -->
+              <a href="{% url 'treatment' treatment.pk %}">
                 <div class="featured-thumbnail">
-                  <img
-                    class="img-fluid"
-                    src="{{ treatment.image.url }}"
-                    alt="image"
-                  />
+                  <img class="img-fluid" src="{{ treatment.image.url }}"
+                  alt="image">
                 </div>
-                <!-- featured-thumbnail end-->
-              </div>
-            </a>
+              </a>
+              <!-- featured-thumbnail end-->
+            </div>
             <div class="featured-content">
               <div class="featured-title">
                 <h3>

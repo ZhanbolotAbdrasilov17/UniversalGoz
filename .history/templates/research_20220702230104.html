@@ -26,21 +26,18 @@
         {% for treatment in treatments %}
         <div class="col-lg-4 col-md-4 col-sm-6">
           <!-- featured-imagebox-portfolio -->
-          <div class="featured-imagebox featured-imagebox-portfolio style2">
-            <!-- ttm-box-view-overlay -->
-            <a href="{% url 'treatment' treatment.pk %}">
-              <div class="ttm-box-view-overlay">
-                <!-- featured-thumbnail -->
-                <div class="featured-thumbnail">
+          <div class="ttm-box-view-overlay">
+              <!-- featured-thumbnail -->
+              <div class="featured-thumbnail">
+                <a href="{% url 'treatment' treatment.pk %}">
                   <img
                     class="img-fluid"
                     src="{{ treatment.image.url }}"
                     alt="image"
-                  />
-                </div>
-                <!-- featured-thumbnail end-->
+                /></a>
               </div>
-            </a>
+              <!-- featured-thumbnail end-->
+            </div>
             <div class="featured-content">
               <div class="featured-title">
                 <h3>
@@ -50,7 +47,6 @@
                 </h3>
               </div>
             </div>
-          </div>
           <!-- featured-imagebox-portfolio end-->
         </div>
         {% endfor %}
