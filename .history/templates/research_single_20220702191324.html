@@ -1,0 +1,97 @@
+{% extends 'index2.html' %}
+{% load static %}
+{% block page %}
+
+
+
+        <!-- page-title -->
+        <div class="ttm-page-title-row">
+            <div class="ttm-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page-title end -->
+
+        <!--site-main start-->
+        <div class="site-main">
+
+            <div class="ttm-row sidebar ttm-sidebar-right ttm-bgcolor-white clearfix">
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-12 content-area">
+                            <!-- post -->
+                            <article class="post ttm-blog-single clearfix">
+                                <!-- ttm-blog-classic-content -->
+                                <div class="ttm-blog-single-content">
+                                    <div class="entry-content">
+                                        <div class="ttm-box-desc-text">
+                                            <div class="margin_top40 margin_bottom40">
+                                                <div class="row">
+                                                    <div class="col-md-6 ttm-box-col-wrapper res-767-padding_bottom30">
+                                                        <img class="img-fluid w-100 h-100" src="{{ treatment.image.url }}" alt="blog-image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {% for treat in treatment_desc %}
+                                            {% if treat.treatment.id == treatment.id %}
+                                            <div class="text-content">
+                                                <h4 class="fs-22">{{ treat.title}}</h4>
+                                                <p>{{ treat.text }}</p>
+                                            </div>
+                                            {% endif %}
+                                            {% endfor %}
+
+
+
+                                            <div class="margin_top30 margin_bottom45">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
+                                                            <li><i class="fa fa-long-arrow-right"></i><div class="ttm-list-li-content">They Carry Insurance loream Coverage</div></li>
+                                                            <li><i class="fa fa-long-arrow-right"></i><div class="ttm-list-li-content">With righteous indignation and dislike men</div></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor res-575-margin_top10">
+                                                            <li><i class="fa fa-long-arrow-right"></i><div class="ttm-list-li-content">They Carry Insurance loream Coverage</div></li>
+                                                            <li><i class="fa fa-long-arrow-right"></i><div class="ttm-list-li-content">With righteous indignation and dislike men</div></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="social-media-block">
+                                                <div class="d-sm-flex justify-content-between">
+                                                    <div class="ttm-social-share-wrapper margin_top15">
+                                                        <h6 class="font-weight-50 margin_bottom0 margin_right10">Share : </h6>
+                                                        <ul class="social-icons circle">
+                                                            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                                                            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                                                            <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
+                                                            <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- ttm-blog-classic-content end -->
+                            </article><!-- post end -->
+                        </div>
+                    </div><!-- row end -->
+                </div>
+            </div>
+
+
+        </div><!--site-main end-->
+
+
+
+
+
+{% endblock %}
