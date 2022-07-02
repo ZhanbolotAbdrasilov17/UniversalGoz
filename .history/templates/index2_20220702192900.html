@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/main.css'%}" />
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/megamenu.css'%}" />
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/responsive.css'%}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/chatbot.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css.chatbot.css'%}" />
   </head>
 
   <body>
@@ -428,9 +428,9 @@
       <use xlink:href="#icon-speech" />
     </svg>	</div>
 
-<div class="chatbot chatbot--closed " style="z-index: 200">
+<div class="chatbot chatbot--closed ">
   <div class="chatbot__header">
-    <p><strong>Есть вопросы?</strong> <span class="u-text-highlight">Попросите Алтынай</span></p>
+    <p><strong>Got a question?</strong> <span class="u-text-highlight">Ask Harry</span></p>
     <svg class="chatbot__close-button icon-speech" viewBox="0 0 32 32">
       <use xlink:href="#icon-speech" />
     </svg>
@@ -447,13 +447,13 @@
           </svg>
         </div>
         <span class="chatbot__arrow chatbot__arrow--left"></span>
-        <p class='chatbot__message'><strong class='intro'>Здравствуйте, я Алтынай, ваш виртуальный помощник. Я здесь, чтобы помочь с вашими общими вопросами.</strong>Пример вопросов, которые вы можете задать для демонстрации: <br><em>Привет, как ты? / Мне нужен совет / Можете ли вы отправить мне предоставить список услуг? / Могу ли я получить форму? / Как мне исользовать полис? </em></p>
+        <p class='chatbot__message'><strong class='intro'>Hello, I’m Harry, your virtual assistant. I'm here to help with your general enquiries.</strong>Example of questions you can ask for demo purpose: <br><em>Hi / How are you? / I'd like some financial advice / Can you email me a statement? / Can I get a form? /  How do I cancel my life insurance? </em></p>
       </li>
       <!-- Message here -->
     </ul>
   </div>
   <div class="chatbot__entry chatbot--closed">
-    <input type="text" class="chatbot__input" placeholder="Напишите сообщение..." />
+    <input type="text" class="chatbot__input" placeholder="Write a message..." />
     <svg class="chatbot__submit" viewBox="0 0 32 32">
       <use xlink:href="#icon-send" />
     </svg>
