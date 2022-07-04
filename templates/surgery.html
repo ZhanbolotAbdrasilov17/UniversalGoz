@@ -1,0 +1,67 @@
+{% extends 'index2.html' %}
+{% load static %}
+{% load i18n%}
+{% block page %}
+
+<!-- page-title -->
+<div class="ttm-page-title-row">
+  <div class="ttm-page-title-row-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="page-title-heading">
+            <h2 class="title">Операции</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- page-title end -->
+
+<!--site-main start-->
+<div class="site-main">
+  <!--grid-section-->
+  <section class="ttm-row grid-section clearfix">
+    <div class="container">
+      <!-- row -->
+      <div class="row">
+        {% for surgery in surgeries %}
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <!-- featured-imagebox-portfolio -->
+          <div class="featured-imagebox featured-imagebox-portfolio style2">
+            <!-- ttm-box-view-overlay -->
+            <a href="{% url 'surgery' surgery.pk %}">
+              <div class="ttm-box-view-overlay">
+                <!-- featured-thumbnail -->
+                <div class="featured-thumbnail">
+                  <img
+                    class="img-fluid"
+                    src="{{ surgery.image.url }}"
+                    alt="image"
+                  />
+                </div>
+                <!-- featured-thumbnail end-->
+              </div>
+            </a>
+            <div class="featured-content">
+              <div class="featured-title">
+                <h3>
+                  <a href="{% url 'surgery' surgery.pk %}"
+                    >{{ surgery.title}}</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- featured-imagebox-portfolio end-->
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!--grid-section end-->
+</div>
+<!--site-main end-->
+
+{% endblock %}

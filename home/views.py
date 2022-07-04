@@ -63,6 +63,11 @@ class NewsDetail(DetailView):
         context['texts'] = Fulldescription.objects.all()
         return context
 
+def treatment(request):
+    treatments = Treatment.objects.all()
+    context = {"treatments": treatments}
+    return render(request, 'research.html', context)
+
 class TreatmentDetail(DetailView):
     model = Treatment
     template_name = "research_single.html"
@@ -73,6 +78,23 @@ class TreatmentDetail(DetailView):
         context = super().get_context_data()
         context['treatment_desc'] = TreatmentFullDescription.objects.all()
         return context
+
+def surgery(request):
+    surgeries = Surgery.objects.all()
+    context = {"surgeries": surgeries}
+    return render(request, 'surgery.html', context)
+
+class SurgeryDetail(DetailView):
+    model = Surgery
+    template_name = "surgery_single.html"
+    context_object_name = 'surgery'
+    pk_url_kwarg = 'surgery_id'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data()
+        context['surgery_desc'] = SurgeryFullDescription.objects.all()
+        return context
+
 
 
 def contact(request):
@@ -93,12 +115,11 @@ def faq(request):
     context = {"faqs": faqs}
     return render(request, 'faq.html', context)
 
-def treatment(request):
-    treatments = Treatment.objects.all()
-    context = {"treatments": treatments}
-    return render(request, 'research.html', context)
 
 def research_single(request):
+    return render(request, 'research_single.html')
+
+def surgery_single(request):
     return render(request, 'research_single.html')
 
 def service(request):

@@ -66,6 +66,26 @@ class TreatmentFullDescription(models.Model):
         verbose_name = 'Описание_лечения'
         ordering = ['text']
 
+class Surgery(models.Model):
+    title = models.CharField(max_length=200, verbose_name="Операции")
+    image = models.ImageField(null=True, blank=True, upload_to="surgery")
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Операции'
+        ordering = ['title']
+
+class SurgeryFullDescription(models.Model):
+    surgery = models.ForeignKey(Surgery, on_delete=models.CASCADE, related_name="surgery_descriptions")
+    title = models.CharField(max_length=200, verbose_name="Заглавие", blank=True, null=True)
+    text = models.TextField(verbose_name="Описание")
+
+    class Meta:
+        verbose_name = 'Описание_операция'
+        ordering = ['text']
+
 
 class FAQ(models.Model):
     question = models.CharField(max_length=300, verbose_name="вопросы",)

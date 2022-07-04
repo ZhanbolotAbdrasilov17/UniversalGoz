@@ -29,6 +29,15 @@ class TreatmentTranslation(TranslationOptions):
 class TreatmentFullDescriptionTranslation(TranslationOptions):
     fields = ('text', 'title')
 
+
+@register(Surgery)
+class SurgeryTranslation(TranslationOptions):
+    fields = ('title', )
+
+@register(SurgeryFullDescription)
+class SurgeryFullDescriptionTranslation(TranslationOptions):
+    fields = ('text', 'title')
+
 @register(Reviews)
 class ReviewsTranslation(TranslationOptions):
     fields = ('text', )
