@@ -212,7 +212,7 @@ msgstr "Yй"
 
 #: templates/contact.html:47
 msgid "Есть вопросы перед назначением?"
-msgstr "Have questions before an appointment?"
+msgstr "Суроолорнуз барбы?"
 
 #: templates/contact.html:60
 msgid "Давайте поговорим"

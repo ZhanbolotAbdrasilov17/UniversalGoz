@@ -1,135 +1,150 @@
-{% extends 'index2.html' %}
-{% load static %}
-{% load i18n%}
-{% block page %}
+{% extends 'index2.html' %} {% load static %} {% load i18n%} {% block page %}
 
-
-
-
-        <!-- page-title -->
-        <div class="ttm-page-title-row">
-            <div class="ttm-page-title-row-inner">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-12">
-                            <div class="page-title-heading">
-                                <h2 class="title">{% trans "Свяжитесь с нами" %}</h2>
-                            </div>
-                            <div class="breadcrumb-wrapper">
-                                <span>
-                                    <i class="fa fa-home mr-2"></i><a title="Homepage" href="index.html">{% trans "Главная" %}</a>
-                                </span>
-                                <span class="ttm-bread-sep">&nbsp; :&nbsp;: &nbsp;</span>
-                                <span>{% trans "Свяжитесь с нами" %}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- page-title -->
+<div class="ttm-page-title-row">
+  <div class="ttm-page-title-row-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="page-title-heading">
+            <h2 class="title">{% trans "Свяжитесь с нами" %}</h2>
+          </div>
+          <div class="breadcrumb-wrapper">
+            <span>
+              <i class="fa fa-home mr-2"></i
+              ><a title="Homepage" href="index.html">{% trans "Главная" %}</a>
+            </span>
+            <span class="ttm-bread-sep">&nbsp; :&nbsp;: &nbsp;</span>
+            <span>{% trans "Свяжитесь с нами" %}</span>
+          </div>
         </div>
-        <!-- page-title end -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- page-title end -->
 
-
-        <!--site-main start-->
-        <div class="site-main">
-
-
-            <!--- conatact-section -->
-            <section class="ttm-row conatact-section clearfix">
-                <div class="container">
-                    <!-- row -->
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="padding_right30 res-991-padding_right0 res-991-margin_bottom50">
-                                <!-- section title -->
-                                <div class="section-title">
-                                    <div class="title-header">
-                                        <h2 class="title padding_bottom20">{% trans "Есть вопросы перед назначением?" %}</h2>
-                                    </div>
-                                    <div class="heading-seperator"><span></span></div>
-                                </div><!-- section title end -->
-                                <!--featured-icon-box-->
-                                <div class="featured-icon-box icon-align-before-content style11">
-                                    <div class="featured-icon padding_right10">
-                                        <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                            <i class="fs-40 flaticon-email"></i>
-                                        </div>
-                                    </div>
-                                    <div class="featured-content">
-                                        <div class="featured-title">
-                                            <h3 class="font-weight-500">{% trans 'Давайте поговорим' %}</h3>
-                                        </div>
-                                        <div class="featured-desc">
-                                            <strong>Phone:</strong> +123 45 678<br>
-                                            <strong>Email:</strong> info@gmail.com
-                                        </div>
-                                    </div>
-                                </div><!-- featured-icon-box end-->
-                                <div class="ttm-horizontal_sep width-100 margin_top25 margin_bottom25"></div>
-                                <!--featured-icon-box-->
-                                <div class="featured-icon-box icon-align-before-content style11">
-                                    <div class="featured-icon padding_right10">
-                                        <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                            <i class="fs-40 flaticon-phone-call"></i>
-                                        </div>
-                                    </div>
-                                    <div class="featured-content">
-                                        <div class="featured-title">
-                                            <h3 class="font-weight-500">{% trans 'Время работы' %}</h3>
-                                        </div>
-                                        <div class="featured-desc">
-                                            <strong>Пон-Пят</strong> с 9:00 до 18:00 <br>
-                                            <strong>Суббота:</strong> с 9:00 да 14:00<br>
-                                            <strong>Воскр:</strong> {% trans 'Закрыто' %}
-                                        </div>
-                                    </div>
-                                </div><!-- featured-icon-box end-->
-                                <div class="ttm-horizontal_sep width-100 margin_top25 margin_bottom25"></div>
-                                <!--featured-icon-box-->
-                                <div class="featured-icon-box icon-align-before-content style11 margin_bottom0">
-                                    <div class="featured-icon padding_right10">
-                                        <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                            <i class="fs-40 flaticon-location"></i>
-                                        </div>
-                                    </div>
-                                    <div class="featured-content">
-                                        <div class="featured-title">
-                                            <h3 class="font-weight-500">{% trans 'Наш адресс' %}</h3>
-                                        </div>
-                                        <div class="featured-desc">Медерова 197<br>Бишкек</div>
-                                    </div>
-                                </div><!-- featured-icon-box end-->
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="ttm-bgcolor-grey text-center p-40 padding_top35 res-991-p-15 res-991-padding_top30 res-991-padding_bottom30">
-                                <h2 class="fs-26">{% trans "Напишите свои запросы" %}</h2>
-                                <p>{% trans 'Заполните данные ниже, и наша стойка регистрации свяжется с вами' %}</p>
-                                <div class="padding_top30">
-                                    {% include 'send_mail.html' %}
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- row end -->
-                </div>
-            </section>
-            <!-- conatact-section end -->
-
-
-            <!--google_map-->
-            <div id="google_map" class="google_map">
-                <div class="map_container">
-                    <div id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6304.829986131271!2d-122.4746968033092!3d37.80374752160443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586e6302615a1%3A0x86bd130251757c00!2sStorey+Ave%2C+San+Francisco%2C+CA+94129!5e0!3m2!1sen!2sus!4v1435826432051" height="400"></iframe>
-                    </div>
-                </div>
+<!--site-main start-->
+<div class="site-main">
+  <!--- conatact-section -->
+  <section class="ttm-row conatact-section clearfix">
+    <div class="container">
+      <!-- row -->
+      <div class="row">
+        <div class="col-lg-5">
+          <div
+            class="padding_right30 res-991-padding_right0 res-991-margin_bottom50"
+          >
+            <!-- section title -->
+            <div class="section-title">
+              <div class="title-header">
+                <h2 class="title padding_bottom20">
+                  {% trans "Есть вопросы перед назначением?" %}
+                </h2>
+              </div>
+              <div class="heading-seperator"><span></span></div>
             </div>
+            <!-- section title end -->
+            <!--featured-icon-box-->
+            <div class="featured-icon-box icon-align-before-content style11">
+              <div class="featured-icon padding_right10">
+                <div
+                  class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg"
+                >
+                  <i class="fs-40 flaticon-email"></i>
+                </div>
+              </div>
+              <div class="featured-content">
+                <div class="featured-title">
+                  <h3 class="font-weight-500">
+                    {% trans 'Давайте поговорим' %}
+                  </h3>
+                </div>
+                <div class="featured-desc">
+                  <strong>Phone:</strong> +123 45 678<br />
+                  <strong>Email:</strong> info@gmail.com
+                </div>
+              </div>
+            </div>
+            <!-- featured-icon-box end-->
+            <div
+              class="ttm-horizontal_sep width-100 margin_top25 margin_bottom25"
+            ></div>
+            <!--featured-icon-box-->
+            <div class="featured-icon-box icon-align-before-content style11">
+              <div class="featured-icon padding_right10">
+                <div
+                  class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg"
+                >
+                  <i class="fs-40 flaticon-phone-call"></i>
+                </div>
+              </div>
+              <div class="featured-content">
+                <div class="featured-title">
+                  <h3 class="font-weight-500">{% trans 'Время работы' %}</h3>
+                </div>
+                <div class="featured-desc">
+                  <strong>Пон-Пят</strong> с 9:00 до 18:00 <br />
+                  <strong>Суббота:</strong> с 9:00 да 14:00<br />
+                  <strong>Воскр:</strong> {% trans 'Закрыто' %}
+                </div>
+              </div>
+            </div>
+            <!-- featured-icon-box end-->
+            <div
+              class="ttm-horizontal_sep width-100 margin_top25 margin_bottom25"
+            ></div>
+            <!--featured-icon-box-->
+            <div
+              class="featured-icon-box icon-align-before-content style11 margin_bottom0"
+            >
+              <div class="featured-icon padding_right10">
+                <div
+                  class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg"
+                >
+                  <i class="fs-40 flaticon-location"></i>
+                </div>
+              </div>
+              <div class="featured-content">
+                <div class="featured-title">
+                  <h3 class="font-weight-500">{% trans 'Наш адресс' %}</h3>
+                </div>
+                <div class="featured-desc">Медерова 197<br />Бишкек</div>
+              </div>
+            </div>
+            <!-- featured-icon-box end-->
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div
+            class="ttm-bgcolor-grey text-center p-40 padding_top35 res-991-p-15 res-991-padding_top30 res-991-padding_bottom30"
+          >
+            <h2 class="fs-26">{% trans "Напишите свои запросы" %}</h2>
+            <p>
+              {% trans 'Заполните данные ниже, и наша стойка регистрации
+              свяжется с вами' %}
+            </p>
+            <div class="padding_top30">{% include 'send_mail.html' %}</div>
+          </div>
+        </div>
+      </div>
+      <!-- row end -->
+    </div>
+  </section>
+  <!-- conatact-section end -->
 
-
-        </div><!--site-main end-->
-
-
-
-
+  <!--google_map-->
+  <div id="google_map" class="google_map">
+    <div class="map_container">
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.3698754947336!2d74.59700549357176!3d42.85283981061068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb62ed355dab9%3A0xcddc55495c6b82ff!2zMTk3INGD0LsuINCc0LXQtNC10YDQvtCy0LAsINCR0LjRiNC60LXQug!5e0!3m2!1sru!2skg!4v1656907789089!5m2!1sru!2skg"
+          height="400"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!--site-main end-->
 
 {%endblock%}
