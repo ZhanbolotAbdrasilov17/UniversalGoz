@@ -34,5 +34,16 @@ class TreatmentAdmin(admin.ModelAdmin):
     inlines = [DescTreatment, ]
 
 admin.site.register(Treatment, TreatmentAdmin)
+
+class DescSurgery(admin.TabularInline):
+    model = SurgeryFullDescription
+
+
+class SurgeryAdmin(admin.ModelAdmin):
+    inlines = [DescSurgery, ]
+
+admin.site.register(Surgery, SurgeryAdmin)
+
+
 admin.site.register(FAQ)
 admin.site.register(Reviews)

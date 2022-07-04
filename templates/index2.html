@@ -174,7 +174,11 @@
                           </li>
 
                           <li class="mega-menu-item">
-                            <a href="{% url 'treatment'%}" class="mega-menu-link">{% trans 'Наши услуги' %}</a>
+                            <a href="#" class="mega-menu-link">{% trans 'Наши услуги' %}</a>
+                            <ul class="mega-submenu">
+                              <li><a href="{% url 'treatment' %}">{% trans 'Диагностика' %}</a></li>
+                              <li><a href="{% url 'treatment' %}">{% trans 'Операции' %}</a></li>
+                            </ul>
                           </li>
                           <li class="mega-menu-item">
                             <a href="{% url 'news'%}" class="mega-menu-link">{% trans 'Новости' %}</a>
