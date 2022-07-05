@@ -45,3 +45,11 @@ class ReviewsTranslation(TranslationOptions):
 @register(FAQ)
 class FAQTranslation(TranslationOptions):
     fields = ('question', 'answer')
+
+@register(VideoContent)
+class VideoContentTranslation(TranslationOptions):
+    fields = ('title',)
+
+@register(ImagesContent)
+class ImageContentTranslation(TranslationOptions):
+    fields = ('title',)

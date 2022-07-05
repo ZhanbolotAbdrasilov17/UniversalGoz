@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 65f2247ef83f7c50880a76e780102b722ad065ed
 from django.db import migrations, models
 import django.db.models.deletion
 
