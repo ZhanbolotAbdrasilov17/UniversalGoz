@@ -40,7 +40,6 @@ class DescSurgery(admin.TabularInline):
 class SurgeryAdmin(admin.ModelAdmin):
     inlines = [DescSurgery, ]
 
-admin.site.register(Surgery, SurgeryAdmin)
 
 admin.site.register(Treatment, TreatmentAdmin)
 
