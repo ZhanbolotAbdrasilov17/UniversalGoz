@@ -36,6 +36,7 @@ class TreatmentAdmin(admin.ModelAdmin):
 class DescSurgery(admin.TabularInline):
     model = SurgeryFullDescription
 
+<<<<<<< HEAD
 
 class SurgeryAdmin(admin.ModelAdmin):
     inlines = [DescSurgery, ]
@@ -43,6 +44,8 @@ class SurgeryAdmin(admin.ModelAdmin):
 
 admin.site.register(Treatment, TreatmentAdmin)
 
+=======
+>>>>>>> 65f2247ef83f7c50880a76e780102b722ad065ed
 class DescSurgery(admin.TabularInline):
     model = SurgeryFullDescription
 

@@ -74,6 +74,7 @@ class Surgery(models.Model):
         return self.title
 
     class Meta:
+<<<<<<< HEAD
         verbose_name = 'Операции'
         ordering = ['title']
 
@@ -81,6 +82,10 @@ class SurgeryFullDescription(models.Model):
     surgery = models.ForeignKey(Surgery, on_delete=models.CASCADE, related_name="surgery_descriptions")
     verbose_name = 'Операция'
     ordering = ['title']
+=======
+        verbose_name = 'Операция'
+        ordering = ['title']
+>>>>>>> 65f2247ef83f7c50880a76e780102b722ad065ed
 
 class SurgeryFullDescription(models.Model):
     treatment = models.ForeignKey(Surgery, on_delete=models.CASCADE, related_name="surgery_descriptions")
@@ -90,9 +95,12 @@ class SurgeryFullDescription(models.Model):
     class Meta:
         verbose_name = 'Описание_операция'
         ordering = ['text']
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 65f2247ef83f7c50880a76e780102b722ad065ed
 class FAQ(models.Model):
     question = models.CharField(max_length=300, verbose_name="вопросы",)
     answer = models.TextField(verbose_name="ответы")
