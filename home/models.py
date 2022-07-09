@@ -119,7 +119,7 @@ class VideoContent(models.Model):
     file = models.FileField(upload_to="video", verbose_name="видео")
 
     def __str__(self):
-        return self.name
+        return self.title
 
     class Meta:
         verbose_name = 'Видео_Контент'
@@ -131,7 +131,7 @@ class ImagesContent(models.Model):
     file = models.ImageField(null=True, blank=True, upload_to="work_images")
 
     def __str__(self):
-        return self.name
+        return self.title
 
     class Meta:
         verbose_name = 'Галерея_Контент'

@@ -104,7 +104,9 @@ def contact(request):
 
 def about(request):
     doctors = Doctor.objects.all()
-    context = {"doctors": doctors, }
+    images = ImagesContent.objects.all()
+    videos = VideoContent.objects.all()
+    context = {"doctors": doctors, "images": images, "videos": videos }
     return render(request, 'about.html', context)
 
 def about_2(request):
@@ -116,11 +118,6 @@ def faq(request):
     return render(request, 'faq.html', context)
 
 
-def research_single(request):
-    return render(request, 'research_single.html')
-
-def surgery_single(request):
-    return render(request, 'research_single.html')
 
 def service(request):
     return render(request, 'service.html')
