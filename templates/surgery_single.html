@@ -46,10 +46,10 @@
                   </div>
 
                   <div class="text-content">
-                    {% for s in surgery_desc %} {% if s.surgery.id == surgery.id%}
-                    <h4>{{s.title}}</h4>
+                    {% for s in surgery_desc %} {% if s.treatment.id == surgery.id%}
+                    <h4 class="fs-22">{{ s.title }}</h4>
                     <p>{{ s.text }}</p>
-                     {% endif %}{% endfor %}
+                    {% endif %} {% endfor %}
                   </div>
                 </div>
               </div>
