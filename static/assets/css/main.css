@@ -2714,9 +2714,9 @@ ul.social-icons {
 .footer-logo {
   margin-bottom: 32px;
 }
-/* .footer-logo img {
-    max-height: 30px;
-} */
+.footer-logo img {
+  max-width: 80%;
+}
 .footer .widget .widget-title {
   font-weight: 800;
   font-size: 22px;
@@ -4153,6 +4153,7 @@ section.error-404 .page-content p {
 }
 .slide.has-image {
   color: #fff;
+  min-height: 250px;
 }
 .slide.has-image span {
   color: #fff;
@@ -4182,4 +4183,24 @@ section.error-404 .page-content p {
   .slide {
     font-size: 180px;
   }
+}
+.carousel {
+  background: #fafafa;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.flickity-carousel video {
+  width: 100%;
+}
+.flickity-prev-next-button {
+  border-radius: 0 !important;
 }

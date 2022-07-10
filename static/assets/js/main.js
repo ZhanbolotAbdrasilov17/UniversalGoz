@@ -677,3 +677,11 @@ sliderUI.slider.addEventListener('touchstart', (event) => {
   sliderController.scrollLeft = sliderUI.slider.scrollLeft;
   sliderController.startPosX = event.pageX - sliderUI.slider.offsetLeft;
 });
+
+var elem = document.querySelector('.flickity-carousel');
+var flkty = new Flickity(elem, {
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true,
+  autoplay: 1700,
+});
