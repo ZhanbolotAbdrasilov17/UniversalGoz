@@ -64,7 +64,7 @@ class TreatmentFullDescription(models.Model):
 
     class Meta:
         verbose_name = 'Описание_лечения'
-        ordering = ['text']
+        ordering = ['id']
 
 class Surgery(models.Model):
     title = models.CharField(max_length=200, verbose_name="Операции")
@@ -85,7 +85,7 @@ class SurgeryFullDescription(models.Model):
 
     class Meta:
         verbose_name = 'Описание_операция'
-        ordering = ['text']
+        ordering = ['id']
 
 
 
@@ -117,6 +117,7 @@ class Reviews(models.Model):
 class VideoContent(models.Model):
     title = models.CharField(max_length=100, verbose_name="Название_видео", blank=True, null=True)
     file = models.FileField(upload_to="video", verbose_name="видео")
+    image = models.ImageField(null=True, blank=True, upload_to="content")
 
     def __str__(self):
         return self.title

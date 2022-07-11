@@ -263,13 +263,11 @@
                         </div>
                     </div>
                     <div style="margin-top: 30px;" class="flickity-carousel" data-flickity>
-                        <div class="carousel-cell"> <video controls poster="https://cdn.wallpaperhub.app/cloudcache/5/2/7/9/6/f/52796f1c0b311281c4ebe4b2639ee644a40b7c90.jpg"><source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video> </div>
-                        <div class="carousel-cell"> <video controls poster="https://cdn.wallpaperhub.app/cloudcache/5/2/7/9/6/f/52796f1c0b311281c4ebe4b2639ee644a40b7c90.jpg"><source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video> </div>
-                        <div class="carousel-cell"> <video controls poster="https://cdn.wallpaperhub.app/cloudcache/5/2/7/9/6/f/52796f1c0b311281c4ebe4b2639ee644a40b7c90.jpg"><source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video> </div>
-                        <div class="carousel-cell"> <video controls poster="https://cdn.wallpaperhub.app/cloudcache/5/2/7/9/6/f/52796f1c0b311281c4ebe4b2639ee644a40b7c90.jpg"><source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video> </div>
-                        <div class="carousel-cell"> <video controls poster="https://cdn.wallpaperhub.app/cloudcache/5/2/7/9/6/f/52796f1c0b311281c4ebe4b2639ee644a40b7c90.jpg"><source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video> </div>
+                        {% for v in videos %}
+                        <div class="carousel-cell"> <video controls poster="{{ v.image.url }}"><source src="{{ v.file.url }}"></video> </div>
+                        {% endfor %}
                     </div>
-
+                </div>
             </section>
             <!--procedure-section end-->
 
