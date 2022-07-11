@@ -31,7 +31,7 @@
     <div class="container">
       <!-- row -->
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <div
             class="padding_right30 res-991-padding_right0 res-991-margin_bottom50"
           >
@@ -115,18 +115,27 @@
             <!-- featured-icon-box end-->
           </div>
         </div>
-<!--        <div class="col-lg-7">-->
-<!--          <div-->
-<!--            class="ttm-bgcolor-grey text-center p-40 padding_top35 res-991-p-15 res-991-padding_top30 res-991-padding_bottom30"-->
-<!--          >-->
-<!--            <h2 class="fs-26">{% trans "Напишите свои запросы" %}</h2>-->
-<!--            <p>-->
-<!--              {% trans 'Заполните данные ниже, и наша стойка регистрации-->
-<!--              свяжется с вами' %}-->
-<!--            </p>-->
-<!--            <div class="padding_top30">{% include 'send_mail.html' %}</div>-->
-<!--          </div>-->
-<!--        </div>-->
+        {% comment %}
+        <div class="col-lg-7">
+          <div
+            class="ttm-bgcolor-grey text-center p-40 padding_top35 res-991-p-15 res-991-padding_top30 res-991-padding_bottom30"
+          >
+            <h2 class="fs-26">{% trans "Напишите свои запросы" %}</h2>
+            <p>
+              {% trans 'Заполните данные ниже, и наша стойка регистрации
+              свяжется с вами' %}
+            </p>
+            <div class="padding_top30">{% include 'send_mail.html' %}</div>
+          </div>
+        </div>
+        {% endcomment %}
+        <div class="col-lg-6">
+          <img
+            width="100%"
+            class="img-responsive"
+            src="{% static 'assets/images/contact.jpg'%}"
+          />
+        </div>
       </div>
       <!-- row end -->
     </div>
