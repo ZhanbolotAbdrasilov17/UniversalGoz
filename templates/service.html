@@ -50,7 +50,6 @@
             <!-- section title -->
             <div class="section-title">
               <div class="title-header">
-                <h3>EyeCare</h3>
                 <h2 class="title">
                   {% trans 'Мы сохраняем, улучшаем и защищаем ваше зрение' %}
                   <span class="ttm-textcolor-skincolor"></span>
@@ -282,32 +281,7 @@
                 <div class="ttm-tabs portfolio_filter_tab">
                   <ul class="tabs portfolio-filter res-991-pb-15 res-991-pt-10">
                     <li class="tab active">
-                      <a href="#" data-filter="*">All Research</a>
-                    </li>
-                    <li class="tab">
-                      <a href="#" data-filter=".retina-checkup"
-                        >Retina Checkup</a
-                      >
-                    </li>
-                    <li class="tab">
-                      <a href="#" data-filter=".laser-eye-surgery"
-                        >Laser Eye Surgery</a
-                      >
-                    </li>
-                    <li class="tab">
-                      <a href="#" data-filter=".glaucoma-surgery"
-                        >Glaucoma Surgery</a
-                      >
-                    </li>
-                    <li class="tab">
-                      <a href="#" data-filter=".vision-correction"
-                        >Vision Correction</a
-                      >
-                    </li>
-                    <li class="tab">
-                      <a href="#" data-filter=".cataract-surgery"
-                        >Cataract Surgery</a
-                      >
+                      <a href="#" data-filter="*"></a>
                     </li>
                   </ul>
                   <div class="content-tab">
@@ -341,14 +315,14 @@
                               </span>
                               <div class="featured-title">
                                 <h3>
-                                  <a href="transitions-lenses.html"
+                                  <a href="{% url 'surgery' %}"
                                     >Переходные линзы</a
                                   >
                                 </h3>
                               </div>
                               <div class="ttm-media-link">
                                 <a
-                                  href="transitions-lenses.html"
+                                  href="{% url 'surgery' %}"
                                   class="ttm_link"
                                   tabindex="0"
                                   ><i class="ti ti-angle-right"></i
@@ -390,13 +364,13 @@
                             </span>
                             <div class="featured-title">
                               <h3>
-                                <a href="visual-impairment.html"
+                                <a href="{% url 'surgery' %}"
                                   >Нарушения зрения</a
                                 >
                               </h3>
                             </div>
                             <div class="ttm-media-link">
-                              <a href="visual-impairment.html" class="ttm_link"
+                              <a href="{% url 'surgery' %}" class="ttm_link"
                                 ><i class="ti ti-angle-right"></i
                               ></a>
                             </div>
@@ -435,14 +409,14 @@
                             </span>
                             <div class="featured-title">
                               <h3>
-                                <a href="cochrane-eyesvision.html"
+                                <a href="{% url 'surgery' %}"
                                   >Кокрейновский взгляд на глаза</a
                                 >
                               </h3>
                             </div>
                             <div class="ttm-media-link">
                               <a
-                                href="cochrane-eyesvision.html"
+                                href="{% url 'surgery' %}"
                                 class="ttm_link"
                                 ><i class="ti ti-angle-right"></i
                               ></a>

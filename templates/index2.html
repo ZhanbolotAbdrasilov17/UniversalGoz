@@ -180,7 +180,7 @@
                             <a href="#" class="mega-menu-link">{% trans 'Сервисы' %}</a>
                             <ul class="mega-submenu">
                               <li><a href="{% url 'about' %}">{% trans 'О нас' %}</a></li>
-                              <li><a href="{% url 'service' %}">{% trans 'Наши сервисы' %}</a></li>
+                              <li><a href="{% url 'service' %}">{% trans "Наши сервисы" %}</a></li>
                               <li><a href="{% url 'doctor' %}">{% trans 'Наша команда' %}</a></li>
                             </ul>
                           </li>
@@ -239,27 +239,7 @@
                         alt="image"
                       />
                     </div>
-                    <div
-                      class="featured-icon-box icon-align-before-content icon-ver_align-top"
-                    >
-                      <div class="featured-icon">
-                        <div
-                          class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg"
-                        >
-                          <i
-                            class="ttm-textcolor-skincolor flaticon-arroba"
-                          ></i>
-                        </div>
-                      </div>
-                      <div class="featured-content">
-                        <div class="featured-title">
-                          <h3>{% trans 'Бесплатная консультация' %}</h3>
-                          <a href="mailto:sale@themetechmount.com"
-                            ><br />sale@themetechmount.com</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+
                     <p class="margin_top30">
                       {% trans 'Компания стремится обеспечить большее улучшение зрения в системе и технологиях.' %}
                     </p>
@@ -312,10 +292,10 @@
                     <h3 class="widget-title">{% trans 'Департаменты' %}</h3>
                     <ul id="menu-footer-service-link" class="menu">
                       <li><a href="{% url 'about' %}">{% trans 'Кто мы есть' %}</a></li>
-                      <li><a href="{% url 'about_2' %}">{% trans 'Наша миссия' %}</a></li>
+                      <li><a href="{% url 'service' %}">{% trans 'Наша миссия' %}</a></li>
                       <li><a href="{% url 'news' %}">{% trans 'Награды' %}</a></li>
                       <li><a href="{% url 'doctor' %}">{% trans 'Наши врачи' %}</a></li>
-                      <li><a href="{% url 'about_2' %}">{% trans 'До и После' %}</a></li>
+                      <li><a href="/#before_after">{% trans 'До и После' %}</a></li>
                     </ul>
                   </div>
                 </div>
@@ -323,12 +303,12 @@
                   <div class="widget widget_nav_menu clearfix">
                     <h3 class="widget-title">{% trans 'Прямая ссылка' %}</h3>
                     <ul id="menu-footer-quick-link" class="menu">
-                      <li><a href="glasses.html">{% trans 'Лечение' %}</a></li>
-                      <li><a href="glaucoma.html">{% trans 'Наши пациенты' %}</a></li>
-                      <li><a href="contact.html">{% trans 'Свяжитесь с нами' %}</a></li>
-                      <li><a href="our-team.html">{% trans 'Назначения' %}</a></li>
-                      <li><a href="phakic-lens.html">{% trans 'О нас' %}</a></li>
-                      <li><a href="faqs.html">{% trans 'Политика конфиденциальности' %}</a></li>
+                      <li><a href="{% url 'treatment' %}">{% trans 'Лечение' %}</a></li>
+                      <li><a href="/#reviews">{% trans 'Наши пациенты' %}</a></li>
+                      <li><a href="{% url 'contact' %}">{% trans 'Свяжитесь с нами' %}</a></li>
+                      <li><a href="{% url 'surgery' %}">{% trans 'Назначения' %}</a></li>
+                      <li><a href="{% url 'about' %}">{% trans 'О нас' %}</a></li>
+
                     </ul>
                   </div>
                 </div>
