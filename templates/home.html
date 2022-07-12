@@ -120,7 +120,7 @@
 
       <!--site-main start-->
       <div class="site-main">
-        <section class="ttm-row vision-section">
+        {% comment %} <section class="ttm-row vision-section">
           <div class="container">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12">
@@ -205,7 +205,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> {% endcomment %}
 
         {% comment %} <section
           class="ttm-row ttm-bgcolor-darkgrey service-section style1 col-bg-img-one ttm-col-bgimage-yes ttm-bg clearfix"
@@ -554,8 +554,8 @@
                         </div>
                         <div class="featured-title">
                           <h3 class="margin_bottom20">
-                            <a href="{% url 'service' %}"
-                              >{% trans "Не соглашайтесь ни на что, что ниже стандарта" %}</a
+                            <p
+                              >{% trans "Не соглашайтесь ни на что, что ниже стандарта" %}</
                             >
                           </h3>
                         </div>
