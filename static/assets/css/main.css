@@ -4194,12 +4194,12 @@ section.error-404 .page-content p {
   height: -moz-fit-content;
   height: fit-content;
   margin-right: 10px;
-  background: #8c8;
   border-radius: 5px;
   counter-increment: carousel-cell;
 }
 .flickity-carousel video {
   width: 100%;
+  max-height: 420px;
 }
 .flickity-prev-next-button {
   border-radius: 0 !important;

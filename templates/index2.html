@@ -173,14 +173,14 @@
                       <!-- menu -->
                       <nav class="main-menu menu-mobile" id="menu">
                         <ul class="menu">
-                          <li class="mega-menu-item active">
+                          <li class="mega-menu-item">
                             <a href="{% url 'home' %}" class="mega-menu-link">{% trans 'Главная' %}</a>
                           </li>
                           <li class="mega-menu-item">
                             <a href="#" class="mega-menu-link">{% trans 'Сервисы' %}</a>
                             <ul class="mega-submenu">
                               <li><a href="{% url 'about' %}">{% trans 'О нас' %}</a></li>
-                              <li><a href="{% url 'service' %}">{% trans "Наши сервисы" %}</a></li>
+                              {% comment %} <li><a href="{% url 'service' %}">{% trans "Наши сервисы" %}</a></li> {% endcomment %}
                               <li><a href="{% url 'doctor' %}">{% trans 'Наша команда' %}</a></li>
                             </ul>
                           </li>
@@ -188,8 +188,8 @@
                           <li class="mega-menu-item">
                             <a href="#" class="mega-menu-link">{% trans 'Наши услуги' %}</a>
                             <ul class="mega-submenu">
-                              <li><a href="{% url 'treatment' %}">{% trans 'Диагностика' %}</a></li>
                               <li><a href="{% url 'surgery' %}">{% trans 'Операции' %}</a></li>
+                              <li><a href="{% url 'treatment' %}">{% trans 'Диагностика' %}</a></li>
                             </ul>
                           </li>
                           <li class="mega-menu-item">
