@@ -6,6 +6,8 @@ class Doctor(models.Model):
     full_name = models.CharField(max_length=200, verbose_name="ФИО")
     position = models.CharField(max_length=300, verbose_name="Должность")
     image = models.ImageField(null=True, blank=True, upload_to="doctors")
+    experience = models.CharField(max_length=300, verbose_name="Опыт", blank=True, null=True)
+
 
     def __str__(self):
         return self.full_name
