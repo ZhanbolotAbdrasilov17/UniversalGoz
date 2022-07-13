@@ -97,7 +97,7 @@ jQuery(function ($) {
         // Enable click event
         $('nav.main-menu ul.menu').each(function () {
           // Dropdown Fade Toggle
-          $('a.mega-menu-link', this).on('click', function (e) {
+          $('a.mega-menu-link-ropdown', this).on('click', function (e) {
             e.preventDefault();
             var t = $(this);
             t.toggleClass('active').next('ul').toggleClass('active');

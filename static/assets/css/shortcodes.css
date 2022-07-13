@@ -1677,6 +1677,7 @@ div:hover > .ttm-box-view-content-inner:before {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 2px;
+  text-align: center;
 }
 .featured-imagebox-portfolio.style2 .featured-content .category {
   font-size: 15px;
