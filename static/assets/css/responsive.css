@@ -1431,6 +1431,9 @@ body .page.sticky-column {
   .ttm-blog-classic .ttm-blogbox-footer-readmore {
     padding-bottom: 20px;
   }
+  .about__list ul {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 450px) {
