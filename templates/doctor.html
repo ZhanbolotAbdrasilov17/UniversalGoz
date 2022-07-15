@@ -28,7 +28,9 @@
           <!-- featured-imagebox-team -->
           <div class="featured-imagebox featured-imagebox-team style1">
             <div class="featured-thumbnail" style="max-height: 394px">
-              <img class="img-fluid" src="{{ doctor.image.url}}" alt="image" />
+              <a href="{% url 'doctor' doctor.pk %}"
+                ><img class="img-fluid" src="{{ doctor.image.url}}" alt="image"
+              /></a>
             </div>
             <div class="featured-content">
               <div class="featured-title">
