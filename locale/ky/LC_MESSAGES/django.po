@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 12:31+0000\n"
+"POT-Creation-Date: 2022-07-15 19:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,6 +166,10 @@ msgstr "Биздин дарек"
 #: templates/doctor.html:10 templates/index2.html:185
 msgid "Наша команда"
 msgstr "Биздин топ"
+
+#: templates/doctor.html:91
+msgid "Получите Решения Для Всех Видов Офтальмологических Услуг"
+msgstr "Көздүн Бардык Түрлөрү Боюнча Чечимдерди Алыңыз"
 
 #: templates/faq.html:12
 msgid "Часто задаваемые вопросы"
@@ -372,9 +376,6 @@ msgstr "Биз сиздин көз карашыңызды сактайбыз, ж
 #~| msgid "ХОТИТЕ ПОЛУЧИТЬ СКИДКУ 20%%?"
 #~ msgid "ХОТИТЕ ПОЛУЧИТЬ СКИДКУ 20%%?"
 #~ msgstr "20 АРЗАНДАТУУ АЛГЫҢЫЗ КЕЛЕТ%"
-
-#~ msgid "Получите Решения Для Всех Видов Офтальмологических Услуг"
-#~ msgstr "Көздүн Бардык Түрлөрү Боюнча Чечимдерди Алыңыз"
 
 #~ msgid "Каждый заслуживает ясно видеть мир."
 #~ msgstr "Ар бир адам дүйнөнү ачык көрүүгө татыктуу."
