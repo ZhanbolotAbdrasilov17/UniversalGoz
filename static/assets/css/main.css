@@ -2989,7 +2989,7 @@ ul.footer-nav-menu li:not(:last-child):after {
   color: #fff;
   display: none;
   position: fixed;
-  right: 34px;
+  left: 34px;
   bottom: 50px;
   z-index: 999;
   height: 0;
