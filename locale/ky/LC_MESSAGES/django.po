@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 19:30+0000\n"
+"POT-Creation-Date: 2022-07-25 04:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "Русский"
 msgid "Kyrgyz"
 msgstr "Кыргызча"
 
-#: templates/about.html:14 templates/index2.html:182 templates/index2.html:311
+#: templates/about.html:14 templates/index2.html:191 templates/index2.html:320
 msgid "О нас"
 msgstr "Биз жөнүндө"
 
@@ -47,11 +47,11 @@ msgid "Компания оснащена высокотехнологичным 
 msgstr ""
 "Компания жогорку технологиялык жабдуулар жана технологиялар менен жабдылган."
 
-#: templates/about.html:92
+#: templates/about.html:91
 msgid "«Universal Goz»"
 msgstr ""
 
-#: templates/about.html:95
+#: templates/about.html:94
 msgid ""
 "«Universal Goz» - это современная глазная клиника с новейшим оборудованием, "
 "где  выполняются сложнейшие операции на глаза. В нашей клинике работают "
@@ -61,39 +61,39 @@ msgstr ""
 "жасалган акыркы жабдуулары бар. Биздин клиникада Түркиядан келген жогорку "
 "квалификациялуу дарыгерлер иштейт."
 
-#: templates/about.html:96
+#: templates/about.html:95
 msgid "В нашей клинике мы предлагаем следующие услуги:"
 msgstr "Биздин клиникада төмөнкү кызматтарды сунуштайбыз:"
 
-#: templates/about.html:102
+#: templates/about.html:99
 msgid "ФАКИЧНЫЕ ЙОЛ ЛИНЗЫ "
 msgstr "ФАКАЛДЫК ИОЛ ЛИНЗАЛАРЫ"
 
-#: templates/about.html:109
+#: templates/about.html:106
 msgid "ОПЕРАЦИЯ КЕРАТОКОНУСА "
 msgstr "КЕРАТОКОНУС ОПЕРАЦИЯСЫ"
 
-#: templates/about.html:115
+#: templates/about.html:112
 msgid "ХИРУРГИЯ КАТАРАКТЫ "
 msgstr "КАТАРАКТА ХИРУРГИЯСЫ"
 
-#: templates/about.html:124
+#: templates/about.html:121
 msgid " ХИРУРГИЯ ГЛАЗА "
 msgstr "КӨЗДҮН ХИРУРГИЯСЫ"
 
-#: templates/about.html:130
+#: templates/about.html:127
 msgid "ХИРУРГИЯ ГЛАУКОМЫ "
 msgstr "ГЛАУКОМА ХИРУРГИЯСЫ"
 
-#: templates/about.html:136
+#: templates/about.html:133
 msgid "ХИРУРГИЯ СЕТЧАТКИ ГЛАЗА "
 msgstr "КӨЗДҮН ТОРЧОСУ ХИРУРГИЯСЫ"
 
-#: templates/about.html:204
+#: templates/about.html:201
 msgid "В клинике Universal Goz самые доступные цены!"
 msgstr "Universal Goz клиникасында эң арзан баалар бар!"
 
-#: templates/about.html:206
+#: templates/about.html:203
 msgid ""
 "Вы можете пройти первичную диагностику и получить консультацию у "
 "высококвалифицированных специалистов за 1500 с."
@@ -101,44 +101,44 @@ msgstr ""
 "Сиз баштапкы диагноздон өтүп, 1500 сек үчүн жогорку квалификациялуу "
 "адистерден кеңеш ала аласыз."
 
-#: templates/about.html:207
+#: templates/about.html:204
 msgid "❕В первичную диагностику входит:"
 msgstr "Баштапкы диагностикага төмөнкүлөр кирет:"
 
-#: templates/about.html:211
+#: templates/about.html:208
 msgid "Комплексное обследование будет стоить 2400 с."
 msgstr "Комплекстүү экспертиза 2400 с турат."
 
-#: templates/about.html:212
+#: templates/about.html:209
 msgid "❕В комплексное обследование входит:"
 msgstr "Комплекстүү экспертизага төмөнкүлөр кирет:"
 
-#: templates/about.html:287
+#: templates/about.html:284
 msgid "Наша галерея и видео"
 msgstr "Биздин галерея жана видео"
 
-#: templates/about.html:378
+#: templates/about.html:375
 msgid "Представляем оптометриста высокого качества"
 msgstr "Жогорку сапаттагы оптометрди киргизүү"
 
-#: templates/about.html:384
+#: templates/about.html:381
 msgid "Составление индивидуальной программы лечения пациента."
 msgstr "Бейтаптын жекече дарылоо программасын түзүү."
 
-#: templates/about.html:385
+#: templates/about.html:382
 msgid "Выполнение всех операций работает на профессиональном уровне."
 msgstr "Бардык операцияларды аткаруу профессионалдык деңгээлде иштейт."
 
-#: templates/about.html:386
+#: templates/about.html:383
 msgid "Соответствие материалов международным стандартам."
 msgstr "Материалдардын эл аралык стандарттарга ылайык келиши"
 
 #: templates/contact.html:10 templates/contact.html:18
-#: templates/index2.html:200
+#: templates/index2.html:209
 msgid "Контакты"
 msgstr "Байланыштар"
 
-#: templates/contact.html:15 templates/index2.html:177 templates/news.html:16
+#: templates/contact.html:15 templates/index2.html:186 templates/news.html:16
 #: templates/service.html:15
 msgid "Главная"
 msgstr "Yй"
@@ -163,7 +163,7 @@ msgstr "Жабык"
 msgid "Наш адресс"
 msgstr "Биздин дарек"
 
-#: templates/doctor.html:10 templates/index2.html:185
+#: templates/doctor.html:10 templates/index2.html:194
 msgid "Наша команда"
 msgstr "Биздин топ"
 
@@ -175,62 +175,70 @@ msgstr "Көздүн Бардык Түрлөрү Боюнча Чечимдерд
 msgid "Часто задаваемые вопросы"
 msgstr "Көп берилүүчү суроолор"
 
-#: templates/home.html:38 templates/home.html:90
-msgid "Ставьте свою безопасность во главу угла"
-msgstr "Коопсуздугуңузду биринчи орунга коюңуз"
-
-#: templates/home.html:44
+#: templates/home.html:38
 msgid "БОЛЕЕ РЕАЛЬНО"
 msgstr "Көбүрөөк реалдуу"
 
-#: templates/home.html:50
+#: templates/home.html:44
 msgid "Видение для лучшей жизни"
 msgstr "Жакшы жашоо үчүн көрүнүш"
 
-#: templates/home.html:96
+#: templates/home.html:51
+msgid "1500 сом консультация"
+msgstr "1500 сом консультация"
+
+#: templates/home.html:54
+msgid "2400 сом комплексная диагностика"
+msgstr "2400 сом комплекстүү диагностика"
+
+#: templates/home.html:92
+msgid "Ставьте свою безопасность во главу угла"
+msgstr "Коопсуздугуңузду биринчи орунга коюңуз"
+
+#: templates/home.html:98
 msgid "Мы приносим лучшее для ваших глаз"
 msgstr "Биз сиздин көз үчүн мыкты алып"
 
-#: templates/home.html:488
+#: templates/home.html:490
 msgid "Позаботьтесь о своем видении ради лучшей жизни"
 msgstr "Жакшы жашоо үчүн көз карашыңызга кам көрүңүз"
 
-#: templates/home.html:516
+#: templates/home.html:518
 msgid "Не соглашайтесь ни на что, что ниже стандарта"
 msgstr "Стандарттан төмөн эч нерсени чечпеңиз"
 
-#: templates/index2.html:66
+#: templates/index2.html:75
 msgid "Социальные сети"
 msgstr "Социалдык тармактар"
 
-#: templates/index2.html:180 templates/service.html:10
+#: templates/index2.html:189 templates/service.html:10
 #: templates/service.html:18
 msgid "Сервисы"
 msgstr "Кызматтар"
 
-#: templates/index2.html:190
+#: templates/index2.html:199
 msgid "Наши услуги"
 msgstr "Биздин кызматтар"
 
-#: templates/index2.html:192
+#: templates/index2.html:201
 msgid "Операции"
 msgstr ""
 
-#: templates/index2.html:193 templates/research.html:10
+#: templates/index2.html:202 templates/research.html:10
 #, fuzzy
 #| msgid "Диагнозы"
 msgid "Диагностика"
 msgstr "Диагностика"
 
-#: templates/index2.html:197 templates/news.html:12 templates/news.html:19
+#: templates/index2.html:206 templates/news.html:12 templates/news.html:19
 msgid "Новости"
 msgstr "Жаңылыктар"
 
-#: templates/index2.html:212
+#: templates/index2.html:221
 msgid "Записаться"
 msgstr "Кирүү"
 
-#: templates/index2.html:245
+#: templates/index2.html:254
 msgid ""
 "Компания стремится обеспечить большее улучшение зрения в системе и "
 "технологиях."
@@ -238,47 +246,47 @@ msgstr ""
 "Компания системада жана технологияда көрүү мүмкүнчүлүгүн жогорулатууну "
 "камсыз кылууга умтулат"
 
-#: templates/index2.html:293
+#: templates/index2.html:302
 msgid "Департаменты"
 msgstr "Бөлүмдөр"
 
-#: templates/index2.html:295
+#: templates/index2.html:304
 msgid "Кто мы есть"
 msgstr "Биз кимбиз"
 
-#: templates/index2.html:296
+#: templates/index2.html:305
 msgid "Наша миссия"
 msgstr "Биздин миссия"
 
-#: templates/index2.html:297
+#: templates/index2.html:306
 msgid "Награды"
 msgstr "Сыйлыктар"
 
-#: templates/index2.html:298
+#: templates/index2.html:307
 msgid "Наши врачи"
 msgstr "Биздин врачтар"
 
-#: templates/index2.html:299
+#: templates/index2.html:308
 msgid "До и После"
 msgstr "Чейин жана кийин"
 
-#: templates/index2.html:305
+#: templates/index2.html:314
 msgid "Прямая ссылка"
 msgstr "Түз шилтеме"
 
-#: templates/index2.html:307
+#: templates/index2.html:316
 msgid "Лечение"
 msgstr "Дарылоо"
 
-#: templates/index2.html:308
+#: templates/index2.html:317
 msgid "Наши пациенты"
 msgstr "Биздин пациенттер"
 
-#: templates/index2.html:309
+#: templates/index2.html:318
 msgid "Свяжитесь с нами"
 msgstr "Биз менен байланыш"
 
-#: templates/index2.html:310
+#: templates/index2.html:319
 msgid "Назначения"
 msgstr "Дайындоолор"
 
@@ -441,9 +449,6 @@ msgstr "Биз сиздин көз карашыңызды сактайбыз, ж
 
 #~ msgid "Наши сервисы"
 #~ msgstr "Биздин кызматтар"
-
-#~ msgid "Бесплатная консультация"
-#~ msgstr "Акысыз консультация"
 
 #~ msgid "Политика конфиденциальности"
 #~ msgstr "Купуялык саясаты"
