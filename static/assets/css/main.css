@@ -3648,9 +3648,6 @@ slider
   line-height: 1;
   margin-top: 20px;
 }
-.slide .slide_style1 .slide__content--headings h3 {
-  padding: 20px 0 20px;
-}
 .slide .slide__content--headings h3 {
   font-family: 'inter';
   font-size: 17px;
@@ -4203,4 +4200,21 @@ section.error-404 .page-content p {
 }
 .flickity-prev-next-button {
   border-radius: 0 !important;
+}
+
+.price-onSlider {
+  line-height: 0;
+}
+
+.price-onSlider h3 {
+  font-family: 'Lora', serif !important;
+  color: #28305f !important;
+  text-align: center !important;
+  display: inline-block !important;
+  padding: 0 10px !important;
+  background: #fff;
+  margin: 0 !important;
+  border-radius: 10px;
+  line-height: 30px !important;
+  font-weight: bold;
 }

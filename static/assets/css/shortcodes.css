@@ -1268,6 +1268,8 @@ i.fa-play {
   text-align: left;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 .featured-icon-box.style5:before {
   position: absolute;

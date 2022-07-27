@@ -88,7 +88,7 @@ nav.main-menu ul.menu li ul.mega-submenu li a {
   padding: 6px 25px 6px 40px;
   position: relative;
   text-align: left;
-  color: inherit;
+  color: #28305f;
   border-radius: 0;
   transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -173,6 +173,20 @@ ul.menu-col li a:focus {
     top: 0;
     bottom: 0;
     z-index: 9;
+  }
+  .menubar::before {
+    content: '\f16d universal.goz';
+    position: absolute;
+    right: 50px;
+    width: 132px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: 33%;
+    color: #fff;
+    font: normal normal normal 18px/1 FontAwesome;
+    font-size: 18px;
+    font-size: 20px;
   }
   .menubar-box {
     display: block;
