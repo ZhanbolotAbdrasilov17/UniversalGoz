@@ -7,6 +7,7 @@ class Doctor(models.Model):
     position = models.CharField(max_length=300, verbose_name="Должность")
     image = models.ImageField(null=True, blank=True, upload_to="doctors")
     experience = models.CharField(max_length=300, verbose_name="Опыт", blank=True, null=True)
+    article = models.CharField(max_length=100, blank=True, null=True)
 
 
     def __str__(self):
@@ -14,7 +15,7 @@ class Doctor(models.Model):
 
     class Meta:
         verbose_name = 'Доктора'
-        ordering = ['full_name']
+        ordering = ['article']
 
 
 class Description(models.Model):
